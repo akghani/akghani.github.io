@@ -19,15 +19,15 @@ feature:
 - description: ""
   icon: r-project
   icon_pack: fab
-  name: R
-- description: "I have"
+  name: Using R
+- description: ""
   icon: chart-line
+  icon_pack: fas
+  name: Research
+- description: ""
+  icon: chalkboard-teacher
   icon_pack: fas
   name: Teaching
-- description: "I have"
-  icon: chart-line
-  icon_pack: fas
-  name: Statistics
 
 # Uncomment to use emoji icons.
 #- icon: ':smile:'
