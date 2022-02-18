@@ -9556,3 +9556,10 @@ div.chart {
 
 .portrait-title h2 {
   font-size: 1.5rem; }
+
+.navbar {
+  height: 70px;
+  background: black;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.11);
+  font-size: 16.17px;
+  padding: 0 1rem; }
