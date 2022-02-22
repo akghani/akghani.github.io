@@ -124,7 +124,7 @@ map:
   api_key: ''
   zoom: 15
 marketing:
-  google_analytics: '' # Set up Google analytics
+  google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
   google_tag_manager: ''
   google_site_verification: ''
   baidu_site_verification: ''
