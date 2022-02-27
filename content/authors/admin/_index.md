@@ -27,7 +27,7 @@ role: Research Associate and Lecturer
 social:
 - icon: envelope
   icon_pack: fas
-  link: alessandro.bramucci@hwr-berlin.de
+  link: https://www.hwr-berlin.de/hwr-berlin/fachbereiche-und-zentralinstitute/fb-1-wirtschaftswissenschaften/personen-und-kontakte/1661-alessandro-bramucci/
 - display:
     header: true
   icon: twitter
