@@ -27,7 +27,7 @@ role: Research Associate and Lecturer
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  link: alessandro.bramucci@hwr-berlin.de
 - display:
     header: true
   icon: twitter
