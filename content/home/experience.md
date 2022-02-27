@@ -30,9 +30,9 @@ experience:
     date_start: '2017-10-01'
     date_end: ''
     description: |2-
-        Mainly I have worked on two projects, [MGWK](https://www.mgwk.de/) and [WIPOSIM](https://www.wiposim.de/), entirely developed in R and RStudio. My responsibilities included:
+        Mainly I have worked on two projects, [MGWK](https://projekt.mgwk.de/index.html) and [WIPOSIM](https://www.wiposim.de/), entirely developed in R and RStudio. My responsibilities included:
         
-        * Programming of the simulations in R Shiny
+        * Programming of the [simulations in R Shiny](https://mgwk.shinyapps.io/scenario1_eng/)
         * Drafting of explanatory texts 
         * Translation from German into English
         * Preparation of the pdf version of the text

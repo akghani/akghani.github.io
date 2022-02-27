@@ -19,7 +19,6 @@ highlight_name: true
 interests:
 - Pluralism in economics education
 - Macroeconomics
-- Global value chains
 organizations:
 - name: Berlin School of Economics and Law (HWR Berlin)
   url: https://www.hwr-berlin.de/
