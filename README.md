@@ -2,6 +2,8 @@
 
 This is the repository of my personal academic webpage. It is developed with RStudio and blogdown using the Hugo academic theme from Wowchemy.
 
+✔ www.alessandrobramucci.com ✔
+
 The site was created in a short time thanks to the following resources:
 
 - The must-read book to start with is [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
