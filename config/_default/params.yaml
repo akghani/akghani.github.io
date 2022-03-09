@@ -126,7 +126,7 @@ map:
 marketing:
   google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
   google_tag_manager: ''
-  google_site_verification: ''
+  google_site_verification: 'google-site-verification=zE_H7eL4bmVB3MI15sIC4FlrXiQqfRfpmt9gPe5LdXs'
   baidu_site_verification: ''
   baidu_tongji: ''
 cms:
