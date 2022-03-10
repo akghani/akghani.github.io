@@ -18,6 +18,7 @@ email: ""
 highlight_name: true
 interests:
 - Pluralism in economics education
+- Demand and growth regimes
 - Macroeconomics
 organizations:
 - name: Berlin School of Economics and Law (HWR Berlin)
