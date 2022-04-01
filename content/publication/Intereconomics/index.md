@@ -1,5 +1,5 @@
 ---
-title: "Decades of Tight Fiscal Policy Have Left the Health Care System in Italy Ill-Prepared to Fight the COVID-19 Outbreak"
+title: "Decades of tight fiscal policy have left the health care system in Italy ill-prepared to fight the COVID-19 outbreak"
 publishDate: "2020-06-07T00:00:00Z"
 publication_types: ["3"]
 authors:
