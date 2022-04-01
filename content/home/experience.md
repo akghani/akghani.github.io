@@ -30,9 +30,10 @@ experience:
     date_start: '2017-10-01'
     date_end: ''
     description: |2-
-        Mainly I have worked on two projects, [MGWK](https://projekt.mgwk.de/index.html) and [WIPOSIM](https://www.wiposim.de/), where we have being developing economic policy simulators for educational purposes using R and RStudio. My responsibilities have included:
+        I have worked mainly on two projects, [MGWK](https://projekt.mgwk.de/index.html) and [WIPOSIM](https://www.wiposim.de/), where we have developed economic policy simulators for educational purposes using R and RStudio. My responsibilities included:
         * Programming of the simulators in R Shiny
-        * Drafting of explanatory texts for the simulations and editorial work on the text using the bookdown package
+        * Drafting of explanatory texts for the simulations
+        * Editorial work on the text using the bookdown package
         
   - title: Lecturer
     company: Berlin School of Economics and Law (HWR Berlin)
@@ -42,7 +43,7 @@ experience:
     date_start: '2016-04-01'
     date_end: ''
     description: |2-
-        Over the years, I have taught several introductory courses in economics, primarily in:
+        Over the years I have taught several introductory courses in economics primarily in:
         
         * [Quantitative methods for economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22)
         * Macroeconomics
