@@ -8,7 +8,7 @@ appropriate action in the context of the different approaches."
 authors:
 - Franz Prante
 - admin
-- Heckhard Hein
+- Eckhard Hein
 - Achim Truger
 featured: false
 publication: '*International Journal of Pluralism and Economics Education, 11(1)*'
