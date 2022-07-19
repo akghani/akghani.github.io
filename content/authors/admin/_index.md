@@ -13,7 +13,7 @@ education:
     year: 2010
   - course: BA (Laurea Triennale) in Philosophy
     institution: University of Urbino
-    year: 2006   
+    year: 2007   
 email: ""
 highlight_name: true
 interests:
