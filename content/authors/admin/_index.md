@@ -17,9 +17,9 @@ education:
 email: ""
 highlight_name: true
 interests:
+- Macroeconomic modelling & data analysis
 - Pluralism in economics education
 - Demand and growth regimes
-- Macroeconomics
 organizations:
 - name: Berlin School of Economics and Law (HWR Berlin)
   url: https://www.hwr-berlin.de/
@@ -47,4 +47,4 @@ superuser: true
 title: Alessandro Bramucci
 ---
 
-Hi! I am an economist based in Berlin, Germany. Here you can find my {{< staticref "uploads/bramucci_cv.pdf" "newtab" >}}cv{{< /staticref >}}.
+Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis. Here you can find my {{< staticref "uploads/bramucci_cv.pdf" "newtab" >}}cv{{< /staticref >}}.
