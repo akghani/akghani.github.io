@@ -47,4 +47,4 @@ superuser: true
 title: Alessandro Bramucci
 ---
 
-Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis but I am also exploring new languages (SQL, Python). Here you can find my {{< staticref "uploads/bramucci_cv.pdf" "newtab" >}}cv{{< /staticref >}}.
+Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis but I am also exploring new languages (SQL, Python). Here you can find my [cv](https://www.alessandrobramucci.com/cv/cv.html).
