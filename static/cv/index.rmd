@@ -1,0 +1,218 @@
+---
+title: "Alessandro Bramucci's resume"
+author: Alessandro Bramucci
+date: "r format(Sys.time(), '%d %b %Y')`"
+output:
+  pagedown::html_resume:
+    css: 
+    - css/override_english.css
+    - resume
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: false
+# uncomment this line to produce HTML and PDF in RStudio:
+#knit: pagedown::chrome_print
+---
+
+Aside
+================================================================================
+
+![Alessandro Bramucci](foto.jpg){width=70%}
+
+Contact {#contact}
+--------------------------------------------------------------------------------
+
+- `bramucci.alessandro@gmail.com`
+- <i class="fa fa-phone"></i> +49 176 36133214
+
+---
+
+- Download PDF
+<a href="https://bttomio.github.io/CV_PDF/bttomio.pdf" class = "icon-block">
+    <i class="fas fafooter fa-download"></i>
+</a>
+- Back to the main page
+<a href="https://www.alessandrobramucci.com/" class = "icon-block">
+    <i class="fas fafooter fa-arrow-circle-left"></i> 
+</a>
+
+Language skills {#skills}
+--------------------------------------------------------------------------------
+
+Italian (mother tongue); German (fluent spoken and written); English (fluent spoken and written); Spanish (basic knowledge)
+
+Computer skills
+--------------------------------------------------------------------------------
+
+R, RStudio, Git, GitHub, Latex, Excel, Word, PowerPoint, Stata, SQL
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Last updated `r format(Sys.time(), '%d %m %Y')`. Created with [pagedown](https://github.com/rstudio/pagedown).
+
+Main
+================================================================================
+
+Alessandro Bramucci {#title}
+--------------------------------------------------------------------------------
+
+---
+
+Hi! I am an economist with 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis. 
+
+Professional experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Research associate
+
+Berlin School of Economics and Law (HWR)
+
+Berlin
+
+October 2019 - August 2022
+
+---
+
+Collaborator in the project ["WIPOSIM - The economic policy online simulator"](https://www.wiposim.de/)
+
+::: concise
+- Programming of simulations in R 
+- Development of interactive applications with the R package *Shiny*
+- Writing of didactic texts accompanying the simulations, in particular on the subject of fiscal policy
+- Extensive experience in data work using the *R tidyverse* packages
+- Publication of scientific articles in academic journals
+- Application and acquisition of third-party funds
+:::
+
+### Research associate
+
+Berlin School of Economics and Law (HWR)
+
+Berlin
+
+October 2017 - May 2019
+
+---
+
+Collaborator in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://projekt.mgwk.de/index.html)
+
+::: concise
+- Programming of simulations in R 
+- Development of interactive applications with the R package *Shiny*.
+- Drafting selected chapters of the book *Introduction to macroeconomics: plural and interactive*
+- Translation of the book and simulations from German into English
+- Presentation of project results in scientific conferences
+:::
+
+Teaching experience {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+### Lecturer
+
+Berlin School of Economics and Law (HWR)
+
+Berlin
+
+2016 - 2022
+
+---
+
+- Introductory courses in economics (Macroeconomics, International Economics)
+- Introduction to quantitative methods (with focus on econometrics)
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### University of Urbino
+
+Doctorate in Economics and Management
+
+Urbino, Italy
+
+2015
+
+### Berlin School of Economics and Law (HWR)
+
+M.A. in International Economics
+
+Berlin
+
+2013
+
+### University of Urbino
+
+M.A. in Philosophy
+
+Urbino, Italy
+
+2010
+
+### University Pompeu Fabra (UPF)
+
+Semester abroad
+
+Barcelona, Spain
+
+2007
+
+### University of Urbino
+
+B.A. in Philosophy
+
+Urbino, Italy
+
+2007
+
+Further education {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+### Technical University (TU)
+
+Additional coursework:
+
+Berlin
+
+2017 - 2019
+
+- Introduction to Engineering Data Analytics with R
+- Applied Data Science for Quality Engineering
+- LaTeX: Einführung in das mathematisch wissenschaftliche Textsatzsystem
+
+### Berlin School of Economics and Law (HWR)
+
+Additional course:
+
+Berlin
+
+2016
+
+- Introduction to Programming in R
+
+Hobbys {data-icon="fas fa-dumbbell"}
+--------------------------------------------------------------------------------
+
+My hobbies are sports and music especially CrossFit, boxing and playing drums
+
+```{js move_disclaim, echo=FALSE}
+(function() {
+    var pages 
+    var timer = 0;
+    var changeDC = setInterval(function() {
+        pages = document.querySelectorAll('.pagedjs_page');
+        if(pages.length !== 2 && timer <= 5000) {
+            timer += 200;
+            return;
+        }
+        if(pages.length !== 2 && timer > 5000) return clearInterval(changeDC);
+        var firstPage = pages[0];
+        var lastePage = pages[pages.length - 1];
+        var aside = firstPage.querySelector('#aside');
+        var asideClone = aside.cloneNode();
+        asideClone.id = "aside_last";
+        var disclaim = document.querySelector('#disclaimer');
+        asideClone.appendChild(disclaim);
+        lastePage.querySelector('.pagedjs_page_content > div').appendChild(asideClone);
+        clearInterval(changeDC);
+    }, 200);
+})()
+```
