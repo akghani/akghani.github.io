@@ -21,8 +21,8 @@ Aside
 Contact {#contact}
 --------------------------------------------------------------------------------
 
-- `bramucci.alessandro@gmail.com`
 - <i class="fa fa-phone"></i> +49 176 36133214
+- `bramucci.alessandro@gmail.com`
 - [www.alessandrobramucci.com](https://www.alessandrobramucci.com/)
 
 ---
@@ -108,8 +108,8 @@ Berlin
 
 ---
 
-- Introductory courses in economics (Macroeconomics, International Economics)
-- Introduction to quantitative methods (with focus on econometrics)
+- Introductory courses in economics (Macroeconomics, International Economics, Business Economics)
+- Introduction to quantitative methods (with focus on Econometrics)
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------

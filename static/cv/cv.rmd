@@ -116,8 +116,8 @@ Berlin
 
 ---
 
-- Introductory courses in economics (Macroeconomics, International Economics)
-- Introduction to quantitative methods (with focus on econometrics)
+- Introductory courses in economics (Macroeconomics, International Economics, Business Economics)
+- Introduction to quantitative methods (with focus on Econometrics)
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
