@@ -10,7 +10,7 @@ output:
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: false
 # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 ---
 
 Aside
@@ -23,17 +23,9 @@ Contact {#contact}
 
 - `bramucci.alessandro@gmail.com`
 - <i class="fa fa-phone"></i> +49 176 36133214
+- [www.alessandrobramucci.com](https://www.alessandrobramucci.com/)
 
 ---
-
-- Download PDF
-<a href="https://www.alessandrobramucci.com/cv/cv_pdf.pdf" class = "icon-block">
-    <i class="fas fafooter fa-download"></i>
-</a>
-- Back to the main page
-<a href="https://www.alessandrobramucci.com/" class = "icon-block">
-    <i class="fas fafooter fa-arrow-circle-left"></i> 
-</a>
 
 Language skills {#skills}
 --------------------------------------------------------------------------------
