@@ -20,4 +20,3 @@ image:
 Following the link below you can access the page with the simulators presented in the paper. Have fun trying the simulators and let us know what you think!
 
 https://www.mgwk.de/apps
-

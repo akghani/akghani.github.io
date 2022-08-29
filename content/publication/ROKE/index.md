@@ -7,9 +7,10 @@ authors:
 - Eckhard Hein
 - admin
 featured: false
-publication: '*Review of Keynesian Economics, 55, pp. 147–152*'
+publication: '*Review of Keynesian Economics, 10(2), 264-290*'
 doi: "https://doi.org/10.4337/roke.2022.02.07"
 image: 
   preview only: true
 ---
 
+Click [here](https://github.com/Alessandro1984/Prante-Hein-Bramucci-ROKE-2022) for the link to the R replication code.
