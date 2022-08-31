@@ -89,7 +89,7 @@ Berlin School of Economics and Law (HWR)
 
 Berlin
 
-October 2017 - May 2019
+October 2017 - April 2019
 
 ---
 
@@ -117,7 +117,7 @@ Berlin
 ---
 
 - Business Economics (WS 2017-18)
-- Economics Tutorium (WS 2016-17)
+- Economics Tutorium (WS 2016-17), as Tutor
 - International Economics (SS 2016, SS 2018)
 - Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19)
 - Quantitative Methods for Economists (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22)
@@ -196,33 +196,33 @@ Selected publications {data-icon=newspaper}
 
 ### Varieties and interdependencies of demand and growth regimes in finance-dominated capitalism: a Post-Keynesian two-country stock–flow consistent simulation approach
 
-with *Franz Prante, Eckhard Hein*
+Prante, F., Hein, E. and Bramucci, A.
 
 N/A
 
 2022
 
-Review of Keynesian Economics, 10(2), 264–290, [https://doi.org/10.4337/roke.2022.02.07](https://doi.org/10.4337/roke.2022.02.07)
+*Review of Keynesian Economics*, 10(2), 264–290, [https://doi.org/10.4337/roke.2022.02.07](https://doi.org/10.4337/roke.2022.02.07)
 
 ### Pluralist macroeconomics - an interactive simulator
 
-with *Franz Prante, Eckhard Hein, Achim Truger*
+Prante, F., Bramucci, A., Hein, E. and Truger, A.
 
 N/A
 
 2020
 
-International Journal of Pluralism and Economics Education, 11(1), 55-78, [https://www.doi.org/10.1504/IJPEE.2020.109496]( https://www.doi.org/10.1504/IJPEE.2020.109496)
+*International Journal of Pluralism and Economics Education*, 11(1), 55-78, [https://www.doi.org/10.1504/IJPEE.2020.109496]( https://www.doi.org/10.1504/IJPEE.2020.109496)
 
 ### Decades of tight fiscal policy have left the health care system in Italy ill-prepared to fight the COVID-19 outbreak
 
-with *Franz Prante, Achim Truger*
+Prante, F., Bramucci, A. and Truger, A.
 
 N/A
 
 2020
 
-Intereconomics, 55, 147–152, [https://doi.org/10.1007/s10272-020-0886-0]( https://doi.org/10.1007/s10272-020-0886-0)
+*Intereconomics*, 55, 147–152, [https://doi.org/10.1007/s10272-020-0886-0]( https://doi.org/10.1007/s10272-020-0886-0)
 
 ```{js move_disclaim, echo=FALSE}
 (function() {

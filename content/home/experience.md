@@ -45,7 +45,7 @@ experience:
     description: |2-
         Over the years I have taught several courses:
         * Business Economics (WS 2017-18)
-        * Economics Tutorium (WS 2016-17)
+        * Economics Tutorium (WS 2016-17), as Tutor
         * International Economics (SS 2016, SS 2018)
         * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19)
         * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22)
