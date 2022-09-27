@@ -2,7 +2,7 @@
 bio: 
 education:
   courses:
-  - course: PhD (Dottorato) in Economics and Management
+  - course: PhD (Dottorato di ricerca) in Economics and Management
     institution: University of Urbino
     year: 2015
   - course: MA in International Economics
@@ -27,7 +27,7 @@ role: Research Associate and Lecturer
 social:
 - icon: envelope
   icon_pack: fas
-  link: https://www.hwr-berlin.de/hwr-berlin/fachbereiche-und-zentralinstitute/fb-1-wirtschaftswissenschaften/personen-und-kontakte/1661-alessandro-bramucci/
+  link: bramucci@hwr-berlin.de
 - display:
     header: true
   icon: twitter

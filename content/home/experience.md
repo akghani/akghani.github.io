@@ -28,7 +28,7 @@ experience:
     company_logo: hwr
     location: Berlin (DE)
     date_start: '2017-10-01'
-    date_end: '' 
+    date_end: '2022-08-31' 
     description: |2-
         I have worked mainly on two projects, [MGWK](https://projekt.mgwk.de/index.html) and [WIPOSIM](https://www.wiposim.de/), where we have developed economic policy simulators for educational purposes using R and RStudio. My responsibilities included:
         * Programming of the simulators in R Shiny
@@ -47,7 +47,7 @@ experience:
         * Business Economics (WS 2017-18)
         * Economics Tutorium (WS 2016-17), as Tutor
         * International Economics (SS 2016, SS 2018)
-        * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19)
+        * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19, SS 2019)
         * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22)
         * Research Methods Seminar (WS 2019-20)
 
