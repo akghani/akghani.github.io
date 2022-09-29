@@ -37,7 +37,7 @@ Contact {#contact}
 ---
 
 - Download PDF
-<a href="https://www.alessandrobramucci.com/cv/cv_pdf.pdf" class = "icon-block">
+<a href="https://www.alessandrobramucci.com/cv/cv_abramucci.pdf" class = "icon-block">
     <i class="fas fafooter fa-download"></i>
 </a>
 - Back to the main page
