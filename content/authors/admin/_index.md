@@ -49,6 +49,6 @@ title: Alessandro Bramucci
 
 Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis. I am also interested in economic policy in Europe and occasionally I write articles on economic policy issues.
 
-{{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/cv.html" "newtab" >}}cv{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
 {{< icon name="book" pack="fas" >}} And here the complete list of my {{< staticref "" "newtab" >}}articles{{< /staticref >}}.
