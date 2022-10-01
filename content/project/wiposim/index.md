@@ -11,7 +11,9 @@ url_slides: ""
 url_video: ""
 ---
 
-The goal of the project is the extension of an interactive paradigm-oriented simulator of basic macroeconomics and of the accompanying online text developed in a previous project (MGWK). We focus on current problems and challenges of modern economies in three selected areas of interest for macroeconomic policy: financialisation and income distribution, fiscal policy and public debt, ecology and macroeconomics. Extending our basic models and simulator in order to address these areas, we develop a set of macroeconomic models to simulate economic policy strategies from different perspectives.
+*Together with Eckhard Hein, Achim Truger and Franz Prante*
+
+Goal of the project was the extension of an interactive paradigm-oriented simulator of basic macroeconomics and of the accompanying online text developed in a previous project (MGWK). We focus on current problems and challenges of modern economies in three selected areas of interest for macroeconomic policy: financialisation and income distribution, fiscal policy and public debt, ecology and macroeconomics. Extending our basic models and simulator in order to address these areas, we develop a set of macroeconomic models to simulate economic policy strategies from different perspectives.
 
 Modelling is based on behavioural equations and identities. For some models, particular attention is paid to stock-flow consistency. In addition to simple didactic models, more complex models are developed to represent the characteristics of real economies in the form of stylized scenarios. For example, a model allows the simulation of country-specific macroeconomic demand and growth regimes and of the regime changes after the 2007-09 crisis. As in the previous project, interactive web applications are programmed to visualize models and scenarios where individual parameters and variables can be changed interactively.
 
