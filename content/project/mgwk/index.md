@@ -25,7 +25,7 @@ And here the German version:
 
 - [Einführung in die Makroökonomik: plural und interaktiv](https://www.mgwk.de/)
 
-In a series of interactive illustrations, the users take control of various economic policy instruments, reacting to economic problems using the appropriate policy measures. With the following link, you can get a quick preview of the applications developed in the project. The remaining apps and scenarios are accessible in the online book in the relative chapters.
+In the book we offer a series of interactive illustrations where the users take control of various economic policy instruments, reacting to economic problems using the appropriate policy measures. With the following link, you can get a quick preview of the applications developed in the project. The remaining apps and scenarios are accessible in the online book in the relative chapters.
 
 - [Scenario: Aggregate demand shock and policy reaction of the user](https://mgwk.shinyapps.io/scenario1_eng/)
 - [Complete model: Aggregate demand/supply shock and endogenous policy reaction](https://mgwk.shinyapps.io/full_model1_eng/)
