@@ -11,20 +11,37 @@ url_slides: ""
 url_video: ""
 ---
 
+# Model-theoretic Foundations of Controversies in Economic Policy (MGWK)
+
 *Together with Eckhard Hein, Achim Truger and Franz Prante*
 
-Aim of the project was to develop a didactic tool to interactively present macroeconomic theories from a multiparadigmatic perspective. Our interactive online textbook discusses basic macroeconomic concepts at the bachelor level. In the interactive illustrations, parameters and variables of the model can be changed by the users. In a series of interactive scenarios, the users take control of various economic policy instruments, reacting to economic problems with appropriate policy measures. The models for the closed economy are presented from a New Keynesian and a post-Keynesian perspective. By changing individual assumptions, a transition between the model worlds becomes possible. The results of the project contributed to the dissemination of pluralism in economic education and teaching.
+Goal of the project MGWK (short for the German *Modelltheoretische Grundlagen wirtschaftspolitischer Kontroversen*) was to develop a didactic tool to teach macroeconomic interactively and from a pluralist perspective. Text and simulations are available in English and German.
+
+You can access the English version of the book here:
+
+- [Introduction to Macroeconomics: Pluralist and Interactive](https://eng.mgwk.de/)
+
+And here the German version:
+
+- [Einführung in die Makroökonomik: plural und interaktiv](https://www.mgwk.de/)
+
+In a series of interactive illustrations, the users take control of various economic policy instruments, reacting to economic problems using the appropriate policy measures. With the following link, you can get a quick preview of the applications developed in the project. The remaining apps and scenarios are accessible in the online book in the relative chapters.
+
+- [Scenario: Aggregate demand shock and policy reaction of the user](https://mgwk.shinyapps.io/scenario1_eng/)
+- [Complete model: Aggregate demand/supply shock and endogenous policy reaction](https://mgwk.shinyapps.io/full_model1_eng/)
+
+Visit also the [project website](https://projekt.mgwk.de/index.html)! *(in German)*
 
 **Funded by:**
 
 <div class="row">
-  <img src="" width="200">
+  <img src="mkw.jpg" width="250">
 </div>
 
 **Project partners:**
 
 <div class="row">
-    <img src="" width="200">
+    <img src="fgw.png" width="200">
     <img src="hwr.png" width="180" height="40">
     <img src="ipe.jpg" width="200">
 </div>

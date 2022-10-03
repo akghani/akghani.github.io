@@ -28,7 +28,15 @@ item:
   description: ""
   organization: DataCamp
   organization_url: https://www.datacamp.com
-  title: 'Introduction to SQL'
+  title: 'Intermediate SQL Queries'
+  url: 
+  
+- certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/fadf1d0f2cf6cb3a836c50f30e5653a80203a590
+  date_start: '2022-01-05'
+  description: ""
+  organization: DataCamp
+  organization_url: https://www.datacamp.com
+  title: 'Introduction to Git'
   url: 
 
 design:
