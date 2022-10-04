@@ -51,4 +51,4 @@ Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experi
 
 {{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
-{{< icon name="book" pack="fas" >}} And here the complete list of my {{< staticref "" "newtab" >}}articles{{< /staticref >}}.
+{{< icon name="book" pack="fas" >}} And here the complete list of my {{< staticref "publications_abramucci.pdf" "newtab" >}}articles{{< /staticref >}}.

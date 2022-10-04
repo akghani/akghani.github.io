@@ -109,15 +109,15 @@ October 2019 - August 2022
 
 ---
 
-Collaborator in the project ["WIPOSIM - The economic policy online simulator"](https://www.wiposim.de/)
+Researcher in the project ["WIPOSIM - The economic policy online simulator"](https://www.wiposim.de/)
 
 ::: concise
 - Programming of simulations in R 
-- Development of interactive applications with the R package *Shiny*
+- Development of interactive applications with the R package *shiny*
 - Writing of didactic texts accompanying the simulations, in particular on the subject of fiscal policy
 - Extensive experience in data work using the *R tidyverse* packages
 - Publication of scientific articles in academic journals
-- Application and acquisition of third-party funds
+- Acquisition of third-party funds
 :::
 
 ### Research associate
@@ -130,11 +130,11 @@ October 2017 - April 2019
 
 ---
 
-Collaborator in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://projekt.mgwk.de/index.html)
+Researcher in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://projekt.mgwk.de/index.html)
 
 ::: concise
 - Programming of simulations in R 
-- Development of interactive applications with the R package *Shiny*.
+- Development of interactive applications with the R package *shiny*.
 - Drafting selected chapters of the online book
 - Translation of the book and simulations from German into English
 - Presentation of the project results in workshops and conferences
