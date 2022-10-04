@@ -101,7 +101,7 @@ October 2019 - August 2022
 
 ---
 
-Researcher in the project ["WIPOSIM - The economic policy online simulator"](https://www.wiposim.de/)
+Researcher in the project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
 
 ::: concise
 - Programming of simulations in R 
@@ -122,7 +122,7 @@ October 2017 - April 2019
 
 ---
 
-Researcher in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://projekt.mgwk.de/index.html)
+Researcher in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
 
 ::: concise
 - Programming of simulations in R 

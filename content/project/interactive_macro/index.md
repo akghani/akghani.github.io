@@ -11,5 +11,16 @@ url_slides: ""
 url_video: ""
 ---
 
+# Macroeconomic models for the classroom
 
+This is a project collecting a series of simulators programmed in *R* and *Shiny* of some famous macroeconomic textbook models. I carry out this project in my spare time and my goal is to develop a proper repository of macroeconomic models for the classroom. Take a look and let me know what you think!
+
+Gregory N. Mankiw, **Macroeconomics**, 7th Edition, International Edition, Palgrave Macmillan (Chapter 14)
+- [A Dynamic Model of Aggregate Demand and Aggregate Supply](https://mgwk.shinyapps.io/DAD_DAS/)
+
+Carlin, W., and Soskice, D., **Macroeconomics. Institutions, Instability, and the Financial System**, Oxford University Press (Chapter 3)
+- [The 3-Equation Model and Macroeconomic Policy](https://mgwk.shinyapps.io/CarlinSoskice/)
+
+Godley, W., and Lavoie, M. **Monetary Economics. An Integrated Approach to Credit, Money, Income, Production and Wealth**, 2nd Edition, Palgrave Macmillan (Chapter 3)
+- [The simplest model with government money (SIM)](https://mgwk.shinyapps.io/sim_shiny/) 
 

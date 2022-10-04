@@ -30,7 +30,7 @@ experience:
     date_start: '2017-10-01'
     date_end: '2022-08-31' 
     description: |2-
-        I have worked mainly on two projects, [MGWK](https://projekt.mgwk.de/index.html) and [WIPOSIM](https://www.wiposim.de/), where we have developed economic policy simulators for educational purposes using R and RStudio. My responsibilities included:
+        I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/) and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/), where we have developed economic policy simulators for educational purposes using R and RStudio. My responsibilities included:
         * Programming of the simulators in R Shiny
         * Drafting of explanatory texts for the simulations
         * Editorial work on the text using the bookdown package
