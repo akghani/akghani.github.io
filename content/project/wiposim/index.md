@@ -34,6 +34,7 @@ In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counter
 **Inequalities and income distribution:**
 
 - Extending Piketty's *r>g* model with different income groups
+    * Access the app [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
 - Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model. 
     * Access the introductory text [here](https://wiposim-genderwagegap.netlify.app/)
     * And access the app showing the model's goods market equilibrium with a gender wage gap [here](https://mgwk.shinyapps.io/wiposim_gender/)
