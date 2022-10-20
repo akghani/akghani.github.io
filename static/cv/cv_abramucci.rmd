@@ -111,13 +111,12 @@ October 2019 - August 2022
 
 ---
 
-Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
+Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/). My tasks included:
 
 ::: concise
-- Programming of simulations in R 
-- Development of interactive applications with the R package *shiny*
-- Writing of didactic texts accompanying the simulations in particular on fiscal policy
-- Extensive experience in data work using the *R tidyverse* packages
+- Programming of the simulations in R and development of the interactive applications with *shiny*
+- Writing of the didactic texts accompanying the simulations in particular on subject of fiscal policy
+- Data work in R with the packages of the *R tidyverse*
 - Publication of scientific articles in academic journals
 - Acquisition of third-party funds
 :::
@@ -132,14 +131,13 @@ October 2017 - April 2019
 
 ---
 
-Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
+Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/). My tasks included:
 
 ::: concise
-- Programming of simulations in R 
-- Development of interactive applications with the R package *shiny*.
-- Drafting selected chapters of the online book
-- Translation of the book and simulations from German into English
-- Presentation of the project results in workshops and conferences
+- Programming of the simulations in R and development of the interactive applications with *shiny*
+- Drafting of selected chapters of the online book [*Introduction to Macroeconomics: Pluralist and Interactive*](https://eng.mgwk.de/)
+- Translation of the book and the simulations from German into English
+- Presentation of the project in workshops and conferences
 :::
 
 Teaching experience {data-icon=chalkboard-teacher}
