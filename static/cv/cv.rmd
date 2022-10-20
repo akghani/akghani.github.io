@@ -8,10 +8,19 @@ output:
     - css/styles.css
     - resume
     # set it to true for a self-contained HTML page but it'll take longer to render
-    self_contained: true
+    self_contained: false
 # uncomment this line to produce HTML and PDF in RStudio:
-# knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 ---
+
+```{css, echo=FALSE}
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0rem;
+  --sidebar-background-color: #ffffff;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+```
 
 ```{r, include=FALSE}
 knitr::opts_chunk$set(
@@ -30,20 +39,22 @@ Aside
 
 Contact {#contact}
 --------------------------------------------------------------------------------
-
+    
 - `bramucci.alessandro@gmail.com`
 - <i class="fa fa-phone"></i> +49 176 36133214
 
 ---
-
+    
 - Download PDF
 <a href="https://www.alessandrobramucci.com/cv/cv_abramucci.pdf" class = "icon-block">
-    <i class="fas fafooter fa-download"></i>
+  <i class="fas fafooter fa-download"></i>
 </a>
 - Back to the main page
 <a href="https://www.alessandrobramucci.com/" class = "icon-block">
-    <i class="fas fafooter fa-arrow-circle-left"></i> 
+  <i class="fas fafooter fa-arrow-circle-left"></i> 
 </a>
+
+---
 
 Language skills {#skills}
 --------------------------------------------------------------------------------
@@ -82,11 +93,12 @@ build_skill_bars(skills = skills_data)
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with [pagedown](https://github.com/rstudio/pagedown). 
-
-Source code: [github.com/Alessandro1984/cv](https://github.com/Alessandro1984/cv).
-
+<small>
+Made with [pagedown](https://github.com/rstudio/pagedown).    
+Source code:    
+[github.com/Alessandro1984/cv](https://github.com/Alessandro1984/cv).   
 Last updated on `r format(Sys.time(), '%d %m %Y')`.
+</small>
 
 Main
 ================================================================================
@@ -109,12 +121,12 @@ October 2019 - August 2022
 
 ---
 
-Researcher in the project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
+Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
 
 ::: concise
 - Programming of simulations in R 
 - Development of interactive applications with the R package *shiny*
-- Writing of didactic texts accompanying the simulations, in particular on the subject of fiscal policy
+- Writing of didactic texts accompanying the simulations in particular on fiscal policy
 - Extensive experience in data work using the *R tidyverse* packages
 - Publication of scientific articles in academic journals
 - Acquisition of third-party funds
@@ -130,7 +142,7 @@ October 2017 - April 2019
 
 ---
 
-Researcher in the project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
+Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
 
 ::: concise
 - Programming of simulations in R 
@@ -163,41 +175,33 @@ Berlin
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
-### University of Urbino
+### PhD (Dottorato di ricerca) in Economics and Management
 
-Doctorate in Economics and Management
+University of Urbino
 
 Urbino, Italy
 
 2015
 
-### Berlin School of Economics and Law (HWR)
+### M.A. in International Economics
 
-M.A. in International Economics
+Berlin School of Economics and Law (HWR)
 
 Berlin
 
 2013
 
-### University of Urbino
+### M.A. (Laurea Specialistica) in Philosophy
 
-M.A. in Philosophy
+University of Urbino
 
 Urbino, Italy
 
 2010
 
-### University Pompeu Fabra (UPF)
+### B.A. (Laurea Triennale) in Philosophy
 
-Semester abroad
-
-Barcelona, Spain
-
-2007
-
-### University of Urbino
-
-B.A. in Philosophy
+University of Urbino
 
 Urbino, Italy
 
@@ -206,27 +210,18 @@ Urbino, Italy
 Further education {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Technical University (TU)
+### Programming courses (with final exam)
 
-Additional coursework:
-
-Berlin
-
-2017 - 2019
-
-- Introduction to Engineering Data Analytics with R
-- Applied Data Science for Quality Engineering
-- LaTeX: Einführung in das mathematisch wissenschaftliche Textsatzsystem
-
-### Berlin School of Economics and Law (HWR)
-
-Additional course:
+HWR Berlin / TU Berlin
 
 Berlin
 
-2016
+2016 - 2019
 
-- Introduction to Programming in R
+- Introduction to Engineering Data Analytics with R (TU Berlin)   
+- Applied Data Science for Quality Engineering (TU Berlin)    
+- Introduction to Programming in R (HWR Berlin)   
+- LaTeX: Einführung in das mathematisch wissenschaftliche Textsatzsystem (TU Berlin)
 
 Selected publications {data-icon=newspaper}
 --------------------------------------------------------------------------------
@@ -259,7 +254,21 @@ N/A
 
 2020
 
-*Intereconomics*, 55, 147–152, [https://doi.org/10.1007/s10272-020-0886-0]( https://doi.org/10.1007/s10272-020-0886-0)
+*Intereconomics*, 55, 147–152, [https://doi.org/10.1007/s10272-020-0886-0](https://doi.org/10.1007/s10272-020-0886-0)
+
+## Academic references {data-icon="handshake"}
+
+### Prof. Dr. Eckhard Hein, *Berlin School of Economics and Law*
+
+`eckhard.hein@hwr-berlin.de`
+
+N/A
+
+### Prof. Dr. Achim Truger, *University of Duisburg-Essen* and *German Council of Economic Experts*
+
+`achim.truger@uni-due.de`
+
+N/A
 
 ```{js move_disclaim, echo=FALSE}
 (function() {
@@ -267,11 +276,11 @@ N/A
     var timer = 0;
     var changeDC = setInterval(function() {
         pages = document.querySelectorAll('.pagedjs_page');
-        if(pages.length !== 2 && timer <= 5000) {
+        if(pages.length !== 1 && timer <= 5000) {
             timer += 200;
             return;
         }
-        if(pages.length !== 2 && timer > 5000) return clearInterval(changeDC);
+        if(pages.length !== 1 && timer > 5000) return clearInterval(changeDC);
         var firstPage = pages[0];
         var lastePage = pages[pages.length - 1];
         var aside = firstPage.querySelector('#aside');
@@ -284,3 +293,4 @@ N/A
     }, 200);
 })()
 ```
+
