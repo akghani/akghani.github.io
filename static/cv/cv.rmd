@@ -147,7 +147,7 @@ Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK
 ::: concise
 - Programming of simulations in R 
 - Development of interactive applications with the R package *shiny*.
-- Drafting selected chapters of the online book
+- Drafting selected chapters of the online book *Introduction to Macroeconomics: Pluralist and Interactive*
 - Translation of the book and simulations from German into English
 - Presentation of the project results in workshops and conferences
 :::
@@ -177,19 +177,19 @@ Education {data-icon=graduation-cap data-concise=true}
 
 ### PhD (Dottorato di ricerca) in Economics and Management
 
-University of Urbino
+University of Urbino    
 
-Urbino, Italy
+Urbino, Italy   
 
-2015
+2015    
 
 ### M.A. in International Economics
 
-Berlin School of Economics and Law (HWR)
+Berlin School of Economics and Law (HWR)    
 
-Berlin
+Berlin    
 
-2013
+2013    
 
 ### M.A. (Laurea Specialistica) in Philosophy
 
