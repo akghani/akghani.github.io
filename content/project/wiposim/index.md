@@ -19,7 +19,7 @@ Goal of WIPOSIM was the extension of texts and simulations developed in the prev
 
 **Fiscal policy and public debt:**
 
-In the text, [*Introduction to fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/), we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications we simulate the concepts explained in the text.
+In the text, [*Fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/), we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications we simulate the concepts explained in the text.
 
 * [Evolution of the debt-to-GDP ratio under different assumptions](https://mgwk.shinyapps.io/debt_simulation_shiny_1/)  
 * [Evolution of the debt-to-GDP ratio with nominal interest rate and inflation](https://mgwk.shinyapps.io/debt_simulation_inflation/)  
