@@ -15,31 +15,56 @@ url_video: ""
 
 *Together with Eckhard Hein, Achim Truger, Franz Prante and Till van Treeck*
 
-Goal of WIPOSIM was the extension of texts and simulations developed in the previous project MGWK. Here we focused on current economic policy problems and challenges of developed economies in three selected areas of interest: inequalities and income distribution, fiscal policy and public debt, ecology and macroeconomics. My contribution focused on the first two thematic areas.
+Goal of WIPOSIM was the extension of texts and simulations developed in the previous project MGWK. Here we focused on current economic policy problems and challenges of developed economies in three selected areas of interest: inequalities and income distribution, fiscal policy and public debt, ecology and macroeconomics. At the following link you can find a short video introduction to the project.
+
+<div align="center">
+
+:movie_camera: :arrow_right: [V I D E O](https://www.youtube.com/watch?v=VrfVZIgQAtg&t=6s):arrow_left: :movie_camera:
+
+</div>
+
+My contribution focused on the first two thematic areas.
 
 **Fiscal policy and public debt:**
 
-In the text, [*Fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/), we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications we simulate the concepts explained in the text.
+:white_check_mark: In the text, [*Fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/), we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications we simulate the concepts explained in the text.
 
-* [Evolution of the debt-to-GDP ratio under different assumptions](https://mgwk.shinyapps.io/debt_simulation_shiny_1/)  
-* [Evolution of the debt-to-GDP ratio with nominal interest rate and inflation](https://mgwk.shinyapps.io/debt_simulation_inflation/)  
+* [Evolution of the debt-to-GDP ratio under different assumptions about real growth rate, real interest rate, government deficit, and the initial value of the debt ratio](https://mgwk.shinyapps.io/debt_simulation_shiny_1/)  
+* [Evolution of the debt-to-GDP ratio with real growth rate, nominal interest rate, and inflation rate](https://mgwk.shinyapps.io/debt_simulation_inflation/)  
 * [Sustainability boundary, sustainability area and the dynamics of the debt-to-GDP ratio](https://mgwk.shinyapps.io/debt_simulation_shiny_sustainability/)   
+* [Required primary balance for the debt ratio to converge towards the 60% debt target in 20 years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_4/)
 * [Required primary balance to bring debt to target in a predefined number of years years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_2/)
       
-In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple Keynesian arithmetic we show the circumstances under which fiscal policy migth have a counterintuitive effect on the debt ratio.
+:white_check_mark: In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple Keynesian arithmetic, we show the circumstances under which fiscal policy might have a counter intuitive effect on the debt ratio.
+
+With simplified assumption about deficit spending:
+
+* [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the short run](https://mgwk.shinyapps.io/course2_app1/)
+* [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the long run](https://mgwk.shinyapps.io/course2_app2/)
+
+With deficit spending determined endogenously by tax revenues:
 
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the short run](https://mgwk.shinyapps.io/course2_app3/)
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the long run](https://mgwk.shinyapps.io/course2_app4/)
 
+:white_check_mark: In the following application, the effect of fiscal policy on the debt-to-GDP ratio can be tested in a simple stock-flow consistent (SFC) model of the closed economy. What is the effect of a permanent increase in the level of government spending? What happens to the debt ratio when government spending grows at a constant rate?
+
+- [Fiscal policy in a simple SFC model for the closed economy](https://mgwk.shinyapps.io/SIM_model_debt/)
+
+:white_check_mark: The following dashboard allows for short- and long-term simulations of the debt ratio starting from current values. Data are obtained from the AMECO database.
+
+- [Fiscal policy dashboard](https://mgwk.shinyapps.io/dashboard/)
+
 **Inequalities and income distribution:**
 
-- Extending Piketty's *r>g* model with different income groups
-    * Access the app [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
-- Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model. 
-    * Access the introductory text [here](https://wiposim-genderwagegap.netlify.app/)
-    * And access the app showing the model's goods market equilibrium with a gender wage gap [here](https://mgwk.shinyapps.io/wiposim_gender/)
+:white_check_mark: Extending Piketty's *r>g* model with different income groups
+- Access the app [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
+    
+:white_check_mark: Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model. 
+- Access the introductory text [here](https://wiposim-genderwagegap.netlify.app/)
+- And access the app showing the model's goods market equilibrium with a gender wage gap [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
-For more information and contents visit the [project website](https://www.wiposim.de)!
+For more information and contents visit the [project website](https://www.wiposim.de):exclamation:
 
 **Funded by:**
 

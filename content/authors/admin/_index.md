@@ -25,9 +25,9 @@ organizations:
   url: https://www.hwr-berlin.de/
 role: Research Associate and Lecturer
 social:
-- icon: envelope
+- icon: university
   icon_pack: fas
-  link: bramucci@hwr-berlin.de
+  link: https://www.ipe-berlin.org/en/institute/associate-members/alessandro-bramucci/
 - display:
     header: true
   icon: twitter
