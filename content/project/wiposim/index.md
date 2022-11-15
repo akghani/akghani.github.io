@@ -35,7 +35,7 @@ My contribution focused on the first two thematic areas.
 * [Required primary balance for the debt ratio to converge towards the 60% debt target in 20 years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_4/)
 * [Required primary balance to bring debt to target in a predefined number of years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_2/)
       
-:white_check_mark: In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple "Keynesian arithmetic"", we show the conditions under which fiscal policy might have a counter intuitive effect on the debt ratio.
+:white_check_mark: In a second text [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple "Keynesian arithmetic"", we show the conditions under which fiscal policy might have a counter intuitive effect on the debt ratio.
 
 With simplified assumption about deficit spending:
 
@@ -47,11 +47,11 @@ With deficit spending determined endogenously by tax revenues:
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the short run](https://mgwk.shinyapps.io/course2_app3/)
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the long run](https://mgwk.shinyapps.io/course2_app4/)
 
-:white_check_mark: In the following application the effect of fiscal policy on the debt-to-GDP ratio can be tested in a simple stock-flow consistent (SFC) model of the closed economy. What is the effect of a permanent increase in the level of government spending? What happens to the debt ratio when government spending grows at a constant rate?
+:white_check_mark: In the following application the effect of fiscal policy on the debt-to-GDP ratio can be tested in a simple stock-flow consistent (SFC) model of the closed economy. The model consists of three sectors. The households sector, the firms sector and the government sector. What is the effect of a permanent increase in the level of government spending on the debt ratio? What happens to the debt ratio when government spending grows at a constant rate?
 
 - [Fiscal policy in a simple SFC model of the closed economy](https://mgwk.shinyapps.io/SIM_model_debt/)
 
-:white_check_mark: The following dashboard allows for short- and long-term simulations of the debt ratio starting from current values. Data are obtained from the AMECO database.
+:white_check_mark: The following dashboard allows to perform short- and long-term projections of the debt ratio for eurozone countries starting from recent values. Data are obtained from the AMECO database.
 
 - [Fiscal policy dashboard](https://mgwk.shinyapps.io/dashboard/)
 
@@ -61,7 +61,7 @@ With deficit spending determined endogenously by tax revenues:
 - The simulator can be accessed here [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
 - We recommend reading the introductory text before using the model. The text can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
     
-:white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy. What is the effect of closing the wage gap on the equilibrium value of aggregate income? What are the conditions in the model so that closing the gender wage gap might have an expansionary effect on aggregate income?
+:white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy developed in the post-Keynesian / Kaleckian tradition.
 - The introductory text with the description of the model can be accessed [here](https://wiposim-genderwagegap.netlify.app/)
 - The app showing the model's goods market equilibrium with a gender wage gap can be accessed  [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
