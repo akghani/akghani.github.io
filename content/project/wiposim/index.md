@@ -57,12 +57,12 @@ With deficit spending determined endogenously by tax revenues:
 
 **Inequalities and income distribution:**
 
-:white_check_mark: This simulator aims to extend Piketty's *r>g* basic model by including three separate household groups. Households are divided into TOP (T), MIDDLE (M) and BOTTOM (B) households.
-- Access the app [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
-- The text introducing the model can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
+:white_check_mark: With our inequality simulator we aim to extend Piketty's *r>g* basic model by including three separate household groups. Households are divided into TOP (T), MIDDLE (M) and BOTTOM (B) households.
+- The simulator can be accessed here [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
+- We recommend reading the introductory text before using the model. The text can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
     
 :white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy. What is the effect of closing the wage gap on the equilibrium value of aggregate income? What are the conditions in the model so that closing the gender wage gap might have an expansionary effect on aggregate income?
-- Access the text [here](https://wiposim-genderwagegap.netlify.app/)
+- The introductory text with the description of the model can be accessed [here](https://wiposim-genderwagegap.netlify.app/)
 - The app showing the model's goods market equilibrium with a gender wage gap can be accessed  [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
 For more information and contents visit the [project website](https://www.wiposim.de):exclamation:
