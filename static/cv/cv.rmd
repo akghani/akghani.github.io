@@ -97,7 +97,7 @@ Disclaimer {#disclaimer}
 Made with [pagedown](https://github.com/rstudio/pagedown).    
 Source code:    
 [github.com/Alessandro1984/cv](https://github.com/Alessandro1984/cv).   
-Last updated on `r format(Sys.time(), '%d %m %Y')`.
+Last updated on `r format(Sys.time(), '%d/%m/%Y')`.
 </small>
 
 Main
@@ -106,7 +106,7 @@ Main
 Alessandro Bramucci {#title}
 --------------------------------------------------------------------------------
 
-Hi! I am an economist with 5+ years of coding experience in R in different academic projects. I am passionate about R in particular for macroeconomic modelling and macroeconomic data analysis. 
+Hi! I am an economist with 5+ years of coding experience in *R* in different academic projects. I am passionate about *R* in particular for macroeconomic modelling and macroeconomic data analysis. 
 
 Professional experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
@@ -124,9 +124,9 @@ October 2019 - August 2022
 Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/). My tasks included:
 
 ::: concise
-- Programming of the simulations in R and development of the interactive applications with *shiny*
+- Programming of the simulations in *R* and development of the interactive applications with *shiny*
 - Writing of the didactic texts accompanying the simulations in particular on subject of fiscal policy
-- Data work in R with the packages of the *R tidyverse*
+- Data work in *R* with the packages of the *R tidyverse*
 - Publication of scientific articles in academic journals
 - Acquisition of third-party funds
 :::
@@ -144,7 +144,7 @@ October 2017 - April 2019
 Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/). My tasks included:
 
 ::: concise
-- Programming of the simulations in R and development of the interactive applications with *shiny*
+- Programming of the simulations in *R* and development of the interactive applications with *shiny*
 - Drafting of selected chapters of the online book [*Introduction to Macroeconomics: Pluralist and Interactive*](https://eng.mgwk.de/)
 - Translation of the book and the simulations from German into English
 - Presentation of the project in workshops and conferences

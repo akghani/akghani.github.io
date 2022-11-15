@@ -27,15 +27,15 @@ My contribution focused on the first two thematic areas.
 
 **Fiscal policy and public debt:**
 
-:white_check_mark: In the text, [*Fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/), we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications we simulate the concepts explained in the text.
+:white_check_mark: In the text [*Fiscal policy and public debt*](https://wiposim-fiscalpolicy-course.netlify.app/) we introduce the government budget identity and derive the factors determining the evolution of the debt-to-GDP ratio. We then discuss the question of debt sustainability and illustrate the role of the primary balance. To conclude, we discuss the main European fiscal rule from a critical perspective. With a series of simple applications, we simulate the concepts explained in the text.
 
 * [Evolution of the debt-to-GDP ratio under different assumptions about real growth rate, real interest rate, government deficit, and the initial value of the debt ratio](https://mgwk.shinyapps.io/debt_simulation_shiny_1/)  
 * [Evolution of the debt-to-GDP ratio with real growth rate, nominal interest rate, and inflation rate](https://mgwk.shinyapps.io/debt_simulation_inflation/)  
 * [Sustainability boundary, sustainability area and the dynamics of the debt-to-GDP ratio](https://mgwk.shinyapps.io/debt_simulation_shiny_sustainability/)   
 * [Required primary balance for the debt ratio to converge towards the 60% debt target in 20 years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_4/)
-* [Required primary balance to bring debt to target in a predefined number of years years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_2/)
+* [Required primary balance to bring debt to target in a predefined number of years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_2/)
       
-:white_check_mark: In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple Keynesian arithmetic, we show the circumstances under which fiscal policy might have a counter intuitive effect on the debt ratio.
+:white_check_mark: In a second text, [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple "Keynesian arithmetic"", we show the conditions under which fiscal policy might have a counter intuitive effect on the debt ratio.
 
 With simplified assumption about deficit spending:
 
@@ -47,9 +47,9 @@ With deficit spending determined endogenously by tax revenues:
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the short run](https://mgwk.shinyapps.io/course2_app3/)
 * [Deficit spending and the debt-to-GDP ratio - a seemingly counterintuitive effect? The effect in the long run](https://mgwk.shinyapps.io/course2_app4/)
 
-:white_check_mark: In the following application, the effect of fiscal policy on the debt-to-GDP ratio can be tested in a simple stock-flow consistent (SFC) model of the closed economy. What is the effect of a permanent increase in the level of government spending? What happens to the debt ratio when government spending grows at a constant rate?
+:white_check_mark: In the following application the effect of fiscal policy on the debt-to-GDP ratio can be tested in a simple stock-flow consistent (SFC) model of the closed economy. What is the effect of a permanent increase in the level of government spending? What happens to the debt ratio when government spending grows at a constant rate?
 
-- [Fiscal policy in a simple SFC model for the closed economy](https://mgwk.shinyapps.io/SIM_model_debt/)
+- [Fiscal policy in a simple SFC model of the closed economy](https://mgwk.shinyapps.io/SIM_model_debt/)
 
 :white_check_mark: The following dashboard allows for short- and long-term simulations of the debt ratio starting from current values. Data are obtained from the AMECO database.
 
@@ -57,12 +57,13 @@ With deficit spending determined endogenously by tax revenues:
 
 **Inequalities and income distribution:**
 
-:white_check_mark: Extending Piketty's *r>g* model with different income groups
+:white_check_mark: This simulator aims to extend Piketty's *r>g* basic model by including three separate household groups. Households are divided into TOP (T), MIDDLE (M) and BOTTOM (B) households.
 - Access the app [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
+- The text introducing the model can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
     
-:white_check_mark: Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model. 
-- Access the introductory text [here](https://wiposim-genderwagegap.netlify.app/)
-- And access the app showing the model's goods market equilibrium with a gender wage gap [here](https://mgwk.shinyapps.io/wiposim_gender/)
+:white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy. What is the effect of closing the wage gap on the equilibrium value of aggregate income? What are the conditions in the model so that closing the gender wage gap might have an expansionary effect on aggregate income?
+- Access the text [here](https://wiposim-genderwagegap.netlify.app/)
+- The app showing the model's goods market equilibrium with a gender wage gap can be accessed  [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
 For more information and contents visit the [project website](https://www.wiposim.de):exclamation:
 
