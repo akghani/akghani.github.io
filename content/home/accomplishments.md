@@ -38,6 +38,22 @@ item:
   organization_url: https://www.datacamp.com
   title: 'Introduction to Git'
   url: 
+  
+- certificate_url: https://www.datacamp.com/statement-of-accomplishment/track/30bc27dd12a72d6d1b740e6db51af37e88b4fe02
+  date_start: '2022-12-23'
+  description: ""
+  organization: DataCamp
+  organization_url: https://www.datacamp.com
+  title: 'R Programming'
+  url: 
+  
+- certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/12782ff7b01eafa1f42e5686cca55d55ba04a126
+  date_start: '2022-12-20'
+  description: ""
+  organization: DataCamp
+  organization_url: https://www.datacamp.com
+  title: 'Introduction to Python'
+  url:
 
 design:
   columns: '2' 
