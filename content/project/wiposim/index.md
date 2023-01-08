@@ -35,7 +35,7 @@ My contribution focused on the first two thematic areas.
 * [Required primary balance for the debt ratio to converge towards the 60% debt target in 20 years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_4/)
 * [Required primary balance to bring debt to target in a predefined number of years](https://mgwk.shinyapps.io/debt_simulation_primary_balance_2/)
       
-:white_check_mark: In a second text [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple "Keynesian arithmetic"", we show the conditions under which fiscal policy might have a counter intuitive effect on the debt ratio.
+:white_check_mark: In a second text [*Fiscal policy and the debt-to-GDP ratio. A seemingly counterintuitive effect?*](https://wiposim-fiscalpolicy-course2.netlify.app/), using some simple "Keynesian arithmetic", we show the conditions under which fiscal policy might have a counter intuitive effect on the debt ratio.
 
 With simplified assumption about deficit spending:
 
