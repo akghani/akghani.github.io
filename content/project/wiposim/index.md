@@ -11,7 +11,7 @@ url_slides: ""
 url_video: ""
 ---
 
-# WIPOSIM – The economic policy online simulator
+# WIPOSIM – The economic policy online simulator Alessandro
 
 *Together with Eckhard Hein, Achim Truger, Franz Prante and Till van Treeck*
 
