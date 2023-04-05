@@ -23,11 +23,12 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-- certificate_url: 
+- certificate_url:
+https://www.alessandrobramucci.com/alessandro-bramucci-diploma.pdf
   date_start: '2023-01-09'
   description: ""
   organization: LeWagon
-  organization_url: https://www.lewagon.com/
+  organization_url: https://www.lewagon.com
   title: 'Data Science'
   url: 
 
