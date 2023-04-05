@@ -39,20 +39,37 @@ Aside
 
 Contact {#contact}
 --------------------------------------------------------------------------------
-    
-- `bramucci.alessandro@gmail.com`
-- <i class="fa fa-phone"></i> +49 176 36133214
 
 ---
-    
-- Download PDF
-<a href="https://www.alessandrobramucci.com/cv/cv_abramucci.pdf" class = "icon-block">
-  <i class="fas fafooter fa-download"></i>
-</a>
-- Back to the main page
-<a href="https://www.alessandrobramucci.com/" class = "icon-block">
-  <i class="fas fafooter fa-arrow-circle-left"></i> 
-</a>
+
+```{r}
+HTML <- TRUE
+
+if(HTML) {
+  header <- '
+  - `bramucci.alessandro@gmail.com`
+  - <i class="fa fa-phone"></i> +49 176 36133214
+  - Download PDF
+  <a href="https://www.alessandrobramucci.com/cv/cv_abramucci.pdf" class = "icon-block">
+    <i class="fas fafooter fa-download"></i>
+  </a>
+  - Back to the main page
+  <a href="https://www.alessandrobramucci.com/" class =     "icon-block">
+    <i class="fas fafooter fa-arrow-circle-left"></i> 
+  </a>
+  '
+} else {
+  header <- '
+  - `bramucci.alessandro@gmail.com`
+  - <i class="fa fa-phone"></i> +49 176 36133214
+  - [www.alessandrobramucci.com](https://www.alessandrobramucci.com/)
+  '
+}
+```
+
+```{r results = "asis"}
+cat(header)
+```
 
 ---
 
@@ -93,7 +110,6 @@ build_skill_bars(skills = skills_data)
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-
 <small>
 Made with [pagedown](https://github.com/rstudio/pagedown).    
 Source code:    
@@ -120,10 +136,8 @@ April 2023 - Present
 
 ---
 
-::: concise
-- Teaching Macroeconomics, International Economics and Data Visualisation with *R*
-- Teaching in German and English
-:::
+- Teaching Economics courses in English and German
+- Supervision of Bachelor and Master theses
 
 ### Research associate
 
@@ -135,7 +149,7 @@ October 2019 - August 2022
 
 ---
 
-Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/).
+Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
 
 ::: concise
 - Programming of the applications in *R shiny*
@@ -154,7 +168,7 @@ October 2017 - April 2019
 
 ---
 
-Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/).
+Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
 
 ::: concise
 - Programming of the applications in *R shiny*
