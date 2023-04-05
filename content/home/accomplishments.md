@@ -28,7 +28,7 @@ item:
   date_end: '2023-03-24'
   organization: Le Wagon
   organization_url: https://www.lewagon.com
-  title: 'Data Science bootcamp'
+  title: 'Data Science Bootcamp'
   
 - certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/e900a6ed9b0087278a3bb6b31d96088f9014cba1
   date_start: '2022-07-01'
