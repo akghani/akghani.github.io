@@ -24,7 +24,7 @@ date_format: Jan 2006
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
 - certificate_url:
-https://www.alessandrobramucci.com/alessandro-bramucci-diploma.pdf
+https://kitt.lewagon.com/schoolings/25949/public_diploma?token=1dd422c083ac30e6e0cbdd9abcf377704c509646bd226c97ccebc90acfbf288c
   date_start: '2023-01-09'
   description: ""
   organization: LeWagon
