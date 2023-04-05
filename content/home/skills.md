@@ -17,17 +17,17 @@ title: Skills
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 - description: ""
-  icon: r-project
-  icon_pack: fab
-  name: Using R
+  icon: r
+  icon_pack: custom
+  name: R
 - description: ""
-  icon: chart-line
-  icon_pack: fas
-  name: Research
+  icon: python
+  icon_pack: custom
+  name: Python
 - description: ""
-  icon: chalkboard-teacher
-  icon_pack: fas
-  name: Teaching
+  icon: git
+  icon_pack: custom
+  name: Git
 
 # Uncomment to use emoji icons.
 #- icon: ':smile:'
