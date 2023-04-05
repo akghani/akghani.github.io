@@ -23,47 +23,26 @@ date_format: Jan 2006
 #   Leave other parameters empty if not required.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 item:
-
 - certificate_url: https://kitt.lewagon.com/schoolings/25949/public_diploma?token=1dd422c083ac30e6e0cbdd9abcf377704c509646bd226c97ccebc90acfbf288c
   date_start: '2023-01-09'
   date_end: '2023-03-24'
   organization: Le Wagon
   organization_url: https://www.lewagon.com
-  title: 'Data Science'
-  image: media/icons/brands/logo_lw.svg
-  image_alt: logo
-
+  title: 'Data Science bootcamp'
+  
 - certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/e900a6ed9b0087278a3bb6b31d96088f9014cba1
   date_start: '2022-07-01'
   description: ""
   organization: DataCamp
   organization_url: https://www.datacamp.com
   title: 'Intermediate SQL Queries'
-  url: 
-  
-- certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/fadf1d0f2cf6cb3a836c50f30e5653a80203a590
-  date_start: '2022-01-05'
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Introduction to Git'
-  url: 
-  
+
 - certificate_url: https://www.datacamp.com/statement-of-accomplishment/track/30bc27dd12a72d6d1b740e6db51af37e88b4fe02
   date_start: '2022-12-23'
   description: ""
   organization: DataCamp
   organization_url: https://www.datacamp.com
   title: 'R Programming'
-  url: 
-  
-- certificate_url: https://www.datacamp.com/statement-of-accomplishment/course/12782ff7b01eafa1f42e5686cca55d55ba04a126
-  date_start: '2022-12-20'
-  description: ""
-  organization: DataCamp
-  organization_url: https://www.datacamp.com
-  title: 'Introduction to Python'
-  url:
 
 design:
   columns: '2' 

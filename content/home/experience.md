@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Guest lecturer
+    company: Berlin School of Economics and Law (HWR Berlin)
+    company_url: 'https://www.ipe-berlin.org/en/'
+    company_logo: hwr
+    location: Berlin (DE)
+    date_start: '2023-04-01'
+    description: |2-
+      
+
   - title: Research Associate
     company: Berlin School of Economics and Law (HWR Berlin) & IPE Berlin
     company_url: 'https://www.ipe-berlin.org/en/'
