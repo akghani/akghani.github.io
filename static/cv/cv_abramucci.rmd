@@ -71,12 +71,12 @@ Computer skills
 skills_data <- tribble(
   ~skill,               ~level,
   "R/RStudio",          4.5,
-  "Excel",              3.5,
-  "Git/GitHub",         3,
+  "Git/GitHub",         4,
+  "Python",             3.5,
+  "Excel",              3,
+  "SQL",                3,
   "Stata",              2, 
-  "SQL",                1
 )
-
 build_skill_bars(skills = skills_data)
 ```
 
@@ -96,10 +96,21 @@ Main
 Alessandro Bramucci {#title}
 --------------------------------------------------------------------------------
 
-Hi! I am an economist with 5+ years of coding experience in *R* in different academic projects. I am passionate about *R* in particular for macroeconomic modelling and macroeconomic data analysis. 
 
 Professional experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
+
+### Guest Lecturer
+
+Berlin School of Economics and Law (HWR)
+
+Berlin
+
+April 2023 - Present
+
+---
+
+Teaching Macroeconomics, International Economics and Data Visualisation with R. I am teaching in German and English.
 
 ### Research associate
 
@@ -111,12 +122,11 @@ October 2019 - August 2022
 
 ---
 
-Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/). My tasks included:
+Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/).
 
 ::: concise
-- Programming of the simulations in *R* and development of the interactive applications with *shiny*
-- Writing of the didactic texts accompanying the simulations in particular on subject of fiscal policy
-- Data work in *R* with the packages of the *R tidyverse*
+- Programming of the applications in *R shiny*
+- Preparation of the texts accompanying the simulations
 - Publication of scientific articles in academic journals
 - Acquisition of third-party funds
 :::
@@ -131,12 +141,12 @@ October 2017 - April 2019
 
 ---
 
-Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/). My tasks included:
+Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/).
 
 ::: concise
-- Programming of the simulations in *R* and development of the interactive applications with *shiny*
-- Drafting of selected chapters of the online book [*Introduction to Macroeconomics: Pluralist and Interactive*](https://eng.mgwk.de/)
-- Translation of the book and the simulations from German into English
+- Programming of the applications in *R shiny*
+- Writing selected chapters of the [online textbook](https://eng.mgwk.de/)
+- Translation of simulations and textbook from German into English
 - Presentation of the project in workshops and conferences
 :::
 
@@ -197,6 +207,16 @@ Urbino, Italy
 
 Further education {data-icon=laptop}
 --------------------------------------------------------------------------------
+
+### Bootcamp in Data Science
+
+Le Wagon
+
+Berlin
+
+2023
+
+- Machine Learning e Deep Learning with Python
 
 ### Programming courses (with final exam)
 
