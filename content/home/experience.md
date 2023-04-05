@@ -50,7 +50,7 @@ experience:
     company_logo: hwr
     location: Berlin (DE)
     date_start: '2016-04-01'
-    date_end: ''
+    date_end: '2023-03-31'
     description: |2-
         Over the years I have taught several courses:
         * Business Economics (WS 2017-18)
