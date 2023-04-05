@@ -47,7 +47,7 @@ superuser: true
 title: Alessandro Bramucci
 ---
 
-Hi! I am an economist based in Berlin, Germany. I have 5+ years of coding experience in *R* in different academic projects. I am passionate about *R* in particular for macroeconomic modelling and macroeconomic data analysis. I am also interested in economic policy in Europe and occasionally I write articles on economic policy issues.
+Hi there! I am an Economist interested in Data Science. I am passionate about data and in particular macroeconomic data. I have 7+ years of experience in teaching Economics and Econometrics. I have also worked on academic projects aimed at delivering interactive Macroeconomics content to students. My goal is to combine my knowledge of Macroeconomics with my interest in Data Science.
 
 {{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
