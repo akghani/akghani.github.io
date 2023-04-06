@@ -39,10 +39,12 @@ experience:
     date_start: '2017-10-01'
     date_end: '2022-08-31' 
     description: |2-
-        I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/) and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/), where we have developed economic policy simulators for educational purposes using R and RStudio. My responsibilities included:
-        * Programming of the simulators in R Shiny
-        * Drafting of explanatory texts for the simulations
-        * Editorial work on the text using the bookdown package
+      I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/), short for the German *Modelltheoretische Grundlagen wirtschaftspolitischer Kontroversen*, and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/) - The economic policy simulator. Goal of the two project was to teach Macroeconomics in an interactive and engaging way using some simple simulations. Both projects have been developed entirely in R/RStudio and numerous other packages (shiny, plotly, bookdown, etc.).
+      
+      My responsibilities included:
+      * Programming of the simulators in R Shiny
+      * Writing the explanatory texts for the simulations
+      * Editorial work on the text using the bookdown package for the HTML and LaTex version
         
   - title: Lecturer
     company: Berlin School of Economics and Law (HWR Berlin)
@@ -52,7 +54,7 @@ experience:
     date_start: '2016-04-01'
     date_end: '2023-03-31'
     description: |2-
-        Over the years I have taught several courses:
+        I have developed and taught the following courses:
         * Business Economics (WS 2017-18)
         * Economics Tutorium (WS 2016-17)
         * International Economics (SS 2016, SS 2018)
