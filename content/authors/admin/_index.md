@@ -47,7 +47,7 @@ superuser: true
 title: Alessandro Bramucci
 ---
 
-Hi there! I am an Economist interested in Data Science. I am passionate about data and in particular macroeconomic data. I have 7+ years of experience in teaching introductory courses in Economics and Econometrics. I have also worked on academic projects aimed at creating interactive contents for students. My goal is to combine my knowledge of Macroeconomics with my interest in Data Science.
+Hi there! I am an Economist interested in Data Science. I am passionate about data and in particular macroeconomic data. I have 7+ years of experience in teaching introductory courses in Economics and Econometrics. I have also worked on academic projects aimed at creating interactive contents for students. My goal is to combine my knowledge of Macroeconomics with my interest in Data Science. occasionally I write articles on economic policy issues in Italy and Europe.
 
 {{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
