@@ -29,7 +29,7 @@ experience:
     location: Berlin (DE)
     date_start: '2023-04-01'
     description: |2-
-      
+      In the Summer Semester 2023 I am teaching Macroeconomics, International Economics and Data Visualisation in R. I am teaching in German and English.
 
   - title: Research Associate
     company: Berlin School of Economics and Law (HWR Berlin) & IPE Berlin
