@@ -23,7 +23,7 @@ interests:
 organizations:
 - name: Berlin School of Economics and Law (HWR Berlin)
   url: https://www.hwr-berlin.de/
-role: Research Associate and Lecturer
+role: Guest Lecturer
 social:
 - icon: university
   icon_pack: fas
