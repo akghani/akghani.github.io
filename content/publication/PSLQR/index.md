@@ -8,9 +8,7 @@ authors:
 - admin
 featured: false
 publication: '*PSL Quarterly Review, 76(305), 181-202*'
-doi: "10.13133/2037-3643/18211"
+doi: "https://doi.org/10.13133/2037-3643/18211"
 image: 
   preview only: true
 ---
-
-XXX
