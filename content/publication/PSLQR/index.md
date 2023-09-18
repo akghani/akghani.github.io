@@ -1,6 +1,6 @@
 ---
 title: "Demand and growth regimes in finance-dominated capitalism and a progressive equality-, sustainability- and domestic demand-led alternative"
-publishDate: "2022-12-17T00:00:00Z"
+publishDate: "2023-09-10"
 publication_types: ["3"]
 authors:
 - Eckhard Hein
