@@ -61,7 +61,7 @@ With deficit spending determined endogenously by tax revenues:
 - The simulator can be accessed [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
 - We recommend reading the introductory text before using the model. The text can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
     
-:white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy developed in the post-Keynesian / Kaleckian tradition.
+:white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy. The model is developed in the post-Keynesian / Kaleckian tradition.
 - The introductory text with the description of the model can be accessed [here](https://wiposim-genderwagegap.netlify.app/)
 - The app showing the model's goods market equilibrium with a gender wage gap can be accessed  [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
