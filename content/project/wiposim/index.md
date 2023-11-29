@@ -1,7 +1,7 @@
 ---
 date: "2022-09-27T00:00:00Z"
 external_link: ""
-summary: Understand economic policy topics with some simple simulations.
+summary: Understand economic policy with some simple simulations.
 title: 2. WIPOSIM
 image:
   caption: Photo by Brett Jordan on Unsplash
@@ -15,7 +15,7 @@ url_video: ""
 
 *Together with Eckhard Hein, Achim Truger, Franz Prante and Till van Treeck*
 
-Goal of WIPOSIM was the extension of texts and simulations developed in the previous project MGWK. Here we focused on current economic policy problems and challenges of developed economies in three selected areas of interest: inequalities and income distribution, fiscal policy and public debt, ecology and macroeconomics. At the following link you can find a short video introduction to the project.
+Goal of WIPOSIM is to extend texts and simulations developed in the previous project MGWK. Here we focused on current challenges in economic policy in three selected areas of interest: inequalities and income distribution, fiscal policy and public debt, ecology and macroeconomics. At the following link you may find a short video introduction to the project WIPOSIM.
 
 <div align="center">
 
@@ -23,7 +23,7 @@ Goal of WIPOSIM was the extension of texts and simulations developed in the prev
 
 </div>
 
-My contribution focused on the first two thematic areas.
+My contribution to the project focused mainly on the first two subject areas.
 
 **Fiscal policy and public debt:**
 
@@ -57,15 +57,15 @@ With deficit spending determined endogenously by tax revenues:
 
 **Inequalities and income distribution:**
 
-:white_check_mark: With our inequality simulator we aim to extend Piketty's *r>g* basic model by including three separate household groups. Households are divided into TOP (T), MIDDLE (M) and BOTTOM (B) households.
-- The simulator can be accessed here [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
+:white_check_mark: With our inequality simulator we aim to extend Piketty's *r>g* basic model by including three separate household groups. Households are subdivided into TOP (T), MIDDLE (M) and BOTTOM (B) households.
+- The simulator can be accessed [here](https://mgwk.shinyapps.io/distribution_piketty_households/)
 - We recommend reading the introductory text before using the model. The text can be accessed [here](https://www.ifo.de/DocDL/forum1-15-focus4.pdf)
     
 :white_check_mark: In the text [Effects of the gender wage gap in a simple post-Keynesian / Kaleckian macroeconomic model](https://wiposim-genderwagegap.netlify.app/) we introduce the effects of a gender wage gap in a simple heterodox macroeconomic model of the closed economy developed in the post-Keynesian / Kaleckian tradition.
 - The introductory text with the description of the model can be accessed [here](https://wiposim-genderwagegap.netlify.app/)
 - The app showing the model's goods market equilibrium with a gender wage gap can be accessed  [here](https://mgwk.shinyapps.io/wiposim_gender/)
 
-For more information and contents visit the [project website](https://www.wiposim.de):exclamation:
+For more information and contents visit the [project website](https://www.wiposim.de)!
 
 **Funded by:**
 
