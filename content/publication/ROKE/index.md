@@ -13,4 +13,4 @@ image:
   preview only: true
 ---
 
-Click [here](https://github.com/Alessandro1984/Prante-Hein-Bramucci-ROKE-2022) for the link to the R replication code.
+The R code to replicate the model and the scenarios is available on [GitHub](https://github.com/Alessandro1984/Prante-Hein-Bramucci-ROKE-2022).

@@ -12,3 +12,5 @@ doi: "https://doi.org/10.13133/2037-3643/18211"
 image: 
   preview only: true
 ---
+
+The R code to replicate the model and the additional scenario of the paper is available on [GitHub](https://github.com/Alessandro1984/Prante-Hein-Bramucci-ROKE-2022).
