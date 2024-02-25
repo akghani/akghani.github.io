@@ -11,3 +11,5 @@ doi: "https://doi.org/10.4337/ejeep.2023.0119"
 image: 
   preview only: true
 ---
+
+A preliminary version of the article was presented at IPE Online Workshop - "Frontiers in Growth Regimes Research: Theoretical Perspectives and Country Cases" in October 2022. The video :movie_camera: can be accessed :arrow_right: [here](https://www.youtube.com/watch?v=J-xKJOUnP7Q&list=PL6Chu5X330Bql_GabMK8ZQmpZvj726OXm&index=13) :arrow_left:.

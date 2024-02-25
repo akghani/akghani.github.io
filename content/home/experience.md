@@ -29,7 +29,7 @@ experience:
     location: Berlin (DE)
     date_start: '2023-04-01'
     description: |2-
-      In the Winter Semester 2023/2024 I am teaching Macroeconomics (in English and German), International Economics (in German), Introduction to Python for Data Analytics (in German) and Quantitative Methods for Economists (in English).
+      In the Winter Semester 2023/2024 I am teaching Macroeconomics (in English and German), International Economics (in German) and Introduction to Python for Data Analytics (in German).
 
   - title: Research Associate
     company: Berlin School of Economics and Law (HWR Berlin) & IPE Berlin
@@ -54,12 +54,12 @@ experience:
     date_start: '2016-04-01'
     date_end: '2023-03-31'
     description: |2-
-        I have developed and taught the following courses:
+        As contract lecturer (*Lehrbeauftragter*) I have developed and taught the following courses:
         * Business Economics (WS 2017-18)
         * Economics Tutorium (WS 2016-17)
         * International Economics (SS 2016, SS 2018)
         * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19, SS 2019)
-        * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23)
+        * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23, WS 2023-24)
         * Research Methods Seminar (WS 2019-20)
 
 design:
