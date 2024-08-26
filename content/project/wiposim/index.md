@@ -2,7 +2,7 @@
 date: "2022-09-27T00:00:00Z"
 external_link: ""
 summary: Understand economic policy with some simple simulations.
-title: 2. WIPOSIM
+title: WIPOSIM
 image:
   caption: Photo by Brett Jordan on Unsplash
 url_code: ""
