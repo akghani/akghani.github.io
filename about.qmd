@@ -1,0 +1,23 @@
+---
+title: "About me"
+image: profile_pic_akg.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+::: {#hero-heading}
+**Abdelkarim el Ghani** is a data analyst with an expertise in **data acquisition, wrangling, analysis, and storytelling** using R.
+:::
+
+::: {.callout-note title="Resources"}
+[Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
+
+[The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
+:::

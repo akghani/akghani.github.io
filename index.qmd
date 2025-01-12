@@ -1,0 +1,20 @@
+---
+title: "Abdelkarim el Ghani"
+subtitle: "Data Scientist | Neuroscience"
+image: profile_pic_akg.jpg
+image-alt: Photo of Abdelkarim el Ghani
+about:
+  id: hero-heading
+  template: jolla
+  image-width: 10em
+  image-shape: round
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com
+    - icon: github
+      text: Github
+      href: https://github.com
+---
+
+Welcome to my portfolio!
