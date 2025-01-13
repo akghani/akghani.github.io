@@ -1,1 +1,1 @@
-Sitemap: https://abdelkarim.com/sitemap.xml
+Sitemap: https://abdelkarim.dev/sitemap.xml

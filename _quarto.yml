@@ -4,7 +4,7 @@ project:
 
 website:
   title: "Abdelkarim el Ghani"
-  site-url: "https://abdelkarim.com/"
+  site-url: "https://abdelkarim.dev/"
   description: "Personal site of Abdelkarim el Ghani."
   open-graph: true
   cookie-consent:
@@ -28,7 +28,7 @@ website:
         icon: person-arms-up
       - text: Projects
         href: projects.qmd  # Projects page (projects.qmd)
-        icon: graph-up-fill
+        icon: graph-up
     tools:
       - icon: github
         href: https://github.com/  # GitHub link
@@ -58,7 +58,5 @@ format:
   #  documentclass: scrreprt
 editor: visual
 
-execute: 
-  freeze: auto
 
 

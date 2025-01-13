@@ -1,11 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://abdelkarim.com/index.html</loc>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/about.html</loc>
+    <lastmod>2025-01-13T12:14:10.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/projects.html</loc>
+    <lastmod>2025-01-11T18:38:52.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/projects/fairplay.html</loc>
+    <lastmod>2025-01-11T11:09:47.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/posts/welcome/index.html</loc>
+    <lastmod>2025-01-12T10:17:33.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/about.html</loc>
+    <lastmod>2025-01-13T12:14:10.882Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/projects.html</loc>
+    <lastmod>2025-01-11T18:38:52.380Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/projects/fairplay.html</loc>
+    <lastmod>2025-01-11T11:09:47.875Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/posts/welcome/index.html</loc>
+    <lastmod>2025-01-12T10:17:33.312Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/posts/post-with-code/index.html</loc>
+    <lastmod>2025-01-12T10:17:33.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/projects/rotterdam-gold.html</loc>
+    <lastmod>2025-01-11T11:10:19.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/index.html</loc>
     <lastmod>2025-01-12T10:37:18.938Z</lastmod>
   </url>
   <url>
-    <loc>https://abdelkarim.com/about.html</loc>
-    <lastmod>2025-01-13T12:14:10.882Z</lastmod>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/posts/post-with-code/index.html</loc>
+    <lastmod>2025-01-12T10:17:33.315Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/404.html</loc>
+    <lastmod>2025-01-13T12:15:28.371Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/projects/rotterdam-gold.html</loc>
+    <lastmod>2025-01-11T11:10:19.283Z</lastmod>
+  </url>
+  <url>
+    <loc>https://abdelkarim.dev/AKG3490.github.io/index.html</loc>
+    <lastmod>2025-01-12T10:37:18.938Z</lastmod>
   </url>
 </urlset>
