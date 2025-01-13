@@ -4,13 +4,17 @@ project:
 
 website:
   title: "Abdelkarim el Ghani"
+  site-url: "https://abdelkarim.com/"
+  description: "Personal site of Abdelkarim el Ghani."
+  open-graph: true
+  cookie-consent:
+    type: express
+    style: interstitial
+    palette: light
   search: 
     location: navbar
     type: overlay
   back-to-top-navigation: true
-  page-footer: 
-    left: "© 2025 - Abdelkarim el Ghani" 
-    right: "Made with Quarto"
   navbar:
     background: '#cdffcd'
     search: true
@@ -18,19 +22,24 @@ website:
     left:
       - text: Home
         href: index.qmd
+        icon: house-fill
       - text: About Me
         href: about.qmd
         icon: person-arms-up
       - text: Projects
         href: projects.qmd  # Projects page (projects.qmd)
-        icon: graph-up
+        icon: graph-up-fill
     tools:
       - icon: github
         href: https://github.com/  # GitHub link
-        target: _blank
+        #target: _blank
       - icon: linkedin
         href: https://linkedin.com  # LinkedIn link
-        target: _blank
+        #target: _blank
+
+  page-footer: 
+    left: "© 2025 - Abdelkarim el Ghani" 
+    right: "Made with Quarto"
 format:
   html:
     fontsize: 20px
@@ -48,5 +57,8 @@ format:
   #pdf: 
   #  documentclass: scrreprt
 editor: visual
+
+execute: 
+  freeze: auto
 
 

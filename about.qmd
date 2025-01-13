@@ -1,8 +1,8 @@
 ---
-title: "About me"
-image: profile_pic_akg.jpg
+title: "About"
 about:
   template: jolla
+  image: about_pic.jpg
   links:
     - icon: linkedin
       text: LinkedIn
@@ -10,7 +10,20 @@ about:
     - icon: github
       text: Github
       href: https://github.com
+lightbox: true
 ---
+
+```{=html}
+  <style>
+body {
+  background-image: url('/background_pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+  </style>
+```
 
 ::: {#hero-heading}
 **Abdelkarim el Ghani** is a data analyst with an expertise in **data acquisition, wrangling, analysis, and storytelling** using R.
@@ -21,3 +34,5 @@ about:
 
 [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
 :::
+
+<a href="https://www.pexels.com/photo/green-leaf-1353938/" target="_blank" class="small-link">Photo by Min An</a>
