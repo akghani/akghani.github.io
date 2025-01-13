@@ -91,9 +91,8 @@ cookieconsent.run({
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Abdelkarim el Ghani">
 <meta property="og:description" content="Data Scientist | Neuroscience">
-<meta property="og:image" content="https://abdelkarim.dev/profile_pic_akg.jpg">
+<meta property="og:image" content="profile_pic_akg.jpg">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
-<meta property="og:image:alt" content="Photo of Abdelkarim el Ghani">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -144,9 +143,14 @@ cookieconsent.run({
 <!-- margin-sidebar -->
     
 <!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+
+
 <div class="quarto-about-jolla">
   <img src="profile_pic_akg.jpg" alt="Photo of Abdelkarim el Ghani" class="about-image
-  round " style="height: 10em; width: 10em;">
+  round " style="height: 15em; width: 15em;">
  <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Abdelkarim el Ghani</h1>
@@ -154,14 +158,13 @@ cookieconsent.run({
 </div>
 <div class="quarto-title-meta">
   </div>
-</header><main class="content" id="quarto-document-content">
-<p>Welcome to my portfolio!</p>
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> 
+</header><div id="hero-heading">
+<p>Welcome to My Portfolio!</p>
+<p>This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.</p>
+</div> 
   <hr class="about-sep">
    <div class="about-links">
-  <a href="https://linkedin.com" class="about-link" rel="" target="">
+  <a href="https://linkedin.com/in/abdelkarimelghani/" class="about-link" rel="" target="">
     <i class="bi bi-linkedin"></i>
      <span class="about-link-text">LinkedIn</span>
   </a>
@@ -171,7 +174,12 @@ cookieconsent.run({
   </a>
 </div>
 </div>
- <!-- /main -->
+
+
+
+
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -401,7 +409,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/abdelkarim\.dev\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -733,14 +741,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 - Abdelkarim el Ghani</p>
-</div>   
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2025 - Abdelkarim el Ghani
+  </li>  
+</ul>
+    </div>   
     <div class="nav-footer-center">
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-<p>Made with Quarto</p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.quarto.org">
+<p>Built with Quarto</p>
+</a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 

@@ -3,11 +3,13 @@ title: "Projects"
 listing:
   contents: projects     # Folder containing project `.qmd` files
   sort: "title"
-  type: default
+  type: grid
   image-height: 260px
   categories: true
-  sort-ui: true
-  filter-ui: true
+  #sort-ui: true
+  #filter-ui: true
+  fields: [title, description, categories]
+  
 page-layout: full
 title-block-banner: true
 comments: false

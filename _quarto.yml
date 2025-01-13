@@ -36,8 +36,11 @@ website:
         #target: _blank
 
   page-footer: 
-    left: "© 2025 - Abdelkarim el Ghani" 
-    right: "Made with Quarto"
+    left: 
+    - text: © 2025 - Abdelkarim el Ghani
+    right: 
+    - href: https://www.quarto.org
+      text: Built with Quarto
 format:
   html:
     fontsize: 20px
@@ -51,7 +54,7 @@ format:
     #code-tools: true
     #code-block-bg: "lightblue"
     #code-block-border-left: "#31BAE9"
-    highlight-style: github
+    highlight-style: nord
   #pdf: 
   #  documentclass: scrreprt
 editor: visual

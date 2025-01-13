@@ -94,7 +94,7 @@ cookieconsent.run({
 <link rel="stylesheet" href="../../styles.css">
 <meta property="og:title" content="Welcome To My Blog – Abdelkarim el Ghani">
 <meta property="og:description" content="Personal site of Abdelkarim el Ghani.">
-<meta property="og:image" content="https://abdelkarim.dev/posts/welcome/thumbnail.jpg">
+<meta property="og:image" content="thumbnail.jpg">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
 </head>
 
@@ -428,7 +428,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp("https:\/\/abdelkarim\.dev\/");
+      var filterRegex = new RegExp('/' + window.location.host + '/');
     var isInternal = (href) => {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
@@ -760,14 +760,24 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>© 2025 - Abdelkarim el Ghani</p>
-</div>   
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © 2025 - Abdelkarim el Ghani
+  </li>  
+</ul>
+    </div>   
     <div class="nav-footer-center">
 
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-<p>Made with Quarto</p>
-</div>
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://www.quarto.org">
+<p>Built with Quarto</p>
+</a>
+  </li>  
+</ul>
+    </div>
   </div>
 </footer>
 

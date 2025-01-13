@@ -6,15 +6,21 @@ image-alt: Photo of Abdelkarim el Ghani
 about:
   id: hero-heading
   template: jolla
-  image-width: 10em
+  image-width: 15em
   image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
-      href: https://linkedin.com
+      href: https://linkedin.com/in/abdelkarimelghani/
     - icon: github
       text: Github
       href: https://github.com
 ---
 
-Welcome to my portfolio!
+
+::: {#hero-heading}
+Welcome to My Portfolio!
+
+This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
+
+:::
