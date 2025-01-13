@@ -29,10 +29,10 @@ website:
         icon: graph-up
     tools:
       - icon: github
-        href: https://github.com/  # GitHub link
+        href: https://github.com/AKG3490  # GitHub link
         #target: _blank
       - icon: linkedin
-        href: https://linkedin.com  # LinkedIn link
+        href: https://linkedin.com/in/abdelkarimelghani  # LinkedIn link
         #target: _blank
 
   page-footer: 
@@ -57,7 +57,10 @@ format:
     highlight-style: nord
   #pdf: 
   #  documentclass: scrreprt
-editor: visual
+
+execute:
+  cache: false
+  freeze: auto
 
 
 

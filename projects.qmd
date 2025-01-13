@@ -1,16 +1,19 @@
 ---
 title: "Projects"
+description: "Explore a collection of projects I’ve worked on, ranging from innovative solutions to creative endeavors. Each entry includes a brief description, category tags, and visual representation to give you an insight into the work I’ve done. The projects are organized by title for easy navigation."
 listing:
   contents: projects     # Folder containing project `.qmd` files
   sort: "title"
-  type: grid
+  type: default
   image-height: 260px
   categories: true
-  #sort-ui: true
-  #filter-ui: true
-  fields: [title, description, categories]
+  sort-ui: true
+  filter-ui: true
+ # fields: [title, description, categories]
   
 page-layout: full
 title-block-banner: true
 comments: false
 ---
+
+## 
