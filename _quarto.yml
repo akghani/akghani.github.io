@@ -16,6 +16,7 @@ website:
   navbar:
     background: '#cdffcd'
     search: true
+    pinned: true
     left:
       - text: Home
         href: index.qmd
@@ -48,12 +49,11 @@ format:
       dark: darkly
     css: styles.css
     toc: true
-    #code-link: true
-    #code-fold: show
-    #code-tools: true
-    #code-block-bg: "lightblue"
-    #code-block-border-left: "#31BAE9"
     highlight-style: nord
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
+      margin-width: 300px
   #pdf: 
   #  documentclass: scrreprt
 
