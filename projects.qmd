@@ -9,7 +9,7 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [title, description, tools]
+  fields: [title, description, tools, image/]
   
 page-layout: full
 title-block-banner: true
