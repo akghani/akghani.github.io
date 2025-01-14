@@ -4,7 +4,7 @@ description: "Explore a collection of projects I’ve worked on, ranging from in
 listing:
   contents: projects     # Folder containing project `.qmd` files
   sort: "title"
-  type: default
+  type: grid
   image-height: 260px
   categories: true
   sort-ui: true
