@@ -17,10 +17,14 @@ about:
       href: https://github.com/AKG3490
 ---
 
-
 ::: {#hero-heading}
-Welcome to My Portfolio!
+## **Welcome to My Portfolio!**
 
 This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
+:::
 
+::: {.callout-note title="Resources"}
+[Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
+
+[The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
 :::

@@ -33,10 +33,6 @@ Abdelkarim has extensive experience in both academic and clinical research envir
 Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
 :::
 
-::: {.callout-note title="Resources"}
-[Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
 
-[The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
-:::
 
 <a href="https://www.pexels.com/photo/green-leaf-1353938/" target="_blank" class="small-link">Photo by Min An</a>

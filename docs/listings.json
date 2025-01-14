@@ -1,18 +1,9 @@
 [
   {
-    "listing": "/AKG3490.github.io/projects.html",
-    "items": [
-      "/AKG3490.github.io/projects/fairplay.html",
-      "/AKG3490.github.io/projects/rotterdam-gold.html"
-    ]
-  },
-  {
     "listing": "/projects.html",
     "items": [
       "/projects/fairplay/index.html",
-      "/AKG3490.github.io/projects/fairplay.html",
-      "/projects/rotterdamgold/index.html",
-      "/AKG3490.github.io/projects/rotterdam-gold.html"
+      "/projects/rotterdamgold/index.html"
     ]
   }
 ]
