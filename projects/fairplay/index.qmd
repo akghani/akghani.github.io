@@ -1,7 +1,6 @@
 ---
 title: "FAIR-play"
 subtitle: "Football for Adolescents to Increase Resiliency; A Programme for Life-skills And Youth"
-image: images/fairplay_pic.jpg{width=400px}
 categories: [Resciliency, Life Skills, R, SPSS]
 ---
 
