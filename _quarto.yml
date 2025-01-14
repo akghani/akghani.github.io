@@ -4,7 +4,6 @@ project:
 
 website:
   title: "Abdelkarim el Ghani"
-  description: "Personal site of Abdelkarim el Ghani."
   open-graph: true
   cookie-consent:
     type: express
@@ -37,7 +36,7 @@ website:
 
   page-footer: 
     left: 
-    - text: © 2025 - Abdelkarim el Ghani
+    - text: © 2025, Abdelkarim el Ghani
     right: 
     - href: https://www.quarto.org
       text: Built with Quarto
