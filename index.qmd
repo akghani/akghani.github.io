@@ -28,4 +28,6 @@ This is the digital space where I showcase my work in neuroscience, data analysi
 [Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
 
 [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
+
+[Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}
 :::
