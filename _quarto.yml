@@ -2,8 +2,17 @@ project:
   type: website
   output-dir: docs/
 
+# Allows the displaying of emojis
+from: markdown+emoji
+
+# Allows the readers to click on images to expand them 
+lightbox: true
+
+# Open the link in another browser tab
+link-external-newwindow: true
+
 website:
-  title: "Abdelkarim el Ghani"
+  #title: "Abdelkarim el Ghani"
   open-graph: true
   cookie-consent:
     type: express
@@ -13,8 +22,9 @@ website:
     location: navbar
     type: overlay
   back-to-top-navigation: true
+  
   navbar:
-    background: '#cdffcd'
+    background-color: '#cdffcd'
     search: true
     pinned: true
     left:
@@ -37,10 +47,15 @@ website:
 
   page-footer: 
     left: 
-    - text: © 2025, Abdelkarim el Ghani
+    - text: © 2025 Abdelkarim el Ghani
+    center: "[![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)"
     right: 
     - href: https://www.quarto.org
       text: Built with Quarto
+    
+  # Add a reader mode button
+  reader-mode: true
+  
 format:
   html:
     fontsize: 20px
