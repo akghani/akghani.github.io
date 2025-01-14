@@ -2,7 +2,7 @@
 title: "Rotterdam Gold"
 description: "Longitudinal analysis of student well-being and coping strategies across multiple waves."
 #date: "2025-01-07"
-categories: [Longitudinal Analysis, Education, R, SPSS]
+tools: [Longitudinal Analysis, data wrangling, ggplot2, R, SPSS]
 #image: rotterdam-gold.jpg
 ---
 
@@ -10,62 +10,10 @@ categories: [Longitudinal Analysis, Education, R, SPSS]
 
 Evaluate longitudinal survey data to understand the impact of school interventions ("focus" vs. "control" schools) on student well-being and coping strategies across four waves.
 
-### Key Steps
 
-1.  **Data Acquisition:** Imported SPSS datasets for four waves.
-2.  **Data Cleaning:** Standardized school names and grouped them into focus/control categories.
-3.  **Construct Index Calculation:** Created indices for optimism, self-efficacy, and coping strategies.
-4.  **Exploratory Data Analysis:** Assessed sample sizes and summarized variables.
-5.  **Results Communication:** Visualized differences and prepared recommendations.
 
-```{r}
-#| label: setup
-#| include: false
 
-### Load Libraries
-library(tidyverse)
-library(tidyr)
-library(dplyr) 
-library(ggplot2)
-library(broom)
-library(styler)
-library(formatR)
-library(rsconnect)
-library(here)
 
-```
-
-```{r}
-# Create a fake dataset for demonstration
-set.seed(123)
-survey_data <- data.frame(
-  school_id = rep(c("A", "B", "C", "D"), each = 50),
-  student_id = 1:200,
-  OPTIMISM_1 = rnorm(200, mean = 3.5, sd = 0.5),
-  OPTIMISM_7 = rnorm(200, mean = 3.6, sd = 0.5),
-  school_group = rep(c("focus", "control"), each = 100)
-)
-```
-
-**Constructing Indices:**
-
-```{r}
-# Optimism Index Example
-survey_data <- survey_data %>%
-  mutate(W1_OPTIMISM = rowMeans(select(., starts_with("OPTIMISM_")), na.rm = TRUE))
-```
-
-**Visualizing Results:**
-
-```{r}
-# Boxplot comparing focus and control groups
-library(ggplot2)
-ggplot(survey_data, aes(x = school_group, y = W1_OPTIMISM)) +
-  geom_boxplot(fill = "lightblue") +
-  labs(title = "Optimism Index by School Group", x = "Group", y = "Optimism Index")
-```
-
-**Outcome:** - Insights supported intervention strategies by highlighting differences in well-being between focus and control schools. - Recommendations were provided to improve program effectiveness and data collection.
 
 ::: {.callout-note title="Publication"}
 Rotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden. [Dijkstra, K., & el Ghani, A., (2024).](https://www.kenniswerkplaats-rotterdamstalent.nl/wp-content/uploads/2024/03/Rapport-Rotterdam-Goud.pdf)
