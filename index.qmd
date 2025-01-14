@@ -18,7 +18,7 @@ about:
 ---
 
 
-## **Welcome to My Portfolio!**{.unnumbered}
+
 
 ::: {#hero-heading}
 This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
