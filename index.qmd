@@ -18,7 +18,17 @@ about:
 ---
 
 
+```{=html}
+  <style>
+body {
+  background-image: url('/background-pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
+  </style>
+```
 
 ::: {#hero-heading}
 <div class="h2"> Hello </div>

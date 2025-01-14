@@ -81,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-tools','listing-image/',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
+      valueNames: ['listing-title','listing-description','listing-tools',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
       
       searchColumns: ["listing-title","listing-author"],
     };
@@ -222,13 +222,7 @@ window.Quarto = {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#section" id="toc-section" class="nav-link active" data-scroll-target="#section"></a></li>
-  </ul>
-</nav>
+        
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div></div></div>
 <!-- main -->
 <main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
@@ -237,12 +231,18 @@ window.Quarto = {
 
 
 
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
+  <style>
+body {
+  background-image: url('./background-pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+  </style>
 
 
 
-</section>
 
 <div class="quarto-listing quarto-listing-container-table" id="listing-listing">
 <div class="listing-actions-group">
@@ -273,9 +273,6 @@ Description
 <th>
 tools
 </th>
-<th>
-image/
-</th>
 </tr>
 </thead>
 <tbody class="list">
@@ -289,9 +286,6 @@ image/
 <td>
 <span class="listing-tools">Resciliency, R, ggplot2, SPSS</span>
 </td>
-<td>
-<span class="listing-image/">&nbsp;</span>
-</td>
 </tr>
 <tr data-index="1" data-listing-file-modified-sort="1736873549221" data-listing-reading-time-sort="1" data-listing-word-count-sort="43" data-listing-title-sort="Rotterdam Gold" data-listing-filename-sort="index.qmd">
 <td>
@@ -302,9 +296,6 @@ image/
 </td>
 <td>
 <span class="listing-tools">Longitudinal Analysis, data wrangling, ggplot2, R, SPSS</span>
-</td>
-<td>
-<span class="listing-image/">&nbsp;</span>
 </td>
 </tr>
 </tbody>

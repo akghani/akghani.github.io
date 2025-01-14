@@ -16,7 +16,7 @@ lightbox: true
 ```{=html}
   <style>
 body {
-  background-image: url('/background_pic.jpg');
+  background-image: url('/background-pic.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

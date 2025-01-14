@@ -9,11 +9,21 @@ listing:
   categories: true
   sort-ui: true
   filter-ui: true
-  fields: [title, description, tools, image/]
+  fields: [title, description, tools]
   
 page-layout: full
 title-block-banner: true
 comments: false
 ---
 
-## 
+```{=html}
+  <style>
+body {
+  background-image: url('/background-pic.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+  </style>
+```
