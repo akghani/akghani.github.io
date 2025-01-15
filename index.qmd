@@ -18,17 +18,7 @@ subtitle: "Data Scientist | Neuroscience"
 #      href: https://github.com/AKG3490
 ---
 
-```{=html}
-  <style>
-body {
-  background-image: url('/background-pic.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
-  </style>
-```
 
 <!-- Placeholder Banner -->
 
