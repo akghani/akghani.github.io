@@ -1,7 +1,7 @@
 ---
 title: "FAIR-play"
 subtitle: "Football for Adolescents to Increase Resiliency; A Programme for Life-skills And Youth"
-tools: [Resciliency, R, ggplot2, SPSS]
+categories: [Resciliency, R, ggplot2, SPSS]
 ---
 
 ### Project Overview

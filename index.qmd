@@ -1,27 +1,27 @@
 ---
-title: "Abdelkarim el Ghani"
+title: "**Abdelkarim el Ghani**"
 subtitle: "Data Scientist | Neuroscience"
-image: profile_pic_akg.jpg
-image-alt: Photo of Abdelkarim el Ghani
-about:
-  template: jolla
-  image-width: 15em
-  image-shape: round
-  id: hero-heading
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com/in/abdelkarimelghani
-    - icon: github
-      text: Github
-      href: https://github.com/AKG3490
+#image: profile_pic_akg.jpg
+#image-alt: Photo of Abdelkarim el Ghani
+#title-block-banner: "#112540"
+#about:
+#  template: jolla
+#  image-width: 20em
+#  image-shape: round
+#  id: hero-heading
+#  links:
+#    - icon: linkedin
+#      text: LinkedIn
+#      href: https://linkedin.com/in/abdelkarimelghani
+#    - icon: github
+#      text: Github
+#      href: https://github.com/AKG3490
 ---
-
 
 ```{=html}
   <style>
 body {
-  background-image: url('/background-pic.jpg');
+  background-image: url('/background-pic.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -30,8 +30,85 @@ body {
   </style>
 ```
 
+<!-- Placeholder Banner -->
+
+```{=html}
+<style>
+  /* Container for the GIF */
+  .gif-container {
+    width: 100%;
+    overflow: hidden; /* Remove any overflow that could create space around the image */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;  /* Make the background transparent */
+  }
+
+  /* Ensure the image itself has no margins, padding, or borders */
+  .gif-container img {
+    width: 100%;  /* Scale the image to 120% width */
+    display: block; /* Ensure no space below the image */
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* Background image that will sit behind the GIF */
+  .gif-container-background {
+    background-image: url('/background-pic.jpeg');
+    background-size: cover;   /* Ensure background fills the entire area */
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed */
+    width: 100%;
+    height: auto;  /* Allow background to adapt to the content height */
+  }
+</style>
+
+<div class="gif-container gif-container-background">
+  <img src="block-banner.gif" alt="Banner GIF">
+</div>
+```
+
+
+
+<!-- Animated Hello World -->
+
+```{=html}
+<h3 id="hello" style="margin: 0; padding: 0; outline: none;"></h3>
+
+<script>
+  var idx = 0;
+  var txt = 'Hello, World!';
+  var speed = 350;
+  var delay = 3500;
+
+  function typeWriter() {
+    if (idx < txt.length) {
+      document.getElementById("hello").innerHTML += txt.charAt(idx);
+      idx++;
+      setTimeout(typeWriter, speed);
+    } else {
+      setTimeout(resetAndTypeAgain, delay);
+    }
+  }
+
+  function resetAndTypeAgain() {
+    document.getElementById("hello").innerHTML = '';
+    idx = 0;
+    typeWriter();
+  }
+
+  // Start the typewriter effect
+  window.onload = function() {
+    document.getElementById("hello").innerHTML = '';
+    typeWriter();
+  }
+</script>
+```
+
+
+
 ::: {#hero-heading}
-<div class="h2"> Hello </div>
 This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
 :::
 
@@ -41,4 +118,6 @@ This is the digital space where I showcase my work in neuroscience, data analysi
 [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
 
 [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}
+
+[Abyoso Hapsoro Nurhadi](https://abyoso-hapsoro.github.io/){target="_blank"}
 :::

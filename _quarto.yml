@@ -23,11 +23,21 @@ website:
     type: overlay
   back-to-top-navigation: true
   
-  navbar:
-    background-color: '#cdffcd'
+  sidebar:
+    logo: profile_pic_akg.jpg
+    alignment: center
     search: true
     pinned: true
-    left:
+    tools:
+      - icon: github
+        href: https://github.com/AKG3490  # GitHub link
+        #target: _blank
+      - icon: linkedin
+        href: https://linkedin.com/in/abdelkarimelghani  # LinkedIn link
+        #target: _blank
+    style: docked
+    collapse-level: 2
+    contents:
       - text: Home
         href: index.qmd
         icon: house-fill
@@ -37,21 +47,17 @@ website:
       - text: Projects
         href: projects.qmd  # Projects page (projects.qmd)
         icon: graph-up
-    tools:
-      - icon: github
-        href: https://github.com/AKG3490  # GitHub link
-        #target: _blank
-      - icon: linkedin
-        href: https://linkedin.com/in/abdelkarimelghani  # LinkedIn link
-        #target: _blank
+    
 
   page-footer: 
-    left: 
-    - text: © 2025 Abdelkarim el Ghani
-    center: "[![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)"
-    right: 
-    - href: https://www.quarto.org
-      text: Built with Quarto
+    background: "darkblue"
+    left: |
+      ©2025, Abdelkarim el Ghani
+    center: | 
+      [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
+    right: |
+      Build with [Quarto](https://quarto.org/)
+    border: false
     
   # Add a reader mode button
   reader-mode: true
@@ -75,6 +81,9 @@ format:
 execute:
   cache: false
   freeze: auto
+  
+editor: 
+  render-on-save: true
 
 
 

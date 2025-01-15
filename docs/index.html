@@ -34,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -90,39 +91,35 @@ cookieconsent.run({
 <link rel="stylesheet" href="styles.css">
 <meta property="og:title" content="Abdelkarim el Ghani">
 <meta property="og:description" content="Data Scientist | Neuroscience">
-<meta property="og:image" content="profile_pic_akg.jpg">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-sidebar docked">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
-      <div class="navbar-container container-fluid">
-            <div id="quarto-search" class="" title="Search"></div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> <i class="bi bi-house-fill" role="img">
-</i> 
-<span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./about.html"> <i class="bi bi-person-arms-up" role="img">
-</i> 
-<span class="menu-text">About Me</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./projects.html"> <i class="bi bi-graph-up" role="img">
-</i> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-</ul>
-          </div> <!-- /navcollapse -->
-            <div class="quarto-navbar-tools tools-wide">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Home</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="./index.html" class="sidebar-logo-link">
+      <img src="./profile_pic_akg.jpg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
     <a href="https://github.com/AKG3490" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-github"></i></a>
     <a href="https://linkedin.com/in/abdelkarimelghani" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
   <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
@@ -132,58 +129,144 @@ cookieconsent.run({
   </div>
 </a>
 </div>
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link active"><i class="bi bi-house-fill" role="img">
+</i> 
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./about.html" class="sidebar-item-text sidebar-link"><i class="bi bi-person-arms-up" role="img">
+</i> 
+ <span class="menu-text">About Me</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./projects.html" class="sidebar-item-text sidebar-link"><i class="bi bi-graph-up" role="img">
+</i> 
+ <span class="menu-text">Projects</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><strong>Abdelkarim el Ghani</strong></h1>
+<p class="subtitle lead">Data Scientist | Neuroscience</p>
+</div>
 
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
   <style>
 body {
-  background-image: url('./background-pic.jpg');
+  background-image: url('./background-pic.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
   </style>
-<div class="quarto-about-jolla">
-  <img src="profile_pic_akg.jpg" alt="Photo of Abdelkarim el Ghani" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Abdelkarim el Ghani</h1>
-<p class="subtitle lead">Data Scientist | Neuroscience</p>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header><div id="hero-heading">
-<div class="h2">
-Hello
-</div>
-<p>This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.</p>
-</div> 
-  <hr class="about-sep">
-   <div class="about-links">
-  <a href="https://linkedin.com/in/abdelkarimelghani" class="about-link" rel="" target="">
-    <i class="bi bi-linkedin"></i>
-     <span class="about-link-text">LinkedIn</span>
-  </a>
-  <a href="https://github.com/AKG3490" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-</div>
-</div>
+<!-- Placeholder Banner -->
+<style>
+  /* Container for the GIF */
+  .gif-container {
+    width: 100%;
+    overflow: hidden; /* Remove any overflow that could create space around the image */
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: transparent;  /* Make the background transparent */
+  }
 
+  /* Ensure the image itself has no margins, padding, or borders */
+  .gif-container img {
+    width: 100%;  /* Scale the image to 120% width */
+    display: block; /* Ensure no space below the image */
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  /* Background image that will sit behind the GIF */
+  .gif-container-background {
+    background-image: url('./background-pic.jpeg');
+    background-size: cover;   /* Ensure background fills the entire area */
+    background-position: center;
+    background-attachment: fixed; /* Keep the background fixed */
+    width: 100%;
+    height: auto;  /* Allow background to adapt to the content height */
+  }
+</style>
+
+<div class="gif-container gif-container-background">
+  <img src="block-banner.gif" alt="Banner GIF">
+</div>
+<!-- Animated Hello World -->
+<h3 id="hello" style="margin: 0; padding: 0; outline: none;" class="anchored"></h3>
+
+<script>
+  var idx = 0;
+  var txt = 'Hello, World!';
+  var speed = 350;
+  var delay = 3500;
+
+  function typeWriter() {
+    if (idx < txt.length) {
+      document.getElementById("hello").innerHTML += txt.charAt(idx);
+      idx++;
+      setTimeout(typeWriter, speed);
+    } else {
+      setTimeout(resetAndTypeAgain, delay);
+    }
+  }
+
+  function resetAndTypeAgain() {
+    document.getElementById("hello").innerHTML = '';
+    idx = 0;
+    typeWriter();
+  }
+
+  // Start the typewriter effect
+  window.onload = function() {
+    document.getElementById("hello").innerHTML = '';
+    typeWriter();
+  }
+</script>
+<div id="hero-heading">
+<p>This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.</p>
+</div>
 <div class="callout callout-style-default callout-note callout-titled" title="Resources">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -197,9 +280,9 @@ Resources
 <p><a href="https://posit-conf-2024.github.io/quarto-websites/" target="_blank">Create websites using Quarto</a></p>
 <p><a href="https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/" target="_blank">The GRAPH Courses</a></p>
 <p><a href="https://happygitwithr.com/" target="_blank">Happy Git and GitHub for the useR</a></p>
+<p><a href="https://abyoso-hapsoro.github.io/" target="_blank">Abyoso Hapsoro Nurhadi</a></p>
 </div>
 </div>
-
 
 
 
@@ -368,6 +451,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -770,24 +860,14 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
- © 2025 Abdelkarim el Ghani
-  </li>  
-</ul>
-    </div>   
+<p>©2025, Abdelkarim el Ghani</p>
+</div>   
     <div class="nav-footer-center">
 <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a></p>
 <div class="cookie-consent-footer"><a href="#" id="open_preferences_center">Cookie Preferences</a></div></div>
     <div class="nav-footer-right">
-      <ul class="footer-items list-unstyled">
-    <li class="nav-item">
-    <a class="nav-link" href="https://www.quarto.org">
-<p>Built with Quarto</p>
-</a>
-  </li>  
-</ul>
-    </div>
+<p>Build with <a href="https://quarto.org/">Quarto</a></p>
+</div>
   </div>
 </footer>
 

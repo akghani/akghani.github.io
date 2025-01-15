@@ -3,20 +3,20 @@ title: "About"
 about:
   template: jolla
   image: about_pic.jpg
-  links:
-    - icon: linkedin
-      text: LinkedIn
-      href: https://linkedin.com
-    - icon: github
-      text: Github
-      href: https://github.com
+#  links:
+#    - icon: linkedin
+#      text: LinkedIn
+#      href: https://linkedin.com
+#    - icon: github
+#      text: Github
+#      href: https://github.com
 lightbox: true
 ---
 
 ```{=html}
   <style>
 body {
-  background-image: url('/background-pic.jpg');
+  background-image: url('/background-pic.jpeg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -25,8 +25,9 @@ body {
   </style>
 ```
 
+
 ::: {#hero-heading}
-Abdelkarim el Ghani is a Research Assistant at the Erasmus School of Social and Behavioural Sciences (ESSB), Erasmus University Rotterdam. His expertise lies in statistical data analysis, neuroscience, and open science practices, with a strong focus on [R programming](https://www.r-project.org/), data visualization, and managing large-scale research datasets.
+Abdelkarim el Ghani is a Research Assistant at the Erasmus School of Social and Behavioural Sciences (ESSB), Erasmus University Rotterdam. His expertise lies in statistical data analysis, neuroscience, and open science practices, with a strong focus on [R](https://www.r-project.org/) programming, data visualization, and managing large-scale research datasets.
 
 Abdelkarim has extensive experience in both academic and clinical research environments. He has contributed to international conferences, authored scientific publications, and supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework. His research interests include neurodevelopment, brain imaging, and statistical modeling of behavioral data.
 
@@ -35,4 +36,4 @@ Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance 
 
 
 
-<a href="https://www.pexels.com/photo/green-leaf-1353938/" target="_blank" class="small-link">Photo by Min An</a>
+<a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>
