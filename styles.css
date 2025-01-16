@@ -1,53 +1,204 @@
-/* css styles */
-#body {
-#  background-color: #e6ffe6;
-#}
+/*--------------------------------------
+  Global Styles
+---------------------------------------*/
 
-/*-- scss:defaults --*/
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
-// Sass Variables
-// https://quarto.org/docs/output-formats/html-themes.html#sass-variables
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*--------------------------------------
+  Theme Colors
+---------------------------------------*/
 
 $theme-lightgreen: #eeffee;
 $theme-green: darkgreen;
-$theme-black: black;
+$theme-black: #000000;
+$theme-white: #ffffff;
+$theme-gray: #f5f5f5;
+$theme-hover: #d4f4d4;
 
-/* Colors */
-$body-bg: $theme-lightgreen;
-$body-color: $theme-green;
-$link-color: $theme-black;
+/*--------------------------------------
+  Base Styles
+---------------------------------------*/
 
-/* Fonts */
-$font-family-sans-serif: "Poppins", sans-serif;
-$font-size-root: 17px;
+body {
+  background-color: $theme-lightgreen;
+  color: $theme-green;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
 
-/*-- scss:rules --*/
+a {
+  color: $theme-green;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: darken($theme-green, 20%);
+    text-decoration: underline;
+  }
+}
 
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   color: $theme-green;
+  margin-top: 0;
+  letter-spacing: 1px;
 }
 
-.navbar * {
+/*--------------------------------------
+  Sidebar Customization
+---------------------------------------*/
+
+/* Sidebar container */
+.sidebar {
+  background-color: $theme-white;
+  border-right: 2px solid lighten($theme-green, 50%);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Sidebar Logo */
+.sidebar-logo img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid $theme-green;
+}
+
+/* Sidebar Links */
+.sidebar-item a {
+  display: block;
+  padding: 12px 20px;
+  font-weight: 500;
   color: $theme-green;
-}
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-span.navbar-title {
-    color: $theme-green;
-  transition-duration: 0.5s;
-  
   &:hover {
-    color: lighten($theme-green, 10%);
-    transition-duration: 0.5s;
+    background-color: $theme-hover;
+    color: $theme-black;
   }
 }
 
+/* Active Sidebar Item */
+.sidebar-item.active a {
+  background-color: $theme-green;
+  color: $theme-white;
+  font-weight: 600;
+}
 
+/* Sidebar Icons */
+.sidebar-item .bi {
+  margin-right: 8px;
+}
 
+/* Sidebar Tools (GitHub, LinkedIn icons) */
+.sidebar-tools a {
+  color: $theme-green;
+  font-size: 1.5em;
+  margin: 0 8px;
+  transition: color 0.3s ease-in-out;
 
- 
+  &:hover {
+    color: darken($theme-green, 20%);
+  }
+}
 
+/* Sidebar Search Bar */
+.sidebar-search input {
+  width: 90%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid lighten($theme-green, 30%);
+  margin: 10px auto;
+  display: block;
+}
 
+/* Sidebar Scroll */
+.sidebar {
+  overflow-y: auto;
+  max-height: 100vh;
+}
 
+/*--------------------------------------
+  Content Area
+---------------------------------------*/
+
+.content {
+  padding: 30px;
+  background-color: $theme-lightgreen;
+}
+
+/* Cards and Content Boxes */
+.card, .content-box {
+  background-color: $theme-white;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+/*--------------------------------------
+  Buttons
+---------------------------------------*/
+
+button, .btn {
+  background-color: $theme-green;
+  color: $theme-white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease-in-out;
+
+  &:hover {
+    background-color: darken($theme-green, 10%);
+  }
+}
+
+/*--------------------------------------
+  Footer
+---------------------------------------*/
+
+.footer {
+  background-color: $theme-green;
+  color: $theme-white;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+/*--------------------------------------
+  Responsive Design
+---------------------------------------*/
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    border-right: none;
+    box-shadow: none;
+  }
+
+  .sidebar-logo img {
+    width: 80px;
+  }
+
+  .content {
+    padding: 15px;
+  }
+}

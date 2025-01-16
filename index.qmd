@@ -102,7 +102,7 @@ subtitle: "Data Scientist | Neuroscience"
 This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
 :::
 
-::: {.callout-note title="Resources"}
+::: {.callout-note title="Resources" hidden=true}
 [Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
 
 [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
@@ -110,4 +110,10 @@ This is the digital space where I showcase my work in neuroscience, data analysi
 [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}
 
 [Abyoso Hapsoro Nurhadi](https://abyoso-hapsoro.github.io/){target="_blank"}
+
+[Gerko Vink](https://www.gerkovink.com/){target="_blank"}
+
+[Markup Languages and Reproducible Programming in Statistics](https://www.gerkovink.com/markup/){target="_blank"}
+
+[Marvin Schmitt](https://marvinschmitt.com/){target="_blank"}
 :::

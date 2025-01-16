@@ -81,9 +81,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -293,7 +293,7 @@ body {
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="listing-actions-group">
    <div class="input-group input-group-sm quarto-listing-sort">
      <span class="input-group-text"><i class="bi bi-sort-down"></i></span>
@@ -303,6 +303,9 @@ body {
          <option value="listing-title" data-direction="asc">
           Title
         </option>
+         <option value="listing-author" data-direction="asc">
+          Author
+        </option>
      </select>
   </div>
     <div class="input-group input-group-sm quarto-listing-filter">
@@ -310,14 +313,20 @@ body {
       <input type="text" class="search form-control" placeholder="Filter">
     </div>
 </div>
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Resciliency,R,ggplot2,SPSS" data-listing-file-modified-sort="1736959686394" data-listing-reading-time-sort="1" data-listing-word-count-sort="93">
-<a href="./projects/fairplay/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-FAIR-play
-</h5>
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Resciliency,R,ggplot2,SPSS" data-listing-file-modified-sort="1737022463243" data-listing-reading-time-sort="1" data-listing-word-count-sort="107">
+<div class="thumbnail">
+<p><a href="./projects/fairplay/index.html" class="no-external"></a></p><a href="./projects/fairplay/index.html" class="no-external">
+<p><img loading="lazy" src="./projects/fairplay/fairplay.jpg" class="thumbnail-image" style="height: 260px;"></p>
+</a><p><a href="./projects/fairplay/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/fairplay/index.html" class="no-external">FAIR-play</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projects/fairplay/index.html" class="no-external">Football for Adolescents to Increase Resiliency; A Programme for Life-skills And Youth</a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Resciliency'); return false;">
 Resciliency
@@ -332,20 +341,28 @@ ggplot2
 SPSS
 </div>
 </div>
-<div class="card-text listing-description">
-The FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in…
+<div class="listing-description">
+<a href="./projects/fairplay/index.html" class="no-external">The FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in…</a>
 </div>
 </div>
-</div>
+<div class="metadata">
+<p><a href="./projects/fairplay/index.html" class="no-external"></a></p><a href="./projects/fairplay/index.html" class="no-external">
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="Longitudinal Analysis,data wrangling,ggplot2,R,SPSS" data-listing-file-modified-sort="1736959647893" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
-<a href="./projects/rotterdamgold/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Rotterdam Gold
-</h5>
+</div>
+<div class="quarto-post image-right" data-index="1" data-categories="Longitudinal Analysis,data wrangling,ggplot2,R,SPSS" data-listing-file-modified-sort="1737021793671" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<div class="thumbnail">
+<p><a href="./projects/rotterdamgold/index.html" class="no-external"></a></p><a href="./projects/rotterdamgold/index.html" class="no-external">
+<p><img loading="lazy" src="./projects/rotterdamgold/rotterdam-gold.jpg" class="thumbnail-image" style="height: 260px;"></p>
+</a><p><a href="./projects/rotterdamgold/index.html" class="no-external"></a></p>
+</div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="./projects/rotterdamgold/index.html" class="no-external">Rotterdam Gold</a>
+</h3>
+<div class="listing-subtitle">
+<a href="./projects/rotterdamgold/index.html" class="no-external"></a>
+</div>
 <div class="listing-categories">
 <div class="listing-category" onclick="window.quartoListingCategory('Longitudinal Analysis'); return false;">
 Longitudinal Analysis
@@ -363,12 +380,14 @@ R
 SPSS
 </div>
 </div>
-<div class="card-text listing-description">
-Longitudinal analysis of student well-being and coping strategies across multiple waves.
+<div class="listing-description">
+<a href="./projects/rotterdamgold/index.html" class="no-external">Longitudinal analysis of student well-being and coping strategies across multiple waves.</a>
 </div>
 </div>
-</div>
+<div class="metadata">
+<p><a href="./projects/rotterdamgold/index.html" class="no-external"></a></p><a href="./projects/rotterdamgold/index.html" class="no-external">
 </a>
+</div>
 </div>
 </div>
 <div class="listing-no-matching d-none">
@@ -948,7 +967,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p>©2025, Abdelkarim el Ghani</p>
+<p>Copyright © 2025 Abdelkarim el Ghani</p>
 </div>   
     <div class="nav-footer-center">
 <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a></p>

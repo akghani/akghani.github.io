@@ -2,7 +2,7 @@
 title: "Rotterdam Gold"
 description: "Longitudinal analysis of student well-being and coping strategies across multiple waves."
 categories: [Longitudinal Analysis, data wrangling, ggplot2, R, SPSS]
-image: rdam-gold.jpg
+image: rotterdam-gold.jpg
 ---
 
 ### Project Overview

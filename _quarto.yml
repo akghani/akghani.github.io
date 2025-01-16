@@ -1,6 +1,6 @@
 project:
   type: website
-  output-dir: docs/
+  output-dir: docs
 
 # Allows the displaying of emojis
 from: markdown+emoji
@@ -50,9 +50,8 @@ website:
     
 
   page-footer: 
-    background: "darkblue"
     left: |
-      ©2025, Abdelkarim el Ghani
+      Copyright © 2025 Abdelkarim el Ghani
     center: | 
       [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
     right: |
@@ -71,10 +70,10 @@ format:
     css: styles.css
     toc: true
     highlight-style: nord
-    grid:
-      sidebar-width: 250px
-      body-width: 900px
-      margin-width: 300px
+#    grid:
+#      sidebar-width: 250px
+#      body-width: 900px
+#      margin-width: 300px
   #pdf: 
   #  documentclass: scrreprt
 
