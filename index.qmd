@@ -55,7 +55,7 @@ subtitle: "Data Scientist | Neuroscience"
 </style>
 
 <div class="gif-container gif-container-background">
-  <img src="block-banner.gif" alt="Banner GIF">
+  <img src="images/block-banner.gif" alt="Banner GIF">
 </div>
 ```
 

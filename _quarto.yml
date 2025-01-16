@@ -1,6 +1,12 @@
 project:
   type: website
   output-dir: docs
+  
+  preview: 
+    port: 22222
+    browser: true
+    watch-inputs: true
+    navigate: true
 
 # Allows the displaying of emojis
 from: markdown+emoji
@@ -12,7 +18,8 @@ lightbox: true
 link-external-newwindow: true
 
 website:
-  #title: "Abdelkarim el Ghani"
+ # title: "Abdelkarim el Ghani"
+  favicon: images/favicon-akg.jpg
   open-graph: true
   cookie-consent:
     type: express
@@ -23,8 +30,12 @@ website:
     type: overlay
   back-to-top-navigation: true
   
+  navbar: 
+    pinned: true
+    logo: /images/logo-akg.jpg
+  
   sidebar:
-    logo: profile_pic_akg.jpg
+    logo: images/profile_pic_akg.jpg
     alignment: center
     search: true
     pinned: true
@@ -36,7 +47,7 @@ website:
         href: https://linkedin.com/in/abdelkarimelghani  # LinkedIn link
         #target: _blank
     style: docked
-    collapse-level: 2
+#    collapse-level: 2
     contents:
       - text: Home
         href: index.qmd
