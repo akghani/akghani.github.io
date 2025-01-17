@@ -1,0 +1,47 @@
+/* Title Styles */
+.title {
+  font-size: clamp(2rem, 5vw, 3rem); /* Responsive font size */
+  font-weight: 700;
+  line-height: 1.4; /* Avoid vertical clipping */
+  white-space: normal; /* Enable multi-line wrapping */
+  overflow: visible; /* Ensure no content clipping */
+  word-break: break-word; /* Handle long words gracefully */
+  text-align: center; /* Center the text */
+  position: relative; /* Avoid overlap issues */
+  z-index: 1; /* Ensure visibility */
+}
+
+/* Subtitle Styles */
+.subtitle {
+  font-family: "Petrona";
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center; /* Align text with the title */
+  margin-top: 0.5rem; /* Add spacing below the title */
+}
+
+/* Title Container */
+.title-container {
+  display: flex;
+  flex-direction: column; /* Stack title and subtitle vertically */
+  justify-content: center; /* Center them vertically */
+  align-items: center; /* Center them horizontally */
+  width: 100%; /* Full width */
+  min-height: 6rem; /* Adjust height to fit both */
+  overflow: visible; /* Prevent clipping */
+  padding: 1rem; /* Add spacing */
+  margin: 0; /* Avoid unnecessary margins */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 2.5rem; /* Smaller title font */
+  }
+
+  .subtitle {
+    font-size: 0.9rem; /* Adjust subtitle font size */
+  }
+}

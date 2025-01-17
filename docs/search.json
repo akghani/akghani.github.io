@@ -11,7 +11,7 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFAIR-play\n\n\nFootball for Adolescents to Increase Resiliency; A Programme for Life-skills And Youth\n\n\n\nResciliency\n\n\nR\n\n\nggplot2\n\n\nSPSS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Gold\n\n\n\n\n\n\nLongitudinal Analysis\n\n\ndata wrangling\n\n\nggplot2\n\n\nR\n\n\nSPSS\n\n\n\nLongitudinal analysis of student well-being and coping strategies across multiple waves.\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFAIR-play\n\n\n\nResciliency\n\n\nR\n\n\nggplot2\n\n\nSPSS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Gold\n\n\n\nLongitudinal Analysis\n\n\ndata wrangling\n\n\nggplot2\n\n\nR\n\n\nSPSS\n\n\n\nLongitudinal analysis of student well-being and coping strategies across multiple waves.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
   },
   {
     "objectID": "projects/rotterdamgold/index.html",
@@ -19,20 +19,6 @@
     "title": "Rotterdam Gold",
     "section": "",
     "text": "Project Overview\nEvaluate longitudinal survey data to understand the impact of school interventions (“focus” vs. “control” schools) on student well-being and coping strategies across four waves.\n\n\n\n\n\n\nPublication\n\n\n\nRotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden. Dijkstra, K., & el Ghani, A., (2024).\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "posts/post-with-code/index.html",
-    "href": "posts/post-with-code/index.html",
-    "title": "Post With Code",
-    "section": "",
-    "text": "This is a post with executable code.\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "projects/fairplay/index.html",
@@ -46,6 +32,6 @@
     "href": "index.html",
     "title": "Abdelkarim el Ghani",
     "section": "",
-    "text": "This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.\n\n\n\n\n\n\n\nResources\n\n\n\nCreate websites using Quarto\nThe GRAPH Courses\nHappy Git and GitHub for the useR\nAbyoso Hapsoro Nurhadi\nGerko Vink\nMarkup Languages and Reproducible Programming in Statistics\nMarvin Schmitt\n\n\n\n\n\n Back to top"
+    "text": "Abdelkarim el Ghani\n  Data Scientist | Neuroscience\n\n\n\n\n  \n    \n      \nThis is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.\n\n    \n  \n\n\n\n\n\n\n\n\nResources\n\n\n\nCreate websites using Quarto\nThe GRAPH Courses\nHappy Git and GitHub for the useR\nAbyoso Hapsoro Nurhadi\nGerko Vink\nMarkup Languages and Reproducible Programming in Statistics\nMarvin Schmitt\nMatt Worthington\nSilvia Canelon\n\n\n\n\n\n\n Back to top"
   }
 ]

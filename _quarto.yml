@@ -1,7 +1,6 @@
 project:
   type: website
   output-dir: docs
-  
   preview: 
     port: 22222
     browser: true
@@ -21,13 +20,10 @@ website:
   #title: "Abdelkarim el Ghani"
   favicon: images/favicon-akg.jpg
   open-graph: true
-#  cookie-consent:
-#    type: express
-#    style: interstitial
-#    palette: light
   search: 
     location: navbar
     type: overlay
+  page-navigation: true  
   back-to-top-navigation: true
   
   navbar: 
@@ -36,6 +32,7 @@ website:
       - text: Home
         href: index.qmd
         icon: house-fill
+    right:    
       - text: About Me
         href: about.qmd
         icon: person-arms-up
@@ -43,7 +40,6 @@ website:
         href: projects.qmd  # Projects page (projects.qmd)
         icon: graph-up
 #    logo: images/block-banner.gif
-  
   sidebar:
     logo: images/profile_pic_akg.jpg
     alignment: center
@@ -60,7 +56,7 @@ website:
 #    collapse-level: 2
 #    contents:
       
-    
+  
 
   page-footer: 
     left: |
@@ -77,19 +73,18 @@ website:
 format:
   html:
     fontsize: 20px
-    theme: 
-      light: flatly
-      dark: darkly
+#    theme:
+#      light:
+#        - cosmo
+#        - assets/akg-theme-light.scss
+#      dark: 
+#        - cosmo
+#        - assets/akg-theme-dark.scss
     css: styles.css
     toc: true
-    highlight-style: nord
-    page-layout: article
-#    grid:
-#      sidebar-width: 250px
-#      body-width: 900px
-#      margin-width: 300px
-  #pdf: 
-  #  documentclass: scrreprt
+    highlight-style: github
+    page-layout: full
+    pagetitle: "{{< meta title >}}"
 
 execute:
   cache: false

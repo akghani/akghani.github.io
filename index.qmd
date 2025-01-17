@@ -1,63 +1,25 @@
 ---
-title: "**Abdelkarim el Ghani**"
-subtitle: "Data Scientist | Neuroscience"
-#image: profile_pic_akg.jpg
-#image-alt: Photo of Abdelkarim el Ghani
-#title-block-banner: "#112540"
-#about:
-#  template: jolla
-#  image-width: 20em
-#  image-shape: round
-#  id: hero-heading
-#  links:
-#    - icon: linkedin
-#      text: LinkedIn
-#      href: https://linkedin.com/in/abdelkarimelghani
-#    - icon: github
-#      text: Github
-#      href: https://github.com/AKG3490
+#title: "**Abdelkarim el Ghani**"
+pagetitle: "Abdelkarim el Ghani, MSc"
+#subtitle: "Data Scientist | Neuroscience"
+about:
+  template: solana
+  image-width: 35em
+  id: hero-heading
+
+#title-block-banner: "images/block-banner.gif"
+page-layout: full
+
+header-includes: >
+  <link rel="stylesheet" href="assets/index.css">
+resources:
+  - assets/index.css
+
 ---
 
 
+<br><br>
 
-<!-- Placeholder Banner -->
-
-```{=html}
-<style>
-  /* Container for the GIF */
-  .gif-container {
-    width: 100%;
-    overflow: hidden; /* Remove any overflow that could create space around the image */
-    margin: 0;
-    padding: 0;
-    position: relative;
-    background-color: transparent;  /* Make the background transparent */
-  }
-
-  /* Ensure the image itself has no margins, padding, or borders */
-  .gif-container img {
-    width: 100%;  /* Scale the image to 120% width */
-    display: block; /* Ensure no space below the image */
-    margin: 0;
-    padding: 0;
-    border: none;
-  }
-
-  /* Background image that will sit behind the GIF */
-  .gif-container-background {
-    background-image: url('images/background-pic.jpeg');
-    background-size: cover;   /* Ensure background fills the entire area */
-    background-position: center;
-    background-attachment: fixed; /* Keep the background fixed */
-    width: 100%;
-    height: auto;  /* Allow background to adapt to the content height */
-  }
-</style>
-
-<div class="gif-container gif-container-background">
-  <img src="images/block-banner.gif" alt="Banner GIF">
-</div>
-```
 
 
 
@@ -97,6 +59,16 @@ subtitle: "Data Scientist | Neuroscience"
 ```
 
 
+```{=html}
+<div class="title-container">
+  <h1 class="title">Abdelkarim el Ghani</h1>
+  <h2 class="subtitle">Data Scientist | Neuroscience</h2>
+</div>
+
+
+```
+
+
 
 ::: {#hero-heading}
 This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
@@ -116,4 +88,8 @@ This is the digital space where I showcase my work in neuroscience, data analysi
 [Markup Languages and Reproducible Programming in Statistics](https://www.gerkovink.com/markup/){target="_blank"}
 
 [Marvin Schmitt](https://marvinschmitt.com/){target="_blank"}
+
+[Matt Worthington](https://www.mrworthington.com/){target="_blank"}
+
+[Silvia Canelon](https://silviacanelon.com/blog/2023-09-29-hello-quarto/#designing-the-site){target="_blank"}
 :::

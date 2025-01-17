@@ -1,3 +1,8 @@
+/*-- scss:defaults --*/
+
+// Sass Variables
+// https://quarto.org/docs/output-formats/html-themes.html #sass-variables
+
 /*--------------------------------------
   Global Styles
 ---------------------------------------*/
@@ -48,32 +53,7 @@ h1, h2, h3, h4, h5, h6 {
   letter-spacing: 1px;
 }
 
-/*--------------------------------------
-  Navbar with GIF Background
----------------------------------------*/
 
-/* Full-Width Navbar Wrapper */
-.navbar-wrapper {
-  width: 100vw; /* Use viewport width to ensure full width */
-  margin: 0;
-  padding: 0;
-}
-
-/* Navbar with Full-Width GIF Background */
-.navbar {
-  background-image: url('images/block-banner.gif'); /* Path to your GIF */
-  background-size: cover; /* Ensures the GIF spans the entire element */
-  background-repeat: no-repeat; /* Prevents repeating the GIF */
-  background-position: center; /* Centers the GIF within the navbar */
-  width: 100vw; /* Full width of the viewport */
-  height: 200px; /* Adjust height as needed */
-  margin: 0; /* Remove any default margins */
-  padding: 0; /* Remove padding */
-  position: relative; /* Ensures positioning works for children */
-  display: flex; /* For content alignment (if needed) */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
-}
 
 
 /* Ensure Links Stay Above Background */
