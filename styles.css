@@ -56,31 +56,56 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-/* Ensure Links Stay Above Background */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $theme-green;
+}
+
+.navbar-toggle {
+  display: none; /* Hidden by default */
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: $theme-white;
+  cursor: pointer;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
 .navbar-nav a {
-  z-index: 1; /* Ensure links are above the background */
-  position: relative;
-  color: white;
-  font-weight: bold;
-  text-transform: uppercase;
   margin: 0 15px;
-  transition: color 0.3s ease-in-out;
+  color: $theme-white;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.navbar-nav a:hover {
-  color: #ffcc00; /* Highlight color on hover */
-}
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* Show toggle on smaller screens */
+  }
 
-/* Overlay for Contrast */
-.navbar::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
-  z-index: 0; /* Place behind content */
+  .navbar-nav {
+    display: none; /* Hide links by default */
+    flex-direction: column;
+    width: 100%;
+    background-color: $theme-green;
+  }
+
+  .navbar-nav.open {
+    display: flex; /* Show links when toggled */
+  }
+
+  .navbar-nav a {
+    margin: 5px 0;
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 

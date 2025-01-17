@@ -43,7 +43,6 @@ website:
   sidebar:
     logo: images/profile_pic_akg.jpg
     alignment: center
-    search: true
     pinned: true
     tools:
       - icon: github
@@ -81,6 +80,7 @@ format:
 #        - cosmo
 #        - assets/akg-theme-dark.scss
     css: styles.css
+    include-after-body: script.js
     toc: true
     highlight-style: github
     page-layout: full

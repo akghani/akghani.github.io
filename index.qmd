@@ -10,10 +10,10 @@ about:
 #title-block-banner: "images/block-banner.gif"
 page-layout: full
 
-header-includes: >
-  <link rel="stylesheet" href="assets/index.css">
-resources:
-  - assets/index.css
+#header-includes: >
+#  <link rel="stylesheet" href="assets/index.css">
+#resources:
+#  - assets/index.css
 
 ---
 
