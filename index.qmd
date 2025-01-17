@@ -45,7 +45,7 @@ subtitle: "Data Scientist | Neuroscience"
 
   /* Background image that will sit behind the GIF */
   .gif-container-background {
-    background-image: url('/background-pic.jpeg');
+    background-image: url('images/background-pic.jpeg');
     background-size: cover;   /* Ensure background fills the entire area */
     background-position: center;
     background-attachment: fixed; /* Keep the background fixed */

@@ -18,7 +18,7 @@ lightbox: true
 link-external-newwindow: true
 
 website:
-  title: "Abdelkarim el Ghani"
+  #title: "Abdelkarim el Ghani"
   favicon: images/favicon-akg.jpg
   open-graph: true
 #  cookie-consent:
@@ -31,6 +31,7 @@ website:
   back-to-top-navigation: true
   
   navbar: 
+    pinned: true
     left: 
       - text: Home
         href: index.qmd
@@ -41,8 +42,7 @@ website:
       - text: Projects
         href: projects.qmd  # Projects page (projects.qmd)
         icon: graph-up
-    pinned: true
-    logo: /images/logo-akg.jpg
+#    logo: images/block-banner.gif
   
   sidebar:
     logo: images/profile_pic_akg.jpg
@@ -83,6 +83,7 @@ format:
     css: styles.css
     toc: true
     highlight-style: nord
+    page-layout: article
 #    grid:
 #      sidebar-width: 250px
 #      body-width: 900px

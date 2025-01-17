@@ -1,7 +1,7 @@
 ---
 title: "About"
 about:
-  template: jolla
+  template: solana
   image: images/about_pic.jpg
 #  links:
 #    - icon: linkedin

@@ -49,12 +49,69 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*--------------------------------------
+  Navbar with GIF Background
+---------------------------------------*/
+
+/* Full-Width Navbar Wrapper */
+.navbar-wrapper {
+  width: 100vw; /* Use viewport width to ensure full width */
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar with Full-Width GIF Background */
+.navbar {
+  background-image: url('images/block-banner.gif'); /* Path to your GIF */
+  background-size: cover; /* Ensures the GIF spans the entire element */
+  background-repeat: no-repeat; /* Prevents repeating the GIF */
+  background-position: center; /* Centers the GIF within the navbar */
+  width: 100vw; /* Full width of the viewport */
+  height: 200px; /* Adjust height as needed */
+  margin: 0; /* Remove any default margins */
+  padding: 0; /* Remove padding */
+  position: relative; /* Ensures positioning works for children */
+  display: flex; /* For content alignment (if needed) */
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
+}
+
+
+/* Ensure Links Stay Above Background */
+.navbar-nav a {
+  z-index: 1; /* Ensure links are above the background */
+  position: relative;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar-nav a:hover {
+  color: #ffcc00; /* Highlight color on hover */
+}
+
+/* Overlay for Contrast */
+.navbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+  z-index: 0; /* Place behind content */
+}
+
+
+
+/*--------------------------------------
   Sidebar Customization
 ---------------------------------------*/
 
-/* Sidebar container */
+/* Sidebar Container */
 .sidebar {
-  background-color: $theme-white;
+  background-color: $theme-lightgreen;
   border-right: 2px solid lighten($theme-green, 50%);
   box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
   padding-top: 20px;
@@ -93,11 +150,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: $theme-green;
   color: $theme-white;
   font-weight: 600;
-}
-
-/* Sidebar Icons */
-.sidebar-item .bi {
-  margin-right: 8px;
 }
 
 /* Sidebar Tools (GitHub, LinkedIn icons) */
@@ -200,5 +252,13 @@ button, .btn {
 
   .content {
     padding: 15px;
+  }
+
+  .navbar {
+    height: 60px; /* Reduce navbar height for smaller screens */
+  }
+
+  .navbar-logo img {
+    width: 100px; /* Adjust logo size */
   }
 }
