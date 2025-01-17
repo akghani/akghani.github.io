@@ -1,7 +1,7 @@
 ---
-#title: "**Abdelkarim el Ghani**"
+title: "**Abdelkarim el Ghani**"
 pagetitle: "Abdelkarim el Ghani, MSc"
-#subtitle: "Data Scientist | Neuroscience"
+subtitle: "Data Scientist | Neuroscience"
 about:
   template: solana
   image-width: 35em
@@ -58,15 +58,6 @@ resources:
 </script>
 ```
 
-
-```{=html}
-<div class="title-container">
-  <h1 class="title">Abdelkarim el Ghani</h1>
-  <h2 class="subtitle">Data Scientist | Neuroscience</h2>
-</div>
-
-
-```
 
 
 

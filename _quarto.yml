@@ -73,7 +73,7 @@ website:
 format:
   html:
     fontsize: 20px
-#    theme:
+    theme: cosmo
 #      light:
 #        - cosmo
 #        - assets/akg-theme-light.scss
