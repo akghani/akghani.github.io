@@ -5,8 +5,6 @@ about:
   image: images/profile_pic_akg.jpg
   image-width: 10em
   image-shape: round
-
-lightbox: true
 ---
 
 ```{=html}

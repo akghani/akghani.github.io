@@ -33,6 +33,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
@@ -66,9 +67,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="theme.scss">
 <meta property="og:title" content="Abdelkarim el Ghani">
 <meta property="og:description" content="Data Scientist | Neuroscience">
+<meta property="og:image" content="images/logo-akg.jpg">
+<meta property="og:site_name" content="Abdelkarim el Ghani">
 </head>
 
 <body class="nav-fixed">
@@ -109,12 +112,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://linkedin.com" target="_blank"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -129,29 +132,39 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
+    </div>
 <!-- main -->
-<main class="content page-columns page-full column-body" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-broadside column-body">
-  <div class="about-main">
-    <div class="about-entity" style="background-image: url('images/about_pic.jpg')"></div>
-    <div class="about-contents"><header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><strong>Abdelkarim el Ghani</strong></h1>
 <p class="subtitle lead">Data Scientist | Neuroscience</p>
 </div>
-<div class="quarto-title-meta column-body">
-  </div>
-</header><div id="hero-heading">
-<p>Welcome to my digital portfolio—a space where neuroscience, data analysis, and open science converge. Here, I showcase my expertise in statistical modeling, research projects, and data visualization. This portfolio reflects my commitment to uncovering insights through data while championing transparency, reproducibility, and innovation in scientific research.</p>
-</div></div>
-  </div>
-</div>
 
+
+
+<div class="quarto-title-meta column-page">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<div class="grid">
+<div class="g-col-12 g-col-md-6">
+<p><img src="images/about_pic.jpg" class="img-fluid"></p>
+</div>
+<div class="g-col-12 g-col-md-6">
+<p>Welcome to my digital portfolio—a space where neuroscience, data analysis, and open science converge. Here, I showcase my expertise in statistical modeling, research projects, and data visualization. This portfolio reflects my commitment to uncovering insights through data while championing transparency, reproducibility, and innovation in scientific research.</p>
+</div>
 <div class="callout callout-style-default callout-note callout-titled" title="Resources" hidden="true">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -176,7 +189,7 @@ Resources
 </div>
 
 
-
+</div>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -199,6 +212,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -278,11 +298,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

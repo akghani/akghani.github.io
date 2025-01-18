@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>About</title>
+<title>About – Abdelkarim el Ghani</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -66,9 +66,11 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
-<link rel="stylesheet" href="styles.css">
-<meta property="og:title" content="About">
+<link rel="stylesheet" href="theme.scss">
+<meta property="og:title" content="About – Abdelkarim el Ghani">
 <meta property="og:description" content="">
+<meta property="og:image" content="images/logo-akg.jpg">
+<meta property="og:site_name" content="Abdelkarim el Ghani">
 </head>
 
 <body class="nav-fixed">
@@ -109,12 +111,12 @@ ul.task-list li input[type="checkbox"] {
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item compact">
-    <a class="nav-link" href="https://linkedin.com"> <i class="bi bi-linkedin" role="img">
+    <a class="nav-link" href="https://linkedin.com" target="_blank"> <i class="bi bi-linkedin" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item compact">
-    <a class="nav-link" href="https://github.com"> <i class="bi bi-github" role="img">
+    <a class="nav-link" href="https://github.com" target="_blank"> <i class="bi bi-github" role="img">
 </i> 
 <span class="menu-text"></span></a>
   </li>  
@@ -281,11 +283,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         if (link.dataset.originalHref !== undefined) {
           link.href = link.dataset.originalHref;
         }
-          // target, if specified
-          link.setAttribute("target", "_blank");
-          if (link.getAttribute("rel") === null) {
-            link.setAttribute("rel", "noopener");
-          }
       }
     }
   function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

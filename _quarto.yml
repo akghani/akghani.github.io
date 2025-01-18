@@ -13,12 +13,12 @@ preview:
 # Enable Markdown extensions
 from: markdown+emoji
 
-# Feature settings
-lightbox: true  # Enable image expansion on click
-link-external-newwindow: true  # Open external links in new tabs
+
 
 website:
+  title: "Abdelkarim el Ghani"
   favicon: images/favicon-akg.png  # Favicon image
+  image: images/logo-akg.jpg
   open-graph: true  # Enable Open Graph metadata
   search:
     location: navbar
@@ -29,6 +29,7 @@ website:
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
+    logo: images/block-banner.gif  # Navbar logo
     left:
       - text: Home
         href: index.qmd
@@ -39,26 +40,14 @@ website:
       - text: Projects
         href: projects.qmd  # Projects page
         icon: graph-up
-    logo: images/block-banner.gif  # Navbar logo
+
     right: 
       - icon: linkedin
         href: https://linkedin.com
+        target: _blank
       - icon: github
         href: https://github.com
-
-  # Uncomment sidebar configuration if needed
-  # sidebar:
-  #   logo: images/profile_pic_akg.jpg
-  #   alignment: center
-  #   pinned: true
-  #   tools:
-  #     - icon: github
-  #       href: https://github.com/AKG3490
-  #     - icon: linkedin
-  #       href: https://linkedin.com/in/abdelkarimelghani
-  #   style: docked
-  #   collapse-level: 2
-  #   contents:
+        target: _blank
 
   page-footer:
     left: |
@@ -75,8 +64,8 @@ format:
   html:
     fontsize: 20px  # Set font size
     theme: cosmo
-    css: styles.css  # Link custom CSS
-#    toc: true  # Enable table of contents
+    css: theme.scss  # Link custom CSS
+    toc: true  # Enable table of contents
     highlight-style: github
     page-layout: full
 
