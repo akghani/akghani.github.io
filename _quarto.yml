@@ -39,7 +39,7 @@ website:
       - text: Projects
         href: projects.qmd  # Projects page (projects.qmd)
         icon: graph-up
-#    logo: images/block-banner.gif
+    logo: images/block-banner.gif
   sidebar:
     logo: images/profile_pic_akg.jpg
     alignment: center
