@@ -80,11 +80,10 @@ format:
 #        - cosmo
 #        - assets/akg-theme-dark.scss
     css: styles.css
-    include-after-body: script.js
     toc: true
     highlight-style: github
     page-layout: full
-    pagetitle: "{{< meta title >}}"
+#    pagetitle: "{{< meta title >}}"
 
 execute:
   cache: false
