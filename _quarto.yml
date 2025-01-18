@@ -27,6 +27,7 @@ website:
   back-to-top-navigation: true  # Show back-to-top button
 
   navbar:
+    title: Abdelkarim el Ghani
     pinned: true
     left:
       - text: Home
