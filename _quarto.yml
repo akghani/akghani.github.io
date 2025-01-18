@@ -1,96 +1,87 @@
+# Quarto Website Configuration
+
 project:
   type: website
   output-dir: docs
-  preview: 
-    port: 22222
-    browser: true
-    watch-inputs: true
-    navigate: true
 
-# Allows the displaying of emojis
+preview:
+  port: 22222
+  browser: true
+  watch-inputs: true
+  navigate: true
+
+# Enable Markdown extensions
 from: markdown+emoji
 
-# Allows the readers to click on images to expand them 
-lightbox: true
-
-# Open the link in another browser tab
-link-external-newwindow: true
+# Feature settings
+lightbox: true  # Enable image expansion on click
+link-external-newwindow: true  # Open external links in new tabs
 
 website:
-  #title: "Abdelkarim el Ghani"
-  favicon: images/favicon-akg.jpg
-  open-graph: true
-  search: 
+  favicon: images/favicon-akg.png  # Favicon image
+  open-graph: true  # Enable Open Graph metadata
+  search:
     location: navbar
-    type: overlay
-  page-navigation: true  
-  back-to-top-navigation: true
-  
-  navbar: 
+    type: overlay  # Search type
+  page-navigation: true  # Enable navigation links on pages
+  back-to-top-navigation: true  # Show back-to-top button
+
+  navbar:
     pinned: true
-    left: 
+    left:
       - text: Home
         href: index.qmd
         icon: house-fill
-    right:    
       - text: About Me
         href: about.qmd
         icon: person-arms-up
       - text: Projects
-        href: projects.qmd  # Projects page (projects.qmd)
+        href: projects.qmd  # Projects page
         icon: graph-up
-    logo: images/block-banner.gif
-  sidebar:
-    logo: images/profile_pic_akg.jpg
-    alignment: center
-    pinned: true
-    tools:
-      - icon: github
-        href: https://github.com/AKG3490  # GitHub link
-        #target: _blank
+    logo: images/block-banner.gif  # Navbar logo
+    right: 
       - icon: linkedin
-        href: https://linkedin.com/in/abdelkarimelghani  # LinkedIn link
-        #target: _blank
-    style: docked
-#    collapse-level: 2
-#    contents:
-      
-  
+        href: https://linkedin.com
+      - icon: github
+        href: https://github.com
 
-  page-footer: 
+  # Uncomment sidebar configuration if needed
+  # sidebar:
+  #   logo: images/profile_pic_akg.jpg
+  #   alignment: center
+  #   pinned: true
+  #   tools:
+  #     - icon: github
+  #       href: https://github.com/AKG3490
+  #     - icon: linkedin
+  #       href: https://linkedin.com/in/abdelkarimelghani
+  #   style: docked
+  #   collapse-level: 2
+  #   contents:
+
+  page-footer:
     left: |
       Copyright © 2025 Abdelkarim el Ghani
-    center: | 
+    center: |
       [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
     right: |
       Build with [Quarto](https://quarto.org/)
     border: false
-    
-  # Add a reader mode button
-  reader-mode: true
-  
+
+#  reader-mode: true  # Enable reader mode
+
 format:
   html:
-    fontsize: 20px
+    fontsize: 20px  # Set font size
     theme: cosmo
-#      light:
-#        - cosmo
-#        - assets/akg-theme-light.scss
-#      dark: 
-#        - cosmo
-#        - assets/akg-theme-dark.scss
-    css: styles.css
-    toc: true
+    css: styles.css  # Link custom CSS
+    toc: true  # Enable table of contents
     highlight-style: github
     page-layout: full
-#    pagetitle: "{{< meta title >}}"
 
 execute:
-  cache: false
-  freeze: auto
-  
-editor: 
-  render-on-save: true
+  cache: false  # Disable cache
+  freeze: auto  # Freeze execution when no changes detected
 
-
-
+editor:
+  render-on-save: true  # Automatically render on save

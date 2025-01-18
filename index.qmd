@@ -1,71 +1,22 @@
 ---
 title: "**Abdelkarim el Ghani**"
-pagetitle: "Abdelkarim el Ghani, MSc"
+pagetitle: "Abdelkarim el Ghani"
 subtitle: "Data Scientist | Neuroscience"
 about:
-  template: solana
-  image-width: 35em
+  template: broadside
+  image: images/about_pic.jpg
+  image-shape: round
+  image-width: 15em
   id: hero-heading
-
-#title-block-banner: "images/block-banner.gif"
-page-layout: full
-
-#header-includes: >
-#  <link rel="stylesheet" href="assets/index.css">
-#resources:
-#  - assets/index.css
-
 ---
-
-
-<br><br>
-
-
-
-
-<!-- Animated Hello World -->
-
-```{=html}
-<h3 id="hello" style="margin: 0; padding: 0; outline: none;"></h3>
-
-<script>
-  var idx = 0;
-  var txt = 'Hello, World!';
-  var speed = 350;
-  var delay = 3500;
-
-  function typeWriter() {
-    if (idx < txt.length) {
-      document.getElementById("hello").innerHTML += txt.charAt(idx);
-      idx++;
-      setTimeout(typeWriter, speed);
-    } else {
-      setTimeout(resetAndTypeAgain, delay);
-    }
-  }
-
-  function resetAndTypeAgain() {
-    document.getElementById("hello").innerHTML = '';
-    idx = 0;
-    typeWriter();
-  }
-
-  // Start the typewriter effect
-  window.onload = function() {
-    document.getElementById("hello").innerHTML = '';
-    typeWriter();
-  }
-</script>
-```
-
 
 
 
 ::: {#hero-heading}
-This is the digital space where I showcase my work in neuroscience, data analysis, and open science. From statistical modeling to research projects, this portfolio highlights my passion for uncovering insights through data and advancing transparent, reproducible science.
+Welcome to my digital portfolio—a space where neuroscience, data analysis, and open science converge. Here, I showcase my expertise in statistical modeling, research projects, and data visualization. This portfolio reflects my commitment to uncovering insights through data while championing transparency, reproducibility, and innovation in scientific research.
 :::
 
-::: {.callout-note title="Resources" hidden=true}
+::: {.callout-note title="Resources" hidden="true"}
 [Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
 
 [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}

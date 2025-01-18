@@ -2,14 +2,10 @@
 title: "About"
 about:
   template: solana
-  image: images/about_pic.jpg
-#  links:
-#    - icon: linkedin
-#      text: LinkedIn
-#      href: https://linkedin.com
-#    - icon: github
-#      text: Github
-#      href: https://github.com
+  image: images/profile_pic_akg.jpg
+  image-width: 10em
+  image-shape: round
+
 lightbox: true
 ---
 
@@ -26,9 +22,31 @@ body {
 ```
 
 ::: {#hero-heading}
-**Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in statistical data analysis, neuroscience, and open science practices, with a strong focus on [**R**](https://www.r-project.org/){target="_blank"} programming, data visualization, and managing large-scale research datasets.
+**Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
-Abdelkarim has extensive experience in both academic and clinical research environments. He has contributed to international conferences, authored scientific publications, and supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework [**OSF**](https://osf.io/){target="_blank}. His research interests include neurodevelopment, brain imaging, and statistical modeling of behavioral data.
+-   Statistical data analysis
+
+-   Neuroscience
+
+-   Open science practices
+
+He is highly skilled in [**R**](https://www.r-project.org/){target="_blank"} programming, data visualization, and managing large-scale research datasets.
+
+Abdelkarim has extensive experience in both academic and clinical research environments. He has:
+
+-   Contributed to international conferences
+
+-   Authored scientific publications
+
+-   Supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework ([**OSF**](https://osf.io/){target="\"_blank"}).
+
+His research interests include:
+
+-   Neurodevelopment
+
+-   Brain imaging
+
+-   Statistical modeling of behavioral data
 
 Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
 :::
