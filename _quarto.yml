@@ -75,7 +75,7 @@ format:
     fontsize: 20px  # Set font size
     theme: cosmo
     css: styles.css  # Link custom CSS
-    toc: true  # Enable table of contents
+#    toc: true  # Enable table of contents
     highlight-style: github
     page-layout: full
 
