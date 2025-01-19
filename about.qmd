@@ -1,9 +1,13 @@
 ---
-title: "About"
+#title: "About"
+#image: images/profile_pic_akg.jpg
+page-layout: article
+format:
+  html: 
+    linestretch: 1.7
 about:
+  id: hero-heading
   template: solana
-  image: images/profile_pic_akg.jpg
-  image-width: 10em
   image-shape: round
 ---
 
@@ -20,12 +24,13 @@ body {
 ```
 
 ::: {#hero-heading}
+<div style="text-align: center;"> <img src="images/profile_pic_akg.jpg" alt="Abdelkarim el Ghani" style="width: 15em; height: auto; border-radius: 50%; margin-bottom: 1em;"/> <!-- Links Below the Picture --> <div> <a href="https://github.com/akg3490" target="_blank" style="margin: 0 1em; font-size: 1.2em;"> <i class="bi bi-github"></i> Github </a> <a href="https://linkedin.com" target="_blank" style="margin: 0 1em; font-size: 1.2em;"> <i class="bi bi-linkedin"></i> Linkedin </a> </div> </div>
+:::
+
 **Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
 -   Statistical data analysis
-
 -   Neuroscience
-
 -   Open science practices
 
 He is highly skilled in [**R**](https://www.r-project.org/){target="_blank"} programming, data visualization, and managing large-scale research datasets.
@@ -33,20 +38,16 @@ He is highly skilled in [**R**](https://www.r-project.org/){target="_blank"} pro
 Abdelkarim has extensive experience in both academic and clinical research environments. He has:
 
 -   Contributed to international conferences
-
 -   Authored scientific publications
-
 -   Supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework ([**OSF**](https://osf.io/){target="\"_blank"}).
 
 His research interests include:
 
 -   Neurodevelopment
-
 -   Brain imaging
-
 -   Statistical modeling of behavioral data
 
 Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
-:::
+
 
 <a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>

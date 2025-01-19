@@ -1,7 +1,7 @@
 ---
-title: "**Abdelkarim el Ghani**"
+title: ""
 pagetitle: "Abdelkarim el Ghani"
-subtitle: "Data Scientist | Neuroscience"
+#subtitle: "Data Scientist | Neuroscience"
 #about:
 #  template: broadside
 #  image: images/about_pic.jpg
@@ -10,20 +10,33 @@ subtitle: "Data Scientist | Neuroscience"
 #  id: hero-heading
 ---
 
-::: {.grid}
+## [Abdelkarim el Ghani]{style="font-weight:500; text-align: center;"}
 
-::: {.g-col-12 .g-col-md-6}
-![](images/about_pic.jpg)
+
+::::::: grid
+::: {.g-col-12}
+::: {style="text-align: center;"}
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
+
+  <img src="images/ggplot2.png" alt="ggplot2" style="width: 6em; height: auto;"/>
+  <img src="images/Rstudio.png" alt="RStudio" style="width: 6em; height: auto;"/>
+  <img src="images/tidyverse.png" alt="tidyverse" style="width: 6em; height: auto;"/>
+  <img src="images/quarto.png" alt="Quarto" style="width: 6em; height: auto;"/>
+
+</div>
 :::
+:::
+:::::::
+
 
 ::: {.g-col-12 .g-col-md-6}
-Welcome to my digital portfolio—a space where neuroscience, data analysis, and open science converge. Here, I showcase my expertise in statistical modeling, research projects, and data visualization. This portfolio reflects my commitment to uncovering insights through data while championing transparency, reproducibility, and innovation in scientific research.
-::: 
+Welcome to My Portfolio!\
+I’m a **statistical data analyst** specializing in uncovering meaningful insights from complex datasets. My work lies at the intersection of neuroscience and data science, with a focus on **statistical modeling**, **data visualization**, and **managing large-scale research initiatives**.
 
+With expertise in analyzing neurodevelopmental data and driving reproducible research, I aim to support data-driven solutions that enhance our understanding of human behavior and scientific processes.
 
-
-
-
+Let’s connect and explore how **statistical analysis** can contribute to impactful research and informed decision-making.
+:::
 
 ::: {.callout-note title="Resources" hidden="true"}
 [Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
@@ -45,4 +58,7 @@ Welcome to my digital portfolio—a space where neuroscience, data analysis, and
 [Silvia Canelon](https://silviacanelon.com/blog/2023-09-29-hello-quarto/#designing-the-site){target="_blank"}
 
 [Jim Hester](https://www.jimhester.com/#){target="_blank"}
+
+[Noel Mangai](https://github.com/NoelMga){target="_blank"}
 :::
+
