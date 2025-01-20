@@ -1,23 +1,17 @@
 ---
-#title: "About"
-#image: images/profile_pic_akg.jpg
-page-layout: article
+title: ""
+subtitle: "<br/>It is possible to add a bakground image to your title block header.<br/>Note: It is better to use a custom title block instead of the title-block-banner option for more customization IMO.<br/><br/><br/><br/>"
+page-layout: full
 format:
   html: 
     linestretch: 1.7
+toc: true
+title-block-banner: "images/background-pic.jpg"
+title-block-banner-color: "black"
+title-block-categories: true
 ---
 
-```{=html}
-  <style>
-body {
-  background-image: url('images/background-pic.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
 
-  </style>
-```
 
 
 

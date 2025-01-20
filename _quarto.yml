@@ -25,6 +25,8 @@ website:
     type: overlay  # Search type
   page-navigation: true  # Enable navigation links on pages
   back-to-top-navigation: true  # Show back-to-top button
+  margin-header: |
+    ![](/images/logo-akg.jpg)
 
   navbar:
     title: Abdelkarim el Ghani
@@ -44,6 +46,9 @@ website:
             href: projects/fairplay/index.qmd
           - text: Rotterdam Gold
             href: projects/rotterdamgold/index.qmd
+      - text: Resume
+        href: resume.qmd
+        icon: briefcase-fill
 
     right: 
       - text: Resources
