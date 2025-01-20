@@ -65,6 +65,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<style>html{ scroll-behavior: smooth; }</style>
 <style>
 
       .quarto-title-block .quarto-title-banner {
@@ -88,7 +89,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="../../index.html" class="navbar-brand navbar-brand-logo">
-    <img src="../../images/block-banner.gif" alt="" class="navbar-logo">
+    <img src="../../images/logo-akg.jpg" alt="" class="navbar-logo">
     </a>
     <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Abdelkarim el Ghani</span>
@@ -110,13 +111,29 @@ ul.task-list li input[type="checkbox"] {
 </i> 
 <span class="menu-text">About Me</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../projects.html"> <i class="bi bi-graph-up" role="img">
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-projects" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+      <i class="bi bi-graph-up" role="img">
 </i> 
-<span class="menu-text">Projects</span></a>
+ <span class="menu-text">Projects</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-projects">    
+        <li>
+    <a class="dropdown-item" href="../../projects/fairplay/index.html">
+ <span class="dropdown-text">Fairplay</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../../projects/rotterdamgold/index.html">
+ <span class="dropdown-text">Rotterdam Gold</span></a>
+  </li>  
+    </ul>
+  </li>
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html"> 
+<span class="menu-text">Resources</span></a>
+  </li>  
   <li class="nav-item compact">
     <a class="nav-link" href="https://linkedin.com" target="_blank"> <i class="bi bi-linkedin" role="img">
 </i> 
@@ -631,4 +648,5 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 
 
 
+<script src="../../site_libs/quarto-html/zenscroll-min.js"></script>
 </body></html>

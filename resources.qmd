@@ -1,0 +1,28 @@
+---
+title: "Resources"
+format: html
+---
+
+::: {.callout-note title="Resources"}
+-   [Create websites using Quarto](https://posit-conf-2024.github.io/quarto-websites/){target="_blank"}
+
+-   [The GRAPH Courses](https://thegraphcourses.org/courses/websites-and-dashboards-with-r/topics/creating-a-personal-website-optional/){target="_blank"}
+
+-   [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}
+
+-   [Abyoso Hapsoro Nurhadi](https://abyoso-hapsoro.github.io/){target="_blank"}
+
+-   [Gerko Vink](https://www.gerkovink.com/){target="_blank"}
+
+-   [Markup Languages and Reproducible Programming in Statistics](https://www.gerkovink.com/markup/){target="_blank"}
+
+-   [Marvin Schmitt](https://marvinschmitt.com/){target="_blank"}
+
+-   [Matt Worthington](https://www.mrworthington.com/){target="_blank"}
+
+-   [Silvia Canelon](https://silviacanelon.com/blog/2023-09-29-hello-quarto/#designing-the-site){target="_blank"}
+
+-   [Jim Hester](https://www.jimhester.com/#){target="_blank"}
+
+-   [Noel Mangai](https://github.com/NoelMga){target="_blank"}
+:::

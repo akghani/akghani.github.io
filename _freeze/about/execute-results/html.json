@@ -1,0 +1,17 @@
+{
+  "hash": "fca968d4a2257c92282e54cc06e4b0cb",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\n#title: \"About\"\n#image: images/profile_pic_akg.jpg\npage-layout: article\nformat:\n  html: \n    linestretch: 1.7\n#about:\n#  id: hero-heading\n#  template: solana\n#  image-shape: round\n---\n\n```{=html}\n  <style>\nbody {\n  background-image: url('images/background-pic.jpeg');\n  background-size: cover;\n  background-position: center;\n  background-attachment: fixed;\n}\n\n  </style>\n```\n\n::: {.cell}\n\n:::\n\n\n\n\n\n\n\n::: {#hero-heading}\n<div style=\"text-align: center;\"> <img src=\"images/profile_pic_convolve.jpg\" alt=\"Abdelkarim el Ghani\" \n    style=\"width: 15em; height: auto; border-radius: 50%; margin-bottom: 1em;\"/> <!-- Links Below the Picture --> <div> <a href=\"https://github.com/akg3490\" target=\"_blank\" style=\"margin: 0 1em; font-size: 1.2em;\"> <i class=\"bi bi-github\"></i> Github </a> <a href=\"https://linkedin.com\" target=\"_blank\" style=\"margin: 0 1em; font-size: 1.2em;\"> <i class=\"bi bi-linkedin\"></i> Linkedin </a> </div> </div>\n:::\n\n<br></br>\n\n**Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target=\"_blank\"}. His expertise lies in:\n\n-   Statistical data analysis\n-   Neuroscience\n-   Open science practices\n\nHe is highly skilled in [**R**](https://www.r-project.org/){target=\"_blank\"} programming, data visualization, and managing large-scale research datasets.\n\nAbdelkarim has extensive experience in both academic and clinical research environments. He has:\n\n-   Contributed to international conferences\n-   Authored scientific publications\n-   Supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework ([**OSF**](https://osf.io/){target=\"\\\"_blank\"}).\n\nHis research interests include:\n\n-   Neurodevelopment\n-   Brain imaging\n-   Statistical modeling of behavioral data\n\nDriven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.\n\n\n<a href=\"https://www.pexels.com/photo/white-painted-wall-1939485/\" target=\"_blank\" class=\"small-link\">Photo by Henry & Co.</a>\n",
+    "supporting": [
+      "about_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

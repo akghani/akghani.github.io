@@ -29,7 +29,7 @@ website:
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: images/block-banner.gif  # Navbar logo
+    logo: images/logo-akg.jpg  # Navbar logo
     left:
       - text: Home
         href: index.qmd
@@ -38,10 +38,16 @@ website:
         href: about.qmd
         icon: person-arms-up
       - text: Projects
-        href: projects.qmd  # Projects page
         icon: graph-up
+        menu:  # Dropdown menu for Projects
+          - text: Fairplay
+            href: projects/fairplay/index.qmd
+          - text: Rotterdam Gold
+            href: projects/rotterdamgold/index.qmd
 
     right: 
+      - text: Resources
+        href: resources.qmd
       - icon: linkedin
         href: https://linkedin.com
         target: _blank
@@ -66,6 +72,7 @@ format:
     theme: cosmo
     css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
+    smooth-scroll: true
     highlight-style: github
     page-layout: full
 
