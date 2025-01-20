@@ -1,6 +1,5 @@
 ---
-title: "Projects"
-description: "Explore a collection of projects I’ve worked on, ranging from innovative solutions to creative endeavors. Each entry includes a brief description, category tags, and visual representation to give you an insight into the work I’ve done. The projects are organized by title for easy navigation."
+title: ""
 
 listing:
   contents: projects     # Folder containing project `.qmd` files
@@ -15,40 +14,4 @@ listing:
 page-layout: full
 ---
 
-```{=html}
-  <style>
-body {
-  background-image: url('/background-pic.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.project-card {
-  background-color: #fff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-}
-.project-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-.project-title {
-  font-size: 1.5em;
-  margin: 10px 0 5px 0;
-}
-.project-tools {
-  color: #555;
-  font-size: 0.9em;
-}
-</style>
-```
 

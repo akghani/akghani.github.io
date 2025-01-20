@@ -5,10 +5,6 @@ page-layout: article
 format:
   html: 
     linestretch: 1.7
-#about:
-#  id: hero-heading
-#  template: solana
-#  image-shape: round
 ---
 
 ```{=html}
