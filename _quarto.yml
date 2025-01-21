@@ -74,12 +74,16 @@ website:
 format:
   html:
     fontsize: 20px  # Set font size
-    theme: cosmo
+    theme: 
+      - cosmo
+      - theme.scss
     css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
     smooth-scroll: true
     highlight-style: github
     page-layout: full
+    resources: 
+      - images
 
 execute:
   cache: false  # Disable cache
