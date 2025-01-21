@@ -83,7 +83,7 @@ format:
   html:
     fontsize: 20px  # Set font size
     theme: 
-      - litera
+      - cosmo
       - theme.scss
   #  css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
