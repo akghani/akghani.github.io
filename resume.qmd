@@ -1,33 +1,70 @@
 ---
 title: ""
-subtitle: "<br/>It is possible to add a bakground image to your title block header.<br/>Note: It is better to use a custom title block instead of the title-block-banner option for more customization IMO.<br/><br/><br/><br/>"
+subtitle: "<br/><br/>Abdelkarim el Ghani is a Research Assistant at the Erasmus School of Social and Behavioural Sciences. He specializes in statistical data analysis, neuroscience, and open science practices.<br/>With a strong background in R programming and data visualization, Abdelkarim contributes to large-scale research initiatives and drives reproducible workflows.<br/><br/><br/><br/>"
 format: html
 toc: true
 title-block-banner: "images/background-pic.jpg"
 ---
 
 
-
-
-
 :::{#hero-heading}
-
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending time unicycling and playing with her pet iguana.
-
 ## Education
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
+### MSc Applied Neuroscience in Human Development  
+**Universiteit Leiden** | 2018 - 2020  
+- Thesis: “Prenatal Exposure to Maternal Distress, Brain Structure, and ADHD Traits in Preadolescents: An Exploratory Study” (Grade: 8.5/10)
 
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+### Premaster Education and Child Studies  
+**Universiteit Leiden** | 2016 - 2017  
+- Thesis: “Comprehension and Memory for Text: The Effect of Aging on Recognition Performance” (Grade: 8.5/10)
+
+### BSc Bio-Pharmaceutical Sciences  
+**Universiteit Leiden** | 2009 - 2016  
+- Thesis: "The Maturation of Acetaminophen Metabolism in Zebrafish (Danio rerio) Larvae as a Model System"  
+- Minor: Science & Research-Based Business (S&RBB)
+
+---
 
 ## Experience
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
+### Research Assistant  
+**Brain & Cognition, Erasmus School of Social and Behavioural Sciences (ESSB)** | Dec 2021 – Present  
+- Developed and managed a comprehensive dataset based on international surveys of children for an Erasmus+ project.  
+- Conducted data import, processing, analysis, and reporting.  
+- Authored R-Markdown scripts for clear documentation and presentation of results.  
+- Performed statistical analyses and visualizations to support presentations at international conferences and publications in scientific journals.
 
-GeoScynce | Chief Analyst | Sept 2012 - April 2018
+### Research Intern  
+**Child and Adolescent Psychiatry/Psychology (KJPP), Erasmus MC Sophia Children's Hospital** | Sep 2019 – Aug 2020  
+- Assessed the quality of MRI data and evaluated its suitability for research purposes.  
+- Conducted statistical analyses and contributed to research reporting.
+
+### Research Intern  
+**Systems Pharmacology, Leiden Academic Centre for Drug Research (LACDR)** | Mar 2016 – Jul 2016  
+- Designed and executed research to investigate the pharmacokinetic profile of paracetamol and its metabolites in zebrafish larvae.  
+- Conducted experiments, reported results, and presented findings.
+
+---
+
+## Skills
+
+- R Programming | Python | SPSS | Microsoft Office  
+- Statistical Analysis | Data Visualization | Text Mining  
+- Fluent in Dutch and English  
+
+---
+
+## Publications
+
+- Dijkstra, K., El Ghani, A., Peiris Millaniya, K. U., & Van der Hallen, R. (2024). Veerkracht bij jeugd door voetbal. *De Psycholoog*, 10-19.  
+- Dijkstra, K., & El Ghani, A. (2024). Rotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden.  
+- Millaniya, K. P., Smit, I., & Dijkstra, K. (2022). FAIR-play Handbook: Implementation of academic concepts into football practices. *Erasmus Initiative Vital Cities and Citizens, Erasmus+*.
 
 :::
+
+
+
+
+
 
 
