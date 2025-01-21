@@ -1,6 +1,6 @@
 ---
 title: ""
-subtitle: "<br/>It is possible to add a bakground image to your title block header.<br/>Note: It is better to use a custom title block instead of the title-block-banner option for more customization IMO.<br/><br/><br/><br/>"
+subtitle: "<br/><br/><br/><br/><br/>"
 page-layout: full
 format:
   html: 
@@ -40,12 +40,11 @@ magick::image_write(convlv_pic, path = "images/profile_pic_convolve.jpg")
 
 ```
 
-
-
 ::: {#hero-heading}
 <div style="text-align: center;"> <img src="images/profile_pic_convolve.jpg" alt="Abdelkarim el Ghani" 
     style="width: 15em; height: auto; border-radius: 50%; margin-bottom: 1em;"/> <!-- Links Below the Picture --> <div> <a href="https://github.com/akg3490" target="_blank" style="margin: 0 1em; font-size: 1.2em;"> <i class="bi bi-github"></i> Github </a> <a href="https://linkedin.com" target="_blank" style="margin: 0 1em; font-size: 1.2em;"> <i class="bi bi-linkedin"></i> Linkedin </a> </div> </div>
 :::
+
 
 <br></br>
 
