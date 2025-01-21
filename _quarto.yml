@@ -74,9 +74,7 @@ website:
 format:
   html:
     fontsize: 20px  # Set font size
-    theme: 
-      - cosmo
-      - theme.scss
+    theme: theme.scss
     css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
     smooth-scroll: true
