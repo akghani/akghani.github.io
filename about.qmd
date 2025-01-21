@@ -6,7 +6,7 @@ format:
     linestretch: 1.7
     page-layout: article
 toc: true
-title-block-banner: "images/background-pic.jpg"
+#title-block-banner: "images/background-pic.jpg"
 #title-block-banner-color: "black"
 title-block-banner-color: "rgba(255, 255, 255, 0.9)"
 include-in-header:
@@ -36,11 +36,6 @@ include-in-header:
       </style>
 ---
 
-
-
-
-
-
 ```{r}
 #| eval: false
 #| echo: false
@@ -65,9 +60,9 @@ magick::image_write(convlv_pic, path = "images/profile_pic_convolve.jpg")
 
 ```
 
-
-
 <br></br>
+
+
 
 **Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
@@ -90,6 +85,5 @@ His research interests include:
 -   Statistical modeling of behavioral data
 
 Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
-
 
 <a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>

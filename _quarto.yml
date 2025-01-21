@@ -3,12 +3,14 @@
 project:
   type: website
   output-dir: docs
-
-preview:
-  port: 22222
-  browser: true
-  watch-inputs: true
-  navigate: true
+  render:
+    - "*.qmd"
+    
+  preview:
+    port: 22227
+    browser: true
+    watch-inputs: true
+    navigate: true
 
 # Enable Markdown extensions
 from: markdown+emoji
@@ -17,21 +19,27 @@ from: markdown+emoji
 
 website:
   title: "Abdelkarim el Ghani"
-  favicon: images/favicon-akg.png  # Favicon image
-  image: images/logo-akg.jpg
-  open-graph: true  # Enable Open Graph metadata
+  favicon: "/images/favicon-akg.png"  # Favicon image
+  image: images/logo-akg.png
+  open-graph:
+    image: images/logo-akg.png
+#    image-alt: |
+    image-width: 500
+    image-height: 500
+      
+      
   search:
     location: navbar
     type: overlay  # Search type
   page-navigation: true  # Enable navigation links on pages
   back-to-top-navigation: true  # Show back-to-top button
   margin-header: |
-    ![](/images/logo-akg.jpg)
+    ![](/images/logo-akg.png){width=700}
 
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: images/logo-akg.jpg  # Navbar logo
+    logo: images/logo-akg.png  # Navbar logo
     left:
       - text: Home
         href: index.qmd
@@ -48,7 +56,7 @@ website:
             href: projects/rotterdamgold/index.qmd
       - text: Resume
         href: resume.qmd
-        icon: briefcase-fill
+        icon: file-earmark-text-fill
 
     right: 
       - text: Resources
@@ -74,14 +82,14 @@ website:
 format:
   html:
     fontsize: 20px  # Set font size
-    theme: theme.scss
-    css: theme.scss  # Link custom CSS
+    theme: 
+      - litera
+      - theme.scss
+  #  css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
     smooth-scroll: true
     highlight-style: github
-    page-layout: full
-    resources: 
-      - images
+    page-layout: article
 
 execute:
   cache: false  # Disable cache
