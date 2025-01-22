@@ -1,11 +1,11 @@
 ---
 title: ""
 subtitle: ""
-about:
-  template: trestles
-  image: images/profile_pic_noise.jpg
+about: 
+  template: jolla
+  image: "images/profile-pic-cartoon.png"
   image-shape: round
-  image-width: 15rem
+  image-width: 10rem
 format:
   html: 
     linestretch: 1.7
@@ -17,7 +17,7 @@ toc: true
 
 ---
 
-
+:::{#hero-heading}
 **Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
 -   Statistical data analysis
@@ -41,3 +41,5 @@ His research interests include:
 Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
 
 <a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>
+
+:::
