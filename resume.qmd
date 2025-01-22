@@ -1,9 +1,8 @@
 ---
 title: ""
-subtitle: "<br/><br/><br/><br/><br/><br/>"
+subtitle: ""
 format: html
 toc: true
-title-block-banner: "images/background-pic.jpg"
 ---
 
 :::{#hero-heading}

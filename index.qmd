@@ -11,23 +11,6 @@ page-layout: article
 
 
 
-
-::::::: grid
-::: {.g-col-12}
-::: {style="text-align: center;"}
-<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1em;">
-
-  <img src="images/ggplot2.png" alt="ggplot2" style="width: 4em; height: auto;"/>
-  <img src="images/Rstudio.png" alt="RStudio" style="width: 4em; height: auto;"/>
-  <img src="images/tidyverse.png" alt="tidyverse" style="width: 4em; height: auto;"/>
-  <img src="images/quarto.png" alt="Quarto" style="width: 4em; height: auto;"/>
-
-</div>
-:::
-:::
-:::::::
-
-
 ::: {.g-col-12 .g-col-md-6}
 **Welcome to My Portfolio!**\
 I’m a statistical data analyst specializing in uncovering meaningful insights from complex datasets. My work lies at the intersection of neuroscience and data science, with a focus on statistical modeling, data visualization, and managing large-scale research initiatives.
@@ -40,5 +23,3 @@ If you'd like to know more about my background, skills, and experience, check ou
 
 Let’s connect and explore how statistical analysis can contribute to impactful research and informed decision-making.
 :::
-
-

@@ -13,10 +13,6 @@ toc: true
 ---
 
 
-
-
-
-
 **Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
 -   Statistical data analysis
