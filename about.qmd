@@ -1,6 +1,11 @@
 ---
 title: ""
-subtitle: "<br/><br/><br/><br/>"
+subtitle: ""
+about:
+  template: trestles
+  image: images/profile_pic_noise.jpg
+  image-shape: round
+  image-width: 15rem
 format:
   html: 
     linestretch: 1.7
