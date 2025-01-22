@@ -1,6 +1,6 @@
 ---
 title: "Abdelkarim el Ghani<br/>"
-subtitle: "<br/>Data Analyst | Neuroscientist<br/><br/><br/><br/>"
+subtitle: "<br/>Data Analyst | Neuroscientist<br/><br/><br/>"
 format: html
 toc: true
 title-block-banner: "images/block-banner.jpeg"

@@ -34,12 +34,12 @@ website:
   page-navigation: true  # Enable navigation links on pages
   back-to-top-navigation: true  # Show back-to-top button
   margin-header: |
-    ![](/images/logo-akg.png){width=700}
+    ![](/images/favicon-akg.png)
 
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: images/logo-akg.png  # Navbar logo
+    logo: images/favicon-akg.png  # Navbar logo
     left:
       - text: Home
         href: index.qmd
