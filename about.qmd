@@ -5,7 +5,7 @@ about:
   template: jolla
   image: "images/profile-pic-cartoon.png"
   image-shape: round
-  image-width: 10rem
+  image-width: 15rem
 format:
   html: 
     linestretch: 1.7
