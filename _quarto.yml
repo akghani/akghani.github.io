@@ -1,5 +1,7 @@
 # Quarto Website Configuration
 
+lang: en
+
 project:
   type: website
   output-dir: docs
@@ -97,3 +99,5 @@ execute:
 
 editor:
   render-on-save: true  # Automatically render on save
+
+
