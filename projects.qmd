@@ -1,6 +1,5 @@
 ---
 title: ""
-
 listing:
   contents: projects     # Folder containing project `.qmd` files
   sort: "title"

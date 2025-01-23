@@ -1,7 +1,11 @@
+/*-- scss:defaults --*/
+
 @import"https://fonts.googleapis.com/css?family=Phudu:500";
 @import"https://fonts.googleapis.com/css?family=DM+Sans:400,700,400italic,700italic";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/*-- scss:defaults --*/
+
+
 
 $primary-color: #E9D2C0;
 $body-bg: #E9D2C0;
@@ -75,6 +79,11 @@ body, .content {
 .navbar-dark .navbar-brand {
   color: $primary-color;
   text-align: center !important;
+}
+
+.navbar-brand img { 
+  max-height: 40px;
+  width: auto;
 }
 
 .navbar-brand {

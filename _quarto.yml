@@ -71,6 +71,7 @@ website:
         target: _blank
 
   page-footer:
+    background: light
     left: |
       © 2025 Abdelkarim el Ghani
     center: |
@@ -92,6 +93,10 @@ format:
     smooth-scroll: true
     highlight-style: github
     page-layout: article
+    anchor-sections: true
+    include-in-header: 
+      - file: "_includes/header.html"
+
 
 execute:
   cache: false  # Disable cache
