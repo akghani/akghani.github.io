@@ -2,6 +2,7 @@
 title: "Abdelkarim el Ghani<br/>"
 subtitle: "<br/>Data Analyst | Neuroscientist<br/><br/><br/>"
 format: html
+css: theme.scss
 toc: true
 title-block-banner: "images/block-banner.jpeg"
 title-block-banner-color: "white"

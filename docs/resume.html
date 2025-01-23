@@ -39,6 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
+<link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -69,7 +71,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta property="og:title" content="– Abdelkarim el Ghani">
-<meta property="og:description" content="">
 <meta property="og:image" content="images/logo-akg.png">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
 <meta property="og:image:height" content="500">
@@ -158,7 +159,6 @@ ul.task-list li input[type="checkbox"] {
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar"><div class="quarto-margin-header"><div class="margin-header-item">
 <p><img src="./images/logo-akg.png" class="img-fluid"></p>
 </div></div>
-        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -166,48 +166,146 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div id="hero-heading">
-<section id="education" class="level2">
-<h2 class="anchored" data-anchor-id="education">Education</h2>
-<p><strong>Leiden University</strong> | Leiden, Netherlands<br>
-MSc in Applied Neuroscience in Human Development | 2018 - 2020<br>
-- Thesis: <em>Prenatal Exposure to Maternal Distress, Brain Structure, and ADHD Traits in Preadolescents: An Exploratory Study</em> (Grade: 8.5/10)</p>
-<p><strong>Leiden University</strong> | Leiden, Netherlands<br>
-Premaster in Education and Child Studies | 2016 - 2017<br>
-- Thesis: <em>Comprehension and Memory for Text: The Effect of Aging on Recognition Performance</em> (Grade: 8.5/10)</p>
-<p><strong>Leiden University</strong> | Leiden, Netherlands<br>
-BSc in Bio-Pharmaceutical Sciences | 2009 - 2016<br>
-- Minor: Science &amp; Research-Based Business<br>
-- Thesis: <em>The Maturation of Acetaminophen Metabolism in Zebrafish (Danio rerio) Larvae as a Model System</em></p>
-</section>
-<section id="experience" class="level2">
-<h2 class="anchored" data-anchor-id="experience">Experience</h2>
-<p><strong>Erasmus School of Social and Behavioural Sciences (ESSB)</strong> | Rotterdam, Netherlands<br>
-Research Assistant | Dec 2021 – Present<br>
-- Developed and managed datasets from international child surveys for an Erasmus+ project.<br>
-- Performed statistical analyses and data visualizations for publications and conferences.<br>
-- Created detailed R-Markdown documentation for reproducible workflows.</p>
-<p><strong>Erasmus MC Sophia Children’s Hospital</strong> | Rotterdam, Netherlands<br>
-Research Intern | Sep 2019 – Aug 2020<br>
-- Evaluated the quality of MRI data and conducted statistical analyses for research studies.<br>
-- Contributed to research manuscripts and reporting.</p>
-<p><strong>Leiden Academic Centre for Drug Research (LACDR)</strong> | Leiden, Netherlands<br>
-Research Intern | Mar 2016 – Jul 2016<br>
-- Investigated the pharmacokinetic profile of paracetamol in zebrafish larvae.<br>
-- Designed experiments, analyzed data, and presented findings.</p>
-<hr>
-</section>
-<section id="publications" class="level2">
-<h2 class="anchored" data-anchor-id="publications">Publications</h2>
-<ul>
-<li>Dijkstra, K., El Ghani, A., Peiris Millaniya, K. U., &amp; Van der Hallen, R. (2024). Veerkracht bij jeugd door voetbal. <em>De Psycholoog</em>, 10-19.<br>
-</li>
-<li>Dijkstra, K., &amp; El Ghani, A. (2024). Rotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden.<br>
-</li>
-<li>Millaniya, K. P., Smit, I., &amp; Dijkstra, K. (2022). FAIR-play Handbook: Implementation of academic concepts into football practices. <em>Erasmus Initiative Vital Cities and Citizens, Erasmus+</em>.</li>
-</ul>
-</section>
+
+
+<!-- Tabs for Navigation -->
+<div class="tab">
+  <button class="tablinks" onclick="openSection(event, 'education')" id="defaultOpen">Education</button>
+  <button class="tablinks" onclick="openSection(event, 'experience')">Experience</button>
+  <button class="tablinks" onclick="openSection(event, 'skills')">Skills</button>
+  <button class="tablinks" onclick="openSection(event, 'publications')">Publications</button>
 </div>
+
+<!-- Education Section -->
+<div id="education" class="tabcontent">
+  <h2 class="anchored">Education</h2>
+  <div class="card">
+    <h3 class="anchored">MSc in Applied Neuroscience in Human Development</h3>
+    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2018 - 2020</em></p>
+    <p>Focus on neurodevelopmental studies and statistical modeling.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">Premaster in Education and Child Studies</h3>
+    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2016 - 2017</em></p>
+    <p>Prepared for graduate-level research in child development and education.</p>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">BSc in Bio-Pharmaceutical Sciences</h3>
+    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2009 - 2016</em></p>
+    <p>Conducted independent research projects focused on pharmacology.</p>
+  </div>
+</div>
+
+<!-- Experience Section -->
+<div id="experience" class="tabcontent">
+  <h2 class="anchored">Experience</h2>
+  <div class="card">
+    <h3 class="anchored">Research Assistant</h3>
+    <p><strong>Erasmus School of Social and Behavioural Sciences (ESSB)</strong> | Rotterdam, Netherlands | <em>Dec 2021 – Present</em></p>
+    <ul>
+      <li>Developed and managed datasets from international child surveys.</li>
+      <li>Performed statistical analyses and created visualizations for publications.</li>
+      <li>Authored detailed R-Markdown documentation for reproducible workflows.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">Research Intern</h3>
+    <p><strong>Erasmus MC Sophia Children's Hospital</strong> | Rotterdam, Netherlands | <em>Sep 2019 – Aug 2020</em></p>
+    <ul>
+      <li>Evaluated MRI data quality and conducted statistical analyses.</li>
+      <li>Contributed to research manuscripts and reports.</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3 class="anchored">Research Intern</h3>
+    <p><strong>Leiden Academic Centre for Drug Research (LACDR)</strong> | Leiden, Netherlands | <em>Mar 2016 – Jul 2016</em></p>
+    <ul>
+      <li>Investigated pharmacokinetics of paracetamol in zebrafish larvae.</li>
+      <li>Designed experiments, analyzed data, and presented findings.</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Skills Section -->
+<div id="skills" class="tabcontent">
+  <h2 class="anchored">Skills</h2>
+  <ul>
+    <li><strong>Programming:</strong> R, Python, MATLAB</li>
+    <li><strong>Statistical Methods:</strong> Regression analysis, ANOVA, Bayesian modeling</li>
+    <li><strong>Data Visualization:</strong> ggplot2, Tableau, Power BI</li>
+    <li><strong>Tools:</strong> Quarto, RStudio, Git, LaTeX</li>
+  </ul>
+</div>
+
+<!-- Publications Section -->
+<div id="publications" class="tabcontent">
+  <h2 class="anchored">Publications</h2>
+  <ul>
+    <li><strong>Veerkracht bij jeugd door voetbal</strong> | <em>De Psycholoog</em> | 2024</li>
+    <li><strong>Rotterdam Goud: Eindrapport Pilot Rotterdams Goud</strong> | 2024</li>
+    <li><strong>FAIR-play Handbook</strong> | <em>Erasmus Initiative Vital Cities and Citizens, Erasmus+</em> | 2022</li>
+  </ul>
+</div>
+
+<script>
+  // JavaScript for Tab Navigation
+  function openSection(evt, sectionName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Open the default tab
+  document.getElementById("defaultOpen").click();
+</script>
+
+<style>
+  /* Tab Styling */
+  .tab {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .tab button {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  .tab button:hover {
+    background-color: lightgreen;
+  }
+  .tab button.active {
+    background-color: white;
+    color: darkgreen;
+    border: 1px solid darkgreen;
+  }
+  .tabcontent {
+    display: none;
+    padding: 20px;
+  }
+  .card {
+    background-color: #f9f9f9;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+</style>
 
 
 
@@ -642,7 +740,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a></p>
 </div>
     <div class="nav-footer-right">
-<p>Build with <a href="https://quarto.org/" target="_blank"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto logo blue round circle with a cross within the circumference" width="65"></a></p>
+<p><span class="faux-block">Build with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/" target="_blank"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto logo blue round circle with a cross within the circumference" width="65"></a></span></p>
 </div>
   </div>
 </footer>

@@ -5,16 +5,13 @@ about:
   template: jolla
   image: "images/profile-pic-cartoon.png"
   image-shape: round
-  image-width: 15rem
+  image-width: 10rem
 format:
   html: 
     linestretch: 1.7
     page-layout: article
-toc: true
-#title-block-banner: "images/background-pic.jpg"
-#title-block-banner-color: "black"
-#title-block-banner-color: "rgba(255, 255, 255, 0.9)"
-
+#    css: theme.scss
+title-block-banner: "images/background-pic.jpg"
 ---
 
 :::{#hero-heading}

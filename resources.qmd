@@ -10,11 +10,15 @@ format: html
 
 -   [Happy Git and GitHub for the useR](https://happygitwithr.com/){target="_blank"}
 
+-   [From Notebooks to the Web: Quarto & GitHub Pages](https://musa-550-fall-2023.github.io/content/week-9/lecture-9A.html){target="_blank"}
+
 -   [Abyoso Hapsoro Nurhadi](https://abyoso-hapsoro.github.io/){target="_blank"}
 
 -   [Gerko Vink](https://www.gerkovink.com/){target="_blank"}
 
 -   [Markup Languages and Reproducible Programming in Statistics](https://www.gerkovink.com/markup/){target="_blank"}
+
+-   [Andrew Heis](https://www.andrewheiss.com/){target="_blank"}
 
 -   [Marvin Schmitt](https://marvinschmitt.com/){target="_blank"}
 
