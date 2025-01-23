@@ -25,4 +25,8 @@ format: html
 -   [Jim Hester](https://www.jimhester.com/#){target="_blank"}
 
 -   [Noel Mangai](https://github.com/NoelMga){target="_blank"}
+
+### For Translating md files
+
+-   [frank blog](https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/){target="_blank"}
 :::

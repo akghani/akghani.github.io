@@ -72,7 +72,7 @@ website:
 
   page-footer:
     left: |
-      Copyright © 2025 Abdelkarim el Ghani
+      © 2025 Abdelkarim el Ghani
     center: |
       [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
     right: |
@@ -99,5 +99,4 @@ execute:
 
 editor:
   render-on-save: true  # Automatically render on save
-
 
