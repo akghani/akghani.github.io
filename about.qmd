@@ -10,31 +10,31 @@ format:
   html: 
     linestretch: 1.7
     page-layout: article
+filters: 
+  - nutshell
 ---
+
+```{=html}
+<script src='https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js'></script>
+```
 
 :::{#hero-heading}
 **Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
 
--   Statistical data analysis
--   Neuroscience
--   Open science practices
+[:Statistical data analysis](# "Turning raw data into meaningful insights through advanced statistical methods.")  
+[:Neuroscience](# "Exploring the brain's complexity and the factors that shape human behavior.")  
+[:Open science practices](# "Promoting transparency, accessibility, and collaboration in research.")
 
-He is highly skilled in [**R**](https://www.r-project.org/){target="_blank"} programming, data visualization, and managing large-scale research datasets.
+Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:
 
-Abdelkarim has extensive experience in both academic and clinical research environments. He has:
+[:Programming](# "Utilizing tools like R, Python, and Quarto for reproducible workflows.")  
+[:Data visualization](# "Transforming numbers into compelling visual stories.")  
+[:Reproducible research](# "Ensuring findings can be verified and built upon by others.")
 
--   Contributed to international conferences
--   Authored scientific publications
--   Supported open science initiatives by sharing code and workflows on platforms like the Open Science Framework ([**OSF**](https://osf.io/){target="\"_blank"}).
+Click on any term to learn more about what it means in my day-to-day work!
+:::
 
-His research interests include:
-
--   Neurodevelopment
--   Brain imaging
--   Statistical modeling of behavioral data
-
-Driven by a passion for data-driven problem-solving, Abdelkarim aims to advance reproducible and transparent scientific research.
 
 <a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>
 
-:::
+

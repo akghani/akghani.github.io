@@ -2,21 +2,23 @@
 title: "Abdelkarim el Ghani<br/>"
 subtitle: "<br/>Data Analyst | Neuroscientist<br/><br/><br/>"
 format: html
-css: theme.scss
+#css: theme.scss
 toc: true
-title-block-banner: "images/block-banner.jpeg"
-title-block-banner-color: "white"
-title-block-categories: true
-page-layout: article
+#title-block-banner: "images/block-banner.jpeg"
+#title-block-banner-color: "white"
+#title-block-categories: true
+#page-layout: article
+header-includes: >
+  <link rel="stylesheet" href="_assets/index.css">
+resources:
+  - _assets/index.css
 ---
 
 
 
 ::: {.g-col-12 .g-col-md-6}
 **Welcome to My Portfolio!**\ 
-I am a statistical data analyst at the Erasmus University, combining my passion for neuroscience and pharmacology with expertise in data wrangling, analysis, visualization, and reporting using Quarto. 
-
-My work focuses on deriving insights from complex datasets to support research and decision-making.
+I'm a statistical data analyst at the Erasmus University with a keen interest in neuroscience and pharmacology. My work focuses on data wrangling, analysis, visualization, and creating clear, impactful reports using tools like Quarto.
 
 Explore my [Projects](projects.qmd) to see detailed examples of my work or visit the [About Me](about.qmd) page to learn more about my background and skills.
 :::

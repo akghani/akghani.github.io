@@ -1,6 +1,5 @@
 # Quarto Website Configuration
 
-lang: en
 
 project:
   type: website
@@ -85,13 +84,28 @@ website:
 format:
   html:
     fontsize: 20px  # Set font size
-    theme: 
-      - cosmo
-      - theme.scss
+    theme:
+      light:
+        - zephyr
+        - _assets/styles-elm-light.scss
+        - _assets/styles-elm-base.scss
+        - _assets/colors.scss
+      dark:
+        - _assets/zephyr-dark.scss
+        - _assets/styles-elm-dark.scss
+        - _assets/styles-elm-base.scss
+        - _assets/colors.scss
+    css:
+      - _assets/panelset-extras.css
+    highlight-style:
+      light: _assets/syntax-elm-light.theme
+      dark: _assets/syntax-elm-dark.theme
+#    theme: 
+#      - cosmo
+#      - theme.scss
   #  css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
     smooth-scroll: true
-    highlight-style: github
     page-layout: article
     anchor-sections: true
     include-in-header: 

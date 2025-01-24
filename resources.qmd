@@ -30,6 +30,10 @@ format: html
 
 -   [Noel Mangai](https://github.com/NoelMga){target="_blank"}
 
+-   [Jm Clawson](https://jmclawson.net/){target="_blank"}
+
+-   [Garrick Aden-Buie](https://www.garrickadenbuie.com/){target="_blank"}
+
 ### For Translating md files
 
 -   [frank blog](https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/){target="_blank"}
