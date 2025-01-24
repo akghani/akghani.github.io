@@ -10,8 +10,6 @@ format:
   html: 
     linestretch: 1.7
     page-layout: article
-#    css: theme.scss
-title-block-banner: "images/background-pic.jpg"
 ---
 
 :::{#hero-heading}

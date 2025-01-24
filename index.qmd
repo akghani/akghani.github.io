@@ -13,13 +13,10 @@ page-layout: article
 
 
 ::: {.g-col-12 .g-col-md-6}
-**Welcome to My Portfolio!**\
-I’m a statistical data analyst with expertise in uncovering insights from complex datasets. My work combines neuroscience and data science, focusing on statistical modeling, data visualization, and large-scale research management.
+**Welcome to My Portfolio!**\ 
+I am a statistical data analyst at the Erasmus University, combining my passion for neuroscience and pharmacology with expertise in data wrangling, analysis, visualization, and reporting using Quarto. 
 
-I specialize in neurodevelopmental data analysis and reproducible research, supporting data-driven solutions to advance our understanding of human behavior and science.
+My work focuses on deriving insights from complex datasets to support research and decision-making.
 
-To dive into the projects I’ve worked on, visit my [**Projects**](projects.qmd) page, where you’ll find detailed insights into the work I’ve done, ranging from statistical modeling to data visualization.
-
-If you'd like to know more about my background, skills, and experience, check out the [**About Me**](about.qmd) page.
-
+Explore my [Projects](projects.qmd) to see detailed examples of my work or visit the [About Me](about.qmd) page to learn more about my background and skills.
 :::

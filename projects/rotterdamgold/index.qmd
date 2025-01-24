@@ -3,11 +3,49 @@ title: "Rotterdam Gold"
 description: "Longitudinal analysis of student well-being and coping strategies across multiple waves."
 categories: [Longitudinal Analysis, data wrangling, ggplot2, R, SPSS]
 image: rotterdam-gold.jpg
+format:
+  html: 
+    execute:
+      mermaid: true
 ---
 
 ### Project Overview
 
 Evaluate longitudinal survey data to understand the impact of school interventions ("focus" vs. "control" schools) on student well-being and coping strategies across four waves.
+
+
+
+```{=html}
+<!-- Ensure Font Awesome is included in your project, for example via a CDN: -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" /> -->
+
+<div style="display: flex; align-items: center; gap: 10px; font-family: sans-serif;">
+  <!-- Step A -->
+  <div style="background: #f1f1f1; padding: 8px; border-radius: 4px;">
+    A [1. Open a .qmd file]
+  </div>
+
+  <!-- Connector -->
+  <span style="font-size: 1.5em;">→</span>
+
+  <!-- Step B -->
+  <div style="background: #f1f1f1; padding: 8px; border-radius: 4px;">
+    B [2. Write Quarto Syntax]
+  </div>
+
+  <!-- Connector -->
+  <span style="font-size: 1.5em;">→</span>
+
+  <!-- Step C -->
+  <div style="background: #f1f1f1; padding: 8px; border-radius: 4px;">
+    C [3. Render the Document]
+  </div>
+</div>
+
+```
+
+
+
 
 ::: {.callout-note title="Publication"}
 Rotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden. [Dijkstra, K., & el Ghani, A., (2024).](https://www.kenniswerkplaats-rotterdamstalent.nl/wp-content/uploads/2024/03/Rapport-Rotterdam-Goud.pdf)
