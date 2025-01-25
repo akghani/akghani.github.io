@@ -1,0 +1,51 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Abdelkarim el Ghani",
+    "section": "",
+    "text": "Abdelkarim el Ghani is a Research Assistant at the\n    Erasmus University Rotterdam.\n    His expertise lies in:\n  \n  \n    \n      Statistical data analysis\n    \n    \n      Neuroscience\n    \n    \n      Open science practices\n    \n  \n  Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:\n  \n    \n      Programming\n    \n    \n      Data visualization\n    \n    \n      Reproducible research\n    \n  \n  Hover over any term to learn more about what it means in my day-to-day work!\n\n\n\n  \n    Turning raw data into meaningful insights through advanced statistical methods.\n  \n  \n    Exploring the brain's complexity and the factors that shape human behavior.\n  \n  \n    Promoting transparency, accessibility, and collaboration in research.\n  \n  \n    Utilizing tools like R, Python, and Quarto for reproducible workflows.\n  \n  \n    Transforming numbers into compelling visual stories.\n  \n  \n    Ensuring findings can be verified and built upon by others.\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Abdelkarim el Ghani",
+    "section": "",
+    "text": "Education\n  Experience\n  Skills\n  Publications\n\n\n\n\n  Education\n  \n    MSc in Applied Neuroscience in Human Development\n    Leiden University | Leiden, Netherlands | 2018 - 2020\n    Focus on neurodevelopmental studies and statistical modeling.\n  \n\n  \n    Premaster in Education and Child Studies\n    Leiden University | Leiden, Netherlands | 2016 - 2017\n    Prepared for graduate-level research in child development and education.\n  \n\n  \n    BSc in Bio-Pharmaceutical Sciences\n    Leiden University | Leiden, Netherlands | 2009 - 2016\n    Conducted independent research projects focused on pharmacology.\n  \n\n\n\n\n  Experience\n  \n    Research Assistant\n    Erasmus School of Social and Behavioural Sciences (ESSB) | Rotterdam, Netherlands | Dec 2021 – Present\n    \n      Developed and managed datasets from international child surveys.\n      Performed statistical analyses and created visualizations for publications.\n      Authored detailed R-Markdown documentation for reproducible workflows.\n    \n  \n\n  \n    Research Intern\n    Erasmus MC Sophia Children's Hospital | Rotterdam, Netherlands | Sep 2019 – Aug 2020\n    \n      Evaluated MRI data quality and conducted statistical analyses.\n      Contributed to research manuscripts and reports.\n    \n  \n\n  \n    Research Intern\n    Leiden Academic Centre for Drug Research (LACDR) | Leiden, Netherlands | Mar 2016 – Jul 2016\n    \n      Investigated pharmacokinetics of paracetamol in zebrafish larvae.\n      Designed experiments, analyzed data, and presented findings.\n    \n  \n\n\n\n\n  Skills\n  \n    Programming: R, Python, MATLAB\n    Statistical Methods: Regression analysis, ANOVA, Bayesian modeling\n    Data Visualization: ggplot2, Tableau, Power BI\n    Tools: Quarto, RStudio, Git, LaTeX\n  \n\n\n\n\n  Publications\n  \n    Veerkracht bij jeugd door voetbal | De Psycholoog | 2024\n    Rotterdam Goud: Eindrapport Pilot Rotterdams Goud | 2024\n    FAIR-play Handbook | Erasmus Initiative Vital Cities and Citizens, Erasmus+ | 2022\n  \n\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/fairplay/index.html",
+    "href": "projects/fairplay/index.html",
+    "title": "FAIR-play",
+    "section": "",
+    "text": "Project Overview\nThe FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in fostering resilience and life skills in youth. Supported by an Erasmus+ grant, this three-year initiative works with Feyenoord, Charlton Athletic, Werder Bremen, Inter Milan, and Hibernian to develop and implement pedagogical strategies for coaches and youth workers. The project aims to empower young people, particularly in urban environments, by using football as a tool to teach resilience and life skills, culminating in a training manual for best practices and evidence-based approaches.\n\n\nResults\n\n\n\n\n\n\n\nResearch Publication\n\n\n\nResilience among youth in soccer. Dijkstra, K., & el Ghani, A., (2024).\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Abdelkarim el Ghani",
+    "section": "",
+    "text": "Welcome to My Portfolio!  I’m a statistical data analyst at the Erasmus University with a keen interest in neuroscience and pharmacology.\nMy work focuses on data wrangling, analysis, visualization, and creating clear, impactful reports using tools like Quarto.\nExplore my Projects to see detailed examples of my work or visit the About Me page to learn more about my background and skills.\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Abdelkarim el Ghani",
+    "section": "",
+    "text": "Order By\n       Default\n         \n          Title\n        \n         \n          Author\n        \n     \n  \n    \n      \n      \n    \n\n\n\n\n\n\n\n\n\n\nFAIR-play\n\n\n\nR\n\n\nggplot2\n\n\nSPSS\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRotterdam Gold\n\n\n\nLongitudinal Analysis\n\n\ndata wrangling\n\n\nggplot2\n\n\nR\n\n\nSPSS\n\n\n\nLongitudinal analysis of student well-being and coping strategies across multiple waves.\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items\n\n Back to top"
+  },
+  {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Resources",
+    "section": "",
+    "text": "Resources\n\n\n\n\nCreate websites using Quarto\nThe GRAPH Courses\nHappy Git and GitHub for the useR\nFrom Notebooks to the Web: Quarto & GitHub Pages\nAbyoso Hapsoro Nurhadi\nGerko Vink\nMarkup Languages and Reproducible Programming in Statistics\nAndrew Heis\nMarvin Schmitt\nMatt Worthington\nSilvia Canelon\nJim Hester\nNoel Mangai\nJm Clawson\nGarrick Aden-Buie\nData programming and intro to R Prepare, clean, transform and enrich data in R, Javier Álvarez Liébana\n\n\nFor Translating md files\n\nfrank blog\n\n\n\nFor pretty background\n\nPexels\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/rotterdamgold/index.html",
+    "href": "projects/rotterdamgold/index.html",
+    "title": "Rotterdam Gold",
+    "section": "",
+    "text": "Project Overview\nEvaluate longitudinal survey data to understand the impact of school interventions (“focus” vs. “control” schools) on student well-being and coping strategies across four waves.\n\n\n\n\n\n\nflowchart LR\n  subgraph formats[\"`format: \n  _html_, _docx_, _pdf_, \n  _ppt_, _revealjs_, \n  etc...`\"]\n  Quarto([\"Quarto\"])\n  end\n  Quarto --&gt; Code{code}\n  Code -- R --&gt; R[\"{r}\n1) Import (memisc)\n2) Wrangle (tidyverse, sjlabelled, car)\n3) Compute scales\n4) Merge data\n5) Export (writexl)\"]\n  R -. \"script\" .- functions[\"source()\"]\n  R -. \"data\" .- data[\"loadRDS()\"]\n  Code -- Python --&gt; P[\"{python}\"]\n  Code -- SQL --&gt; SQL[\"{r}\"]\n  SQL -- \"define\" --&gt; connection[(\"my_db\")]\n  connection --&gt; sql2[\"`{sql} \n  #| connection: my_db`\"]\n  Quarto --&gt; Text[text]\n  Text -. footnotes .- W[\"Some text.[^fn1]\n  [^fn1]: Some note\"]\n  Text -. \"references\" .- X[\"See @fig-four\"]\n  Text -. citations .- Y[\"Some text [@key].\"]\n  style formats fill:#fff,stroke:#fff\n  style sql2 text-align:left\n\n\n\n\n\n\n\n\n\n\n\n\nPublication\n\n\n\nRotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden. Dijkstra, K., & el Ghani, A., (2024).\n\n\n\n\n\n\n Back to top"
+  }
+]
