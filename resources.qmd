@@ -34,6 +34,9 @@ format: html
 
 -   [Garrick Aden-Buie](https://www.garrickadenbuie.com/){target="_blank"}
 
+-   [Data programming and intro to R
+Prepare, clean, transform and enrich data in R, Javier Álvarez Liébana](https://javieralvarezliebana.es/docencia/mucss-data-programming/slides/#/title-slide){target="_blank"}
+
 ### For Translating md files
 
 -   [frank blog](https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/){target="_blank"}

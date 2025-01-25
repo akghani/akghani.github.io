@@ -3,9 +3,9 @@ title: ""
 subtitle: ""
 about: 
   template: jolla
-  image: "images/profile_pic_akg.jpg"
+  image: "images/profile-pic-bw.png"
   image-shape: round
-  image-width: 10rem
+  image-width: 15rem
 format:
   html: 
     linestretch: 1.7
