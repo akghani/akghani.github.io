@@ -5,10 +5,9 @@ about:
   template: jolla
   image: "images/profile-pic-bw.png"
   image-shape: round
-  image-width: 15rem
+  image-width: 13rem
 format:
   html: 
-    linestretch: 1.7
     page-layout: article
 ---
 
@@ -20,6 +19,30 @@ format:
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
+
+<!-- Additional CSS for layout and style -->
+<style>
+  #hero-heading {
+    text-align: left; /* Align text to the left */
+    margin: 1rem 0;
+  }
+  #hero-heading ul {
+    padding-left: 1.5rem; /* Add indentation for bullet points */
+  }
+  #hero-heading li {
+    margin-bottom: 1rem; /* Space between bullet points */
+  }
+  .tooltip-term {
+    color: #007BFF; /* Blue text for terms */
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .tooltip-term:hover {
+    color: #0056b3; /* Darker blue on hover */
+  }
+</style>
+
 ```
 
 ```{=html}
@@ -32,13 +55,13 @@ format:
 
   <ul>
     <li>
-      <span data-template="data-analysis">Statistical data analysis</span>
+      <span class="tooltip-term" data-template="data-analysis">Statistical data analysis</span>
     </li>
     <li>
-      <span data-template="neuroscience">Neuroscience</span>
+      <span class="tooltip-term" data-template="neuroscience">Neuroscience</span>
     </li>
     <li>
-      <span data-template="open-science">Open science practices</span>
+      <span class="tooltip-term" data-template="open-science">Open science practices</span>
     </li>
   </ul>
 
@@ -46,13 +69,13 @@ format:
 
   <ul>
     <li>
-      <span data-template="programming">Programming</span>
+      <span class="tooltip-term" data-template="programming">Programming</span>
     </li>
     <li>
-      <span data-template="data-visualization">Data visualization</span>
+      <span class="tooltip-term" data-template="data-visualization">Data visualization</span>
     </li>
     <li>
-      <span data-template="reproducible-research">Reproducible research</span>
+      <span class="tooltip-term" data-template="reproducible-research">Reproducible research</span>
     </li>
   </ul>
 
@@ -81,25 +104,34 @@ format:
   </div>
 </div>
 
+
+
 ```
 
 
 ```{=html}
 <script>
   document.addEventListener('DOMContentLoaded', function () {
-    tippy('[data-template]', {
-      content(reference) {
-        const id = reference.getAttribute('data-template');
-        const template = document.getElementById(id);
-        return template ? template.innerHTML : '';
-      },
-      allowHTML: true, // Enable HTML content in tooltips
-      theme: 'light',
-      animation: 'scale',
-      arrow: true,
+    const terms = document.querySelectorAll('.tooltip-term');
+    
+    terms.forEach((term, index) => {
+      tippy(term, {
+        content(reference) {
+          const id = reference.getAttribute('data-template');
+          const template = document.getElementById(id);
+          return template ? template.innerHTML : '';
+        },
+        allowHTML: true, // Enable HTML content in tooltips
+        theme: 'light',
+        animation: 'scale',
+        arrow: true,
+        delay: [index * 100, 100], // Staggered delay for tooltips
+      });
     });
   });
 </script>
+
+
 
 
 

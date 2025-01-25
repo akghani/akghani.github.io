@@ -53,6 +53,7 @@ website:
         menu:  # Dropdown menu for Projects
           - text: Fairplay
             href: projects/fairplay/index.qmd
+            #icon: <a href="https://www.flaticon.com/free-icons/soccer" title="soccer icons">Soccer icons created by Freepik - Flaticon</a>
           - text: Rotterdam Gold
             href: projects/rotterdamgold/index.qmd
       - text: Resume

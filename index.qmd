@@ -1,6 +1,6 @@
 ---
 title: "Abdelkarim el Ghani<br/>"
-subtitle: "Data Analyst | Neuroscientist<br/><br/>"
+subtitle: "Data Analyst | Neuroscientist<br/>"
 format: html
 #css: theme.scss
 toc: true
