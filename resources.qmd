@@ -37,4 +37,9 @@ format: html
 ### For Translating md files
 
 -   [frank blog](https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/){target="_blank"}
+
+
+### For pretty background
+
+-   [Pexels](https://www.pexels.com/photo/white-painted-wall-1939485/){target="_blank"}
 :::

@@ -40,8 +40,6 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<script src="site_libs/quarto-contrib/nutshell-1.0.7/nutshell.js"></script>
-<script src="site_libs/quarto-contrib/nutshell-1.0.7/nutshell_options.js"></script>
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -174,22 +172,80 @@ ul.task-list li input[type="checkbox"] {
     </div>
 <!-- main -->
 <div class="quarto-about-jolla">
-  <img src="images/profile-pic-cartoon.png" class="about-image
+  <img src="images/profile_pic_akg.jpg" class="about-image
   round " style="height: 10rem; width: 10rem;">
  <main class="content" id="quarto-document-content">
-<script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+<!-- Include Tippy.js and Popper.js -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 <div id="hero-heading">
-<p><strong>Abdelkarim el Ghani</strong> is a Research Assistant at the <a href="https://www.eur.nl/" target="_blank"><strong>Erasmus University Rotterdam</strong></a>. His expertise lies in:</p>
-<p><a href="#" title="Turning raw data into meaningful insights through advanced statistical methods.">:Statistical data analysis</a><br>
-<a href="#" title="Exploring the brain's complexity and the factors that shape human behavior.">:Neuroscience</a><br>
-<a href="#" title="Promoting transparency, accessibility, and collaboration in research.">:Open science practices</a></p>
-<p>Driven by a passion for data-driven problem-solving, Abdelkarim’s work involves:</p>
-<p><a href="#" title="Utilizing tools like R, Python, and Quarto for reproducible workflows.">:Programming</a><br>
-<a href="#" title="Transforming numbers into compelling visual stories.">:Data visualization</a><br>
-<a href="#" title="Ensuring findings can be verified and built upon by others.">:Reproducible research</a></p>
-<p>Click on any term to learn more about what it means in my day-to-day work!</p>
+  <p>
+    <strong>Abdelkarim el Ghani</strong> is a Research Assistant at the
+    <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
+    His expertise lies in:
+  </p>
+  <ul>
+    <li>
+      <span data-template="data-analysis">Statistical data analysis</span>
+    </li>
+    <li>
+      <span data-template="neuroscience">Neuroscience</span>
+    </li>
+    <li>
+      <span data-template="open-science">Open science practices</span>
+    </li>
+  </ul>
+  <p>Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:</p>
+  <ul>
+    <li>
+      <span data-template="programming">Programming</span>
+    </li>
+    <li>
+      <span data-template="data-visualization">Data visualization</span>
+    </li>
+    <li>
+      <span data-template="reproducible-research">Reproducible research</span>
+    </li>
+  </ul>
+  <p>Hover over any term to learn more about what it means in my day-to-day work!</p>
 </div>
-<p><a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry &amp; Co.</a></p>
+<!-- Tooltip Content (Hidden) -->
+<div style="display: none;">
+  <div id="data-analysis">
+    Turning raw data into meaningful insights through advanced statistical methods.
+  </div>
+  <div id="neuroscience">
+    Exploring the brain's complexity and the factors that shape human behavior.
+  </div>
+  <div id="open-science">
+    Promoting transparency, accessibility, and collaboration in research.
+  </div>
+  <div id="programming">
+    Utilizing tools like R, Python, and Quarto for reproducible workflows.
+  </div>
+  <div id="data-visualization">
+    Transforming numbers into compelling visual stories.
+  </div>
+  <div id="reproducible-research">
+    Ensuring findings can be verified and built upon by others.
+  </div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    tippy('[data-template]', {
+      content(reference) {
+        const id = reference.getAttribute('data-template');
+        const template = document.getElementById(id);
+        return template ? template.innerHTML : '';
+      },
+      allowHTML: true, // Enable HTML content in tooltips
+      theme: 'light',
+      animation: 'scale',
+      arrow: true,
+    });
+  });
+</script>
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main>  

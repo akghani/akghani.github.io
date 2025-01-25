@@ -3,38 +3,120 @@ title: ""
 subtitle: ""
 about: 
   template: jolla
-  image: "images/profile-pic-cartoon.png"
+  image: "images/profile_pic_akg.jpg"
   image-shape: round
   image-width: 10rem
 format:
   html: 
     linestretch: 1.7
     page-layout: article
-filters: 
-  - nutshell
 ---
 
+
+
 ```{=html}
-<script src='https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js'></script>
+
+<!-- Include Tippy.js and Popper.js -->
+<link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+<script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
 ```
 
-:::{#hero-heading}
-**Abdelkarim el Ghani** is a Research Assistant at the [**Erasmus University Rotterdam**](https://www.eur.nl/){target="_blank"}. His expertise lies in:
+```{=html}
+<div id="hero-heading">
+  <p>
+    <strong>Abdelkarim el Ghani</strong> is a Research Assistant at the
+    <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
+    His expertise lies in:
+  </p>
 
-[:Statistical data analysis](# "Turning raw data into meaningful insights through advanced statistical methods.")  
-[:Neuroscience](# "Exploring the brain's complexity and the factors that shape human behavior.")  
-[:Open science practices](# "Promoting transparency, accessibility, and collaboration in research.")
+  <ul>
+    <li>
+      <span data-template="data-analysis">Statistical data analysis</span>
+    </li>
+    <li>
+      <span data-template="neuroscience">Neuroscience</span>
+    </li>
+    <li>
+      <span data-template="open-science">Open science practices</span>
+    </li>
+  </ul>
 
-Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:
+  <p>Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:</p>
 
-[:Programming](# "Utilizing tools like R, Python, and Quarto for reproducible workflows.")  
-[:Data visualization](# "Transforming numbers into compelling visual stories.")  
-[:Reproducible research](# "Ensuring findings can be verified and built upon by others.")
+  <ul>
+    <li>
+      <span data-template="programming">Programming</span>
+    </li>
+    <li>
+      <span data-template="data-visualization">Data visualization</span>
+    </li>
+    <li>
+      <span data-template="reproducible-research">Reproducible research</span>
+    </li>
+  </ul>
 
-Click on any term to learn more about what it means in my day-to-day work!
-:::
+  <p>Hover over any term to learn more about what it means in my day-to-day work!</p>
+</div>
+
+<!-- Tooltip Content (Hidden) -->
+<div style="display: none;">
+  <div id="data-analysis">
+    Turning raw data into meaningful insights through advanced statistical methods.
+  </div>
+  <div id="neuroscience">
+    Exploring the brain's complexity and the factors that shape human behavior.
+  </div>
+  <div id="open-science">
+    Promoting transparency, accessibility, and collaboration in research.
+  </div>
+  <div id="programming">
+    Utilizing tools like R, Python, and Quarto for reproducible workflows.
+  </div>
+  <div id="data-visualization">
+    Transforming numbers into compelling visual stories.
+  </div>
+  <div id="reproducible-research">
+    Ensuring findings can be verified and built upon by others.
+  </div>
+</div>
+
+```
 
 
-<a href="https://www.pexels.com/photo/white-painted-wall-1939485/" target="_blank" class="small-link">Photo by Henry & Co.</a>
+```{=html}
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    tippy('[data-template]', {
+      content(reference) {
+        const id = reference.getAttribute('data-template');
+        const template = document.getElementById(id);
+        return template ? template.innerHTML : '';
+      },
+      allowHTML: true, // Enable HTML content in tooltips
+      theme: 'light',
+      animation: 'scale',
+      arrow: true,
+    });
+  });
+</script>
+
+
+
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

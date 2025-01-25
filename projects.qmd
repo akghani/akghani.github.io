@@ -9,7 +9,6 @@ listing:
   sort-ui: true
   filter-ui: true
 #  fields: [title, description, categories]
-  
 page-layout: full
 ---
 
