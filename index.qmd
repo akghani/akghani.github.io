@@ -1,12 +1,7 @@
 ---
-title: "Abdelkarim el Ghani<br/>"
-subtitle: "Data Analyst | Neuroscientist<br/>"
+title: ""
+subtitle: ""
 format: html
-#css: theme.scss
-toc: true
-#title-block-banner: "images/block-banner.jpeg"
-#title-block-banner-color: "white"
-#title-block-categories: true
 #page-layout: article
 header-includes: >
   <link rel="stylesheet" href="_assets/index.css">
@@ -15,14 +10,24 @@ resources:
 ---
 
 
+```{=html}
+<div class="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h1>Abdelkarim el Ghani</h1>
+    <h2>Data Analyst | Neuroscientist</h2>
+    <p>Welcome to my portfolio! Explore my projects and skills.</p>
+    <a href="projects.qmd" class="hero-button">Explore Projects</a>
+    <a href="about.qmd" class="hero-button hero-button-secondary">Learn More About Me</a>
+  </div>
+</div>
 
 
 
-::: {.g-col-12 .g-col-md-6}
-**Welcome to My Portfolio!**\ 
-I'm a statistical data analyst at the Erasmus University with a keen interest in neuroscience and pharmacology. 
 
-My work focuses on data wrangling, analysis, visualization, and creating clear, impactful reports using tools like Quarto.
 
-Explore my [Projects](projects.qmd) to see detailed examples of my work or visit the [About Me](about.qmd) page to learn more about my background and skills.
-:::
+
+```
+
+
+
