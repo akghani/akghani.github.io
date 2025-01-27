@@ -2,32 +2,112 @@
 title: ""
 subtitle: ""
 format: html
-#page-layout: article
-header-includes: >
-  <link rel="stylesheet" href="_assets/index.css">
-resources:
-  - _assets/index.css
+page-layout: custom
+#header-includes: >
+#  <link rel="stylesheet" href="_assets/index.css">
+#resources:
+#  - _assets/index.css
 ---
 
 
+
+
+
 ```{=html}
+<!-- Include the CSS -->
+<style>
+  :root {
+    --vh: 100vh; /* Fallback for unsupported browsers */
+  }
+
+  /* Full-page Hero Section */
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100); /* Dynamic height using JS for mobile */
+    background: url('../images/block-banner.gif') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Transparent Container for Text */
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle transparency */
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white; /* Ensure visibility on the GIF */
+  }
+
+  /* Typography */
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    .hero-content h2 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content h2 {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- JavaScript to Fix Mobile Viewport Height -->
+<script>
+  function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVH();
+  window.addEventListener('resize', setVH);
+</script>
+
+<!-- Hero Section -->
 <div class="hero">
-  <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Abdelkarim el Ghani</h1>
-    <h2>Data Analyst | Neuroscientist</h2>
-    <p>Welcome to my portfolio! Explore my projects and skills.</p>
-    <a href="projects.qmd" class="hero-button">Explore Projects</a>
-    <a href="about.qmd" class="hero-button hero-button-secondary">Learn More About Me</a>
+    <h2>Statistical Data Analyst | Neuroscientist | Pharmacology Enthusiast</h2>
+    <div>
+      <a href="projects.qmd" class="btn btn-primary">Explore Projects</a>
+      <a href="about.qmd" class="btn btn-secondary">About Me</a>
+    </div>
   </div>
 </div>
 
 
 
-
-
-
 ```
+
+
+
+
+
+
+[Code The Web](https://codetheweb.blog/fullscreen-image-hero/){tab="_blank"}
+
 
 
 

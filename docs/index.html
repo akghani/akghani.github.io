@@ -70,13 +70,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<!-- academic icons -->
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-
-<!-- fontawesome icons -->
-<script src="https://kit.fontawesome.com/1392a7030f.js" crossorigin="anonymous"></script>
-<link rel="stylesheet" href="_assets/index.css">
 
 
 <link rel="stylesheet" href="_assets/panelset-extras.css">
@@ -165,36 +158,104 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content" id="quarto-document-content">
 
 
 
 
+<!-- Include the CSS -->
+<style>
+  :root {
+    --vh: 100vh; /* Fallback for unsupported browsers */
+  }
+
+  /* Full-page Hero Section */
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: calc(var(--vh, 1vh) * 100); /* Dynamic height using JS for mobile */
+    background: url('../images/block-banner.gif') no-repeat center center / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+
+  /* Transparent Container for Text */
+  .hero-content {
+    background-color: rgba(0, 0, 0, 0.2); /* Subtle transparency */
+    padding: 1.5rem 2rem;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white; /* Ensure visibility on the GIF */
+  }
+
+  /* Typography */
+  .hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2.5rem;
+    }
+    .hero-content h2 {
+      font-size: 1rem;
+    }
+  }
+
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content h2 {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+<!-- JavaScript to Fix Mobile Viewport Height -->
+<script>
+  function setVH() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  setVH();
+  window.addEventListener('resize', setVH);
+</script>
+
+<!-- Hero Section -->
 <div class="hero">
-  <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Abdelkarim el Ghani</h1>
-    <h2 class="anchored">Data Analyst | Neuroscientist</h2>
-    <p>Welcome to my portfolio! Explore my projects and skills.</p>
-    <a href="./projects.html" class="hero-button">Explore Projects</a>
-    <a href="./about.html" class="hero-button hero-button-secondary">Learn More About Me</a>
+    <h2>Statistical Data Analyst | Neuroscientist | Pharmacology Enthusiast</h2>
+    <div>
+      <a href="./projects.html" class="btn btn-primary">Explore Projects</a>
+      <a href="./about.html" class="btn btn-secondary">About Me</a>
+    </div>
   </div>
 </div>
 
 
 
+<p><a href="https://codetheweb.blog/fullscreen-image-hero/" data-tab="_blank">Code The Web</a></p>
 
 
 
 
-
-
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
