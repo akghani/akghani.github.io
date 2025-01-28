@@ -2,14 +2,8 @@
 title: ""
 subtitle: ""
 format: html
-page-layout: custom
-
+page-layout: full
 ---
-
-
-
-
-
 
 
 ```{=html}
@@ -140,13 +134,8 @@ page-layout: custom
 
 
 
+
 ```
-
-
-
-
-
-
 
 
 

@@ -40,6 +40,8 @@ format: html
 
 -   [Mickaël CANOUIL](https://mickael.canouil.fr/){target="_blank"}
 
+-   [HackMD](https://hackmd.io/@preprocess/r1vSpTBTT?utm_source=preview-mode&utm_medium=rec){target="_blank"}
+
 ### For Translating md files
 
 -   [frank blog](https://edenian-prince.github.io/blog/posts/2024-08-21-translate-md-files/){target="_blank"}

@@ -20,7 +20,7 @@ title-meta: "Abdelkarim el Ghani"
 
 website:
   title: "Abdelkarim el Ghani"
-  favicon: "/images/favicon-akg.png"  # Favicon image
+  favicon: /images/favicon-akg.png  # Favicon image
   image: images/logo-akg.png
   open-graph:
     image: images/logo-akg.png
@@ -40,7 +40,7 @@ website:
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: images/logo-akg.png  # Navbar logo
+    logo: /images/logo-akg.png  # Navbar logo
     left:
       - text: Home
         href: index.qmd
@@ -84,7 +84,7 @@ website:
 
 format:
   html:
-    fontsize: 20px  # Set font size
+    fontsize: 1.1em  # Set font size
     theme:
       light:
         - zephyr
@@ -101,10 +101,6 @@ format:
     highlight-style:
       light: _assets/syntax-elm-light.theme
       dark: _assets/syntax-elm-dark.theme
-#    theme: 
-#      - cosmo
-#      - theme.scss
-  #  css: theme.scss  # Link custom CSS
     toc: false  # Disable table of contents
     smooth-scroll: true
     page-layout: article
