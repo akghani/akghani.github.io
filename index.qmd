@@ -3,59 +3,110 @@ title: ""
 subtitle: ""
 format: html
 page-layout: custom
-#header-includes: >
-#  <link rel="stylesheet" href="_assets/index.css">
-#resources:
-#  - _assets/index.css
+
 ---
 
 
 
 
 
-```{=html}
-<!-- Include the CSS -->
-<style>
-  :root {
-    --vh: 100vh; /* Fallback for unsupported browsers */
-  }
 
-  /* Full-page Hero Section */
+
+```{=html}
+<style>
+  /* Fullscreen Hero Section */
   .hero {
     position: relative;
     width: 100vw;
-    height: calc(var(--vh, 1vh) * 100); /* Dynamic height using JS for mobile */
-    background: url('../images/block-banner.gif') no-repeat center center / cover;
+    height: 100vh;
+    background: url('/images/block-banner.gif') no-repeat center center / cover;
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
+    justify-content: center;
+    overflow: hidden;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    text-align: center;
+    color: white;
   }
 
-  /* Transparent Container for Text */
+  /* Overlay for readability */
+  .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+  }
+
+  /* Content inside hero */
   .hero-content {
-    background-color: rgba(0, 0, 0, 0.2); /* Subtle transparency */
-    padding: 1.5rem 2rem;
-    border-radius: 10px;
+    position: relative;
+    z-index: 2;
     max-width: 800px;
-    color: white; /* Ensure visibility on the GIF */
+    padding: 2rem;
+    color: white;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
   }
 
-  /* Typography */
   .hero-content h1 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-size: 3.5rem;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
   }
 
   .hero-content h2 {
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-top: 1rem;
+    animation: fadeIn 2.5s ease-in-out forwards;
+    opacity: 0;
   }
 
-  /* Responsive Adjustments */
+  .hero-content .btn-container {
+    margin-top: 2rem;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 0;
+  }
+
+  .hero-content .btn {
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+  }
+
+  .hero-content .btn:hover {
+    background-color: #0056b3;
+  }
+
+  .hero-content .btn-secondary {
+    background-color: #28a745;
+  }
+
+  .hero-content .btn-secondary:hover {
+    background-color: #1e7e34;
+  }
+
+  /* Animation Keyframes */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* Responsive Design */
   @media (max-width: 768px) {
     .hero-content h1 {
       font-size: 2.5rem;
@@ -75,23 +126,13 @@ page-layout: custom
   }
 </style>
 
-<!-- JavaScript to Fix Mobile Viewport Height -->
-<script>
-  function setVH() {
-    let vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
-  }
-  setVH();
-  window.addEventListener('resize', setVH);
-</script>
-
-<!-- Hero Section -->
 <div class="hero">
+  <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Abdelkarim el Ghani</h1>
     <h2>Statistical Data Analyst | Neuroscientist | Pharmacology Enthusiast</h2>
-    <div>
-      <a href="projects.qmd" class="btn btn-primary">Explore Projects</a>
+    <div class="btn-container">
+      <a href="projects.qmd" class="btn">Explore Projects</a>
       <a href="about.qmd" class="btn btn-secondary">About Me</a>
     </div>
   </div>
@@ -106,7 +147,7 @@ page-layout: custom
 
 
 
-[Code The Web](https://codetheweb.blog/fullscreen-image-hero/){tab="_blank"}
+
 
 
 
