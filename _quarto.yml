@@ -53,13 +53,11 @@ website:
         menu:  # Dropdown menu for Projects
           - text: Fairplay
             href: projects/fairplay/index.qmd
-            #icon: <a href="https://www.flaticon.com/free-icons/soccer" title="soccer icons">Soccer icons created by Freepik - Flaticon</a>
           - text: Rotterdam Gold
             href: projects/rotterdamgold/index.qmd
       - text: Resume
         href: resume.qmd
         icon: file-earmark-text-fill
-
     right: 
       - text: Resources
         href: resources.qmd
@@ -69,6 +67,14 @@ website:
       - icon: github
         href: https://github.com
         target: _blank
+        
+  sidebar: 
+    - id: projects
+      title: "Projects"
+      style: docked
+      contents: 
+        - projects/fairplay/index.qmd
+        - projects/rotterdamgold/index.qmd
 
   page-footer:
     background: light
@@ -85,28 +91,38 @@ website:
 format:
   html:
     fontsize: 1.1em  # Set font size
-    theme:
-      light:
-        - zephyr
-        - _assets/styles-elm-light.scss
-        - _assets/styles-elm-base.scss
-        - _assets/colors.scss
-      dark:
-        - _assets/zephyr-dark.scss
-        - _assets/styles-elm-dark.scss
-        - _assets/styles-elm-base.scss
-        - _assets/colors.scss
-    css:
-      - _assets/panelset-extras.css
-    highlight-style:
-      light: _assets/syntax-elm-light.theme
-      dark: _assets/syntax-elm-dark.theme
+    theme: materia
+    css: styles.css
+    monofont:	"Fira Mono"
+    monobackgroundcolor: "#f7f7f7"
+    code-tools: false
+    code-block-border-left: true
+    code-link: true
+    code-fold: show
+#    theme:
+#      light:
+#        - zephyr
+#        - _assets/styles-elm-light.scss
+#        - _assets/styles-elm-base.scss
+#        - _assets/colors.scss
+#      dark:
+#        - _assets/zephyr-dark.scss
+#        - _assets/styles-elm-dark.scss
+#        - _assets/styles-elm-base.scss
+#        - _assets/colors.scss
+#    css:
+#      - _assets/panelset-extras.css
+#    highlight-style:
+#      light: _assets/syntax-elm-light.theme
+#      dark: _assets/syntax-elm-dark.theme
     toc: false  # Disable table of contents
     smooth-scroll: true
-    page-layout: article
-    anchor-sections: true
+#    page-layout: article
+#    anchor-sections: true
 #    include-in-header: 
 #      - file: "_includes/header.html"
+#  pdf:
+#    documentclass: scrreprt
 
 lightbox: auto
 

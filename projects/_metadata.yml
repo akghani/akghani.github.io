@@ -5,5 +5,38 @@
 freeze: auto
 
 # Enable banner style title blocks
-
 title-block-banner: "images/block-banner.gif"
+
+# Enable CC licence appendix
+#license: "CC BY"
+
+# Default fields for citation
+#citation: true
+
+# Default author:
+author:
+  - name: Abdelkarim el Ghani
+
+# Default for table of contents
+toc: true
+toc-title: Contents
+toc-location: left
+
+# Options for outputs
+fig-format: svg
+fig-align: "center"
+out-width: "100%"
+
+# Links
+link-external-icon: false # due problem/issue with code-link: true
+link-external-newwindow: true
+
+# Default knitr options
+execute:
+  echo: true
+  message: false
+  warning: false
+  freeze: true  # never re-render during project render
+
+
+
