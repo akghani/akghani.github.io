@@ -1,115 +1,129 @@
-/* Fullscreen Hero Section */
-.hero {
-  position: relative;
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
+/* Ensure the background GIF spans the full page */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    background-image: url('../images/block-banner.gif'); /* Make sure path is correct */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
 }
 
-/* GIF Background */
-.hero img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures the image covers the entire area */
-  z-index: -1;
-}
-
-/* Dark Overlay */
+/* Dark Overlay for Readability */
 .hero-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Dark overlay for visibility */
-  z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0;
 }
 
-/* Hero Content */
+/* Center Content */
 .hero-content {
-  position: relative;
-  z-index: 2;
-  color: white;
-  text-align: center;
-  padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* Typography */
+/* Title */
 .hero-content h1 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
 }
 
+/* Subtitle */
 .hero-content h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
 }
 
-.hero-content p {
-  font-size: 1.2rem;
-  margin-bottom: 2rem;
+/* Intro text */
+.hero-content h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    animation: fadeIn 2.5s ease-in-out forwards;
+    opacity: 0;
 }
 
-/* Buttons */
-.hero-content .btn {
-  display: inline-block;
-  padding: 0.75rem 1.5rem;
-  color: white;
-  border-radius: 5px;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  margin: 0.5rem;
-  transition: background-color 0.3s ease;
+/* Button container */
+.btn-container {
+    margin-top: 2rem;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 0;
 }
 
-.hero-content .btn-primary {
-  background-color: #007bff;
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
 }
 
-.hero-content .btn-primary:hover {
-  background-color: #0056b3;
+.btn:hover {
+    background-color: #0056b3;
 }
 
-.hero-content .btn-secondary {
-  background-color: #28a745;
+.btn-secondary {
+    background-color: #28a745;
 }
 
-.hero-content .btn-secondary:hover {
-  background-color: #1e7e34;
+.btn-secondary:hover {
+    background-color: #1e7e34;
 }
 
-/* Responsive Adjustments */
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
 @media (max-width: 768px) {
-  .hero-content h1 {
-    font-size: 2.5rem;
-  }
-  .hero-content h2 {
-    font-size: 1.5rem;
-  }
-  .hero-content p {
-    font-size: 1rem;
-  }
-}
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 
-@media (max-width: 576px) {
-  .hero-content h1 {
-    font-size: 2rem;
-  }
-  .hero-content h2 {
-    font-size: 1.2rem;
-  }
-  .hero-content p {
-    font-size: 0.9rem;
-  }
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 1rem;
+    }
 }

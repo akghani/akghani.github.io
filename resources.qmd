@@ -1,6 +1,7 @@
 ---
-title: "Resources"
+title: ""
 format: html
+title-block-banner: "images/block-banner.gif"
 ---
 
 ::: {.callout-note title="Resources"}
@@ -18,7 +19,7 @@ format: html
 
 -   [Markup Languages and Reproducible Programming in Statistics](https://www.gerkovink.com/markup/){target="_blank"}
 
--   [Andrew Heis](https://www.andrewheiss.com/){target="_blank"}
+-   [Andrew Heiss](https://www.andrewheiss.com/){target="_blank"}
 
 -   [Marvin Schmitt](https://marvinschmitt.com/){target="_blank"}
 
@@ -41,6 +42,8 @@ format: html
 -   [Mickaël CANOUIL](https://mickael.canouil.fr/){target="_blank"}
 
 -   [HackMD](https://hackmd.io/@preprocess/r1vSpTBTT?utm_source=preview-mode&utm_medium=rec){target="_blank"}
+
+-   [The SDOH & Place Community Toolkit](https://toolkit.sdohplace.org/index.html){target="_blank"}
 
 ### For Translating md files
 

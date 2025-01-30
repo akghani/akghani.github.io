@@ -2,180 +2,23 @@
 title: ""
 subtitle: ""
 page-layout: custom
+section-divs: false
+toc: false
+css: _assets/index.css
 ---
 
-```{=html}
-<!-- Hero Section -->
-<div class="hero">
-  <!-- Background Image -->
-  <div class="background-image"></div>
+::: {.background-image} :::
 
-  <!-- Overlay -->
-  <div class="hero-overlay"></div>
+::: {.hero-overlay} :::
 
-  <!-- Hero Content -->
-  <div class="hero-content">
-    <h1>Abdelkarim el Ghani</h1>
-    <h2>Statistical Data Analyst | Neuroscientist | Pharmacology Enthusiast</h2>
-    <div class="btn-container">
-      <a href="projects.qmd" class="btn">Explore Projects</a>
-      <a href="about.qmd" class="btn btn-secondary">About Me</a>
-    </div>
-  </div>
-</div>
+::: {.hero-content}
+# Abdelkarim el Ghani
+## Statistical Data Analyst | Neuroscientist
+### Hi there, welcome to my portfolio.  
+### Feel free to explore my projects and learn more about me!
 
-<style>
-  /* Fullscreen Hero Section */
-  .hero {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: white;
-  }
-
-  /* Background Image */
-  .background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('images/block-banner.gif'); /* Ensure correct path */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: 0;
-  }
-
-  /* Overlay for readability */
-  .hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark overlay */
-    z-index: 1;
-  }
-
-  /* Hero Content - Positioned Above Everything */
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    max-width: 800px;
-    padding: 2rem;
-    color: white;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
-  }
-
-  .hero-content h1 {
-    font-size: 3.5rem;
-    animation: fadeIn 1.5s ease-in-out forwards;
-    opacity: 0;
-  }
-
-  .hero-content h2 {
-    font-size: 1.5rem;
-    margin-top: 1rem;
-    animation: fadeIn 2.5s ease-in-out forwards;
-    opacity: 0;
-  }
-
-  .hero-content .btn-container {
-    margin-top: 2rem;
-    animation: fadeIn 3s ease-in-out forwards;
-    opacity: 0;
-  }
-
-  .hero-content .btn {
-    padding: 0.8rem 1.5rem;
-    margin: 0.5rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    text-decoration: none;
-    border-radius: 5px;
-    color: white;
-    background-color: #007bff;
-    transition: background-color 0.3s ease;
-  }
-
-  .hero-content .btn:hover {
-    background-color: #0056b3;
-  }
-
-  .hero-content .btn-secondary {
-    background-color: #28a745;
-  }
-
-  .hero-content .btn-secondary:hover {
-    background-color: #1e7e34;
-  }
-
-  /* Animation Keyframes */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero {
-        height: auto;
-        padding: 4rem 1rem;
-    }
-
-    .hero-content {
-        padding: 1rem;
-        text-align: center;
-    }
-
-    .hero-content h1 {
-        font-size: 2.2rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1.2rem;
-    }
-
-    .btn-container {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .hero-content .btn {
-        width: 100%;
-        padding: 1rem;
-        margin: 0.5rem 0;
-    }
-  }
-
-  @media (max-width: 576px) {
-    .hero {
-        height: auto;
-        padding: 3rem 1rem;
-    }
-
-    .hero-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .hero-content h2 {
-        font-size: 1rem;
-    }
-  }
-</style>
-```
-
+::: {.btn-container}
+[Explore Projects](projects.qmd){.btn}  
+[About Me](about.qmd){.btn .btn-secondary}
+:::
+:::

@@ -6,6 +6,8 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+  resources:
+    - images/  
     
   preview:
     port: 22227
@@ -93,6 +95,9 @@ format:
     fontsize: 1.1em  # Set font size
     theme: materia
     css: styles.css
+    title-block-banner: "images/block-banner.gif"
+    title-block-style: plain
+    title-block-categories: false
     monofont:	"Fira Mono"
     monobackgroundcolor: "#f7f7f7"
     code-tools: false

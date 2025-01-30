@@ -1,0 +1,129 @@
+/* Ensure the background GIF spans the full page */
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;  /* Full width */
+    height: 100vh; /* Full height */
+    background-image: url('../images/block-banner.gif'); /* Make sure path is correct */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* Dark Overlay for Readability */
+.hero-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 0;
+}
+
+/* Center Content */
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Perfect center alignment */
+    z-index: 2;
+    max-width: 800px;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Title */
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Subtitle */
+.hero-content h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    animation: fadeIn 2s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Intro text */
+.hero-content h3 {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    animation: fadeIn 2.5s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Button container */
+.btn-container {
+    margin-top: 2rem;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 0;
+}
+
+/* Button styles */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    margin: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #007bff;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn-secondary {
+    background-color: #28a745;
+}
+
+.btn-secondary:hover {
+    background-color: #1e7e34;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+
+    .hero-content h3 {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 1rem;
+    }
+}
