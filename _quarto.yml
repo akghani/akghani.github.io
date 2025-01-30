@@ -70,7 +70,7 @@ website:
         
   sidebar: 
     - id: projects
-      title: "Projects"
+      title: Projects
       style: docked
       contents: 
         - projects/fairplay/index.qmd
@@ -119,8 +119,9 @@ format:
     smooth-scroll: true
 #    page-layout: article
 #    anchor-sections: true
-#    include-in-header: 
-#      - file: "_includes/header.html"
+    include-in-header: 
+      text: |
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 #  pdf:
 #    documentclass: scrreprt
 
