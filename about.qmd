@@ -5,7 +5,7 @@ about:
   template: jolla
   image: "images/profile-pic-bw.png"
   image-shape: round
-  image-width: 13rem
+  image-width: 15rem
 format:
   html: 
     page-layout: article

@@ -1,11 +1,13 @@
-/* Ensure the background GIF spans the full page */
-.background-image {
+/* _assets/index.css */
+
+/* Increase specificity by targeting .background-image within the body */
+body .background-image {
     position: fixed;
     top: 0;
     left: 0;
     width: 100vw;  /* Full width */
     height: 100vh; /* Full height */
-    background-image: url('../images/block-banner.gif'); /* Make sure path is correct */
+    background-image: url('..images/block-banner.gif'); /* Absolute path */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -54,7 +56,7 @@
     opacity: 0;
 }
 
-/* Intro text */
+/* Intro Text */
 .hero-content h3 {
     font-size: 1.3rem;
     font-weight: normal;
@@ -63,14 +65,14 @@
     opacity: 0;
 }
 
-/* Button container */
+/* Button Container */
 .btn-container {
     margin-top: 2rem;
     animation: fadeIn 3s ease-in-out forwards;
     opacity: 0;
 }
 
-/* Button styles */
+/* Button Styles */
 .btn {
     display: inline-block;
     padding: 0.8rem 1.5rem;
