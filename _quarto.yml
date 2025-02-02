@@ -52,6 +52,7 @@ website:
         href: about.qmd
         icon: person-arms-up
       - text: Projects
+        href: projects.qmd
         icon: graph-up
         menu:  # Dropdown menu for Projects
           - text: Fairplay
