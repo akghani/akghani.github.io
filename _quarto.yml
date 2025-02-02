@@ -28,8 +28,8 @@ website:
   open-graph:
     image: /images/logo-akg.png
 #    image-alt: |
-    image-width: 500
-    image-height: 500
+    image-width: 600
+    image-height: 600
       
       
   search:
@@ -94,7 +94,7 @@ website:
 format:
   html:
     fontsize: 1.1em  # Set font size
-    theme: materia
+#    theme: materia
 #    css: styles.css
     title-block-banner: ""
     title-block-style: plain
@@ -105,29 +105,29 @@ format:
     code-block-border-left: true
     code-link: true
     code-fold: show
-#    theme:
-#      light:
-#        - zephyr
-#        - _assets/styles-elm-light.scss
-#        - _assets/styles-elm-base.scss
-#        - _assets/colors.scss
-#      dark:
-#        - _assets/zephyr-dark.scss
-#        - _assets/styles-elm-dark.scss
-#        - _assets/styles-elm-base.scss
-#        - _assets/colors.scss
-#    css:
-#      - _assets/panelset-extras.css
-#    highlight-style:
-#      light: _assets/syntax-elm-light.theme
-#      dark: _assets/syntax-elm-dark.theme
-#    toc: false  # Disable table of contents
+    theme:
+      light:
+        - zephyr
+        - _assets/styles-elm-light.scss
+        - _assets/styles-elm-base.scss
+        - _assets/colors.scss
+      dark:
+        - _assets/zephyr-dark.scss
+        - _assets/styles-elm-dark.scss
+        - _assets/styles-elm-base.scss
+        - _assets/colors.scss
+    css:
+      - _assets/panelset-extras.css
+    highlight-style:
+      light: _assets/syntax-elm-light.theme
+      dark: _assets/syntax-elm-dark.theme
+    toc: false  # Disable table of contents
     smooth-scroll: true
 #    page-layout: article
-#    anchor-sections: true
-#    include-in-header: 
-#      text: |
-#        <meta name="viewport" content="width=device-width, initial-scale=1">
+    anchor-sections: true
+    include-in-header: 
+      text: |
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 #  pdf:
 #    documentclass: scrreprt
 

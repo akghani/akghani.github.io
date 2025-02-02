@@ -1,29 +1,27 @@
 ---
 title: ""
 subtitle: ""
+toc: false
 page-layout: custom
 section-divs: false
-toc: false
-css: _assets/index.css  # Link to the page-specific CSS
+format: 
+  html:
+    include-in-header: 
+      text: |
+        <link rel="stylesheet" href="_assets/index.css">
+
 ---
 
-::: {.background-image}
-:::
-
-::: {.hero-overlay}
-:::
-
+::: {.hero}
 ::: {.hero-content}
 # Abdelkarim el Ghani
-
 ## Statistical Data Analyst | Neuroscientist
-
-### Hi there, welcome to my portfolio.
-
-### Feel free to explore my projects and learn more about me!
+Hi there, welcome to my portfolio.  
+Feel free to explore my projects and learn more about me!
 
 ::: {.btn-container}
 [Explore Projects](projects/index.qmd){.btn}  
 [About Me](about.qmd){.btn .btn-secondary}
+:::
 :::
 :::

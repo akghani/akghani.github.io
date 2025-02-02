@@ -2,7 +2,6 @@
 title: ""
 format: html
 toc: false
-
 ---
 
 
@@ -24,19 +23,34 @@ toc: false
   <h2>Education</h2>
   <div class="card">
     <h3>MSc in Applied Neuroscience in Human Development</h3>
-    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2018 - 2020</em></p>
+    <p class="edu-info">
+      <strong>
+        <img class="leiden-logo" src="/images/leiden-univ.png" alt="Leiden University logo">
+        Leiden University
+      </strong> | Leiden, Netherlands | <em>2018 - 2020</em>
+    </p>
     <p>Focus on neurodevelopmental studies and statistical modeling.</p>
   </div>
 
   <div class="card">
     <h3>Premaster in Education and Child Studies</h3>
-    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2016 - 2017</em></p>
+    <p class="edu-info">
+      <strong>
+        <img class="leiden-logo" src="/images/leiden-univ.png" alt="Leiden University logo">
+        Leiden University
+      </strong> | Leiden, Netherlands | <em>2016 - 2017</em>
+    </p>
     <p>Prepared for graduate-level research in child development and education.</p>
   </div>
 
   <div class="card">
     <h3>BSc in Bio-Pharmaceutical Sciences</h3>
-    <p><strong>Leiden University</strong> | Leiden, Netherlands | <em>2009 - 2016</em></p>
+    <p class="edu-info">
+      <strong>
+        <img class="leiden-logo" src="/images/leiden-univ.png" alt="Leiden University logo">
+        Leiden University
+      </strong> | Leiden, Netherlands | <em>2009 - 2016</em>
+    </p>
     <p>Conducted independent research projects focused on pharmacology.</p>
   </div>
 </div>
@@ -115,40 +129,136 @@ toc: false
 </script>
 
 <style>
-  /* Tab Styling */
+  /* Global styling */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0 20px;
+    transition: background 0.5s;
+  }
+  
+  h2 {
+    border-bottom: 2px solid #4A90E2;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  h3 {
+    margin-top: 0;
+    color: #4A90E2;
+    transition: text-shadow 0.3s;
+  }
+  
+  h3:hover {
+    text-shadow: 2px 2px 4px rgba(74,144,226,0.6);
+  }
+  
+  /* Tab Styling with modern blue palette and smooth transitions */
   .tab {
     display: flex;
     justify-content: center;
-    margin-bottom: 20px;
+    margin: 30px 0;
   }
+  
   .tab button {
-    background-color: darkgreen;
-    color: white;
-    padding: 10px 20px;
+    background-color: #4A90E2;
+    color: #fff;
+    padding: 12px 30px;
     border: none;
+    margin: 0 5px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   }
+  
   .tab button:hover {
-    background-color: lightgreen;
+    background-color: #357ABD;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(53,122,189,0.4);
   }
+  
   .tab button.active {
-    background-color: white;
-    color: darkgreen;
-    border: 1px solid darkgreen;
+    background-color: #fff;
+    color: #4A90E2;
+    border: 2px solid #4A90E2;
+    transform: none;
   }
+  
+  /* Tab content styling */
   .tabcontent {
     display: none;
-    padding: 20px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s;
   }
+  
+  .tabcontent:hover {
+    transform: scale(1.02);
+  }
+  
+  /* Card styling for sections */
   .card {
-    background-color: #f9f9f9;
-    padding: 15px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  }
+  
+  /* Education Info: Increase font size for better balance with larger logo */
+  .edu-info {
+    font-size: 1.2em;
     margin: 10px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* Leiden University logo styling */
+  .leiden-logo {
+    height: 2em;
+    vertical-align: middle;
+    margin-right: 10px;
+    transition: transform 0.3s;
+  }
+  
+  .leiden-logo:hover {
+    transform: scale(1.2);
+  }
+  
+  /* List styling */
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .tab {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .tab button {
+      margin: 5px 0;
+      width: 90%;
+    }
   }
 </style>
+
+
+
 ```
 
 

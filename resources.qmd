@@ -1,7 +1,6 @@
 ---
 title: ""
 format: html
-title-block-banner: "images/block-banner.gif"
 ---
 
 ::: {.callout-note title="Resources"}
@@ -44,6 +43,8 @@ title-block-banner: "images/block-banner.gif"
 -   [HackMD](https://hackmd.io/@preprocess/r1vSpTBTT?utm_source=preview-mode&utm_medium=rec){target="_blank"}
 
 -   [The SDOH & Place Community Toolkit](https://toolkit.sdohplace.org/index.html){target="_blank"}
+
+-   [John C. Flournoy, PhD](https://johnflournoy.science/){target="_blank"}
 
 ### For Translating md files
 

@@ -34,10 +34,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark.min.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -67,14 +69,16 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+<link rel="stylesheet" href="_assets/panelset-extras.css">
 <meta property="og:title" content="– Abdelkarim el Ghani">
 <meta property="og:description" content="">
 <meta property="og:image" content="/images/logo-akg.png">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
-<meta property="og:image:height" content="500">
-<meta property="og:image:width" content="500">
+<meta property="og:image:height" content="600">
+<meta property="og:image:width" content="600">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -148,6 +152,7 @@ ul.task-list li input[type="checkbox"] {
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
 </div>
       </div> <!-- /container-fluid -->
     </nav>
@@ -162,37 +167,137 @@ ul.task-list li input[type="checkbox"] {
   <img src="images/profile-pic-bw.png" class="about-image
   round " style="height: 15rem; width: 15rem;">
  <main class="content" id="quarto-document-content">
-<!-- Include Tippy.js and Popper.js -->
+<!-- Include Tippy.js and Popper.js for interactive tooltips -->
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css">
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
-<!-- Additional CSS for layout and style -->
+<!-- Include Particles.js for a dynamic particle background -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<!-- Extra CSS and HTML to show that you are both a webdeveloper and a superscientist -->
 <style>
+  /* Fullscreen Particle Background Container */
+  #particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  /* Animated Gradient Background Overlay */
+  body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: linear-gradient(270deg, #f6f9fc, #e9eff5, #f6f9fc, #e9eff5);
+    background-size: 800% 800%;
+    animation: gradientAnimation 20s ease infinite;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  @keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  /* Professional Entrance for the Hero Section */
   #hero-heading {
-    text-align: left; /* Align text to the left */
+    text-align: left;
+    margin: 2rem 0;
+    animation: fadeSlide 1.5s ease-out;
+  }
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  #hero-heading p {
+    font-size: 1.3em;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+    margin-bottom: 1.2rem;
+  }
+  /* Stylish List with Subtle Bounce and Professional Icons */
+  #hero-heading ul {
+    padding-left: 1.5rem;
     margin: 1rem 0;
   }
-  #hero-heading ul {
-    padding-left: 1.5rem; /* Add indentation for bullet points */
-  }
   #hero-heading li {
-    margin-bottom: 1rem; /* Space between bullet points */
+    margin-bottom: 1rem;
+    font-weight: 500;
+    position: relative;
+    padding-left: 1.5em;
+    animation: bounceIn 0.8s ease;
   }
+  #hero-heading li:before {
+    content: '★';
+    position: absolute;
+    left: 0;
+    color: #4A90E2;
+    font-size: 1.2em;
+    animation: pulseStar 1.5s infinite;
+  }
+  @keyframes pulseStar {
+    0% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.3); opacity: 1; }
+    100% { transform: scale(1); opacity: 0.8; }
+  }
+  @keyframes bounceIn {
+    0% { transform: translateY(-10px); opacity: 0; }
+    60% { transform: translateY(5px); opacity: 1; }
+    100% { transform: translateY(0); }
+  }
+  /* Interactive Tooltip Terms */
   .tooltip-term {
-    color: #007BFF; /* Blue text for terms */
+    color: #007BFF;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
+    transition: color 0.3s, transform 0.3s;
   }
   .tooltip-term:hover {
-    color: #0056b3; /* Darker blue on hover */
+    color: #ff4081;
+    transform: scale(1.15) rotate(1deg);
+  }
+  /* Pimped-Up Profile Image with Gradient Border & Shadow */
+  .jolla-about .profile-image {
+    border: 5px solid;
+    border-image-slice: 1;
+    border-width: 5px;
+    border-image-source: linear-gradient(45deg, #4A90E2, #50b3a2);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  .jolla-about .profile-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
+  }
+  /* Digital Clock Styling */
+  #digital-clock {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4A90E2;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  /* Link Styling */
+  #hero-heading a {
+    color: #4A90E2;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  #hero-heading a:hover {
+    color: #ff4081;
   }
 </style>
+<!-- Particle Background Container -->
+<div id="particles-js"></div>
+<!-- Digital Clock Display -->
+<div id="digital-clock"></div>
 <div id="hero-heading">
   <p>
-    <strong>Abdelkarim el Ghani</strong> is a Research Assistant at the
+    <strong>Abdelkarim el Ghani</strong> is a dedicated Research Assistant at 
     <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
-    His expertise lies in:
+    With expertise spanning both advanced web development and cutting-edge scientific research, he specializes in:
   </p>
   <ul>
     <li>
@@ -205,10 +310,10 @@ ul.task-list li input[type="checkbox"] {
       <span class="tooltip-term" data-template="open-science">Open science practices</span>
     </li>
   </ul>
-  <p>Driven by a passion for data-driven problem-solving, Abdelkarim's work involves:</p>
+  <p>His work integrates sophisticated programming and state-of-the-art data visualization techniques, ensuring robust and reproducible research outcomes.</p>
   <ul>
     <li>
-      <span class="tooltip-term" data-template="programming">Programming</span>
+      <span class="tooltip-term" data-template="programming">Web development</span>
     </li>
     <li>
       <span class="tooltip-term" data-template="data-visualization">Data visualization</span>
@@ -217,30 +322,31 @@ ul.task-list li input[type="checkbox"] {
       <span class="tooltip-term" data-template="reproducible-research">Reproducible research</span>
     </li>
   </ul>
-  <p>Hover over any term to learn more about what it means in my day-to-day work!</p>
+  <p>Hover over any term to learn more about his expertise.</p>
 </div>
-<!-- Tooltip Content (Hidden) -->
+<!-- Hidden Tooltip Content -->
 <div style="display: none;">
   <div id="data-analysis">
-    Turning raw data into meaningful insights through advanced statistical methods.
+    Converting complex data into actionable insights using advanced statistical techniques.
   </div>
   <div id="neuroscience">
-    Exploring the brain's complexity and the factors that shape human behavior.
+    Investigating the brain's complexities to better understand human behavior.
   </div>
   <div id="open-science">
-    Promoting transparency, accessibility, and collaboration in research.
+    Promoting rigorous, transparent, and collaborative research practices.
   </div>
   <div id="programming">
-    Utilizing tools like R, Python, and Quarto for reproducible workflows.
+    Developing robust, responsive websites and interactive applications with modern technologies.
   </div>
   <div id="data-visualization">
-    Transforming numbers into compelling visual stories.
+    Crafting clear, impactful visualizations that translate data into meaningful narratives.
   </div>
   <div id="reproducible-research">
-    Ensuring findings can be verified and built upon by others.
+    Ensuring every result is verifiable and reproducible through systematic workflows.
   </div>
 </div>
 <script>
+  // Initialize Tippy.js for tooltip functionality
   document.addEventListener('DOMContentLoaded', function () {
     const terms = document.querySelectorAll('.tooltip-term');
     terms.forEach((term, index) => {
@@ -250,14 +356,79 @@ ul.task-list li input[type="checkbox"] {
           const template = document.getElementById(id);
           return template ? template.innerHTML : '';
         },
-        allowHTML: true, // Enable HTML content in tooltips
+        allowHTML: true,
         theme: 'light',
         animation: 'scale',
         arrow: true,
-        delay: [index * 100, 100], // Staggered delay for tooltips
+        delay: [index * 100, 100],
       });
     });
   });
+  // Initialize Particles.js for a dynamic background
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 60,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#4A90E2"
+      },
+      "shape": {
+        "type": "circle"
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false
+      },
+      "size": {
+        "value": 3,
+        "random": true
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#4A90E2",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 3,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out"
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "grab"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        "resize": true
+      }
+    },
+    "retina_detect": true
+  });
+  // Digital Clock Functionality
+  function updateClock() {
+    const clockEl = document.getElementById('digital-clock');
+    const now = new Date();
+    const timeStr = now.toLocaleTimeString();
+    clockEl.textContent = timeStr;
+  }
+  setInterval(updateClock, 1000);
+  updateClock();
 </script>
 
 
@@ -284,6 +455,150 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const disableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'prefetch';
+    }
+  }
+  const enableStylesheet = (stylesheets) => {
+    for (let i=0; i < stylesheets.length; i++) {
+      const stylesheet = stylesheets[i];
+      stylesheet.rel = 'stylesheet';
+    }
+  }
+  const manageTransitions = (selector, allowTransitions) => {
+    const els = window.document.querySelectorAll(selector);
+    for (let i=0; i < els.length; i++) {
+      const el = els[i];
+      if (allowTransitions) {
+        el.classList.remove('notransition');
+      } else {
+        el.classList.add('notransition');
+      }
+    }
+  }
+  const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+    const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+    const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+    let newTheme = '';
+    if(darkModeDefault) {
+      newTheme = isAlternate ? baseTheme : alternateTheme;
+    } else {
+      newTheme = isAlternate ? alternateTheme : baseTheme;
+    }
+    const changeGiscusTheme = () => {
+      // From: https://github.com/giscus/giscus/issues/336
+      const sendMessage = (message) => {
+        const iframe = document.querySelector('iframe.giscus-frame');
+        if (!iframe) return;
+        iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+      }
+      sendMessage({
+        setConfig: {
+          theme: newTheme
+        }
+      });
+    }
+    const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+    if (isGiscussLoaded) {
+      changeGiscusTheme();
+    }
+  }
+  const toggleColorMode = (alternate) => {
+    // Switch the stylesheets
+    const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+    manageTransitions('#quarto-margin-sidebar .nav-link', false);
+    if (alternate) {
+      enableStylesheet(alternateStylesheets);
+      for (const sheetNode of alternateStylesheets) {
+        if (sheetNode.id === "quarto-bootstrap") {
+          toggleBodyColorMode(sheetNode);
+        }
+      }
+    } else {
+      disableStylesheet(alternateStylesheets);
+      toggleBodyColorPrimary();
+    }
+    manageTransitions('#quarto-margin-sidebar .nav-link', true);
+    // Switch the toggles
+    const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+    for (let i=0; i < toggles.length; i++) {
+      const toggle = toggles[i];
+      if (toggle) {
+        if (alternate) {
+          toggle.classList.add("alternate");     
+        } else {
+          toggle.classList.remove("alternate");
+        }
+      }
+    }
+    // Hack to workaround the fact that safari doesn't
+    // properly recolor the scrollbar when toggling (#1455)
+    if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+      manageTransitions("body", false);
+      window.scrollTo(0, 1);
+      setTimeout(() => {
+        window.scrollTo(0, 0);
+        manageTransitions("body", true);
+      }, 40);  
+    }
+  }
+  const isFileUrl = () => { 
+    return window.location.protocol === 'file:';
+  }
+  const hasAlternateSentinel = () => {  
+    let styleSentinel = getColorSchemeSentinel();
+    if (styleSentinel !== null) {
+      return styleSentinel === "alternate";
+    } else {
+      return false;
+    }
+  }
+  const setStyleSentinel = (alternate) => {
+    const value = alternate ? "alternate" : "default";
+    if (!isFileUrl()) {
+      window.localStorage.setItem("quarto-color-scheme", value);
+    } else {
+      localAlternateSentinel = value;
+    }
+  }
+  const getColorSchemeSentinel = () => {
+    if (!isFileUrl()) {
+      const storageValue = window.localStorage.getItem("quarto-color-scheme");
+      return storageValue != null ? storageValue : localAlternateSentinel;
+    } else {
+      return localAlternateSentinel;
+    }
+  }
+  const darkModeDefault = false;
+  let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+  // Dark / light mode switch
+  window.quartoToggleColorScheme = () => {
+    // Read the current dark / light value 
+    let toAlternate = !hasAlternateSentinel();
+    toggleColorMode(toAlternate);
+    setStyleSentinel(toAlternate);
+    toggleGiscusIfUsed(toAlternate, darkModeDefault);
+  };
+  // Ensure there is a toggle, if there isn't float one in the top right
+  if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+    const a = window.document.createElement('a');
+    a.classList.add('top-right');
+    a.classList.add('quarto-color-scheme-toggle');
+    a.href = "";
+    a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+    const i = window.document.createElement("i");
+    i.classList.add('bi');
+    a.appendChild(i);
+    window.document.body.appendChild(a);
+  }
+  // Switch to dark mode if need be
+  if (hasAlternateSentinel()) {
+    toggleColorMode(true);
+  } else {
+    toggleColorMode(false);
+  }
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
