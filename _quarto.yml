@@ -1,6 +1,4 @@
 # Quarto Website Configuration
-
-
 project:
   type: website
   output-dir: docs
