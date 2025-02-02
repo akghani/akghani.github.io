@@ -1,5 +1,19 @@
 [
   {
+    "objectID": "resources.html",
+    "href": "resources.html",
+    "title": "Abdelkarim el Ghani",
+    "section": "",
+    "text": "Resources\n\n\n\n\nCreate websites using Quarto\nThe GRAPH Courses\nHappy Git and GitHub for the useR\nFrom Notebooks to the Web: Quarto & GitHub Pages\nAbyoso Hapsoro Nurhadi\nGerko Vink\nMarkup Languages and Reproducible Programming in Statistics\nAndrew Heiss\nMarvin Schmitt\nMatt Worthington\nSilvia Canelon\nJim Hester\nNoel Mangai\nJm Clawson\nGarrick Aden-Buie\nData programming and intro to R Prepare, clean, transform and enrich data in R, Javier Álvarez Liébana\nJoseph Salmon\nMickaël CANOUIL\nHackMD\nThe SDOH & Place Community Toolkit\nJohn C. Flournoy, PhD\n\n\nFor Translating md files\n\nfrank blog\n\n\n\nFor pretty background\n\nPexels\n\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/fairplay/index.html",
+    "href": "projects/fairplay/index.html",
+    "title": "FAIR-play",
+    "section": "",
+    "text": "Project Overview\nThe FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in fostering resilience and life skills in youth. Supported by an Erasmus+ grant, this three-year initiative works with Feyenoord, Charlton Athletic, Werder Bremen, Inter Milan, and Hibernian to develop and implement pedagogical strategies for coaches and youth workers. The project aims to empower young people, particularly in urban environments, by using football as a tool to teach resilience and life skills, culminating in a training manual for best practices and evidence-based approaches.\n\n\nResults\n\n\n\n\n\n\n\nResearch Publication\n\n\n\nResilience among youth in soccer. Dijkstra, K., & el Ghani, A., (2024).\n\n\n\n\n\n\n Back to top"
+  },
+  {
     "objectID": "resume.html",
     "href": "resume.html",
     "title": "Abdelkarim el Ghani",
@@ -26,19 +40,5 @@
     "title": "Abdelkarim el Ghani",
     "section": "",
     "text": "Abdelkarim el Ghani is a dedicated Research Assistant at \n    Erasmus University Rotterdam.\n    Specializing in advanced data analytics, neuroscience, and modern web development, he leverages cutting-edge techniques to drive innovation.\n  \n  \n    \n      Statistical Data Analysis\n    \n    \n      Neuroscience\n    \n    \n      Open Science Practices\n    \n  \n  \n    Combining rigorous scientific research with innovative digital solutions, his work pushes the boundaries of what is possible.\n  \n  \n    \n      Web Development\n    \n    \n      Data Visualization\n    \n    \n      Reproducible Research\n    \n  \n  \n    Hover over any term to learn more about his areas of expertise.\n  \n\n\n\n  \n    Converting complex datasets into actionable insights using advanced statistical techniques.\n  \n  \n    Investigating the intricacies of brain function to better understand human behavior.\n  \n  \n    Advocating for transparency and collaboration in scientific research.\n  \n  \n    Developing robust, modern websites and interactive applications with the latest technologies.\n  \n  \n    Crafting clear and compelling visual representations that translate data into meaningful stories.\n  \n  \n    Implementing systematic workflows that ensure every finding is verifiable and impactful.\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/fairplay/index.html",
-    "href": "projects/fairplay/index.html",
-    "title": "FAIR-play",
-    "section": "",
-    "text": "Project Overview\nThe FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in fostering resilience and life skills in youth. Supported by an Erasmus+ grant, this three-year initiative works with Feyenoord, Charlton Athletic, Werder Bremen, Inter Milan, and Hibernian to develop and implement pedagogical strategies for coaches and youth workers. The project aims to empower young people, particularly in urban environments, by using football as a tool to teach resilience and life skills, culminating in a training manual for best practices and evidence-based approaches.\n\n\nResults\n\n\n\n\n\n\n\nResearch Publication\n\n\n\nResilience among youth in soccer. Dijkstra, K., & el Ghani, A., (2024).\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "resources.html",
-    "href": "resources.html",
-    "title": "Abdelkarim el Ghani",
-    "section": "",
-    "text": "Resources\n\n\n\n\nCreate websites using Quarto\nThe GRAPH Courses\nHappy Git and GitHub for the useR\nFrom Notebooks to the Web: Quarto & GitHub Pages\nAbyoso Hapsoro Nurhadi\nGerko Vink\nMarkup Languages and Reproducible Programming in Statistics\nAndrew Heiss\nMarvin Schmitt\nMatt Worthington\nSilvia Canelon\nJim Hester\nNoel Mangai\nJm Clawson\nGarrick Aden-Buie\nData programming and intro to R Prepare, clean, transform and enrich data in R, Javier Álvarez Liébana\nJoseph Salmon\nMickaël CANOUIL\nHackMD\nThe SDOH & Place Community Toolkit\nJohn C. Flournoy, PhD\n\n\nFor Translating md files\n\nfrank blog\n\n\n\nFor pretty background\n\nPexels\n\n\n\n\n\n\n\n Back to top"
   }
 ]

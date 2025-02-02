@@ -2,11 +2,11 @@
 project:
   type: website
   output-dir: docs
-  render:
-    - "*.qmd"
-  resources:
-    - _assets/
-    - images/  
+#  render:
+#    - "*.qmd"
+#  resources:
+#    - _assets/
+#    - images/  
     
   preview:
     port: 22227
