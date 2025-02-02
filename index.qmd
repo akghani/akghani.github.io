@@ -20,7 +20,7 @@ Hi there, welcome to my portfolio.
 Feel free to explore my projects and learn more about me!
 
 ::: {.btn-container}
-[Explore Projects](projects/index.qmd){.btn}  
+[Explore Projects](projects.qmd){.btn}  
 [About Me](about.qmd){.btn .btn-secondary}
 :::
 :::

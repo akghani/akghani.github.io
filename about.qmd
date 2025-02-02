@@ -13,29 +13,21 @@ format:
 
 
 
-```{=html}
 
-<!-- Include Tippy.js and Popper.js for interactive tooltips -->
+
+```{=html}
+<!-- External Libraries -->
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 
-<!-- Include Particles.js for a dynamic particle background -->
-<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-
-<!-- Extra CSS and HTML to show that you are both a webdeveloper and a superscientist -->
+<!-- Additional CSS for Fancy Hover Effects and Dynamic Styling -->
 <style>
-  /* Fullscreen Particle Background Container */
-  #particles-js {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    top: 0;
-    left: 0;
-  }
-
-  /* Animated Gradient Background Overlay */
+  /* Animated Gradient Background for the Page */
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: linear-gradient(270deg, #f6f9fc, #e9eff5, #f6f9fc, #e9eff5);
@@ -45,45 +37,42 @@ format:
     padding: 20px;
     color: #333;
   }
-
   @keyframes gradientAnimation {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
   }
-
-  /* Professional Entrance for the Hero Section */
+  
+  /* Hero Heading Enhancements */
   #hero-heading {
     text-align: left;
     margin: 2rem 0;
     animation: fadeSlide 1.5s ease-out;
   }
-  
   @keyframes fadeSlide {
     from { opacity: 0; transform: translateY(-20px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  
   #hero-heading p {
     font-size: 1.3em;
     text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
     margin-bottom: 1.2rem;
   }
-
-  /* Stylish List with Subtle Bounce and Professional Icons */
+  
+  /* List Styling with Professional Icons and Bounce Effect */
   #hero-heading ul {
     padding-left: 1.5rem;
     margin: 1rem 0;
   }
-  
   #hero-heading li {
     margin-bottom: 1rem;
     font-weight: 500;
     position: relative;
     padding-left: 1.5em;
     animation: bounceIn 0.8s ease;
+    /* Enable VanillaTilt on list items */
+    cursor: pointer;
   }
-  
   #hero-heading li:before {
     content: '★';
     position: absolute;
@@ -92,71 +81,52 @@ format:
     font-size: 1.2em;
     animation: pulseStar 1.5s infinite;
   }
-  
   @keyframes pulseStar {
     0% { transform: scale(1); opacity: 0.8; }
     50% { transform: scale(1.3); opacity: 1; }
     100% { transform: scale(1); opacity: 0.8; }
   }
-  
   @keyframes bounceIn {
     0% { transform: translateY(-10px); opacity: 0; }
     60% { transform: translateY(5px); opacity: 1; }
     100% { transform: translateY(0); }
   }
   
-  /* Interactive Tooltip Terms */
+  /* Fancy Tooltip Term Hover Effects */
   .tooltip-term {
     color: #007BFF;
     cursor: pointer;
     font-weight: bold;
     text-decoration: underline;
-    transition: color 0.3s, transform 0.3s;
+    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
   }
-  
   .tooltip-term:hover {
     color: #ff4081;
-    transform: scale(1.15) rotate(1deg);
+    transform: translateY(-5px) scale(1.15) rotate(2deg);
+    text-shadow: 0 0 8px rgba(255, 64, 129, 0.8);
   }
   
-  /* Pimped-Up Profile Image with Gradient Border & Shadow */
+  /* Profile Image Pizzazz (for Jolla Template) */
   .jolla-about .profile-image {
     border: 5px solid;
     border-image-slice: 1;
     border-width: 5px;
     border-image-source: linear-gradient(45deg, #4A90E2, #50b3a2);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
-  
   .jolla-about .profile-image:hover {
-    transform: scale(1.1);
+    transform: scale(1.08) rotate(1deg);
     box-shadow: 0 12px 24px rgba(0,0,0,0.35);
-  }
-  
-  /* Digital Clock Styling */
-  #digital-clock {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #4A90E2;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-    position: absolute;
-    top: 20px;
-    right: 20px;
-  }
-  
-  /* Link Styling */
-  #hero-heading a {
-    color: #4A90E2;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  #hero-heading a:hover {
-    color: #ff4081;
   }
 </style>
 
+<!-- Initialize AOS for Scroll Animations -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    AOS.init({ duration: 1000, once: true });
+  });
+</script>
 
 
 ```
@@ -165,74 +135,66 @@ format:
 
 
 ```{=html}
-<!-- Particle Background Container -->
-<div id="particles-js"></div>
-
-<!-- Digital Clock Display -->
-<div id="digital-clock"></div>
-
-
-```
-
-
-
-
-```{=html}
-<div id="hero-heading">
+<!-- About Page Content with Enhanced Hover and Scroll Effects -->
+<div id="hero-heading" data-aos="fade-up">
   <p>
     <strong>Abdelkarim el Ghani</strong> is a dedicated Research Assistant at 
     <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
-    With expertise spanning both advanced web development and cutting-edge scientific research, he specializes in:
+    Specializing in advanced data analytics, neuroscience, and modern web development, he leverages cutting-edge techniques to drive innovation.
   </p>
 
   <ul>
-    <li>
-      <span class="tooltip-term" data-template="data-analysis">Statistical data analysis</span>
+    <li data-aos="fade-right" data-aos-delay="100" data-tilt>
+      <span class="tooltip-term" data-template="data-analysis">Statistical Data Analysis</span>
     </li>
-    <li>
+    <li data-aos="fade-right" data-aos-delay="200" data-tilt>
       <span class="tooltip-term" data-template="neuroscience">Neuroscience</span>
     </li>
-    <li>
-      <span class="tooltip-term" data-template="open-science">Open science practices</span>
+    <li data-aos="fade-right" data-aos-delay="300" data-tilt>
+      <span class="tooltip-term" data-template="open-science">Open Science Practices</span>
     </li>
   </ul>
 
-  <p>His work integrates sophisticated programming and state-of-the-art data visualization techniques, ensuring robust and reproducible research outcomes.</p>
+  <p data-aos="fade-up" data-aos-delay="400">
+    Combining rigorous scientific research with innovative digital solutions, his work pushes the boundaries of what is possible.
+  </p>
 
   <ul>
-    <li>
-      <span class="tooltip-term" data-template="programming">Web development</span>
+    <li data-aos="fade-left" data-aos-delay="500" data-tilt>
+      <span class="tooltip-term" data-template="programming">Web Development</span>
     </li>
-    <li>
-      <span class="tooltip-term" data-template="data-visualization">Data visualization</span>
+    <li data-aos="fade-left" data-aos-delay="600" data-tilt>
+      <span class="tooltip-term" data-template="data-visualization">Data Visualization</span>
     </li>
-    <li>
-      <span class="tooltip-term" data-template="reproducible-research">Reproducible research</span>
+    <li data-aos="fade-left" data-aos-delay="700" data-tilt>
+      <span class="tooltip-term" data-template="reproducible-research">Reproducible Research</span>
     </li>
   </ul>
 
-  <p>Hover over any term to learn more about his expertise.</p>
+  <p data-aos="fade-up" data-aos-delay="800">
+    Hover over any term to learn more about his areas of expertise.
+  </p>
 </div>
 
 <!-- Hidden Tooltip Content -->
 <div style="display: none;">
   <div id="data-analysis">
-    Converting complex data into actionable insights using advanced statistical techniques.
+    Converting complex datasets into actionable insights using advanced statistical techniques.
   </div>
   <div id="neuroscience">
-    Investigating the brain's complexities to better understand human behavior.
+    Investigating the intricacies of brain function to better understand human behavior.
   </div>
   <div id="open-science">
-    Promoting rigorous, transparent, and collaborative research practices.
+    Advocating for transparency and collaboration in scientific research.
   </div>
   <div id="programming">
-    Developing robust, responsive websites and interactive applications with modern technologies.
+    Developing robust, modern websites and interactive applications with the latest technologies.
   </div>
   <div id="data-visualization">
-    Crafting clear, impactful visualizations that translate data into meaningful narratives.
+    Crafting clear and compelling visual representations that translate data into meaningful stories.
   </div>
   <div id="reproducible-research">
-    Ensuring every result is verifiable and reproducible through systematic workflows.
+    Implementing systematic workflows that ensure every finding is verifiable and impactful.
   </div>
 </div>
 
@@ -247,8 +209,8 @@ format:
 
 ```{=html}
 <script>
-  // Initialize Tippy.js for tooltip functionality
   document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Tippy.js for each tooltip term with advanced settings
     const terms = document.querySelectorAll('.tooltip-term');
     terms.forEach((term, index) => {
       tippy(term, {
@@ -261,87 +223,26 @@ format:
         theme: 'light',
         animation: 'scale',
         arrow: true,
-        delay: [index * 100, 100],
+        interactive: true,
+        // Custom delays: 150ms before showing, 100ms before hiding
+        delay: [150, 100],
+        // Custom duration for show/hide animations: [300ms for showing, 250ms for hiding]
+        duration: [300, 250],
+        trigger: 'mouseenter focus',
+        // Stagger the appearance slightly based on index, if desired
+        onShow(instance) {
+          // Optionally adjust timing further for each tooltip if needed
+          return true;
+        }
       });
     });
   });
-
-  // Initialize Particles.js for a dynamic background
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 60,
-        "density": {
-          "enable": true,
-          "value_area": 800
-        }
-      },
-      "color": {
-        "value": "#4A90E2"
-      },
-      "shape": {
-        "type": "circle"
-      },
-      "opacity": {
-        "value": 0.5,
-        "random": false
-      },
-      "size": {
-        "value": 3,
-        "random": true
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#4A90E2",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 3,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out"
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "grab"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      }
-    },
-    "retina_detect": true
-  });
-
-  // Digital Clock Functionality
-  function updateClock() {
-    const clockEl = document.getElementById('digital-clock');
-    const now = new Date();
-    const timeStr = now.toLocaleTimeString();
-    clockEl.textContent = timeStr;
-  }
-  setInterval(updateClock, 1000);
-  updateClock();
 </script>
 
 
+
+
+
 ```
-
-
-
-
-
-
-
 
 
