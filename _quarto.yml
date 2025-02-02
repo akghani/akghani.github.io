@@ -70,16 +70,16 @@ website:
         href: https://github.com
         target: _blank
         
-  sidebar: 
-    - id: projects
-      title: Projects
-      style: docked
-      contents: 
-        - projects/fairplay/index.qmd
-        - projects/rotterdamgold/index.qmd
+#  sidebar: 
+#    - id: projects
+#      title: Projects
+#      style: docked
+#      contents: 
+#        - projects/fairplay/index.qmd
+#        - projects/rotterdamgold/index.qmd
 
   page-footer:
-    background: light
+    background: dark
     left: |
       © 2025 Abdelkarim el Ghani
     center: |
