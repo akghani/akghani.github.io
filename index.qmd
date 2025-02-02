@@ -9,6 +9,7 @@ format:
     include-in-header: 
       text: |
         <link rel="stylesheet" href="_assets/index.css">
+    css: index.css
 ---
 
 ::: {.hero}
