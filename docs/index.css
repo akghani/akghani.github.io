@@ -10,7 +10,7 @@
 .hero::before {
   content: "";
   background: url('images/block-banner.gif') no-repeat center center/cover;
-  background-size: 130% auto; /* Makes the image 120% as wide as the container */
+  background-size: 130% auto; /* Makes the image 130% as wide as the container */
   position: absolute;
   top: 0;
   left: 0;
@@ -51,7 +51,7 @@
   margin: 0.5rem;
 }
 
-.hero-content p {
+.hero-content h3 {
   font-size: 1.3rem;
   margin: 1rem 0;
 }
@@ -91,7 +91,7 @@
   .hero-content h2 {
     font-size: 1.4rem;
   }
-  .hero-content p {
+  .hero-content h3 {
     font-size: 1rem;
   }
 }

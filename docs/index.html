@@ -35,12 +35,12 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-60f85c23f2811dd1463265375bc4ca76.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-9fb437d7e45876096fe0f3f461f36195.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-2af7f0b0398bfa0962dcbbb676989764.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-015bcb103847e127e004979fbe60ed7c.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-1555f50fc3c0f2a21ee5344fd236bd58.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-0d9fdb2040cf147e4b3808d6b4d13cd5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -70,10 +70,15 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: #27445C;
+      }
+</style>
 
 
-<link rel="stylesheet" href="_assets/panelset-extras.css">
+<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="index.css">
 <meta property="og:title" content="– Abdelkarim el Ghani">
 <meta property="og:description" content="">
@@ -81,10 +86,10 @@ ul.task-list li input[type="checkbox"] {
 <meta property="og:site_name" content="Abdelkarim el Ghani">
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -148,24 +153,74 @@ ul.task-list li input[type="checkbox"] {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
 <!-- main -->
 
 
 
 
+<!-- Hero Section -->
 <div class="hero">
-<section id="abdelkarim-el-ghani" class="hero-content">
-<h1>Abdelkarim el Ghani</h1>
-<h2 id="statistical-data-analyst-neuroscientist">Statistical Data Analyst | Neuroscientist</h2>
-<h3 id="hi-there-welcome-to-my-portfolio.">Hi there, welcome to my portfolio.</h3>
-<h3 id="feel-free-to-explore-my-projects-and-learn-more-about-me">Feel free to explore my projects and learn more about me!</h3>
+<div class="hero-content">
+<!-- The background gif and styling are defined in index.css -->
+<h1>
+Abdelkarim el Ghani
+</h1>
+<h2>
+Statistical Data Analyst | Neuroscientist
+</h2>
+<h3>
+Hi there, welcome to my portfolio.
+</h3>
+<h3>
+Feel free to explore my projects and learn more about me!
+</h3>
 <div class="btn-container">
 <p><a href="./projects.html" class="btn">Explore Projects</a><br>
 <a href="./about.html" class="btn btn-secondary">About Me</a></p>
 </div>
-</section>
 </div>
+</div>
+<!-- JavaScript for Tab Navigation -->
+<script>
+  function openSection(evt, sectionName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  // Open the default tab (if using tabs)
+  if (document.getElementById("defaultOpen")) {
+    document.getElementById("defaultOpen").click();
+  }
+</script>
+
+
+<!-- Local CSS Overrides (if needed) -->
+<style>
+  /* Example: Override global text color on this page */
+  :root {
+    --main-text-color: #000 !important; /* Force black text (change as desired) */
+  }
+  body, h2, h3, h3, li {
+    color: var(--main-text-color) !important;
+  }
+</style>
+
+
+
+
 
 
 

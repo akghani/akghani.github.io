@@ -1,0 +1,17 @@
+{
+  "hash": "d542cb94f8279289afba36fc6c6f572d",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\npage-layout: custom\ntitle-block-banner: false\nlogo: \"images/logo-akg.png\"\n\n---\n\n\n\n\n\n\n\n\n<body onload=\"document.body.style.opacity=&#39;1&#39;\">\n\n![](images/block-banner.gif){.splash height=\"auto\" style=\"position: relative;  top: -30px;\" fig-align=\"center\" width=\"130%\"}\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n<script src = \"assets/mobile_detect.js\"></script>\n\n\n\n\n\n\n\n\n::: {.cell}\n::: {.cell-output-display}\n\n```{=html}\n<div id=\"container\" style=\"width:60vw; margin: auto;\">\n<img src=\"images/profile-pic-bw.png\" style=\"width:40%\"/>\n<div class=\"textbox\"><strong>HI, I'M Abdelkarim el Ghani</strong><br><i>Statistical Data Analyst | Neuroscientist.</i><br><br> Thanks for stopping by. Here you will find information about me, my professional experiences, and data-related musings. As a \"Tidy Trekker\" and data lover, it was inevitable that I would have to find a place on the web to call \"home.\" Please feel free to reach out to me personally through <a href=\"mailto:meghan@thetidytrekker.com\">e-mail</a>, <a href=\"https://twitter.com/meghansharris\">Twitter</a>, or <a rel=\"me\" href=\"https://fosstodon.org/@meghansharris\">Mastodon</a> to get in touch with any inquiries!</div>\n</div>\n```\n\n:::\n:::\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
