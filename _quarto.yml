@@ -4,9 +4,9 @@ project:
   output-dir: docs
 #  render:
 #    - "*.qmd"
-#  resources:
-#    - _assets/
-#    - images/  
+  resources:
+    - _assets/
+    - images/  
     
   preview:
     port: 22227

@@ -4,16 +4,12 @@ subtitle: ""
 toc: false
 page-layout: custom
 section-divs: false
-#format: 
-#  html:
-#    include-in-header: 
-#      text: |
-#        <link rel="stylesheet" href="_assets/index.css">
-
-header-includes: >
-  <link rel="stylesheet" href="_assets/index.css">
+format: 
+  html:
+    css:
+      - index.css
 resources:
-  - _assets/index.css        
+  - index.css
 ---
 
 ::: {.hero}
