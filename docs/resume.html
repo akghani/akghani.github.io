@@ -75,10 +75,9 @@ ul.task-list li input[type="checkbox"] {
 
 <link rel="stylesheet" href="_assets/panelset-extras.css">
 <meta property="og:title" content="– Abdelkarim el Ghani">
-<meta property="og:image" content="images/logo-akg.png">
+<meta property="og:image" content="./images/leiden-univ.png">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
-<meta property="og:image:height" content="600">
-<meta property="og:image:width" content="600">
+<meta property="og:image:alt" content="Leiden University logo">
 </head>
 
 <body class="nav-fixed fullcontent">
@@ -152,8 +151,6 @@ ul.task-list li input[type="checkbox"] {
     
 <!-- main -->
 <main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
-
-
 
 
 
@@ -239,10 +236,10 @@ ul.task-list li input[type="checkbox"] {
 <div id="skills" class="tabcontent">
   <h2 class="anchored">Skills</h2>
   <ul>
-    <li><strong>Programming:</strong> R, Python, MATLAB</li>
+    <li><strong>Programming:</strong> R, Python, SPSS</li>
     <li><strong>Statistical Methods:</strong> Regression analysis, ANOVA, Bayesian modeling</li>
     <li><strong>Data Visualization:</strong> ggplot2, Tableau, Power BI</li>
-    <li><strong>Tools:</strong> Quarto, RStudio, Git, LaTeX</li>
+    <li><strong>Tools:</strong> Quarto, RStudio</li>
   </ul>
 </div>
 
@@ -255,6 +252,7 @@ ul.task-list li input[type="checkbox"] {
     <li><strong>FAIR-play Handbook</strong> | <em>Erasmus Initiative Vital Cities and Citizens, Erasmus+</em> | 2022</li>
   </ul>
 </div>
+
 
 <script>
   // JavaScript for Tab Navigation
@@ -271,28 +269,37 @@ ul.task-list li input[type="checkbox"] {
     document.getElementById(sectionName).style.display = "block";
     evt.currentTarget.className += " active";
   }
-
   // Open the default tab
   document.getElementById("defaultOpen").click();
 </script>
 
 <style>
+  /* Define CSS variables for text colors */
+  :root {
+    --main-text-color: #333; /* default for light mode */
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --main-text-color: #ddd; /* lighter text for dark mode */
+    }
+  }
+  
   /* Global styling */
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     background: #f4f7f9;
-    color: #333;
+    color: var(--main-text-color) !important;
     line-height: 1.6;
     margin: 0;
     padding: 0 20px;
-    transition: background 0.5s;
+    transition: background 0.5s, color 0.5s;
   }
   
   h2 {
     border-bottom: 2px solid #4A90E2;
     padding-bottom: 5px;
     margin-bottom: 20px;
-    color: #333;
+    color: var(--main-text-color) !important;
   }
   
   h3 {
@@ -305,7 +312,7 @@ ul.task-list li input[type="checkbox"] {
     text-shadow: 2px 2px 4px rgba(74,144,226,0.6);
   }
   
-  /* Tab Styling with modern blue palette and smooth transitions */
+  /* Tab Styling */
   .tab {
     display: flex;
     justify-content: center;
@@ -352,7 +359,7 @@ ul.task-list li input[type="checkbox"] {
     transform: scale(1.02);
   }
   
-  /* Card styling for sections */
+  /* Card styling */
   .card {
     background-color: #fff;
     padding: 20px;
@@ -367,7 +374,7 @@ ul.task-list li input[type="checkbox"] {
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
   }
   
-  /* Education Info: Increase font size for better balance with larger logo */
+  /* Education Info styling */
   .edu-info {
     font-size: 1.2em;
     margin: 10px 0;
@@ -404,7 +411,6 @@ ul.task-list li input[type="checkbox"] {
     }
   }
 </style>
-
 
 
 

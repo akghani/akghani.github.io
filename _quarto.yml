@@ -23,11 +23,7 @@ website:
   title: "Abdelkarim el Ghani"
   favicon: /images/favicon-akg.png  # Favicon image
   image: /images/logo-akg.png
-  open-graph:
-    image: images/logo-akg.png
-#    image-alt: |
-    image-width: 600
-    image-height: 600
+  open-graph: true
       
       
   search:
