@@ -17,12 +17,12 @@ project:
 # Enable Markdown extensions
 from: markdown+emoji
 
-title-meta: "Abdelkarim el Ghani"
+#title-meta: "Abdelkarim el Ghani"
 
 website:
   title: "Abdelkarim el Ghani"
   favicon: /images/favicon-akg.png  # Favicon image
-  image: images/logo-akg.png
+  image: /images/logo-akg.png
   open-graph:
     image: images/logo-akg.png
 #    image-alt: |
@@ -41,7 +41,7 @@ website:
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: images/logo-akg.png  # Navbar logo
+    logo: /images/logo-akg.png  # Navbar logo
     left:
       - text: Home
         href: index.qmd

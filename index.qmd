@@ -15,8 +15,8 @@ format:
 ::: {.hero-content}
 # Abdelkarim el Ghani
 ## Statistical Data Analyst | Neuroscientist
-Hi there, welcome to my portfolio.  
-Feel free to explore my projects and learn more about me!
+### Hi there, welcome to my portfolio.  
+### Feel free to explore my projects and learn more about me!
 
 ::: {.btn-container}
 [Explore Projects](projects.qmd){.btn}  
