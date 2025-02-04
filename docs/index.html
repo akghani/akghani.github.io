@@ -39,8 +39,8 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-8ea72dc5fed832574809a9c94082fbbb.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-1555f50fc3c0f2a21ee5344fd236bd58.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-0d9fdb2040cf147e4b3808d6b4d13cd5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-6053aa2fe0cd904c0c5938b6312ccea5.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-bb74f17d238aac6298bf13b8c69e47c5.min.css" rel="prefetch" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -70,18 +70,10 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <style>html{ scroll-behavior: smooth; }</style>
-<style>
-
-      .quarto-title-block .quarto-title-banner {
-        background: #27445C;
-      }
-</style>
 
 
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="index.css">
-<meta property="og:title" content="– Abdelkarim el Ghani">
-<meta property="og:description" content="">
+<meta property="og:title" content="Abdelkarim el Ghani">
+<meta property="og:description" content="Statistical Data Analyst | Neuroscientist">
 <meta property="og:image" content="/images/logo-akg.png">
 <meta property="og:site_name" content="Abdelkarim el Ghani">
 </head>
@@ -89,7 +81,7 @@ ul.task-list li input[type="checkbox"] {
 <body class="floating nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -160,65 +152,29 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
 <!-- main -->
 
-
-
-
-<!-- Hero Section -->
-<div class="hero">
-<div class="hero-content">
-<!-- The background gif and styling are defined in index.css -->
-<h1>
-Abdelkarim el Ghani
-</h1>
-<h2>
-Statistical Data Analyst | Neuroscientist
-</h2>
-<h3>
-Hi there, welcome to my portfolio.
-</h3>
-<h3>
-Feel free to explore my projects and learn more about me!
-</h3>
-<div class="btn-container">
-<p><a href="./projects.html" class="btn">Explore Projects</a><br>
-<a href="./about.html" class="btn btn-secondary">About Me</a></p>
-</div>
-</div>
-</div>
-<!-- JavaScript for Tab Navigation -->
-<script>
-  function openSection(evt, sectionName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(sectionName).style.display = "block";
-    evt.currentTarget.className += " active";
-  }
-  // Open the default tab (if using tabs)
-  if (document.getElementById("defaultOpen")) {
-    document.getElementById("defaultOpen").click();
-  }
-</script>
-
-
-<!-- Local CSS Overrides (if needed) -->
-<style>
-  /* Example: Override global text color on this page */
-  :root {
-    --main-text-color: #000 !important; /* Force black text (change as desired) */
-  }
-  body, h2, h3, h3, li {
-    color: var(--main-text-color) !important;
-  }
-</style>
-
-
+<!-- _assets/title-block.html -->
+<header id="title-block-header" style="position: relative;">
+  <!-- Particles container -->
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;"></div>
+  
+  <!-- Title Block Content -->
+  <div class="title-block-content" style="position: relative; z-index: 1; text-align: center; padding: 2em;">
+    <img src="images/logo-akg.png" alt="Logo" style="width:80px; height:80px; margin-bottom:20px;">
+    <h1 class="title">Abdelkarim el Ghani</h1>
+    <p class="subtitle">Statistical Data Analyst | Neuroscientist</p>
+  </div>
+  
+  <!-- Load particles.js from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Initialize particles.js using the configuration from _assets/particles.json -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      particlesJS.load("particles-js", "_assets/particles.json", function() {
+        console.log("Particles configuration loaded.");
+      });
+    });
+  </script>
+</header>
 
 
 
@@ -796,7 +752,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a></p>
 </div>
     <div class="nav-footer-right">
-<p><span class="faux-block">Build with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/" target="_blank"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto logo blue round circle with a cross within the circumference" width="65"></a></span></p>
+<p><span class="faux-block">Build with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/" target="_blank"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto logo" width="65"></a></span></p>
 </div>
   </div>
 </footer>

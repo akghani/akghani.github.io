@@ -1,0 +1,81 @@
+---
+title: ""
+subtitle: ""
+toc: false
+page-layout: custom
+section-divs: false
+format: 
+  html:
+    css:
+      - index.css
+resources:
+  - index.css
+---
+
+
+
+
+<!-- Hero Section -->
+::: {.hero}
+::: {.hero-content}
+<!-- The background gif and styling are defined in index.css -->
+<h1>Abdelkarim el Ghani</h1>
+<h2>Statistical Data Analyst | Neuroscientist</h2>
+<h3>Hi there, welcome to my portfolio.</h3>
+<h3>Feel free to explore my projects and learn more about me!</h3>
+
+::: {.btn-container}
+[Explore Projects](projects.qmd){.btn}  
+[About Me](about.qmd){.btn .btn-secondary}
+:::
+:::
+:::
+
+
+
+
+
+
+```{=html}
+<!-- JavaScript for Tab Navigation -->
+<script>
+  function openSection(evt, sectionName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(sectionName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+  // Open the default tab (if using tabs)
+  if (document.getElementById("defaultOpen")) {
+    document.getElementById("defaultOpen").click();
+  }
+</script>
+
+
+```
+
+
+
+```{=html}
+<!-- Local CSS Overrides (if needed) -->
+<style>
+  /* Example: Override global text color on this page */
+  :root {
+    --main-text-color: #000 !important; /* Force black text (change as desired) */
+  }
+  body, h2, h3, h3, li {
+    color: var(--main-text-color) !important;
+  }
+</style>
+
+
+
+
+```

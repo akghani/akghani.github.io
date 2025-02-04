@@ -1,0 +1,23 @@
+<!-- _assets/title-block.html -->
+<header id="title-block-header" style="position: relative;">
+  <!-- Particles container -->
+  <div id="particles-js" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;"></div>
+  
+  <!-- Title Block Content -->
+  <div class="title-block-content" style="position: relative; z-index: 1; text-align: center; padding: 2em;">
+    <img src="images/logo-akg.png" alt="Logo" style="width:80px; height:80px; margin-bottom:20px;">
+    $if(title)$<h1 class="title">$title$</h1>$endif$
+    $if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+  </div>
+  
+  <!-- Load particles.js from a CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <!-- Initialize particles.js using the configuration from _assets/particles.json -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      particlesJS.load("particles-js", "_assets/particles.json", function() {
+        console.log("Particles configuration loaded.");
+      });
+    });
+  </script>
+</header>

@@ -1,43 +1,34 @@
-# Quarto Website Configuration
+# _quarto.yml
 project:
   type: website
   output-dir: docs
-#  render:
-#    - "*.qmd"
+  render:
+    - "*.qmd"
   resources:
-    - _assets/
-    - images/  
-    
+    - "_assets/**"
+    - "images/**"
   preview:
     port: 22227
     browser: true
     watch-inputs: true
     navigate: true
 
-# Enable Markdown extensions
 from: markdown+emoji
-
-#title-meta: "Abdelkarim el Ghani"
 
 website:
   title: "Abdelkarim el Ghani"
-  favicon: /images/favicon-akg.png  # Favicon image
+  favicon: /images/favicon-akg.png
   image: /images/logo-akg.png
   open-graph: true
-      
-      
   search:
     location: navbar
-    type: overlay  # Search type
-  page-navigation: true  # Enable navigation links on pages
-  back-to-top-navigation: true  # Show back-to-top button
-#  margin-header: |
-#    ![](/images/logo-akg.png)
-
+    type: overlay
+  page-navigation: true
+  back-to-top-navigation: true
   navbar:
     title: Abdelkarim el Ghani
     pinned: true
-    logo: /images/logo-akg.png  # Navbar logo
+    logo: /images/logo-akg.png
     left:
       - text: Home
         href: index.qmd
@@ -48,7 +39,7 @@ website:
       - text: Projects
         href: projects.qmd
         icon: graph-up
-        menu:  # Dropdown menu for Projects
+        menu:
           - text: Fairplay
             href: projects/fairplay/index.qmd
           - text: Rotterdam Gold
@@ -65,47 +56,33 @@ website:
       - icon: github
         href: https://github.com
         target: _blank
-        
-#  sidebar: 
-#    - id: projects
-#      title: Projects
-#      style: docked
-#      contents: 
-#        - projects/fairplay/index.qmd
-#        - projects/rotterdamgold/index.qmd
-
   page-footer:
-    background: dark
+    background: light
     left: |
       © 2025 Abdelkarim el Ghani
     center: |
       [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
     right: |
-      <span class="faux-block">Build with {{< fa brands r-project >}} and [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo blue round circle with a cross within the circumference" width=65px}](https://quarto.org/){target="_blank"}</span>
+      <span class="faux-block">Build with {{< fa brands r-project >}} and [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo" width=65px}](https://quarto.org/){target="_blank"}</span>
     border: true
 
-#  reader-mode: true  # Enable reader mode
-
-title-block-banner: "#27445C"
+#title-block-banner: "#27445C"
 format: 
   html:
     smooth-scroll: true
-    fontcolor: black
     toc: true
     toc-location: left
     toc-title: Summary
     toc-depth: 3
-css: styles.css
+#css: styles.css
 theme:
   light: [cosmo, _assets/lightstyle.scss]
   dark: [cosmo, _assets/darkstyle.scss]
-
 lightbox: auto
 
 execute:
-  cache: false  # Disable cache
-  freeze: auto  # Freeze execution when no changes detected
+  cache: false
+  freeze: auto
 
 editor:
-  render-on-save: true  # Automatically render on save
-
+  render-on-save: true

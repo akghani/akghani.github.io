@@ -138,9 +138,9 @@ format:
 <!-- About Page Content with Enhanced Hover and Scroll Effects -->
 <div id="hero-heading" data-aos="fade-up">
   <p>
-    <strong>Abdelkarim el Ghani</strong> is a dedicated Research Assistant at 
+    <strong>Abdelkarim el Ghani</strong> is a Statistical Data Analyst at 
     <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
-    Specializing in advanced data analytics, neuroscience, and modern web development, he leverages cutting-edge techniques to drive innovation.
+    Specializing in data analytics, neuroscience, and modern web development, he leverages cutting-edge techniques to drive innovation.
   </p>
 
   <ul>
@@ -156,7 +156,7 @@ format:
   </ul>
 
   <p data-aos="fade-up" data-aos-delay="400">
-    Combining rigorous scientific research with innovative digital solutions, his work pushes the boundaries of what is possible.
+    Combining scientific research with innovative digital solutions, his work pushes the boundaries of what is possible.
   </p>
 
   <ul>
