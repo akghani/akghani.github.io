@@ -1,48 +1,384 @@
-// Google Fonts
-@import url('https://fonts.googleapis.com/css2?family=Pirata+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat');
-
 /*-- scss:defaults --*/
-$navbar-bg: #3A3B3C;
-$font-family-base: 'Montserrat', sans-serif;
-$success: #CE2029 !default;
+  
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Roboto+Serif:wght@100..900&display=swap');
 
-// Custom Variables
-$dracula: 'Pirata One', cursive;
 
-/*-- scss:rules --*/
-#title-block-header.quarto-title-block.default .quarto-title .title {
-  font-family: $dracula;
-  font-size: $font-size-base * 4;
-  text-shadow: 3px 3px 0 rgba(206, 32, 41, 1);
+// Dark theme colors
+$body-bg: #1a1a1a;
+$body-color: #f8f9fa;
+$link-color: #75b5aa;
+$navbar-bg: #2d333b;
+$navbar-fg: #fafafa;
+$code-block-bg: #2d2d2d;
+$code-color: #75b5aa;
+$caption-color: #75b5aa;
+
+
+/* Apply Roboto Mono to all heading tags */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: $body-color;
 }
 
-p.subtitle.lead {
-  font-family: $dracula;
-  font-size: $font-size-base * 3.5;
-  margin-top: -20px;
-  margin-bottom: 0px;
-  padding-top: 0px !important;
-  text-shadow: 3px 3px 0 rgba(206, 32, 41, 1);
+/* Apply Roboto Serif to all paragraphs, captions, and other text */
+p, caption, body, .caption, blockquote, li, .text, div {
+  font-family: 'Roboto Serif', serif;
+  color: $body-color;
+}
+
+/* You can customize specific elements as needed, for example: */
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+
+/* Space before title */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 40px;
+}
+
+
+// NAV
+
+/*  Dark theme specific navbar */
+nav {
+    background-color: $navbar-bg !important;
+    
+    ul li a {
+        font-size: 15px;
+        color: $navbar-fg !important;
+    }
+}
+
+
+nav ul li:first-child a {
+    font-size: 26px;  /* Font size for "Steven Ponce" */
+    color: white;     /* Adjust color if necessary */
+}
+
+
+/* Align the navbar items using Flexbox */
+nav ul {
+    display: flex;
+    justify-content: space-between; /* Ensure space between items */
+    align-items: center; /* Vertically align items */
+}
+
+/* Ensure spacing between navbar items */
+nav ul li {
+    margin-right: 20px;
+}
+
+/* Specific styling for 'Steven Ponce' */
+.site-owner {
+    font-size: 26px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* Apply 'Roboto Mono' to all navbar items */
+nav ul li a, .site-owner {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px; /* Adjust font size for other navbar links */
+}
+
+/* Apply background to navbar only */
+nav, .navbar {
+    background-color: $navbar-bg !important;  
+}
+
+
+// banner
+.quarto-title-banner {
+  background-color: $navbar-bg !important;  // Using your dark theme navbar color
+  color: $navbar-fg !important;  // Using your dark theme font color
+  padding: 0.5rem 1rem;
+  
+  .quarto-title {
+    color: $navbar-fg !important;
+  }
+}
+
+// For any text in the header/banner
+.header-section-number {
+  color: $navbar-fg !important;
+}
+
+
+
+
+// FOOTER
+/* Footer styling */
+.footer-items {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--bs-light);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+  
+  &:hover {
+    opacity: 1;
+    text-decoration: none;
+    color: var(--bs-light);
+  }
+  
+  i, svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.page-footer {
+  padding: 0.5rem 1rem;
+  background-color: $navbar-bg;
+  color: $navbar-fg; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  
+  
+  .link-secondary {
+    color: var(--bs-light);
+    text-decoration: none;
+    opacity: 0.8;
+    
+    &:hover {
+      opacity: 1;
+      color: var(--bs-light);
+    }
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+}
+
+/* Add some space between footer elements on mobile */
+@media (max-width: 768px) {
+  .footer-items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+
+// TOC
+
+// Dark theme TOC
+nav#TOC.toc-active {
+    background-color: transparent !important;
+    font-size: 0.9em !important;
+    color: $body-color !important;
+    padding: 10px !important;
+
+    a {
+        color: $body-color !important;
+        font-size: 0.9em !important;
+        text-decoration: none !important;
+
+        &:hover {
+            color: $link-color !important;
+        }
+
+        &.active {
+            font-weight: bold;
+            color: $link-color !important;
+            border-left: 3px solid $link-color;
+        }
+    }
+}
+
+
+/* TOC Test*/
+nav#TOC.toc-active ul {
+    display: block; /* Ensure the TOC list is displayed in a vertical stack */
+}
+
+nav#TOC.toc-active ul li {
+    display: block; /* List items should stack vertically */
+}
+
+
+nav#TOC.toc-active ul {
+    display: block !important; /* Force TOC to stack vertically */
+    padding-left: 0; /* Adjust padding if needed */
+}
+
+nav#TOC.toc-active ul li {
+    margin-right: 0 !important; /* Remove the margin if it's causing horizontal alignment issues */
+}
+
+
+
+// Add smooth transitions
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+// Add styles for code blocks
+pre {
+    background-color: $code-block-bg !important;
+    color: $code-color !important;
 }
 
 code {
-  color: #EA776A;
+    color: $code-color !important;
 }
 
-.about-image {
-  margin-top: 1.5em;
+// Add styles for cards in dark mode
+.card {
+    background-color: lighten($body-bg, 5%) !important;
+    border-color: lighten($body-bg, 10%) !important;
 }
 
-#webr-run-button-1.btn.btn-default.btn-webr,
-#webr-run-button-2.btn.btn-default.btn-webr,
-#webr-run-button-3.btn.btn-default.btn-webr,
-#webr-run-button-4.btn.btn-default.btn-webr {
-  background-color: #ce2029;
+// Add styles for inputs and buttons in dark mode
+input, select, textarea {
+    background-color: lighten($body-bg, 5%) !important;
+    color: $body-color !important;
+    border-color: lighten($body-bg, 15%) !important;
+}
+
+// Add styles for tables in dark mode
+table {
+    color: $body-color;
+    
+    th, td {
+        border-color: lighten($body-bg, 15%) !important;
+    }
+}
+
+// Add styles for blockquotes in dark mode
+blockquote {
+    border-left-color: $link-color !important;
+    background-color: lighten($body-bg, 5%) !important;
+}
+
+// Add styles for horizontal rules
+hr {
+    border-color: lighten($body-bg, 15%) !important;
+}
+
+// links 
+a {
+    color: $link-color !important;
+    
+    &:hover {
+        color: lighten($link-color, 15%) !important;
+    }
+}
+
+// selection highlighting
+::selection {
+    background-color: $link-color !important;
+    color: $body-bg !important;
+}
+
+// styles for callouts
+.callout {
+    background-color: lighten($body-bg, 5%) !important;
+    border-color: $link-color !important;
+    
+    .callout-title {
+        background-color: lighten($body-bg, 8%) !important;
+    }
+}
+
+// OTHERS
+
+/* Reduce the font size of card titles */
+h5.no-anchor.card-title.listing-title {
+    font-size: 20px !important; /* Adjust the size to your preference */
+    line-height: 1.3; /* Adjust line height for better spacing */
 }
 
 
-nav.navbar.navbar-expand-lg {
-  padding-top: 10px;
-  padding-bottom: 10px;
+// FONTS
+
+/* Set base font size for the entire document */
+body {
+    font-size: 1em !important; /* Adjust as necessary */
+    line-height: 1.6 !important; /* Ensure proper readability */
+    font-family: 'Roboto Mono', monospace; /* Apply Roboto Mono for consistency */
+}
+
+/* Heading adjustments */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Mono', monospace !important;
+    font-size: 1.5em !important; /* Adjust heading size */
+    margin-bottom: 15px; /* Add some spacing */
+}
+
+/* Paragraph adjustments */
+p {
+    font-size: 1em !important; /* Adjust for readability */
+    margin-bottom: 20px; /* Add spacing after paragraphs */
+}
+
+
+// CAPTION
+/* Target Quarto figure captions specifically */
+.quarto-float-caption, 
+.figcaption,
+figure figcaption,
+.figure-caption {
+  color: $caption-color !important;  
+}
+
+/* Additional specificity if needed */
+div.quarto-figure .quarto-float-caption {
+  color: $caption-color !important; 
+}
+
+/* Target the specific ID if the above selectors don't work */
+#fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca {
+  color: $caption-color !important; 
+}
+
+// SOCIAL SHARE
+.page-layout-article {
+    .social-share {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 1rem;
+        width: 847px;  // Set specific width based on the inspect element
+        margin: 2rem auto;
+        padding: 0;
+        
+        // Container to enforce centering
+        &::after {
+            content: '';
+            display: block;
+            width: 847px;  // Match container width
+            margin: 0 auto;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 37.88px;  // Set specific width from inspect
+            height: 37.88px; // Make it square
+            margin: 0;
+            padding: 0;
+        }
+    }
 }

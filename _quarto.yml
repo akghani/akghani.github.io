@@ -74,8 +74,8 @@ format:
     toc-location: left
 #css: styles.css
 theme:
-  light: [cosmo, _assets/lightstyle.scss]
-  dark: [cosmo, _assets/darkstyle.scss]
+  light: [flatly, _assets/lightstyle.scss]
+  dark: [darkly, _assets/darkstyle.scss]
 lightbox: auto
 
 execute:
