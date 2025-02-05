@@ -167,20 +167,17 @@ ul.task-list li input[type="checkbox"] {
   <!-- Load particles.js from CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
   
-  <!-- Initialize particles.js using the configuration from _assets/particles.json -->
+  <!-- Initialize particles.js using configuration from _assets/particles.json -->
   <script>
     document.addEventListener("DOMContentLoaded", function(){
       console.log("Initializing particlesJS...");
-      // Adjust the relative path as needed:
-      // If your output structure is docs/index.html and docs/_assets/particles.json exists,
-      // then "./_assets/particles.json" should work.
-      particlesJS.load("particles-js", "./_assets/particles.json", function() {
+      particlesJS.load("particles-js", "_assets/particles.json", function() {
         console.log("Particles configuration loaded.");
       });
     });
   </script>
   
-  <!-- Ensure that the particles canvas fills the container -->
+  <!-- Ensure the particles canvas fills the container -->
   <style>
     #particles-js canvas {
       width: 100% !important;

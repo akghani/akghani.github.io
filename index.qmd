@@ -13,5 +13,5 @@ format:
 resources:
   - "_assets/**"
   - "images/**"
-  - particles.json
+#  - particles.json
 ---
