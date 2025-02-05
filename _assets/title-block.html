@@ -36,15 +36,19 @@
             "random": true
           },
           "size": {
-            "value": 4,
+            "value": 8,
             "random": true
           },
           "line_linked": {
-            "enable": false
+            "enable": true,
+            "distance": 300,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
           },
           "move": {
             "enable": true,
-            "speed": 2,
+            "speed": 3,
             "direction": "bottom",
             "random": false,
             "straight": false,
@@ -55,7 +59,7 @@
           "detect_on": "canvas",
           "events": {
             "onhover": { "enable": false },
-            "onclick": { "enable": false },
+            "onclick": { "enable": true },
             "resize": true
           }
         },

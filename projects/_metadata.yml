@@ -5,7 +5,7 @@
 freeze: auto
 
 # Enable banner style title blocks
-title-block-banner: "images/block-banner.gif"
+#title-block-banner: "images/block-banner.gif"
 
 # Enable CC licence appendix
 #license: "CC BY"

@@ -8,10 +8,27 @@ format:
   html:
     template-partials:
       - _assets/title-block.html
-#    css:
-#      - index.css
+    css:
+      - index.css
+    include-in-header: |
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 resources:
   - "_assets/**"
   - "images/**"
-#  - particles.json
+  - index.css
 ---
+
+<!-- Hero Section -->
+::: {.hero}
+::: {.hero-content}
+<!-- The background gif and styling are defined in index.css -->
+<h1>Hi there</h1>
+<h2>Welcome to my portfolio</h2>
+<h3>Feel free to explore my projects and learn more about me!</h3>
+
+::: {.btn-container}
+[Explore Projects](projects.qmd){.btn}  
+[About Me](about.qmd){.btn .btn-secondary}
+:::
+:::
+:::

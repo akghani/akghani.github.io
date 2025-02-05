@@ -1,16 +1,20 @@
 /* index.css */
 
+/* Hero Section */
 .hero {
   position: relative;
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #FDFDFD;  /* Dark background so the particles are visible */
 }
 
+/* Remove the GIF background by commenting out or deleting the ::before rule */
+/*
 .hero::before {
   content: "";
   background: url('images/block-banner.gif') no-repeat center center/cover;
-  background-size: 130% auto; /* Makes the image 130% as wide as the container */
+  background-size: 130% auto;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,10 +22,14 @@
   height: 100%;
   z-index: -2;
 }
+*/
 
+/* Optionally, you can adjust or remove the ::after overlay. 
+   For example, you might not need it if the particles effect is clear on a dark background.
+   Here we leave a slight overlay for extra depth: */
 .hero::after {
   content: "";
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   position: absolute;
   top: 0;
   left: 0;
@@ -30,13 +38,14 @@
   z-index: -1;
 }
 
+/* Hero Content */
 .hero-content {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: #fff;
+  color: #853d25;
   padding: 20px;
   font-family: "Fira Mono", monospace;
 }
@@ -51,11 +60,12 @@
   margin: 0.5rem;
 }
 
-.hero-content h3 {
+.hero-content p {
   font-size: 1.3rem;
   margin: 1rem 0;
 }
 
+/* Button Container */
 .btn-container {
   margin-top: 1.5rem;
 }
@@ -84,6 +94,7 @@
   background-color: #1e7e34;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
@@ -91,7 +102,7 @@
   .hero-content h2 {
     font-size: 1.4rem;
   }
-  .hero-content h3 {
+  .hero-content p {
     font-size: 1rem;
   }
 }

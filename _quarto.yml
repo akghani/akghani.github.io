@@ -72,8 +72,6 @@ format:
     smooth-scroll: true
     toc: true
     toc-location: left
-    toc-title: Summary
-    toc-depth: 3
 #css: styles.css
 theme:
   light: [cosmo, _assets/lightstyle.scss]

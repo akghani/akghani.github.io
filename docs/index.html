@@ -72,6 +72,7 @@ ul.task-list li input[type="checkbox"] {
 <style>html{ scroll-behavior: smooth; }</style>
 
 
+<link rel="stylesheet" href="index.css">
 <meta property="og:title" content="Abdelkarim el Ghani">
 <meta property="og:description" content="Statistical Data Analyst | Neuroscientist">
 <meta property="og:image" content="/images/logo-akg.png">
@@ -190,15 +191,19 @@ ul.task-list li input[type="checkbox"] {
             "random": true
           },
           "size": {
-            "value": 4,
+            "value": 8,
             "random": true
           },
           "line_linked": {
-            "enable": false
+            "enable": true,
+            "distance": 300,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
           },
           "move": {
             "enable": true,
-            "speed": 2,
+            "speed": 3,
             "direction": "bottom",
             "random": false,
             "straight": false,
@@ -209,7 +214,7 @@ ul.task-list li input[type="checkbox"] {
           "detect_on": "canvas",
           "events": {
             "onhover": { "enable": false },
-            "onclick": { "enable": false },
+            "onclick": { "enable": true },
             "resize": true
           }
         },
@@ -229,6 +234,25 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!-- Hero Section -->
+<div class="hero">
+<div class="hero-content">
+<!-- The background gif and styling are defined in index.css -->
+<h1>
+Hi there
+</h1>
+<h2>
+Welcome to my portfolio
+</h2>
+<h3>
+Feel free to explore my projects and learn more about me!
+</h3>
+<div class="btn-container">
+<p><a href="./projects.html" class="btn">Explore Projects</a><br>
+<a href="./about.html" class="btn btn-secondary">About Me</a></p>
+</div>
+</div>
+</div>
 
 
 
