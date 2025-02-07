@@ -1,0 +1,70 @@
+<!-- _assets/title-block.html -->
+<header id="title-block-header">
+  <!-- Particles container -->
+  <div id="particles-js"></div>
+
+  <!-- Title Block Content -->
+  <div class="title-block-content animate__animated animate__fadeInDown">
+    <img src="images/logo-akg-bw.png" alt="Logo" class="title-block-logo">
+    $if(title)$<h1 class="title">$title$</h1>$endif$
+    $if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+  </div>
+
+  <!-- Load particles.js from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+
+  <!-- Initialize particles.js with embedded configuration -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function(){
+      particlesJS("particles-js", {
+        "particles": {
+          "number": {
+            "value": 200,
+            "density": {
+              "enable": true,
+              "value_area": 800
+            }
+          },
+          "color": {
+            "value": "#888888"
+          },
+          "shape": {
+            "type": "circle"
+          },
+          "opacity": {
+            "value": 0.5,
+            "random": true
+          },
+          "size": {
+            "value": 8,
+            "random": true
+          },
+          "line_linked": {
+            "enable": true,
+            "distance": 300,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 2
+          },
+          "move": {
+            "enable": true,
+            "speed": 3,
+            "direction": "bottom",
+            "random": false,
+            "straight": false,
+            "out_mode": "out"
+          }
+        },
+        "interactivity": {
+          "detect_on": "canvas",
+          "events": {
+            "onhover": { "enable": false },
+            "onclick": { "enable": true },
+            "resize": true
+          }
+        },
+        "retina_detect": true
+      });
+    });
+  </script>
+</header>

@@ -1,0 +1,400 @@
+/*-- scss:defaults --*/
+
+// IMPORT FONTS
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Roboto+Serif:wght@100..900&display=swap');
+
+// Light theme colors
+$body-bg: #fafafa;
+$body-color: #212529;
+$link-color: #3b4252;
+$navbar-bg: #3b4252;
+$navbar-fg: #fafafa;
+$code-block-bg: #f8f9fa;
+$code-color: #3b4252;
+$caption-color: #3b4252;
+
+// Add smooth transitions
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Unify Title Block & Hero backgrounds for a cohesive look */
+#title-block-header,
+.hero {
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+  color: $body-color;
+}
+
+/* Overlay in hero if you want a darker overlay effect */
+.hero-overlay {
+  background: rgba(0,0,0,0.3);
+}
+
+/* Apply Roboto Mono to all heading tags */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace;
+  color: $body-color;
+}
+
+/* Apply Roboto Serif to paragraphs and other text */
+p, caption, body, .caption, blockquote, li, .text, div {
+  font-family: 'Roboto Serif', serif;
+  color: $body-color;
+}
+
+/* Heading sizes */
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+
+/* Paragraph sizing */
+p {
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+/* Increase space before headings */
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    margin-top: 40px;
+}
+
+/* --- NAV --- */
+nav, .navbar {
+    background-color: $navbar-bg !important;
+}
+
+/* Force text color in navbar */
+nav ul li a {
+    font-size: 15px;
+    color: $navbar-fg !important;
+}
+
+/* Example branding name bigger (replace with your name if needed) */
+nav ul li:first-child a {
+    font-size: 26px;  
+    color: $navbar-fg !important;  
+}
+
+/* Flex styling for nav */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Spacing between nav items */
+nav ul li {
+    margin-right: 20px;
+}
+
+.site-owner {
+    font-size: 26px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+nav ul li a, .site-owner {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 15px;
+}
+
+/* Quarto title banner */
+.quarto-title-banner {
+  background-color: $navbar-bg !important;
+  color: $navbar-fg !important;
+  padding: 0.5rem 1rem;
+  
+  .quarto-title {
+    color: $navbar-fg !important;
+  }
+}
+
+.header-section-number {
+  color: $navbar-fg !important;
+}
+
+/* --- Buttons & Fancy Hover Effects --- */
+.btn, .btn-secondary {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn {
+  background-color: #ffd700; /* gold color */
+  color: #000;
+  
+  &:hover {
+    transform: scale(1.07);
+    background-color: #ffbf00;
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  }
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+  
+  &:hover {
+    transform: scale(1.07);
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+  }
+}
+
+/* Social links: hover color & minimal glow */
+.social-links a {
+  color: #fff;
+  margin: 0 0.75rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
+/* Scroll-down arrow style */
+.scroll-down a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
+/* Footer styling */
+.footer-items {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.footer-link {
+  color: var(--bs-light);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
+  
+  &:hover {
+    opacity: 1;
+    color: var(--bs-light);
+    text-shadow: 0 0 5px var(--bs-light);
+  }
+  
+  i, svg {
+    margin-right: 0.5rem;
+  }
+}
+
+.page-footer {
+  padding: 0.5rem 1rem;
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  
+  .link-secondary {
+    color: var(--bs-light);
+    text-decoration: none;
+    opacity: 0.8;
+    
+    &:hover {
+      opacity: 1;
+      color: var(--bs-light);
+    }
+  }
+  
+  span {
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-items {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
+/* TOC Styles */
+nav#TOC.toc-active {
+  background-color: transparent !important;
+  font-size: 0.9em !important;
+  color: #212529 !important;
+  padding: 10px !important;
+}
+
+nav#TOC.toc-active a {
+  color: #212529 !important;
+  font-size: 0.9em !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #000 !important;
+  }
+  
+  &.active {
+    font-weight: bold;
+    color: #000 !important;
+    border-left: 3px solid #000;
+  }
+}
+
+nav#TOC.toc-active ul {
+  display: block !important;
+  padding-left: 0;
+}
+
+nav#TOC.toc-active ul li {
+  display: block;
+  margin-right: 0 !important;
+}
+
+/* Link color + hover */
+a {
+  color: $link-color !important;
+  
+  &:hover {
+    color: darken($link-color, 15%) !important;
+  }
+}
+
+/* Selection highlight */
+::selection {
+  background-color: $link-color !important;
+  color: $body-bg !important;
+}
+
+/* Callouts */
+.callout {
+  background-color: darken($body-bg, 5%) !important;
+  border-color: $link-color !important;
+  
+  .callout-title {
+    background-color: darken($body-bg, 8%) !important;
+  }
+}
+
+/* Smaller listing titles */
+h5.no-anchor.card-title.listing-title {
+  font-size: 20px !important;
+  line-height: 1.3;
+}
+
+/* Body base font */
+body {
+  font-size: 1em !important;
+  line-height: 1.6 !important;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* Heading adjustments */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 1.5em !important;
+  margin-bottom: 15px;
+}
+
+/* Paragraph adjustments */
+p {
+  font-size: 1em !important;
+  margin-bottom: 20px;
+}
+
+/* Captions */
+.quarto-float-caption,
+.figcaption,
+figure figcaption,
+.figure-caption {
+  color: $caption-color !important;
+}
+
+div.quarto-figure .quarto-float-caption {
+  color: $caption-color !important;
+}
+
+/* Code blocks */
+pre {
+  background-color: $code-block-bg !important;
+  color: $code-color !important;
+}
+
+code {
+  color: $code-color !important;
+}
+
+/* Cards in light mode */
+.card {
+  background-color: #fff !important;
+  border-color: #ddd !important;
+}
+
+/* Inputs and textareas */
+input, select, textarea {
+  background-color: #fff !important;
+  color: $body-color !important;
+  border-color: #ccc !important;
+}
+
+/* Tables */
+table {
+  color: $body-color;
+  
+  th, td {
+    border-color: #ddd !important;
+  }
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: $link-color !important;
+  background-color: darken($body-bg, 5%) !important;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: #ddd !important;
+}
+
+/* Social Share */
+.page-layout-article {
+  .social-share {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 847px;
+    margin: 2rem auto;
+    padding: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 847px;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 37.88px;
+      height: 37.88px;
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
