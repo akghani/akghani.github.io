@@ -1,8 +1,7 @@
 /*-- scss:defaults --*/
-  
+
 // IMPORT FONTS
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Roboto+Serif:wght@100..900&display=swap');
-
 
 // Light theme colors
 $body-bg: #fafafa;
@@ -16,109 +15,91 @@ $caption-color: #3b4252;
 
 // Add smooth transitions
 * {
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 
+/* Unify Title Block & Hero backgrounds for a cohesive look */
+#title-block-header,
+.hero {
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+  color: $body-color;
+}
+
+/* Overlay in hero if you want a darker overlay effect */
+.hero-overlay {
+  background: rgba(0,0,0,0.3);
+}
 
 /* Apply Roboto Mono to all heading tags */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Roboto Mono', monospace;
+  color: $body-color;
 }
 
-/* Apply Roboto Serif to all paragraphs, captions, and other text */
+/* Apply Roboto Serif to paragraphs and other text */
 p, caption, body, .caption, blockquote, li, .text, div {
   font-family: 'Roboto Serif', serif;
+  color: $body-color;
 }
 
-/* You can customize specific elements as needed, for example: */
-h1 {
-  font-size: 2.5em;
-}
+/* Heading sizes */
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
 
-h2 {
-  font-size: 2em;
-}
-
+/* Paragraph sizing */
 p {
   font-size: 1.1em;
+  margin-bottom: 20px;
 }
 
-
-/* Space before title */
+/* Increase space before headings */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
     margin-top: 40px;
 }
 
-
-// NAV
-
-/* Change the font size of the navigation links */
-nav ul li a {
-    font-size: 15px;
-    color: $navbar-fg !important; /* Adjust text color if needed */
-}
-
-/* Change the banner background color */
-nav {
+/* --- NAV --- */
+nav, .navbar {
     background-color: $navbar-bg !important;
 }
 
-nav ul li:first-child a {
-    font-size: 26px;  /* Font size for "Steven Ponce" */
-    color: $navbar-fg !important;  // Using the light theme variable
+/* Force text color in navbar */
+nav ul li a {
+    font-size: 15px;
+    color: $navbar-fg !important;
 }
 
+/* Example branding name bigger (replace with your name if needed) */
+nav ul li:first-child a {
+    font-size: 26px;  
+    color: $navbar-fg !important;  
+}
 
-/* Align the navbar items using Flexbox */
+/* Flex styling for nav */
 nav ul {
     display: flex;
-    justify-content: space-between; /* Ensure space between items */
-    align-items: center; /* Vertically align items */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Ensure spacing between navbar items */
+/* Spacing between nav items */
 nav ul li {
     margin-right: 20px;
 }
 
-/* Specific styling for 'Steven Ponce' */
 .site-owner {
     font-size: 26px;
     font-family: 'Roboto Mono', monospace;
 }
 
-/* Apply 'Roboto Mono' to all navbar items */
 nav ul li a, .site-owner {
     font-family: 'Roboto Mono', monospace;
-    font-size: 15px; /* Adjust font size for other navbar links */
+    font-size: 15px;
 }
 
-/* Apply background to navbar only */
-nav, .navbar {
-    background-color: $navbar-bg !important;
-}
-
-/* Make sure all navbar links are white */
-.navbar-nav .nav-link,
-.navbar-brand,
-.nav-item a {
-    color: $navbar-fg !important;
-}
-
-/* Add hover effect for better interaction */
-.navbar-nav .nav-link:hover,
-.navbar-brand:hover,
-.nav-item a:hover {
-    color: darken($navbar-fg, 10%) !important;
-    text-decoration: none;
-}
-
-
-
-// banner 
+/* Quarto title banner */
 .quarto-title-banner {
-  background-color: $navbar-bg !important;  // Using your navbar color variable
-  color: $navbar-fg !important;  // Using your navbar font color variable
+  background-color: $navbar-bg !important;
+  color: $navbar-fg !important;
   padding: 0.5rem 1rem;
   
   .quarto-title {
@@ -126,14 +107,68 @@ nav, .navbar {
   }
 }
 
-// For any text in the header/banner
 .header-section-number {
   color: $navbar-fg !important;
 }
 
+/* --- Buttons & Fancy Hover Effects --- */
+.btn, .btn-secondary {
+  font-size: 1.1rem;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
+.btn {
+  background-color: #ffd700; /* gold color */
+  color: #000;
+  
+  &:hover {
+    transform: scale(1.07);
+    background-color: #ffbf00;
+    box-shadow: 0 0 10px #FFD700, 0 0 20px #FFD700;
+  }
+}
 
-// FOOTER
+.btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+  
+  &:hover {
+    transform: scale(1.07);
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+  }
+}
+
+/* Social links: hover color & minimal glow */
+.social-links a {
+  color: #fff;
+  margin: 0 0.75rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
+/* Scroll-down arrow style */
+.scroll-down a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
 /* Footer styling */
 .footer-items {
   display: flex;
@@ -145,12 +180,12 @@ nav, .navbar {
   color: var(--bs-light);
   text-decoration: none;
   opacity: 0.8;
-  transition: opacity 0.2s ease;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
   
   &:hover {
     opacity: 1;
-    text-decoration: none;
     color: var(--bs-light);
+    text-shadow: 0 0 5px var(--bs-light);
   }
   
   i, svg {
@@ -160,7 +195,7 @@ nav, .navbar {
 
 .page-footer {
   padding: 0.5rem 1rem;
-  background-color: $navbar-bg; 
+  background-color: $navbar-bg;
   color: $navbar-fg;
   display: flex;
   justify-content: space-between;
@@ -184,7 +219,6 @@ nav, .navbar {
   }
 }
 
-/* Add some space between footer elements on mobile */
 @media (max-width: 768px) {
   .footer-items {
     flex-direction: column;
@@ -192,165 +226,175 @@ nav, .navbar {
   }
 }
 
-
-// TOC
-
-/* Target the TOC container with the specific ID and class */
+/* TOC Styles */
 nav#TOC.toc-active {
-    background-color: transparent !important; /* Remove background color */
-    font-size: 0.9em !important; /* Adjust the font size */
-    color: #212529 !important; /* Set readable text color */
-    padding: 10px !important; /* Add padding for better spacing */
+  background-color: transparent !important;
+  font-size: 0.9em !important;
+  color: #212529 !important;
+  padding: 10px !important;
 }
 
-/* Style the links inside the TOC */
 nav#TOC.toc-active a {
-    color: #212529 !important; /* Set readable color for links */
-    font-size: 0.9em !important; /* Ensure smaller font size */
-    text-decoration: none !important; /* Remove underline from links */
+  color: #212529 !important;
+  font-size: 0.9em !important;
+  text-decoration: none !important;
+  
+  &:hover {
+    color: #000 !important;
+  }
+  
+  &.active {
+    font-weight: bold;
+    color: #000 !important;
+    border-left: 3px solid #000;
+  }
 }
 
-/* Add hover effects to TOC links */
-nav#TOC.toc-active a:hover {
-    color: #000 !important; /* Set darker color for better readability on hover */
-}
-
-nav#TOC.toc-active a.active {
-    font-weight: bold; /* Make the active section bold */
-    color: #000 !important; /* Ensure visibility of the active section */
-    border-left: 3px solid #000; /* Add a left border for better visibility */
-}
-
-
-/* TOC Test*/
 nav#TOC.toc-active ul {
-    display: block; /* Ensure the TOC list is displayed in a vertical stack */
+  display: block !important;
+  padding-left: 0;
 }
 
 nav#TOC.toc-active ul li {
-    display: block; /* List items should stack vertically */
+  display: block;
+  margin-right: 0 !important;
 }
 
-
-nav#TOC.toc-active ul {
-    display: block !important; /* Force TOC to stack vertically */
-    padding-left: 0; /* Adjust padding if needed */
-}
-
-nav#TOC.toc-active ul li {
-    margin-right: 0 !important; /* Remove the margin if it's causing horizontal alignment issues */
-}
-
-
-// Add styles for links
+/* Link color + hover */
 a {
-    color: $link-color !important;
-    
-    &:hover {
-        color: darken($link-color, 15%) !important;
-    }
+  color: $link-color !important;
+  
+  &:hover {
+    color: darken($link-color, 15%) !important;
+  }
 }
 
-// Add styles for selection highlighting
+/* Selection highlight */
 ::selection {
-    background-color: $link-color !important;
-    color: $body-bg !important;
+  background-color: $link-color !important;
+  color: $body-bg !important;
 }
 
-// Add styles for callouts
+/* Callouts */
 .callout {
-    background-color: darken($body-bg, 5%) !important;
-    border-color: $link-color !important;
-    
-    .callout-title {
-        background-color: darken($body-bg, 8%) !important;
-    }
+  background-color: darken($body-bg, 5%) !important;
+  border-color: $link-color !important;
+  
+  .callout-title {
+    background-color: darken($body-bg, 8%) !important;
+  }
 }
 
-
-
-// OTHERS
-
-/* Reduce the font size of card titles */
+/* Smaller listing titles */
 h5.no-anchor.card-title.listing-title {
-    font-size: 20px !important; /* Adjust the size to your preference */
-    line-height: 1.3; /* Adjust line height for better spacing */
+  font-size: 20px !important;
+  line-height: 1.3;
 }
 
-
-// FONTS
-
-/* Set base font size for the entire document */
+/* Body base font */
 body {
-    font-size: 1em !important; /* Adjust as necessary */
-    line-height: 1.6 !important; /* Ensure proper readability */
-    font-family: 'Roboto Mono', monospace; /* Apply Roboto Mono for consistency */
+  font-size: 1em !important;
+  line-height: 1.6 !important;
+  font-family: 'Roboto Mono', monospace;
 }
 
 /* Heading adjustments */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto Mono', monospace !important;
-    font-size: 1.5em !important; /* Adjust heading size */
-    margin-bottom: 15px; /* Add some spacing */
+  font-family: 'Roboto Mono', monospace !important;
+  font-size: 1.5em !important;
+  margin-bottom: 15px;
 }
 
 /* Paragraph adjustments */
 p {
-    font-size: 1em !important; /* Adjust for readability */
-    margin-bottom: 20px; /* Add spacing after paragraphs */
+  font-size: 1em !important;
+  margin-bottom: 20px;
 }
 
-
-// CAPTION
-/* Target Quarto figure captions specifically */
-.quarto-float-caption, 
+/* Captions */
+.quarto-float-caption,
 .figcaption,
 figure figcaption,
 .figure-caption {
-  color: $caption-color !important;  
+  color: $caption-color !important;
 }
 
-/* Additional specificity if needed */
 div.quarto-figure .quarto-float-caption {
-  color: $caption-color !important; 
+  color: $caption-color !important;
 }
 
-/* Target the specific ID if the above selectors don't work */
-#fig-1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca {
-  color: $caption-color !important; 
+/* Code blocks */
+pre {
+  background-color: $code-block-bg !important;
+  color: $code-color !important;
 }
 
+code {
+  color: $code-color !important;
+}
 
-// SOCIAL SHARE
+/* Cards in light mode */
+.card {
+  background-color: #fff !important;
+  border-color: #ddd !important;
+}
+
+/* Inputs and textareas */
+input, select, textarea {
+  background-color: #fff !important;
+  color: $body-color !important;
+  border-color: #ccc !important;
+}
+
+/* Tables */
+table {
+  color: $body-color;
+  
+  th, td {
+    border-color: #ddd !important;
+  }
+}
+
+/* Blockquotes */
+blockquote {
+  border-left-color: $link-color !important;
+  background-color: darken($body-bg, 5%) !important;
+}
+
+/* Horizontal rules */
+hr {
+  border-color: #ddd !important;
+}
+
+/* Social Share */
 .page-layout-article {
-    .social-share {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 1rem;
-        width: 847px;  // Set specific width based on the inspect element
-        margin: 2rem auto;
-        padding: 0;
-        
-        // Container to enforce centering
-        &::after {
-            content: '';
-            display: block;
-            width: 847px;  // Match container width
-            margin: 0 auto;
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        
-        a {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 37.88px;  // Set specific width from inspect
-            height: 37.88px; // Make it square
-            margin: 0;
-            padding: 0;
-        }
+  .social-share {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    width: 847px;
+    margin: 2rem auto;
+    padding: 0;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 847px;
+      margin: 0 auto;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 37.88px;
+      height: 37.88px;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

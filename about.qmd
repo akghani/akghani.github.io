@@ -3,7 +3,7 @@ title: ""
 subtitle: ""
 about: 
   template: jolla
-  image: "images/profile-pic-bw.png"
+  image: "images/profile-pic-nbg.png"
   image-shape: round
   image-width: 15rem
 format:
@@ -11,136 +11,183 @@ format:
     page-layout: article
 ---
 
-
-
-
-
 ```{=html}
 <!-- External Libraries -->
 <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
-
 <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 
-<!-- Additional CSS for Fancy Hover Effects and Dynamic Styling -->
 <style>
-  /* Animated Gradient Background for the Page */
-  body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: linear-gradient(270deg, #f6f9fc, #e9eff5, #f6f9fc, #e9eff5);
-    background-size: 800% 800%;
-    animation: gradientAnimation 20s ease infinite;
-    margin: 0;
-    padding: 20px;
-    color: #333;
-  }
-  @keyframes gradientAnimation {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-  }
-  
-  /* Hero Heading Enhancements */
-  #hero-heading {
-    text-align: left;
-    margin: 2rem 0;
-    animation: fadeSlide 1.5s ease-out;
-  }
-  @keyframes fadeSlide {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-  #hero-heading p {
-    font-size: 1.3em;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-    margin-bottom: 1.2rem;
-  }
-  
-  /* List Styling with Professional Icons and Bounce Effect */
-  #hero-heading ul {
-    padding-left: 1.5rem;
-    margin: 1rem 0;
-  }
-  #hero-heading li {
-    margin-bottom: 1rem;
-    font-weight: 500;
-    position: relative;
-    padding-left: 1.5em;
-    animation: bounceIn 0.8s ease;
-    /* Enable VanillaTilt on list items */
-    cursor: pointer;
-  }
-  #hero-heading li:before {
-    content: '★';
-    position: absolute;
-    left: 0;
-    color: #4A90E2;
-    font-size: 1.2em;
-    animation: pulseStar 1.5s infinite;
-  }
-  @keyframes pulseStar {
-    0% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.3); opacity: 1; }
-    100% { transform: scale(1); opacity: 0.8; }
-  }
-  @keyframes bounceIn {
-    0% { transform: translateY(-10px); opacity: 0; }
-    60% { transform: translateY(5px); opacity: 1; }
-    100% { transform: translateY(0); }
-  }
-  
-  /* Fancy Tooltip Term Hover Effects */
-  .tooltip-term {
-    color: #007BFF;
-    cursor: pointer;
-    font-weight: bold;
-    text-decoration: underline;
-    transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
-  }
-  .tooltip-term:hover {
-    color: #ff4081;
-    transform: translateY(-5px) scale(1.15) rotate(2deg);
-    text-shadow: 0 0 8px rgba(255, 64, 129, 0.8);
-  }
-  
-  /* Profile Image Pizzazz (for Jolla Template) */
-  .jolla-about .profile-image {
-    border: 5px solid;
-    border-image-slice: 1;
-    border-width: 5px;
-    border-image-source: linear-gradient(45deg, #4A90E2, #50b3a2);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .jolla-about .profile-image:hover {
-    transform: scale(1.08) rotate(1deg);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.35);
-  }
+/* ---------------------------------------------------
+   1) PAGE BACKGROUND & BASE STYLES
+----------------------------------------------------- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  /* Light gradient by default; decent in dark mode too */
+  background: linear-gradient(135deg, #e9eff5, #f7f9fa);
+  background-size: 200% 200%;
+  animation: gradientBG 12s ease infinite;
+  color: #333;
+}
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Basic link styling */
+a {
+  color: #1976d2;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff4081;
+}
+
+/* ---------------------------------------------------
+   2) ANIMATIONS FOR HEADINGS & LISTS
+----------------------------------------------------- */
+#hero-heading {
+  text-align: left;
+  margin: 2rem 0;
+  animation: fadeSlide 1.5s ease-out;
+}
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateY(-20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+#hero-heading p {
+  font-size: 1.15em;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+/* Bouncing + color-cycling stars */
+#hero-heading ul {
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+#hero-heading li {
+  margin-bottom: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding-left: 1.8em;
+  animation: bounceIn 0.8s ease;
+  cursor: pointer;
+}
+@keyframes bounceIn {
+  0%   { transform: translateY(-10px); opacity: 0; }
+  60%  { transform: translateY(5px);   opacity: 1; }
+  100% { transform: translateY(0); }
+}
+#hero-heading li::before {
+  content: '★';
+  position: absolute;
+  left: 0;
+  font-size: 1.2em;
+  animation: starColorCycle 3s infinite alternate ease-in-out;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+@keyframes starColorCycle {
+  0%   { color: #FFD700; transform: scale(1);   }
+  25%  { color: #ff4081; transform: scale(1.2); }
+  50%  { color: #50b3a2; transform: scale(1);   }
+  75%  { color: #1976d2; transform: scale(1.2); }
+  100% { color: #FFD700; transform: scale(1);   }
+}
+
+/* ---------------------------------------------------
+   3) TOOLTIP TERMS & THEIR HOVER EFFECTS
+----------------------------------------------------- */
+.tooltip-term {
+  color: #1976d2;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.3s ease, transform 0.3s ease, text-shadow 0.3s ease;
+}
+.tooltip-term:hover {
+  color: #ff4081;
+  transform: translateY(-5px) scale(1.12) rotate(2deg);
+  text-shadow: 0 0 8px rgba(255,64,129,0.4);
+}
+
+/* ---------------------------------------------------
+   4) JOLLA PROFILE IMAGE
+----------------------------------------------------- */
+.jolla-about .profile-image {
+  border: 4px solid;
+  border-image-slice: 1;
+  border-width: 4px;
+  border-image-source: linear-gradient(45deg, #FFD700, #50b3a2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.jolla-about .profile-image:hover {
+  transform: scale(1.05) rotate(1deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+
+/* ---------------------------------------------------
+   5) CUSTOM TIPPY THEME WITH LIGHT/DARK OVERRIDES
+----------------------------------------------------- */
+
+/* 5a) Universal fallback (if theme toggling isn't recognized) */
+.tippy-box[data-theme~='my-tippy'] {
+  background-color: #f5f5f5 !important;
+  color: #111 !important;
+  border: 2px solid #ffd700;
+  border-radius: 5px;
+  box-shadow: 0 0 8px #ffd700, 0 0 12px #ff4081;
+}
+.tippy-box[data-theme~='my-tippy'] .tippy-arrow::before {
+  color: #f5f5f5 !important;
+}
+
+/* 5b) Light theme override */
+body[data-quarto-theme='light'] .tippy-box[data-theme~='my-tippy'] {
+  background-color: #fff !important;
+  color: #111 !important;
+}
+body[data-quarto-theme='light'] .tippy-box[data-theme~='my-tippy'] .tippy-arrow::before {
+  color: #fff !important;
+}
+
+/* 5c) Dark theme override */
+body[data-quarto-theme='dark'] .tippy-box[data-theme~='my-tippy'] {
+  background-color: #333 !important;
+  color: #f8f9fa !important;
+}
+body[data-quarto-theme='dark'] .tippy-box[data-theme~='my-tippy'] .tippy-arrow::before {
+  color: #333 !important;
+}
 </style>
 
-<!-- Initialize AOS for Scroll Animations -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
+  /* Initialize AOS (Scroll Animations) */
+  document.addEventListener('DOMContentLoaded', function() {
     AOS.init({ duration: 1000, once: true });
   });
 </script>
 
 
+
 ```
 
-
-
-
 ```{=html}
-<!-- About Page Content with Enhanced Hover and Scroll Effects -->
+<!-- Main About Content -->
 <div id="hero-heading" data-aos="fade-up">
   <p>
     <strong>Abdelkarim el Ghani</strong> is a Statistical Data Analyst at 
     <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
-    Specializing in data analytics, neuroscience, and modern web development, he leverages cutting-edge techniques to drive innovation.
+    Specializing in data analytics, neuroscience, and modern web development, he leverages 
+    cutting-edge techniques to drive innovation.
   </p>
 
   <ul>
@@ -156,7 +203,8 @@ format:
   </ul>
 
   <p data-aos="fade-up" data-aos-delay="400">
-    Combining scientific research with innovative digital solutions, his work pushes the boundaries of what is possible.
+    Combining scientific research with innovative digital solutions, his work pushes 
+    the boundaries of what is possible.
   </p>
 
   <ul>
@@ -188,13 +236,13 @@ format:
     Advocating for transparency and collaboration in scientific research.
   </div>
   <div id="programming">
-    Developing robust, modern websites and interactive applications with the latest technologies.
+    Developing robust, modern websites and interactive apps with the latest technologies.
   </div>
   <div id="data-visualization">
-    Crafting clear and compelling visual representations that translate data into meaningful stories.
+    Crafting clear and compelling visual representations that transform data into meaningful stories.
   </div>
   <div id="reproducible-research">
-    Implementing systematic workflows that ensure every finding is verifiable and impactful.
+    Implementing systematic workflows ensuring every finding is verifiable and impactful.
   </div>
 </div>
 
@@ -202,17 +250,18 @@ format:
 
 
 
+
+
+
 ```
-
-
-
 
 ```{=html}
 <script>
+  /* Initialize Tippy.js with a custom theme that
+     works in light/dark modes + fallback */
   document.addEventListener('DOMContentLoaded', function () {
-    // Initialize Tippy.js for each tooltip term with advanced settings
     const terms = document.querySelectorAll('.tooltip-term');
-    terms.forEach((term, index) => {
+    terms.forEach(term => {
       tippy(term, {
         content(reference) {
           const id = reference.getAttribute('data-template');
@@ -220,20 +269,13 @@ format:
           return template ? template.innerHTML : '';
         },
         allowHTML: true,
-        theme: 'light',
+        theme: 'my-tippy',  // Our custom theme
         animation: 'scale',
         arrow: true,
         interactive: true,
-        // Custom delays: 150ms before showing, 100ms before hiding
         delay: [150, 100],
-        // Custom duration for show/hide animations: [300ms for showing, 250ms for hiding]
         duration: [300, 250],
-        trigger: 'mouseenter focus',
-        // Stagger the appearance slightly based on index, if desired
-        onShow(instance) {
-          // Optionally adjust timing further for each tooltip if needed
-          return true;
-        }
+        trigger: 'mouseenter focus'
       });
     });
   });
@@ -244,5 +286,3 @@ format:
 
 
 ```
-
-

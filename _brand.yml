@@ -1,0 +1,52 @@
+meta:
+  name: "Abdelkarim el Ghani"
+  link:
+    home: https://akghani.github.io
+    github: https://github.com/akghani
+color:
+  palette:
+    green: "#595F39"
+    black: "#1B1B1B"
+    gray: "#58594A"
+    white: "#E4E4DE"
+  foreground: black
+  background: white
+  primary: green
+  secondary: gray
+typography:
+  fonts:
+    - family: Fjalla One
+      source: google
+    - family: Inter
+      source: google
+    - family: Space Mono
+      source: google
+  base:
+    family: Inter
+    line-height: 1.6
+  headings:
+    family: Fjalla One
+    weight: 600
+    color: green
+  link:
+    color: secondary
+    weight: 500
+  monospace:
+    family: Space Mono
+    size: 1em
+defaults:
+  bootstrap:
+    defaults:
+      navbar-bg: green
+      navbar-fg: white
+      navbar-hl: black
+    # bootstrap variable definitions
+  quarto:
+    format:
+      # basic format-specific settings
+      html:
+        title-block-banner: green
+        title-block-banner-color: white
+    
+      
+      

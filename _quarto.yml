@@ -70,12 +70,10 @@ website:
 format: 
   html:
     smooth-scroll: true
-    toc: true
-    toc-location: left
-#css: styles.css
-theme:
-  light: [flatly, _assets/lightstyle.scss]
-  dark: [darkly, _assets/darkstyle.scss]
+#    toc: true
+#    toc-location: left
+#    css: styles.css
+    theme: [flatly, theme.scss]
 lightbox: auto
 
 execute:
