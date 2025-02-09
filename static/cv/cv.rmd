@@ -120,10 +120,14 @@ Main
 Alessandro Bramucci {#title}
 --------------------------------------------------------------------------------
 
+Date of Birth / Place: November 3, 1984 / Ancona, Italy   
+Nationality: Italian    
+Marital Status: Married, one child    
+
 Professional experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Guest Lecturer in Economics
+### Guest Lecturer
 
 Berlin School of Economics and Law (HWR)
 
@@ -133,7 +137,7 @@ April 2023 - Present
 
 ---
 
-- Teaching courses in English and German
+- Teaching Economics courses in English and German
 - Supervision of Bachelor and Master theses
 
 ### Research associate
@@ -174,7 +178,7 @@ Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK
 - Presenting the project at workshops and conferences
 :::
 
-Teaching experience {data-icon=chalkboard-teacher}
+Additional teaching experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ### Lecturer
@@ -211,43 +215,26 @@ Berlin
 
 2013    
 
-### M.A. (Laurea Specialistica) in Philosophy
+### M.A. (Laurea Specialistica) & B.A. (Laurea Triennale) in Philosophy
 
 University of Urbino
 
 Urbino, Italy
 
-2010
-
-### B.A. (Laurea Triennale) in Philosophy
-
-University of Urbino
-
-Urbino, Italy
-
-2007
+2010 / 2007
 
 Further education {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Coding bootcamp
+### Programming courses
 
-Le Wagon
-
-Berlin
-
-2023
-
-- Data Science with Python
-
-### Programming courses (with final exam)
-
-HWR Berlin / TU Berlin
+HWR Berlin / TU Berlin / Le Wagon
 
 Berlin
 
-2016 - 2019
+2016 - 2023
 
+- Data Science Bootcamp (Le Wagon)
 - Introduction to Engineering Data Analytics with *R* (TU Berlin)   
 - Applied Data Science for Quality Engineering (TU Berlin)    
 - Introduction to Programming in *R* (HWR Berlin)   
