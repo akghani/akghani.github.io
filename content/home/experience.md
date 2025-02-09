@@ -45,11 +45,11 @@ experience:
     date_start: '2017-10-01'
     date_end: '2022-08-31' 
     description: |2-
-      I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/), short for the German *Modelltheoretische Grundlagen wirtschaftspolitischer Kontroversen*, and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/) - The economic policy simulator. Goal of the two project was to teach Macroeconomics in an interactive and engaging way using some simple simulations. Both projects have been developed entirely in R/RStudio and numerous other packages (shiny, plotly, bookdown, etc.).
+      I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/), short for *Modelltheoretische Grundlagen wirtschaftspolitischer Kontroversen*, and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/) - The economic policy simulator. Goal of the two projects was to develop online tools to teach Macroeconomics in an interactive and engaging way using simulations. Both projects have been developed entirely in R/RStudio and numerous other packages (shiny, plotly, bookdown, etc.).
       
       My responsibilities included:
       * Programming of the simulations and the relative interactive applications
-      * Drafting the explanatory texts for the simulations
+      * Drafting of the explanatory texts of the simulations
       * Editorial work on the final textbook
         
   - title: Lecturer (*Lehrbeauftragter*)
