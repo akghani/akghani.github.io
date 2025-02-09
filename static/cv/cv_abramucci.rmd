@@ -103,6 +103,7 @@ skills_data <- tribble(
   "SQL",                3,
   "Stata",              2, 
 )
+
 build_skill_bars(skills = skills_data)
 ```
 
@@ -110,9 +111,6 @@ Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
 <small>
-Made with [pagedown](https://github.com/rstudio/pagedown).    
-Source code:    
-[github.com/Alessandro1984/cv](https://github.com/Alessandro1984/cv).   
 Last updated on `r format(Sys.time(), '%d/%m/%Y')`.
 </small>
 
@@ -125,7 +123,7 @@ Alessandro Bramucci {#title}
 Professional experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
-### Guest Lecturer
+### Guest Lecturer in Economics
 
 Berlin School of Economics and Law (HWR)
 
@@ -135,7 +133,7 @@ April 2023 - Present
 
 ---
 
-- Teaching Economics courses in English and German
+- Teaching courses in English and German
 - Supervision of Bachelor and Master theses
 
 ### Research associate
@@ -151,10 +149,10 @@ October 2019 - August 2022
 Project ["WIPOSIM - The economic policy online simulator"](https://www.alessandrobramucci.com/project/wiposim/)
 
 ::: concise
-- Programming of the applications in *R shiny*
-- Preparation of the texts explaining the simulations
-- Publication of scientific articles in academic journals
-- Acquisition of third-party funds
+- Developing applications in *R shiny*
+- Writing explanatory texts for simulations
+- Publishing scientific articles in academic journals
+- Securing third-party funding
 :::
 
 ### Research associate
@@ -170,10 +168,10 @@ October 2017 - April 2019
 Project ["Model-theoretic Foundations of Controversies in Economic Policy" (MGWK)](https://www.alessandrobramucci.com/project/mgwk/)
 
 ::: concise
-- Programming of the applications in *R shiny*
-- Writing selected chapters of the [online textbook](https://eng.mgwk.de/)
-- Translation of applications and textbook from German to English
-- Presentation of the project in workshops and conferences
+- Developing applications in *R shiny*
+- Authoring selected chapters of the [online textbook](https://eng.mgwk.de/)
+- Translating applications and textbook from German to English
+- Presenting the project at workshops and conferences
 :::
 
 Teaching experience {data-icon=chalkboard-teacher}
@@ -190,30 +188,28 @@ Berlin
 ---
 
 - Business Economics (WS 2017-18)
-- Economics Tutorium (WS 2016-17)
 - International Economics (SS 2016, SS 2018)
 - Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19, SS 2019)
-- Quantitative Methods for Economists (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23)
-- Research Methods Seminar (WS 2019-20)
+- Quantitative Methods for Economists (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23, WS 2023-24, WS 2024-25)
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ### PhD (Dottorato di ricerca) in Economics and Management
 
-University of Urbino
+University of Urbino    
 
-Urbino, Italy
+Urbino, Italy   
 
-2015
+2015    
 
 ### M.A. in International Economics
 
-Berlin School of Economics and Law (HWR)
+Berlin School of Economics and Law (HWR)    
 
-Berlin
+Berlin    
 
-2013
+2013    
 
 ### M.A. (Laurea Specialistica) in Philosophy
 
@@ -234,7 +230,7 @@ Urbino, Italy
 Further education {data-icon=laptop}
 --------------------------------------------------------------------------------
 
-### Bootcamp in Data Science
+### Coding bootcamp
 
 Le Wagon
 
@@ -242,7 +238,7 @@ Berlin
 
 2023
 
-- Machine Learning e Deep Learning with Python
+- Data Science with Python
 
 ### Programming courses (with final exam)
 
@@ -252,43 +248,33 @@ Berlin
 
 2016 - 2019
 
-- Introduction to Engineering Data Analytics with R (TU Berlin)   
+- Introduction to Engineering Data Analytics with *R* (TU Berlin)   
 - Applied Data Science for Quality Engineering (TU Berlin)    
-- Introduction to Programming in R (HWR Berlin)   
-- LaTeX: Einführung in das mathematisch wissenschaftliche Textsatzsystem (TU Berlin)
+- Introduction to Programming in *R* (HWR Berlin)   
+- *LaTeX*: Einführung in das mathematisch wissenschaftliche Textsatzsystem (TU Berlin)
 
 Selected publications {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
+### In search of a growth model for Italy: the failed attempt of an export-led recovery strategy?
+
+Bramucci, A.
+
+N/A
+
+2023
+
+*European Journal of Economics and Economic Policies: Intervention*, 21(1), 113-132, [https://doi.org/10.4337/ejeep.2023.0119](https://doi.org/10.4337/ejeep.2023.0119)
+
 ### Varieties and interdependencies of demand and growth regimes in finance-dominated capitalism: a Post-Keynesian two-country stock–flow consistent simulation approach
 
-Prante, F., Hein, E. and Bramucci, A.
+Prante, F., Hein, E. und Bramucci, A.
 
 N/A
 
 2022
 
 *Review of Keynesian Economics*, 10(2), 264–290, [https://doi.org/10.4337/roke.2022.02.07](https://doi.org/10.4337/roke.2022.02.07)
-
-### Pluralist macroeconomics - an interactive simulator
-
-Prante, F., Bramucci, A., Hein, E. and Truger, A.
-
-N/A
-
-2020
-
-*International Journal of Pluralism and Economics Education*, 11(1), 55-78, [https://www.doi.org/10.1504/IJPEE.2020.109496]( https://www.doi.org/10.1504/IJPEE.2020.109496)
-
-### Decades of tight fiscal policy have left the health care system in Italy ill-prepared to fight the COVID-19 outbreak
-
-Prante, F., Bramucci, A. and Truger, A.
-
-N/A
-
-2020
-
-*Intereconomics*, 55, 147–152, [https://doi.org/10.1007/s10272-020-0886-0](https://doi.org/10.1007/s10272-020-0886-0)
 
 ## Academic references {data-icon="handshake"}
 
@@ -301,6 +287,14 @@ N/A
 ### Prof. Dr. Achim Truger, *University of Duisburg-Essen* and *German Council of Economic Experts*
 
 `achim.truger@uni-due.de`
+
+N/A
+
+## Peer review activities {data-icon="pen"}
+
+### Structural Change and Economic Dynamics, Competition and Change, European Journal of Economics and Economic Policies: Intervention, Economia & Lavoro
+
+N/A
 
 N/A
 
@@ -327,3 +321,5 @@ N/A
     }, 200);
 })()
 ```
+
+

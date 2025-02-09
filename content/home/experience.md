@@ -22,16 +22,22 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Guest Lecturer
+  - title: Guest Lecturer (*Gastdozent*)
     company: Berlin School of Economics and Law (HWR Berlin)
     company_url: 'https://www.ipe-berlin.org/en/'
     company_logo: hwr
     location: Berlin (DE)
     date_start: '2023-04-01'
     description: |2-
-      In the Winter Semester 2023/2024 I am teaching Macroeconomics (in English and German), International Economics (in German) and Introduction to Python for Data Analytics (in German).
+      I teach the following courses:
+      * Macroeconomics: The Economic Cycle and Employment (en/de)
+      * International Economics (de)
+      * Introduction to Python for Data Analytics (de)
+      * Theory of Economic Policy (de)
+      * Microeconomics (de)
+      * [Data Visualization with R](https://github.com/Alessandro1984/Data-visualisation-with-R) (en)
 
-  - title: Research Associate
+  - title: Research Associate (*wiss. Mitarbeiter*)
     company: Berlin School of Economics and Law (HWR Berlin) & IPE Berlin
     company_url: 'https://www.ipe-berlin.org/en/'
     company_logo: hwr
@@ -46,20 +52,20 @@ experience:
       * Drafting the explanatory texts for the simulations
       * Editorial work on the final textbook
         
-  - title: Lecturer
+  - title: Lecturer (*Lehrbeauftragter*)
     company: Berlin School of Economics and Law (HWR Berlin)
     company_url: 'https://www.hwr-berlin.de/'
     company_logo: hwr
     location: Berlin (DE)
     date_start: '2016-04-01'
-    date_end: '2023-03-31'
+    date_end: '2025-02-03'
     description: |2-
-        As contract lecturer (*Lehrbeauftragter*) I have developed and taught the following courses:
+        I have developed and taught the following courses:
         * Business Economics (WS 2017-18)
         * Economics Tutorium (WS 2016-17)
         * International Economics (SS 2016, SS 2018)
         * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19, SS 2019)
-        * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23, WS 2023-24)
+        * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23, WS 2023-24, WS 2024-25)
         * Research Methods Seminar (WS 2019-20)
 
 design:

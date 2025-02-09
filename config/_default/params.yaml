@@ -27,10 +27,10 @@ address:
   country: Germany
   country_code: DE
 contact_links:
-  - icon: twitter
+  - icon: x-twitter
     icon_pack: fab
-    name: You can find me on Twitter
-    link: 'https://twitter.com/AleBramucci'
+    name: You can find me on X
+    link: 'https://x.com/AleBramucci'
 
 # Site header
 

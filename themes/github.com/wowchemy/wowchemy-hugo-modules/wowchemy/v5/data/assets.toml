@@ -70,6 +70,10 @@
 
 # CSS
 
+[css.fontAwesome]
+  version = "6.6.0"
+  sri = "sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+  url =  "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/%s/css/all.min.css"
 [css.academicons]
   version = "1.9.1"
   sri = "sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA=="
