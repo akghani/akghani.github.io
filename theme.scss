@@ -159,7 +159,7 @@ section {
   padding-bottom: 6rem;
 }
 .about .heading {
-  font-size: 4rem; /* Professional, smaller heading */
+  font-size: 4rem; /* Smaller, more professional */
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -182,7 +182,7 @@ section {
 }
 .skill-box {
   background: #ffffff;
-  color: var(--bg-color); /* Ensure dark text on white */
+  color: var(--bg-color); /* Dark text on white */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   padding: 1.5rem;
@@ -355,19 +355,18 @@ section {
 }
 
 /* RESPONSIVE BREAKPOINTS */
-@media (max-width: 1200px) {
-  html { font-size: 55%; }
-}
+
+/* For tablets and small laptops */
 @media (max-width: 991px) {
+  html { font-size: 55%; }
   .header { padding: 2rem 4%; }
   section { padding: 10rem 4% 2rem; }
   .home { padding: 0 4%; }
   .portfolio { padding-bottom: 7rem; }
   .footer { padding: 2rem 4%; }
 }
-@media (max-width: 850px) {
-  .home-imgHover { width: 55%; }
-}
+
+/* For devices with widths below 768px (tablets, small devices) */
 @media (max-width: 768px) {
   .header { background: var(--bg-color); }
   #menu-icon { display: block; }
@@ -393,51 +392,32 @@ section {
     transition-delay: 0s;
   }
   .navbar.active a { transform: translateX(0); transition-delay: 0.25s; }
-  .home-imgHover {
-    pointer-events: none;
-    background-color: var(--bg-color);
-    opacity: 0.6;
-  }
-  .portfolio h2 { margin-bottom: 3rem; }
-  .portfolio-container { grid-template-columns: repeat(2, 1fr); }
 }
+
+/* For smartphones and very small devices */
 @media (max-width: 520px) {
   html { font-size: 50%; }
-  .home-sci { width: 160px; }
-  .home-sci a { width: 38px; height: 38px; }
+  .header { padding: 1.5rem 3%; }
+  section { padding: 8rem 3% 1rem; }
+  .navbar a { margin-left: 1.5rem; font-size: 1.5rem; }
+  .home-content h1 { font-size: 4.5rem; }
+  .home-content p { font-size: 1.4rem; margin: 1.5rem 0 3rem; }
+  .btn-box { width: 100%; flex-direction: column; gap: 1rem; }
+  .btn-box a, .btn-box button { width: 100%; font-size: 1.6rem; }
 }
+
+/* Additional tweaks for very narrow screens */
 @media (max-width: 462px) {
   .home {
     justify-content: center;
     background: var(--bg-color);
   }
-  .home-imgHover {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    height: 100%;
-    background: var(--bg-color);
-    transition: 3s;
-    opacity: 0.75;
-  }
   .home-content {
     flex-direction: column;
     text-align: center;
   }
-  .home.show-animate .home-content .text-animate h3::before {
-    padding-left: 5.8rem;
-    animation: homeCursorText 6s linear infinite;
-    animation-delay: 2s;
-  }
-  .home.show-animate .home-content .text-animate h3 {
-    animation: homeBgTextSmartfone 6s linear infinite;
-    animation-delay: 2s;
-  }
-  .home-content h1 { font-size: 5rem; }
-  .portfolio h2 { margin-bottom: 3rem; }
+  .home-content h1 { font-size: 4rem; }
   .portfolio-container { grid-template-columns: 1fr; }
-  .contact form .input-box .input-field { width: 100%; }
   .footer { flex-direction: column-reverse; }
   .footer p { margin-top: 2rem; text-align: center; }
 }
