@@ -1,4 +1,3 @@
-# _quarto.yml
 project:
   type: website
   output-dir: docs
@@ -13,49 +12,28 @@ project:
     watch-inputs: true
     navigate: true
 
-from: markdown+emoji
-
 website:
   title: "Abdelkarim el Ghani"
-  favicon: /images/favicon-akg.png
-  image: /images/logo-akg.png
-  open-graph: true
-  search:
-    location: navbar
-    type: overlay
-  page-navigation: true
-  back-to-top-navigation: true
-  navbar:
-    title: Abdelkarim el Ghani
-    pinned: true
-    logo: /images/logo-akg.png
-    left:
-      - text: Home
-        href: index.qmd
-        icon: house-fill
-      - text: About Me
-        href: about.qmd
-        icon: person-arms-up
-      - text: Projects
-        href: projects.qmd
-        icon: graph-up
-        menu:
-          - text: Fairplay
-            href: projects/fairplay/index.qmd
-          - text: Rotterdam Gold
-            href: projects/rotterdamgold/index.qmd
-      - text: Resume
-        href: resume.qmd
-        icon: file-earmark-text-fill
-    right: 
-      - text: Resources
-        href: resources.qmd
-      - icon: linkedin
-        href: https://linkedin.com
-        target: _blank
-      - icon: github
-        href: https://github.com
-        target: _blank
+  favicon: "images/favicon-akg.png"
+  image: images/logo-akg.png
+  
+navbar:
+  left:
+    - text: "Home"
+      href: index.qmd
+      icon: house-fill
+    - text: "About"
+      href: index.qmd#about
+      icon: person-arms-up
+    - text: "Projects"
+      href: projects.qmd
+      icon: graph-up
+    - text: "Resume"
+      href: resume.qmd
+      icon: file-earmark-text-fill
+    - text: "Resources"
+      href: resources.qmd
+      
   page-footer:
     background: light
     left: |
@@ -65,20 +43,14 @@ website:
     right: |
       <span class="faux-block">Build with {{< fa brands r-project >}} and [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo" width=65px}](https://quarto.org/){target="_blank"}</span>
     border: true
-
-#title-block-banner: "#27445C"
+    
 format: 
   html:
     smooth-scroll: true
-#    toc: true
-#    toc-location: left
-#    css: styles.css
-    theme: [flatly, theme.scss]
-lightbox: auto
-
+    theme: 
+      - simplex
+      - theme.scss
+      
 execute:
-  cache: false
-  freeze: auto
-
-editor:
-  render-on-save: true
+  echo: false
+  message: false

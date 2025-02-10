@@ -1,0 +1,54 @@
+---
+title: "Abdelkarim el Ghani"
+subtitle: "Statistical Data Analyst | Neuroscientist"
+toc: false
+page-layout: custom
+section-divs: false
+format:
+  html:
+    template-partials:
+      - _assets/title-block.html
+    css:
+      - index.css
+      - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
+      - https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css
+resources:
+  - "_assets/**"
+  - "images/**"
+  - index.css
+---
+
+
+::: {.hero}
+<div class="hero-overlay"></div>
+
+::: {.hero-content}
+<div class="hero-text animate__animated animate__fadeInDown">
+[![](https://readme-typing-svg.herokuapp.com?font=Lobster&size=50&pause=2000&color=2D333B&center=true&width=512&height=100&lines=Hi+there!;Welcome+to+my+portfolio!)](https://git.io/typing-svg)
+</div>
+
+::: {.btn-container .animate__animated .animate__fadeInUp}
+[Explore Projects](projects.qmd){.btn}  
+[About Me](about.qmd){.btn .btn-secondary}
+:::
+
+<div class="social-links animate__animated animate__fadeInUp animate__delay-1s">
+  <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="scroll-down animate__animated animate__pulse animate__infinite">
+  <a href="#about">
+    <i class="fas fa-chevron-down"></i>
+  </a>
+</div>
+:::
+:::
+
+
+
+

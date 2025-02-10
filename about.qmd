@@ -1,15 +1,6 @@
----
-title: ""
-subtitle: ""
-about: 
-  template: jolla
-  image: "images/profile-pic-nbg.png"
-  image-shape: round
-  image-width: 15rem
-format:
-  html: 
-    page-layout: article
----
+
+
+
 
 ```{=html}
 <!-- External Libraries -->

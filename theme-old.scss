@@ -1,0 +1,366 @@
+/*-- scss:defaults --*/
+// SCSS defaults and variables go here
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100..700&family=Roboto+Serif:wght@100..900&display=swap');
+
+// Color and font variables
+$body-bg: #f0f4fc;
+$body-color: #212529;
+$link-color: #007BFF;
+$navbar-bg: #3b4252;
+$navbar-fg: #fafafa;
+$code-block-bg: #f8f9fa;
+$code-color: #3b4252;
+$caption-color: #555;
+
+$font-heading: 'Roboto Mono', monospace;
+$font-text: 'Roboto Serif', serif;
+$font-code: 'Roboto Mono', monospace;
+
+
+/*-- scss:rules --*/
+// Actual SCSS rules/styles go below
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #e9eff5, #f7f9fa);
+  background-size: 200% 200%;
+  animation: gradientBG 12s ease infinite;
+  color: $body-color;
+  font-family: $font-text;
+  font-size: 1em !important;
+  line-height: 1.6 !important;
+}
+
+@keyframes gradientBG {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-heading !important;
+  color: $body-color;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin-bottom: 20px;
+  font-size: 1.05em !important;
+}
+
+h1 { font-size: 2.4em; }
+h2 { font-size: 2em;   }
+h3 { font-size: 1.8em; }
+
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav, .navbar {
+  background-color: $navbar-bg !important;
+  color: $navbar-fg !important;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0; 
+  padding: 0;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a,
+.navbar-brand,
+.nav-item a {
+  color: $navbar-fg !important;
+  text-decoration: none;
+  font-family: $font-heading;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+nav a:hover,
+.navbar-brand:hover,
+.nav-item a:hover {
+  color: lighten($navbar-fg, 20%) !important;
+  text-shadow: 0 0 5px $navbar-fg;
+}
+
+/* Quarto Title Banner (if you use it) */
+.quarto-title-banner {
+  background-color: $navbar-bg !important;
+  color: $navbar-fg !important;
+  padding: 0.5rem 1rem;
+
+  .quarto-title {
+    color: $navbar-fg !important;
+    font-family: $font-heading;
+  }
+
+  .header-section-number {
+    color: $navbar-fg !important;
+  }
+}
+
+/* Title Block */
+#title-block-header {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+  overflow: hidden;
+  color: #fff;
+  margin-bottom: 0 !important;
+  padding: 2em 0;
+}
+
+.title-block-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 2em;
+}
+
+.title-block-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+}
+
+#particles-js {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* Hero */
+.hero {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1c92d2, #f2fcfe);
+  margin-top: 0 !important;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text {
+  margin-bottom: 2rem;
+  font-family: $font-heading;
+  font-size: 1.2rem;
+}
+
+.btn-container {
+  margin-bottom: 2rem;
+}
+
+.btn, .btn-secondary {
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  margin: 0 0.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  font-family: $font-heading;
+}
+
+.btn {
+  background-color: #ffd700;
+  color: #000;
+
+  &:hover {
+    transform: scale(1.07);
+    background-color: #ffbf00;
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700;
+  }
+}
+
+.btn-secondary {
+  background-color: #007bff;
+  color: #fff;
+
+  &:hover {
+    transform: scale(1.07);
+    background-color: #0056b3;
+    box-shadow: 0 0 10px #007bff, 0 0 20px #007bff;
+  }
+}
+
+/* Social links & hover effect */
+.social-links a {
+  color: #fff;
+  margin: 0 0.75rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
+/* Scroll-down arrow */
+.scroll-down a {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700;
+  }
+}
+
+/* Footer (optional) */
+.page-footer {
+  padding: 1rem;
+  background-color: $navbar-bg;
+  color: $navbar-fg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+.footer-items {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.footer-link {
+  color: $navbar-fg;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, text-shadow 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+    color: $navbar-fg;
+    text-shadow: 0 0 5px $navbar-fg;
+  }
+  i, svg {
+    margin-right: 0.5rem;
+  }
+}
+
+/* TOC overrides */
+nav#TOC.toc-active {
+  background-color: transparent !important;
+  font-size: 0.95em !important;
+  color: $body-color !important;
+  padding: 0.5rem 1rem !important;
+}
+
+nav#TOC.toc-active a {
+  color: $body-color !important;
+  text-decoration: none !important;
+
+  &:hover {
+    color: darken($body-color, 20%) !important;
+  }
+
+  &.active {
+    font-weight: bold;
+    color: darken($body-color, 20%) !important;
+    border-left: 3px solid darken($body-color, 20%);
+  }
+}
+
+nav#TOC.toc-active ul {
+  display: block !important;
+  padding-left: 0 !important;
+}
+
+nav#TOC.toc-active li {
+  margin-right: 0 !important;
+}
+
+/* Code blocks, tables, callouts */
+pre {
+  background-color: $code-block-bg !important;
+  color: $code-color !important;
+  font-family: $font-code;
+  padding: 1em;
+  border-radius: 5px;
+  overflow-x: auto;
+}
+
+code {
+  color: $code-color !important;
+  font-family: $font-code;
+}
+
+table {
+  color: $body-color;
+  width: 100%;
+  border-collapse: collapse;
+
+  th, td {
+    padding: 0.6em;
+    border: 1px solid lighten($body-bg, 20%);
+  }
+}
+
+.callout {
+  background-color: darken($body-bg, 2%) !important;
+  border-color: $link-color !important;
+  border-left-width: 5px;
+
+  .callout-title {
+    background-color: darken($body-bg, 5%) !important;
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+  }
+}
+
+.quarto-float-caption,
+.figcaption,
+figure figcaption,
+.figure-caption {
+  color: $caption-color !important;
+}
+
+/* Selection highlight */
+::selection {
+  background-color: $link-color !important;
+  color: $body-bg !important;
+}
+
+/* Card Titles */
+h5.no-anchor.card-title.listing-title {
+  font-size: 20px !important;
+  line-height: 1.3;
+}
