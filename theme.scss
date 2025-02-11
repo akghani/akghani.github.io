@@ -1,5 +1,7 @@
 /*-- scss:defaults --*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* Global Reset */
 * {
@@ -10,414 +12,312 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* CSS Variables for Branding */
+/*---------------------------------
+  Branding Variables
+----------------------------------*/
+/* 
+  --body-bg:        Background color for the entire page.
+  --navbar-bg:      Background color for the navbar.
+  --accent-color:   Used for key accents (headings, buttons, links).
+  --base-text:      Base text color for general content.
+  --section-bg:     Background for secondary sections (e.g., About, Contact).
+*/
 :root {
-  --bg-color: #112e42;          /* Dark navy background */
-  --main-color: #00abf0;        /* Bright blue accent */
-  --text-color: #ededed;        /* Light text */
-  --second-bg-color: #0f1823;    /* Deep subtle blue for secondary sections */
+  --body-bg:        #F7F7F7;   /* Light gray background for the page */
+  --navbar-bg:      #FFEBD6;   /* Light peach for navbar and secondary sections */
+  --accent-color:   #FF6F61;   /* Bright coral accent for headings, logos, buttons */
+  --base-text:      #333333;   /* Dark text for readability */
+  --section-bg:     #FFF8F2;   /* Very light background for content sections */
 }
 
-/* Base Settings */
+
+
+/*-- scss:rules --*/
+
+/*---------------------------------
+  Base Settings
+----------------------------------*/
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* 1rem = 10px */
   overflow-x: hidden;
 }
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
+  background: var(--body-bg);
+  color: var(--base-text);
 }
 
-/* HEADER & NAVBAR */
+/*---------------------------------
+  Header & Navbar
+----------------------------------*/
 .header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 9%;
-  background-color: transparent;
+  padding: 1.5rem 5%;
+  background: var(--navbar-bg); /* Navbar background color */
   display: flex;
   justify-content: space-between;
   z-index: 100;
 }
 .logo {
-  font-size: 2.5rem;
-  color: var(--text-color);
+  font-size: 2.2rem;
+  color: var(--accent-color); /* Logo uses the accent color */
   text-decoration: none;
-  font-weight: 600;
+  font-weight: bold;
 }
 .navbar {
-  position: relative;
+  position: sticky;
+  top: 0;
+  background: var(--navbar-bg);
+  padding: 1rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 .navbar a {
   font-size: 1.7rem;
-  color: var(--text-color);
+  color: var(--base-text); /* Base text color for links */
   text-decoration: none;
   font-weight: 500;
-  margin-left: 3.5rem;
-  transition: 0.3s;
-}
-/* Navbar hover & active effect with gradient */
-.navbar a:hover,
-.navbar a.active {
-  background: linear-gradient(45deg, var(--main-color), var(--second-bg-color));
-  color: var(--bg-color) !important;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
+  transition: background 0.3s, color 0.3s;
+}
+/* Active & Hover State for Navbar Links */
+.navbar a:hover,
+.navbar a.active {
+  background: var(--accent-color);
+  color: var(--navbar-bg); /* Contrast: dark text is replaced with the navbar background color */
 }
 
-/* SECTIONS */
+/*---------------------------------
+  Sections
+----------------------------------*/
 section {
   min-height: 100vh;
-  padding: 10rem 9% 2rem;
+  padding: 8rem 5% 4rem;
+  margin-top: 70px; /* Offset for fixed header */
 }
 
-/* HERO SECTION */
+/*---------------------------------
+  Hero Section
+----------------------------------*/
 .home {
   display: flex;
   align-items: center;
-  padding: 0 9%;
+  justify-content: center;
   background: url('images/pexels-njeromin-29254313.jpg') no-repeat center/cover;
   background-attachment: fixed;
 }
 .home-content {
   max-width: 60rem;
-  z-index: 99;
+  text-align: center;
 }
 .home-content h1 {
-  position: relative;
-  display: inline-block;
-  font-size: 5.6rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-.home-content h1 span {
-  color: var(--main-color);
+  font-size: 5rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
 }
 .home-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 4rem;
+  margin-bottom: 2rem;
+  color: var(--base-text);
 }
-
-/* BUTTONS */
-.btn-box {
-  display: flex;
-  justify-content: space-between;
-  width: 34.5rem;
-  height: 5rem;
-}
-.btn-box a, .btn-box button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 15rem;
-  height: 100%;
-  background: var(--main-color);
-  border: 0.2rem solid var(--main-color);
-  border-radius: 0.8rem;
-  font-size: 1.8rem;
-  color: var(--bg-color);
+.hero-buttons a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  padding: 0.8rem 1.5rem;
+  background: var(--accent-color);
+  color: var(--navbar-bg);
   text-decoration: none;
-  font-weight: 600;
-  letter-spacing: 0.1rem;
-  z-index: 1;
-  overflow: hidden;
-  transition: 0.5s;
+  border-radius: 0.5rem;
+  transition: background 0.3s;
 }
-.btn-box a:hover, .btn-box button:hover {
-  color: var(--main-color);
-}
-.btn-box a:nth-child(2) {
-  background: transparent;
-  color: var(--main-color);
-}
-.btn-box a:nth-child(2):hover {
-  color: var(--bg-color);
-}
-.btn-box a::before, .btn-box button::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--bg-color);
-  z-index: -1;
-  transition: 0.5s;
-}
-.btn-box a:hover::before, .btn-box button:hover::before {
-  width: 100%;
+.hero-buttons a:hover {
+  background: #e85b50; /* Slightly darker coral for hover */
 }
 
-/* ABOUT SECTION */
+/*---------------------------------
+  About Section
+----------------------------------*/
 .about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-  background-color: var(--second-bg-color);
-  padding-bottom: 6rem;
+  background: var(--navbar-bg); /* Secondary section background */
+  padding: 4rem 5%;
+  text-align: center;
 }
 .about .heading {
-  font-size: 4rem; /* Smaller, more professional */
-  margin-bottom: 3rem;
-  text-align: center;
-}
-.about-content {
-  text-align: center;
-}
-.about-content h3 {
-  font-size: 2.4rem;
+  font-size: 3.8rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
 }
 .about-content p {
   font-size: 1.6rem;
-  margin: 2rem 0 3rem;
+  max-width: 700px;
+  margin: 1rem auto;
+  color: var(--base-text);
 }
 
-/* SKILLS SECTION */
+/*---------------------------------
+  Skills Section
+----------------------------------*/
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 2rem;
+  padding: 2rem 0;
 }
 .skill-box {
   background: #ffffff;
-  color: var(--bg-color); /* Dark text on white */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  color: var(--base-text);
   padding: 1.5rem;
+  border-radius: 0.5rem;
   text-align: center;
-  font-size: 1.1rem;
-  transition: transform 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 .skill-box:hover {
   transform: translateY(-5px);
 }
 
-/* PROJECTS SECTION */
+/*---------------------------------
+  Projects Section
+----------------------------------*/
 .portfolio {
-  background-color: var(--bg-color);
+  background: var(--body-bg);
+  padding: 4rem 5%;
 }
 .portfolio h2 {
-  margin-bottom: 4rem;
+  font-size: 3.8rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: var(--accent-color);
 }
-.portfolio-container {
+.projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
 }
 .project-card {
-  position: relative;
-  border-radius: 2rem;
-  box-shadow: 0 0 1rem var(--second-bg-color);
+  background: #ffffff;
+  border-radius: 0.5rem;
   overflow: hidden;
-  display: flex;
+  box-shadow: 0 0 1rem rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+.project-card:hover {
+  transform: scale(1.02);
 }
 .project-card img {
   width: 100%;
-  transition: 0.5s ease;
-  opacity: 0.7;
-}
-.project-card:hover img {
-  transform: scale(1.1);
+  display: block;
 }
 .portfolio-layer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.1), var(--main-color));
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  padding: 1rem;
   text-align: center;
-  padding: 0 4rem;
-  transform: translateY(100%);
-  transition: 0.5s ease;
-}
-.project-card:hover .portfolio-layer {
-  transform: translateY(0);
+  background: rgba(255, 255, 255, 0.9);
 }
 .portfolio-layer h4 {
-  font-size: 3rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--accent-color);
 }
 .portfolio-layer p {
-  font-size: 1.6rem;
-  margin: 0.3rem 0 1rem;
-}
-.portfolio-layer a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 5rem;
-  height: 5rem;
-  background-color: var(--text-color);
-  border-radius: 50%;
-}
-.portfolio-layer a i {
-  font-size: 2.4em;
-  color: var(--bg-color);
+  font-size: 1.4rem;
+  color: var(--base-text);
 }
 
-/* CONTACT SECTION */
+/*---------------------------------
+  Contact Section
+----------------------------------*/
 .contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem 9%;
+  background: var(--navbar-bg);
+  text-align: center;
+  padding: 4rem 5%;
+  color: var(--base-text);
 }
 .contact h2 {
-  font-size: 3rem;
-  margin-bottom: 2rem;
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent-color);
 }
 .contact .contact-form {
   max-width: 500px;
-  margin: 2rem auto;
-  background: #fff;
+  margin: 0 auto;
+  background: var(--body-bg);
   padding: 1.5rem;
-  border-radius: 10px;
+  border-radius: 0.5rem;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 .contact .contact-form p {
+  font-size: 1.6rem;
   margin: 0.5rem 0;
-  font-size: 1.6rem;
 }
 
-/* FOOTER SECTION */
+/*---------------------------------
+  Footer Section
+----------------------------------*/
 .footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 2rem 9%;
+  background: var(--accent-color);
+  color: var(--navbar-bg);
+  text-align: center;
+  padding: 2rem 5%;
 }
-.footer-text p {
+.footer p {
   font-size: 1.6rem;
-  color: var(--text-color);
-}
-.footer-text p a {
-  font-weight: bold;
-  color: var(--text-color);
-}
-.footer-text p a:hover {
-  color: var(--main-color);
-}
-.footer-iconTop a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.8rem;
-  background: var(--main-color);
-  border: 0.2rem solid var(--main-color);
-  border-radius: 0.6rem;
-  overflow: hidden;
-  transition: 0.5s;
-}
-.footer-iconTop a::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background: var(--second-bg-color);
-  transition: 0.5s;
-}
-.footer-iconTop a:hover::before {
-  width: 100%;
-}
-.footer-iconTop a i {
-  font-size: 2.4rem;
-  color: var(--bg-color);
-  transition: 0.5s;
-}
-.footer-iconTop a:hover i {
-  color: var(--main-color);
 }
 
-/* KEYFRAME ANIMATIONS */
-@keyframes showRight {
-  100% { width: 0; }
-}
-@keyframes homeBgText {
-  0%, 10%, 100% { background-position: -33rem 0; }
-  65%, 85% { background-position: -11rem 0; }
-}
-@keyframes homeCursorText {
-  0%, 10%, 100% { width: 0; }
-  65%, 78%, 85% { width: 65%; opacity: 1; }
-  75%, 81% { opacity: 0; }
-}
-@keyframes aboutSpinner {
-  100% { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-/* RESPONSIVE BREAKPOINTS */
-
-/* For tablets and small laptops */
+/*---------------------------------
+  Responsive Breakpoints
+----------------------------------*/
+/* Tablets & small laptops */
 @media (max-width: 991px) {
   html { font-size: 55%; }
   .header { padding: 2rem 4%; }
-  section { padding: 10rem 4% 2rem; }
-  .home { padding: 0 4%; }
-  .portfolio { padding-bottom: 7rem; }
-  .footer { padding: 2rem 4%; }
+  section { padding: 8rem 4% 2rem; }
 }
 
-/* For devices with widths below 768px (tablets, small devices) */
+/* Devices below 768px */
 @media (max-width: 768px) {
-  .header { background: var(--bg-color); }
-  #menu-icon { display: block; }
-  .navbar {
-    position: absolute;
-    top: 100%;
-    left: -100%;
-    width: 100%;
-    padding: 1rem 4%;
-    background: var(--main-color);
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-    z-index: -1;
-    transition: 0.25s ease;
-    transition-delay: 0.25s;
-  }
-  .navbar.active { left: 0; transition-delay: 0s; }
-  .navbar a {
-    display: block;
-    font-size: 2rem;
-    margin: 3rem 0;
-    transform: translateX(-20rem);
-    transition: 0.25s ease;
-    transition-delay: 0s;
-  }
-  .navbar.active a { transform: translateX(0); transition-delay: 0.25s; }
+  .header { padding: 1.5rem 3%; }
+  .navbar ul { flex-direction: column; gap: 1rem; }
+  .navbar a { font-size: 1.5rem; }
 }
 
-/* For smartphones and very small devices */
+/* Smartphones */
 @media (max-width: 520px) {
   html { font-size: 50%; }
-  .header { padding: 1.5rem 3%; }
-  section { padding: 8rem 3% 1rem; }
-  .navbar a { margin-left: 1.5rem; font-size: 1.5rem; }
-  .home-content h1 { font-size: 4.5rem; }
-  .home-content p { font-size: 1.4rem; margin: 1.5rem 0 3rem; }
-  .btn-box { width: 100%; flex-direction: column; gap: 1rem; }
-  .btn-box a, .btn-box button { width: 100%; font-size: 1.6rem; }
+  .header { padding: 1rem 2%; }
+  section { padding: 6rem 2% 1rem; }
+  .home-content h1 { font-size: 3.8rem; }
+  .home-content p { font-size: 1.4rem; margin: 1rem 0 2rem; }
+  .skills-grid { grid-template-columns: 1fr; }
 }
 
-/* Additional tweaks for very narrow screens */
+/* Extra Small Devices */
 @media (max-width: 462px) {
-  .home {
-    justify-content: center;
-    background: var(--bg-color);
-  }
-  .home-content {
-    flex-direction: column;
-    text-align: center;
-  }
-  .home-content h1 { font-size: 4rem; }
-  .portfolio-container { grid-template-columns: 1fr; }
-  .footer { flex-direction: column-reverse; }
+  .home { background: var(--body-bg); }
+  .home-content { text-align: center; }
+  .home-content h1 { font-size: 3.6rem; }
+  .footer { flex-direction: column; }
   .footer p { margin-top: 2rem; text-align: center; }
 }
+
+
+
+@keyframes bounce {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+ 

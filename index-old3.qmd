@@ -1,0 +1,287 @@
+---
+title: "Abdelkarim el Ghani"
+description: ""
+format:
+  html:
+    page-layout: full
+---
+
+```{=html}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abdelkarim el Ghani</title>
+
+  <!-- External CSS Libraries -->
+  <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/dist/tippy.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Your Custom CSS (if any) -->
+  <link rel="stylesheet" href="theme.scss" />
+
+  <!-- (Optional) Additional inline CSS for layout adjustments -->
+  <style>
+    /* Example: Adjust header spacing or colors if needed */
+    body { margin: 0; font-family: sans-serif; }
+    .header { display: flex; align-items: center; justify-content: space-between; padding: 10px 20px; background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); position: fixed; width: 100%; z-index: 1000; }
+    .header .logo { font-size: 1.5em; font-weight: bold; text-decoration: none; color: #333; }
+    .navbar a { margin: 0 10px; text-decoration: none; color: #333; }
+    .navbar a.active { color: #ff4081; }
+    section { padding: 100px 20px 60px; margin-top: 60px; }
+    .btn { padding: 10px 20px; text-decoration: none; background: #1976d2; color: #fff; border-radius: 4px; margin-right: 10px; }
+    .btn-secondary { background: #ff4081; }
+    .skills-grid, .projects-grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .skill-box, .project-card { border: 1px solid #ddd; padding: 20px; border-radius: 4px; background: #f9f9f9; }
+    .footer { background: #333; color: #fff; padding: 20px; text-align: center; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <!-- Adapted logo: Your information remains unchanged in the hero section -->
+    <a href="#" class="logo"><span>Abdelkarim</span> el Ghani<span class="animate" style="--i:1;"></span></a>
+    <div class="bx bx-menu" id="menu-icon">
+      <span class="animate" style="--i:2;"></span>
+    </div>
+    <nav class="navbar">
+      <!-- Navigation links refer to section IDs defined below -->
+      <a href="#hero" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+      <span class="active-nav"></span>
+      <span class="animate" style="--i:2;"></span>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="home show-animate" id="hero">
+    <div class="home-content">
+      <h1>Hi, I’m Abdelkarim el Ghani<span class="animate" style="--i:2;"></span></h1>
+      <p>
+        I'm a Statistical Data Analyst and Neuroscientist who mixes data analytics with modern web development.
+        I love turning complex problems into intuitive, elegant solutions.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <h2 class="heading">About Me<span class="animate scroll" style="--i:1;"></span></h2>
+    <div class="about-content">
+      <p>
+        <strong>Abdelkarim el Ghani</strong> is a Statistical Data Analyst at 
+        <a href="https://www.eur.nl/" target="_blank">Erasmus University Rotterdam</a>.
+        Specializing in data analytics, neuroscience, and modern web development, he leverages 
+        cutting-edge techniques to drive innovation.
+      </p>
+      <ul>
+        <li data-aos="fade-right" data-aos-delay="100" data-tilt>
+          <span class="tooltip-term" data-template="data-analysis">Statistical Data Analysis</span>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="200" data-tilt>
+          <span class="tooltip-term" data-template="neuroscience">Neuroscience</span>
+        </li>
+        <li data-aos="fade-right" data-aos-delay="300" data-tilt>
+          <span class="tooltip-term" data-template="open-science">Open Science Practices</span>
+        </li>
+      </ul>
+      <p data-aos="fade-up" data-aos-delay="400">
+        Combining scientific research with innovative digital solutions, his work pushes 
+        the boundaries of what is possible.
+      </p>
+      <ul>
+        <li data-aos="fade-left" data-aos-delay="500" data-tilt>
+          <span class="tooltip-term" data-template="programming">Web Development</span>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="600" data-tilt>
+          <span class="tooltip-term" data-template="data-visualization">Data Visualization</span>
+        </li>
+        <li data-aos="fade-left" data-aos-delay="700" data-tilt>
+          <span class="tooltip-term" data-template="reproducible-research">Reproducible Research</span>
+        </li>
+      </ul>
+      <p data-aos="fade-up" data-aos-delay="800">
+        Hover over any term to learn more about his areas of expertise.
+      </p>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="skills" id="skills">
+    <h2 class="heading">Skills<span class="animate scroll" style="--i:1;"></span></h2>
+    <div class="skills-grid">
+      <div class="skill-box">
+        <strong>Data Analytics</strong>
+        <p>SPSS, R, Statistical Modeling</p>
+      </div>
+      <div class="skill-box">
+        <strong>Neuroscience</strong>
+        <p>Experimental Design, fMRI, EEG Analysis</p>
+      </div>
+      <div class="skill-box">
+        <strong>Reproducible Research</strong>
+        <p>Open Science, Version Control, CI/CD</p>
+      </div>
+    </div>
+  </section>
+
+```
+
+```{=html}
+<!-- PROJECTS SECTION -->
+<section id="projects" class="portfolio">
+  <h2 class="heading">Featured Projects<span class="animate scroll" style="--i:1;"></span></h2>
+  <div class="projects-grid">
+  
+  ::: {include="projects/fairplay/index.qmd"}
+  :::
+  
+  ::: {include="projects/rotterdamgold/index.qmd"}
+  :::
+  
+  </div>
+</section>
+```
+
+
+```{=html}
+  <!-- CONTACT SECTION -->
+  <section class="contact" id="contact">
+    <h2 class="heading">Contact<span class="animate scroll" style="--i:1;"></span></h2>
+    <p>Interested in collaborating or just want to say hi? Drop me a line:</p>
+    <div class="contact-form">
+      <p><strong>Email</strong>: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p><strong>Twitter</strong>: <a href="https://twitter.com/twitterhandle">@twitterhandle</a></p>
+      <p><strong>GitHub</strong>: <a href="https://github.com/yourusername">yourusername</a></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-iconTop">
+      <a href="#hero"><i class="bx bx-up-arrow-alt"></i></a>
+      <span class="animate scroll" style="--i:3;"></span>
+    </div>
+  </footer>
+
+  <!-- External JavaScript Libraries -->
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
+
+  <!-- Initialization Scripts -->
+  <script>
+    // Initialize AOS (Scroll Animations)
+    document.addEventListener('DOMContentLoaded', function() {
+      AOS.init({ duration: 1000, once: true });
+    });
+
+    // Initialize Tippy.js for tooltips
+    document.addEventListener('DOMContentLoaded', function () {
+      const terms = document.querySelectorAll('.tooltip-term');
+      terms.forEach(term => {
+        tippy(term, {
+          content(reference) {
+            const id = reference.getAttribute('data-template');
+            const template = document.getElementById(id);
+            return template ? template.innerHTML : '';
+          },
+          allowHTML: true,
+          theme: 'my-tippy',
+          animation: 'scale',
+          arrow: true,
+          interactive: true,
+          delay: [150, 100],
+          duration: [300, 250],
+          trigger: 'mouseenter focus'
+        });
+      });
+      // Initialize AOS animations
+    AOS.init({ duration: 1000, once: true });
+    });
+
+    // Sticky Navbar and Scroll Handling
+    document.addEventListener("DOMContentLoaded", function() {
+      let menuIcon = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
+
+      if (menuIcon && navbar) {
+        menuIcon.onclick = () => {
+          menuIcon.classList.toggle('bx-x');
+          navbar.classList.toggle('active');
+        };
+      }
+
+      let sections = document.querySelectorAll('section');
+      let navLinks = document.querySelectorAll('nav a');
+
+      window.addEventListener("scroll", function() {
+        sections.forEach(sec => {
+          let top = window.scrollY;
+          let offset = sec.offsetTop - 100;
+          let height = sec.offsetHeight;
+          let id = sec.getAttribute('id');
+
+          if (top >= offset && top < offset + height) {
+            navLinks.forEach(link => {
+              link.classList.remove('active');
+              let target = document.querySelector(`nav a[href="#${id}"]`);
+              if (target) target.classList.add('active');
+            });
+            sec.classList.add('show-animate');
+          } else {
+            sec.classList.remove('show-animate');
+          }
+        });
+
+        let header = document.querySelector('header');
+        if (header) header.classList.toggle('sticky', window.scrollY > 100);
+
+        if (menuIcon && navbar) {
+          menuIcon.classList.remove('bx-x');
+          navbar.classList.remove('active');
+        }
+
+        let footer = document.querySelector('footer');
+        if (footer) {
+          footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.body.scrollHeight);
+        }
+      });
+    });
+  </script>
+
+  <!-- Hidden Tooltip Content -->
+  <div style="display: none;">
+    <div id="data-analysis">
+      Converting complex datasets into actionable insights using advanced statistical techniques.
+    </div>
+    <div id="neuroscience">
+      Investigating the intricacies of brain function to better understand human behavior.
+    </div>
+    <div id="open-science">
+      Advocating for transparency and collaboration in scientific research.
+    </div>
+    <div id="programming">
+      Developing robust, modern websites and interactive apps with the latest technologies.
+    </div>
+    <div id="data-visualization">
+      Crafting clear and compelling visual representations that transform data into meaningful stories.
+    </div>
+    <div id="reproducible-research">
+      Implementing systematic workflows ensuring every finding is verifiable and impactful.
+    </div>
+  </div>
+</body>
+</html>
+```

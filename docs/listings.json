@@ -2,8 +2,9 @@
   {
     "listing": "/projects.html",
     "items": [
-      "/projects/fairplay/index.html",
-      "/projects/rotterdamgold/index.html"
+      "/projects/fairplay/index-fp-yaml.html",
+      "/projects/rotterdamgold/index.html",
+      "/projects/fairplay/index.html"
     ]
   }
 ]
