@@ -22,9 +22,10 @@ website:
   title: "Abdelkarim el Ghani"
   favicon: "images/favicon-akg.png"
   twitter-card: true
+  site-url: https://akghani.github.io
   image: images/logo-akg.png
   page-footer:
-    background: "#FF6F61"
+    background: "#354842"
     left: |
       © 2025 Abdelkarim el Ghani
     center: |
