@@ -6,7 +6,6 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="One-Page Portfolio">
 
 <title>Abdelkarim el Ghani</title>
 <style>
@@ -31,15 +30,17 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
 <link href="./images/favicon-akg.png" rel="icon" type="image/png">
+<script src="site_libs/quarto-listing/list.min.js"></script>
+<script src="site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-93640d7eeb499918ee4f96aafd60642d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-549806ee2085284f45b00abea8c6df48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-7ca9b527126aea4e6916dc1adfdc2ee2.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-df83324a554ecacfdf3fce23b5696303.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-1.2.0/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -69,9 +70,73 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-projects-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-projects-listing'] = new List('listing-projects-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <style>html{ scroll-behavior: smooth; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<meta property="og:title" content="Abdelkarim el Ghani">
+<meta property="og:image" content="./projects/fairplay/fairplay.jpg">
+<meta property="og:site_name" content="Abdelkarim el Ghani">
+<meta name="twitter:title" content="Abdelkarim el Ghani">
+<meta name="twitter:image" content="./projects/fairplay/fairplay.jpg">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body>
@@ -83,30 +148,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Abdelkarim el Ghani</h1>
-</div>
-
-<div>
-  <div class="description">
-    One-Page Portfolio
-  </div>
-</div>
+<main class="content column-page" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-<div class="quarto-title-meta column-page">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <!-- HEADER & NAVBAR -->
@@ -135,35 +179,33 @@ ul.task-list li input[type="checkbox"] {
 <!-- HERO SECTION -->
 <section id="hero" class="home show-animate">
 <div class="home-content">
-<p>Hi, I’m Abdelkarim el Ghani I’m a Statistical Data Analyst and Neuroscientist who mixes data analytics with modern web development. I love turning complex problems into intuitive, elegant solutions.</p>
 <div class="hero-buttons">
-<p><a href="#projects" class="btn">View My Work</a> <a href="#contact" class="btn btn-secondary">Contact Me</a></p>
+<p><a href="#projects" class="btn btn-primary">View My Work</a> <a href="#contact" class="btn btn-primary">Contact Me</a></p>
 </div>
 </div>
 </section>
 <!-- ABOUT SECTION -->
 <section id="about" class="about">
-<p>About Me</p>
-<div data-include="about.qmd">
-
-</div>
-<div data-include="about.qmd">
-</div></section>
+<section id="about-me" class="level2">
+<h2 class="anchored" data-anchor-id="about-me">About Me</h2>
+<p>about/index.qmd ::: {#About} ::: Alles 7oet?</p>
+</section>
 <!-- SKILLS SECTION -->
 <section id="skills" class="skills">
+</section>
 <section id="skills" class="level2">
 <h2 class="anchored" data-anchor-id="skills">Skills</h2>
 <div class="skills-grid">
 <div class="skill-box">
-<p><strong>Data Analytics</strong></p>
+<p><strong>Programming</strong></p>
 <p>
-Python, R, Statistical Modeling
+R (tidyverse)
 </p>
 </div>
 <div class="skill-box">
-<p><strong>Web Development</strong></p>
+<p><strong>Statistical Tools</strong></p>
 <p>
-HTML, CSS/SCSS, JavaScript, Quarto
+SPSS, R, Quarto
 </p>
 </div>
 <div class="skill-box">
@@ -175,26 +217,83 @@ Experimental Design, fMRI, EEG Analysis
 <div class="skill-box">
 <p><strong>Reproducible Research</strong></p>
 <p>
-Open Science, Version Control, CI/CD
+Open Science:D
 </p>
 </div>
 </div>
 </section>
 <!-- PROJECTS SECTION -->
 <section id="projects" class="portfolio">
-<p>Projects</p>
-<div class="project-card">
-<p><img src="projects/fairplay/fairplay.jpg" alt="Fairplay Project"></p>
-<div class="portfolio-layer">
-<pre><code>&lt;h4&gt;Fairplay&lt;/h4&gt;
-&lt;p&gt;Fairplay focuses on fairness and transparency in its approach.&lt;/p&gt;</code></pre>
+</section>
+<section id="projects" class="level2">
+<h2 class="anchored" data-anchor-id="projects">Projects</h2>
+<div id="listing-projects-listing" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="UiUyQ2dncGxvdDIlMkNTUFNT" data-listing-file-modified-sort="1739356653299" data-listing-reading-time-sort="1" data-listing-word-count-sort="108">
+<a href="./projects/fairplay/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="./projects/fairplay/fairplay.jpg" class="thumbnail-image card-img" style="height: 260px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+FAIR-play
+</h5>
+<div class="card-text listing-description">
+The FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Abdelkarim el Ghani
 </div>
 </div>
-<div class="project-card">
-<p><img src="projects/rotterdamgold/rotterdam-gold.jpg" alt="Rotterdam Gold Project"></p>
-<div class="portfolio-layer">
-<pre><code>&lt;h4&gt;Rotterdam Gold&lt;/h4&gt;
-&lt;p&gt;Rotterdam Gold showcases premium design and innovative solutions.&lt;/p&gt;</code></pre>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1739374158264" data-listing-reading-time-sort="1" data-listing-word-count-sort="29">
+<a href="./projects/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="projects/fairplay/fairplay.jpg" style="height: 260px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Projects
+</h5>
+<div class="card-text listing-description">
+These projects include software I have developed, workshop materials I have presented, and assessment systems I have contributed to. <br>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Abdelkarim el Ghani
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1739355972607" data-listing-reading-time-sort="1" data-listing-word-count-sort="43">
+<a href="./projects/rotterdamgold/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<div class="listing-item-img-placeholder card-img-top" style="height: 260px;">&nbsp;</div>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Rotterdam Gold
+</h5>
+<div class="card-text listing-description">
+Evaluate longitudinal survey data to understand the impact of school interventions (“focus” vs.&nbsp;“control” schools) on student well-being and coping strategies across four…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+Abdelkarim el Ghani
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
 </div>
 </div>
 </section>
@@ -233,12 +332,41 @@ If you’d like to chat, message me at <a href="https://google.nl">✈️</a>
 <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.0/dist/vanilla-tilt.min.js"></script>
 <!-- Initialization Scripts -->
 <script> document.addEventListener('DOMContentLoaded', function() { // Initialize AOS AOS.init({ duration: 1000, once: true }); // Initialize Tippy.js for tooltips const terms = document.querySelectorAll('.tooltip-term'); terms.forEach(term => { tippy(term, { content(reference) { const id = reference.getAttribute('data-template'); const template = document.getElementById(id); return template ? template.innerHTML : ''; }, allowHTML: true, theme: 'my-tippy', animation: 'scale', arrow: true, interactive: true, delay: [150, 100], duration: [300, 250], trigger: 'mouseenter focus' }); }); }); // Sticky Navbar & Scroll Handling document.addEventListener("DOMContentLoaded", function() { let menuIcon = document.querySelector('#menu-icon'); let navbar = document.querySelector('.navbar'); if (menuIcon && navbar) { menuIcon.onclick = () => { menuIcon.classList.toggle('bx-x'); navbar.classList.toggle('active'); }; } let sections = document.querySelectorAll('section'); let navLinks = document.querySelectorAll('nav a'); window.addEventListener("scroll", function() { sections.forEach(sec => { let top = window.scrollY; let offset = sec.offsetTop - 100; let height = sec.offsetHeight; let id = sec.getAttribute('id'); if (top >= offset && top < offset + height) { navLinks.forEach(link => { link.classList.remove('active'); let target = document.querySelector(`nav a[href="#${id}"]`); if (target) target.classList.add('active'); }); sec.classList.add('show-animate'); } else { sec.classList.remove('show-animate'); } }); let header = document.querySelector('header'); if (header) header.classList.toggle('sticky', window.scrollY > 100); if (menuIcon && navbar) { menuIcon.classList.remove('bx-x'); navbar.classList.remove('active'); } let footer = document.querySelector('footer'); if (footer) { footer.classList.toggle('show-animate', window.innerHeight + window.scrollY >= document.body.scrollHeight); } }); }); </script>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+  // Select all sections and nav links
+  const sections = document.querySelectorAll("section");
+  const navLinks = document.querySelectorAll("nav a");
+
+  window.addEventListener("scroll", () => {
+    let currentSectionId = "";
+    
+    // Loop over sections to find which one is currently in view.
+    sections.forEach(section => {
+      // Adjust the offset as needed (here 100px is used as a buffer)
+      const sectionTop = section.offsetTop - 100;
+      if (window.pageYOffset >= sectionTop) {
+        currentSectionId = section.getAttribute("id");
+      }
+    });
+
+    // Loop over nav links and update the active class.
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      // If the link's href contains the current section id, add the active class.
+      if (link.getAttribute("href").includes("#" + currentSectionId)) {
+        link.classList.add("active");
+      }
+    });
+  });
+});
+</script>
+
 
 
 </section>
-</main></div>
 
- <!-- /main -->
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -656,7 +784,20 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   }
 });
 </script>
- <!-- /content -->
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>© 2025 Abdelkarim el Ghani</p>
+</div>   
+    <div class="nav-footer-center">
+<p><a href="https://creativecommons.org/licenses/by-nd/4.0/"><img src="https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg" class="img-fluid"></a></p>
+</div>
+    <div class="nav-footer-right">
+<p><span class="faux-block">Build with <i class="fa-brands fa-r-project" aria-label="r-project"></i> and <a href="https://quarto.org/" target="_blank"><img src="https://quarto.org/quarto.png" class="img-fluid" alt="Quarto logo" width="65"></a></span></p>
+</div>
+  </div>
+</footer>
 
 
 

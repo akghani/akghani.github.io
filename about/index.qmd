@@ -1,5 +1,8 @@
-
-
+---
+pagetitle: "About me"
+#subtitle: "blablabla"
+image: images/profile-pic-nbg.png
+---
 
 
 ```{=html}
@@ -271,9 +274,5 @@ body[data-quarto-theme='dark'] .tippy-box[data-theme~='my-tippy'] .tippy-arrow::
     });
   });
 </script>
-
-
-
-
 
 ```

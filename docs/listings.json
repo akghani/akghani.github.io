@@ -1,10 +1,17 @@
 [
   {
-    "listing": "/projects.html",
+    "listing": "/index.html",
     "items": [
-      "/projects/fairplay/index-fp-yaml.html",
-      "/projects/rotterdamgold/index.html",
-      "/projects/fairplay/index.html"
+      "/projects/fairplay/index.html",
+      "/projects/index.html",
+      "/projects/rotterdamgold/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/fairplay/index.html",
+      "/projects/rotterdamgold/index.html"
     ]
   }
 ]

@@ -3,8 +3,10 @@ project:
   output-dir: docs
   render:
     - "*.qmd"
+    - "*/*.qmd"
+    - "*/*/*.qmd"
   resources:
-    - "_assets/**"
+#    - "_assets/**"
     - "images/**"
   preview:
     port: 22227
@@ -12,45 +14,68 @@ project:
     watch-inputs: true
     navigate: true
 
+# Metadata stuff
+#pagetitle: "{{< meta title >}} | Abdelkarim el Ghani"
+#author-meta: "Abdelkarim el Ghani"
+
 website:
   title: "Abdelkarim el Ghani"
   favicon: "images/favicon-akg.png"
+  twitter-card: true
   image: images/logo-akg.png
+  page-footer:
+    background: "#FF6F61"
+    left: |
+      © 2025 Abdelkarim el Ghani
+    center: |
+      [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
+    right: |
+      <span class="faux-block">Build with {{< fa brands r-project >}} and [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo" width=65px}](https://quarto.org/){target="_blank"}</span>
+    border: true
+    
+
+ ### Navigation ###
+  back-to-top-navigation: true
+  page-navigation: true
+  bread-crumbs: true 
   
+open-graph: true
+
+
+
+### Navbar ###
 navbar:
+  pinned: true
+  logo: "images/logo-akg-bw.png"
   left:
     - text: "Home"
       href: index.qmd
       icon: house-fill
     - text: "About"
-      href: index.qmd#about
+      href: about/index.qmd
       icon: person-arms-up
     - text: "Projects"
-      href: index.qmd#projects
+      href: projects/index.qmd
       icon: graph-up
     - text: "Resume"
       href: resume.qmd
       icon: file-earmark-text-fill
-    - text: "Resources"
-      href: resources.qmd
+#    - text: "Resources"
+#      href: resources.qmd
       
-page-footer:
-  background: light
-  left: |
-    © 2025 Abdelkarim el Ghani
-  center: |
-    [![](https://img.shields.io/badge/License-CC%20BY--ND%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nd/4.0/)
-  right: |
-    <span class="faux-block">Build with {{< fa brands r-project >}} and [![Quarto](https://quarto.org/quarto.png){fig-alt="Quarto logo" width=65px}](https://quarto.org/){target="_blank"}</span>
-  border: true
+  
  
-#brand: _brand.yml    
+
+## Format options ##
+
 format: 
   html:
     smooth-scroll: true
-    theme: theme.scss
-    includes:
-      before-body-end: script.js
+    theme: [lumen, theme.scss]
+
+
+
+## Execution / R options ##
       
 execute:
   echo: false

@@ -1,0 +1,15 @@
+{
+  "hash": "73bdc974b6d8b17b03ac42f0e1aa6f95",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Projects\"\nlisting:\n  contents: \n    - \"**/index.qmd\"     # Folder containing project `.qmd` files\n  sort: \"title\"\n  type: grid\n#  image-height: 260px\n  categories: true\n  sort-ui: true\n  filter-ui: true\nengine: knitr\nformat: \n  html:\n    page-layout: full\n#  fields: [title, description, categories]\n---\n\n::: {.cell}\n<style type=\"text/css\">\n#title-block-header .description {\n    display: none;\n}\n</style>\n:::\n\n\n\nThese projects include software I have developed, workshop materials I have presented, and assessment systems I have contributed to.\n<br>\n\n---\n\n<br>\n\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

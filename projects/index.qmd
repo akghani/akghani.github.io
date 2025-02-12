@@ -1,0 +1,34 @@
+---
+title: "Projects"
+listing:
+  contents: 
+    - "**/index.qmd"     # Folder containing project `.qmd` files
+  sort: "title"
+  type: grid
+#  image-height: 260px
+  categories: true
+  sort-ui: true
+  filter-ui: true
+engine: knitr
+format: 
+  html:
+    page-layout: full
+#  fields: [title, description, categories]
+---
+
+
+```{css, echo = FALSE}
+#title-block-header .description {
+    display: none;
+}
+```
+
+These projects include software I have developed, workshop materials I have presented, and assessment systems I have contributed to.
+<br>
+
+---
+
+<br>
+
+
+
