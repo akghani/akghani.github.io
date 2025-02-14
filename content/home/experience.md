@@ -22,11 +22,11 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Guest Lecturer (*Gastdozent*)
-    company: Berlin School of Economics and Law (HWR Berlin)
-    company_url: 'https://www.ipe-berlin.org/en/'
+  - title: Research Assistant
+    company: Erasmus School of Social and Behavioural Sciences (ESSB Rotterdam)
+    company_url: 'https://www.eur.nl/en'
     company_logo: hwr
-    location: Berlin (DE)
+    location: Rotterdam (NL)
     date_start: '2023-04-01'
     description: |2-
       I teach the following courses:
@@ -37,11 +37,11 @@ experience:
       * Microeconomics (de)
       * [Data Visualization with R](https://github.com/Alessandro1984/Data-visualisation-with-R) (en)
 
-  - title: Research Associate (*wiss. Mitarbeiter*)
-    company: Berlin School of Economics and Law (HWR Berlin) & IPE Berlin
-    company_url: 'https://www.ipe-berlin.org/en/'
+  - title: Research Intern
+    company: Erasmus Medical Center
+    company_url: 'https://www.erasmusmc.nl/en/sophia/patient-care'
     company_logo: hwr
-    location: Berlin (DE)
+    location: Rotterdam (NL)
     date_start: '2017-10-01'
     date_end: '2022-08-31' 
     description: |2-

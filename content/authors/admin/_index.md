@@ -2,47 +2,35 @@
 bio: 
 education:
   courses:
-  - course: PhD (Dottorato di ricerca) in Economics and Management
-    institution: University of Urbino
-    year: 2015
-  - course: MA in International Economics
-    institution: Berlin School of Economics and Law (HWR Berlin)
-    year: 2013
-  - course: MA (Laurea Specialistica) in Philosophy
-    institution: University of Urbino
-    year: 2010
-  - course: BA (Laurea Triennale) in Philosophy
-    institution: University of Urbino
-    year: 2007   
+  - course: MSc in Applied Neuroscience in Human Development
+    institution: Leiden University
+    year: 2018
+  - course: BSc in Biopharmaceutical Sciences
+    institution: Leiden University
+    year: 2016   
 email: ""
 highlight_name: true
 interests:
-- Macroeconomic modelling & data analysis
-- Pluralism in economics education
+- Neuroscience
+- :D
 - Demand and growth regimes
 organizations:
-- name: Berlin School of Economics and Law (HWR Berlin)
-  url: https://www.hwr-berlin.de/
-role: Guest Lecturer in Economics
+- name: Erasmus University
+  url: https://www.eur.nl/
+role: Research Assistant at the Brain & Cognition Department
 social:
-- icon: university
-  icon_pack: fas
-  link: https://www.ipe-berlin.org/en/institute/associate-members/alessandro-bramucci/
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.com/citations?user=rKlgvMAAAAAJ&hl=en
 - icon: github
   icon_pack: fab
-  link: https://github.com/Alessandro1984
+  link: https://github.com/akghani/
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/alessandro-bramucci-a5470758/
+  link: https://www.linkedin.com/in/abdelkarimelghani/
 superuser: true
-title: Alessandro Bramucci
+title: Abdelkarim el Ghani
 ---
 
-I am an Economist interested in Data Science. I am passionate about data and in particular macroeconomic data. I have 8+ years of experience in teaching courses in Economics, Econometrics, R and Python. Previously, I worked on academic projects aimed at creating interactive contents for students. My goal is to combine my knowledge of Macroeconomics with my interest in Data Science. Occasionally I write articles on economic policy issues in Italy and Europe.
+I am a detail-oriented Data Analyst and Research Specialist with a passion for transforming complex data into actionable insights. I have a strong background in data management, statistical analysis, and research support, and I excel at communicating research results to diverse stakeholders—including sports organizations. I specialize in managing intricate datasets and building robust R-based pipelines for data import, cleaning, and analysis, with comprehensive documentation in Quarto/R Markdown to ensure transparency and reproducibility. Whether handling ad hoc requests or tackling text mining tasks for ongoing projects, I deliver timely, accurate results that drive collaborative, data-driven decision making.
 
 {{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
-{{< icon name="book" pack="fas" >}} And here the complete list of my {{< staticref "publications_abramucci.pdf" "newtab" >}}articles{{< /staticref >}}.
+{{< icon name="book" pack="fas" >}} And here is the complete list of my {{< staticref "publications.pdf" "newtab" >}}articles{{< /staticref >}}.
