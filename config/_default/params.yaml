@@ -4,53 +4,53 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-
 theme: ocean
 day_night: false
 font: ''
 font_size: L
 
-# SEO
 
+# SEO
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: 'Alessandro Bramucci homepage'
-twitter: 'AleBramucci'
+description: 'Abdelkarim el Ghani homepage'
+
 
 # Contact (edit or remove options as required)
+#email: alessandro.bramucci@hwr-berlin.de
+#address:
+#  street: Babelsberger Str. 14
+#  city: Berlin
+#  country: Germany
+#  country_code: DE
+#contact_links:
+#  - icon: x-twitter
+#    icon_pack: fab
+#    name: You can find me on X
+#    link: 'https://x.com/AleBramucci'
 
-email: alessandro.bramucci@hwr-berlin.de
-address:
-  street: Babelsberger Str. 14
-  city: Berlin
-  country: Germany
-  country_code: DE
-contact_links:
-  - icon: x-twitter
-    icon_pack: fab
-    name: You can find me on X
-    link: 'https://x.com/AleBramucci'
+
 
 # Site header
-
 main_menu:
   enable: true
   align: r
   show_logo: true
-  show_language: false
-  show_day_night: false
-  show_search: false
+  show_language: true
+  show_day_night: true
+  show_search: true
   highlight_active_link: true
 
-# Localization
 
+# Localization
 date_format: 'Jan 2, 2006'
 time_format: '3:04 PM'
 address_format: en-us
 
-# Site features
 
+
+# Site features
 highlight: true
 highlight_languages:
   - r
@@ -79,7 +79,7 @@ section_pager: false
 docs_section_pager: true
 sharing: true
 copyright_license:
-  enable: false
+  enable: true
   allow_derivatives: false
   share_alike: true
   allow_commercial: false
