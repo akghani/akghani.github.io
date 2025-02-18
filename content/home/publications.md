@@ -11,7 +11,7 @@ active: true
 # Order that this section appears on the page.
 weight: 55
 
-title: Selected publications
+title: Publications
 subtitle: ''
 
 content:

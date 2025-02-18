@@ -7,10 +7,9 @@ widget: portfolio
 headless: true
 
 # Order that this section appears on the page.
-weight: 45
+weight: 65
 
 title: Projects
-subtitle: 'Old and new'
 
 content:
   # Page type to display. E.g. project.

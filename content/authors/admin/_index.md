@@ -12,8 +12,8 @@ email: ""
 highlight_name: true
 interests:
 - Neuroscience
-- :D
-- Demand and growth regimes
+- Quantitative Data Analysis
+- Data Visualization
 organizations:
 - name: Erasmus University
   url: https://www.eur.nl/

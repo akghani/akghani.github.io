@@ -5,8 +5,8 @@
 
 # Appearance
 theme: ocean
-day_night: false
-font: ''
+day_night: true
+font: ocean
 font_size: L
 
 
@@ -14,7 +14,7 @@ font_size: L
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: 'Abdelkarim el Ghani homepage'
+description: 'Personal website of Abdelkarim el Ghani'
 
 
 # Contact (edit or remove options as required)
@@ -33,6 +33,7 @@ description: 'Abdelkarim el Ghani homepage'
 
 
 # Site header
+
 main_menu:
   enable: true
   align: r
@@ -56,6 +57,7 @@ highlight_languages:
   - r
   - python
   - latex
+  - bash
 math: false
 diagram: false
 privacy_pack: false
@@ -123,12 +125,12 @@ map:
   provider: mapnik
   api_key: ''
   zoom: 15
-marketing:
-  google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
-  google_tag_manager: ''
-  google_site_verification: 'google-site-verification=zE_H7eL4bmVB3MI15sIC4FlrXiQqfRfpmt9gPe5LdXs'
-  baidu_site_verification: ''
-  baidu_tongji: ''
+#marketing:
+#  google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
+#  google_tag_manager: ''
+#  google_site_verification: 'google-site-verification=zE_H7eL4bmVB3MI15sIC4FlrXiQqfRfpmt9gPe5LdXs'
+#  baidu_site_verification: ''
+#  baidu_tongji: ''
 cms:
   branch: master
   local_backend: false

@@ -1,0 +1,16 @@
+---
+title: "Rotterdam Gold"
+pagetitle: "Rotterdam Gold Project"
+---
+
+### Project Overview
+
+Evaluate longitudinal survey data to understand the impact of school interventions ("focus" vs. "control" schools) on student well-being and coping strategies across four waves.
+
+
+
+
+
+::: {.callout-note title="Publication"}
+Rotterdam Goud: Eindrapport Pilot Rotterdams Goud: Wijzen van leren en sociaal-emotioneel welbevinden. [Dijkstra, K., & el Ghani, A., (2024).](https://www.kenniswerkplaats-rotterdamstalent.nl/wp-content/uploads/2024/03/Rapport-Rotterdam-Goud.pdf)
+:::

@@ -4,7 +4,7 @@
 widget: featurette
 
 # This file represents a page section.
-headless: false
+headless: true
 
 # Order that this section appears on the page.
 weight: 30
@@ -24,10 +24,6 @@ feature:
   icon: python
   icon_pack: custom
   name: Python
-- description: ""
-  icon: git
-  icon_pack: custom
-  name: Git
 
 # Uncomment to use emoji icons.
 - icon: ':smile:'

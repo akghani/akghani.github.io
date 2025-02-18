@@ -25,7 +25,7 @@ experience:
   - title: Research Assistant
     company: Erasmus School of Social and Behavioural Sciences (ESSB Rotterdam)
     company_url: 'https://www.eur.nl/en'
-    company_logo: hwr
+    company_logo: essb
     location: Rotterdam (NL)
     date_start: '2023-04-01'
     description: |2-
@@ -40,7 +40,7 @@ experience:
   - title: Research Intern
     company: Erasmus Medical Center
     company_url: 'https://www.erasmusmc.nl/en/sophia/patient-care'
-    company_logo: hwr
+    company_logo: emc
     location: Rotterdam (NL)
     date_start: '2017-10-01'
     date_end: '2022-08-31' 
