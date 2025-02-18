@@ -29,7 +29,8 @@ superuser: true
 title: Abdelkarim el Ghani
 ---
 
-I am a detail-oriented Data Analyst and Research Specialist with a passion for transforming complex data into actionable insights. I have a strong background in data management, statistical analysis, and research support, and I excel at communicating research results to diverse stakeholders—including sports organizations. I specialize in managing intricate datasets and building robust R-based pipelines for data import, cleaning, and analysis, with comprehensive documentation in Quarto/R Markdown to ensure transparency and reproducibility. Whether handling ad hoc requests or tackling text mining tasks for ongoing projects, I deliver timely, accurate results that drive collaborative, data-driven decision making.
+Welcome to my website!
+I’m Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
 
 {{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
 
