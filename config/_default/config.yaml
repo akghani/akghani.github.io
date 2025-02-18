@@ -5,7 +5,7 @@ theme: "starter-hugo-academic"
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: Abdelkarim el Ghani # Website name
-baseurl: 'https://akghani.github.io/academic_website' # Website URL
+baseurl: 'https://akghani.github.io/' # Website URL
 copyright: '© 2025 Abdelkarim el Ghani' # Footer text, e.g. '© {year} Me'
 
 ############################
