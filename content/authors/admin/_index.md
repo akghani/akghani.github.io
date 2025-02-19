@@ -4,10 +4,13 @@ education:
   courses:
   - course: MSc in Applied Neuroscience in Human Development
     institution: Leiden University
-    year: 2018
+    year: 2018-2020
+  - course: Premaster Education and Child Studies
+    institution: Leiden University
+    year: 2016-2017
   - course: BSc in Biopharmaceutical Sciences
     institution: Leiden University
-    year: 2016   
+    year: 2009-2016   
 email: ""
 highlight_name: true
 interests:
