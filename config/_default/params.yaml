@@ -4,10 +4,17 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 # Appearance
-theme: ocean
+theme: coffee
 day_night: true
-font: ocean
+font: classic
 font_size: L
+
+
+#appearance:
+#  theme_day: minimal
+#  theme_night: minimal
+#  font: minimal
+#  font_size: L
 
 
 # SEO
