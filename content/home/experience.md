@@ -49,22 +49,6 @@ experience:
       * Created R-scripts in R-Markdown to document data workflows and present findings.
       * Conducted statistical analyses, visualized research results, and contributed to international conferences and scientific journals.
       * Supported open science initiatives by documenting and sharing code on platforms like the Open Science Framework (OSF).
-        
-  - title: Lecturer (*Lehrbeauftragter*)
-    company: Berlin School of Economics and Law (HWR Berlin)
-    company_url: 'https://www.hwr-berlin.de/'
-    company_logo: hwr
-    location: Berlin (DE)
-    date_start: '2016-04-01'
-    date_end: '2025-02-03'
-    description: |2-
-        I have developed and taught the following courses:
-        * Business Economics (WS 2017-18)
-        * Economics Tutorium (WS 2016-17)
-        * International Economics (SS 2016, SS 2018)
-        * Macroeconomics: The Economic Cycle and Employment (SS 2016, WS 2016-17, SS 2017, SS 2018, WS 2018-19, SS 2019)
-        * [Quantitative Methods for Economists](https://github.com/Alessandro1984/quant_methods_HWR_21-22) (WS 2017-18, WS 2018-19, WS 2019-20, WS 2020-21, WS 2021-22, WS 2022-23, WS 2023-24, WS 2024-25)
-        * Research Methods Seminar (WS 2019-20)
 
 design:
   columns: '2'
