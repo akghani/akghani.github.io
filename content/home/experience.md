@@ -39,18 +39,16 @@ experience:
 
   - title: Research Intern
     company: Erasmus Medical Center
-    company_url: 'https://www.erasmusmc.nl/en/sophia/patient-care'
+    company_url: 'https://www.erasmusmc.nl/en/sophia/'
     company_logo: emc
     location: Rotterdam (NL)
-    date_start: '2017-10-01'
-    date_end: '2022-08-31' 
+    date_start: '2019-10-01'
+    date_end: '2020-08-31' 
     description: |2-
-      I have worked mainly on two projects, [MGWK](https://www.alessandrobramucci.com/project/mgwk/), short for *Modelltheoretische Grundlagen wirtschaftspolitischer Kontroversen*, and [WIPOSIM](https://www.alessandrobramucci.com/project/wiposim/) - The economic policy simulator. Goal of the two projects was to develop online tools to teach Macroeconomics in an interactive and engaging way using some simple simulations. Both projects have been developed entirely in R/RStudio and numerous other packages (shiny, plotly, bookdown, etc.).
-      
-      My responsibilities included:
-      * Programming of the simulations and the relative interactive applications
-      * Drafting of the explanatory texts of the simulations
-      * Editorial work on the final textbook
+      * Developed and managed a comprehensive dataset based on international surveys for an Erasmus+ funded project.
+      * Created R-scripts in R-Markdown to document data workflows and present findings.
+      * Conducted statistical analyses, visualized research results, and contributed to international conferences and scientific journals.
+      * Supported open science initiatives by documenting and sharing code on platforms like the Open Science Framework (OSF).
         
   - title: Lecturer (*Lehrbeauftragter*)
     company: Berlin School of Economics and Law (HWR Berlin)
