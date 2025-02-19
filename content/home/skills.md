@@ -21,9 +21,9 @@ feature:
   icon_pack: custom
   name: R
 - description: ""
-  icon: python
-  icon_pack: custom
-  name: Python
+  icon: chart-line
+  icon_pack: fas
+  name: Statistics
 
 # Uncomment to use emoji icons.
 - icon: ':smile:'
