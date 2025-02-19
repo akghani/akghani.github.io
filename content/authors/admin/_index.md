@@ -32,6 +32,3 @@ title: Abdelkarim el Ghani
 Welcome to my website!
 I’m Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
 
-{{< icon name="download" pack="fas" >}} Here you can find my {{< staticref "cv/" "newtab" >}}cv{{< /staticref >}}.
-
-{{< icon name="book" pack="fas" >}} And here is the complete list of my {{< staticref "publications.pdf" "newtab" >}}articles{{< /staticref >}}.
