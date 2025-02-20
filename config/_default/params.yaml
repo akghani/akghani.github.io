@@ -25,9 +25,6 @@ description: 'Personal website of Abdelkarim el Ghani'
 
 
 
-
-
-
 # Site header
 main_menu:
   enable: true
@@ -53,8 +50,8 @@ highlight_languages:
   - python
   - latex
   - bash
-math: false
-diagram: false
+math: true
+diagram: true
 privacy_pack: false
 edit_page:
   repo_url: ''
