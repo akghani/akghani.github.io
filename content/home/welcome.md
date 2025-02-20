@@ -1,6 +1,9 @@
 ---
 widget: blank
 
+# Activate this widget? true/false
+active: true
+
 weight: 1
 
 
