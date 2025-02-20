@@ -29,7 +29,6 @@ description: 'Personal website of Abdelkarim el Ghani'
 
 
 # Site header
-
 main_menu:
   enable: true
   align: r
