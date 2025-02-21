@@ -445,3 +445,11 @@ h2, h3 {
   }
 }
 }
+
+
+@keyframes slide-bottom {
+        100% { 
+            bottom: 0; 
+            opacity: 1; 
+        }
+  }

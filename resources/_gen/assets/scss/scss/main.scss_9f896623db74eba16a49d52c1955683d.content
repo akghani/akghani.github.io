@@ -9901,3 +9901,8 @@ h2, h3 {
 #accomplishments .card:hover .init-hidden p {
   max-height: 1000px;
   transition: max-height 1s ease-in; }
+
+@keyframes slide-bottom {
+  100% {
+    bottom: 0;
+    opacity: 1; } }
