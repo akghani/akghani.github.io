@@ -24,7 +24,6 @@ org_name: ''
 description: 'Personal website of Abdelkarim el Ghani'
 
 
-
 # Site header
 main_menu:
   enable: true
@@ -34,16 +33,6 @@ main_menu:
   show_day_night: true
   show_search: true
   highlight_active_link: true
-
-# Site footer
-footer:
-  copyright:
-    notice: '© {year} Abdelkarim el Ghani. This work is licensed under {license}.'
-    license:
-      enable: true
-      allow_derivatives: true
-      share_alike: true
-      allow_commercial: false
 
 
 
@@ -61,8 +50,8 @@ highlight_languages:
   - python
   - latex
   - bash
-math: true
-diagram: true
+math: false
+diagram: false
 privacy_pack: false
 edit_page:
   repo_url: ''
@@ -124,10 +113,10 @@ search:
     api_key: ''
     index_name: ''
     show_logo: false
-map:
-  provider: mapnik
-  api_key: ''
-  zoom: 15
+#map:
+#  provider: mapnik
+#  api_key: ''
+#  zoom: 15
 #marketing:
 #  google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
 #  google_tag_manager: ''

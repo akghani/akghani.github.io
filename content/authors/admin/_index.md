@@ -27,6 +27,7 @@ social:
   link: https://www.linkedin.com/in/abdelkarimelghani/
 superuser: true
 title: Abdelkarim el Ghani
+avatar_image: avatar.jpg
 ---
 
 Welcome to my website!
