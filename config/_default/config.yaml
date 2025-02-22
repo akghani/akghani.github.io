@@ -9,7 +9,7 @@ baseurl: 'https://akghani.github.io/' # Website URL
 copyright: '© 2025 Abdelkarim el Ghani' # Footer text, e.g. '© {year} Me'
 
 params:
-  logo: "/assets/media/icon.png"
+  logo: '/assets/media/icon.png'
 
 ############################
 ## LANGUAGE
