@@ -1,26 +1,28 @@
 ---
 widget: blank
-
-# Activate this widget? true/false
 active: true
-
 weight: 1
 
+title: "Welcome to My Site"
+subtitle: "A place where ideas and projects come to life"
 
-title: ""
+# Main content for your welcome widget. You can use Markdown formatting here.
+content: |
+  Welcome to my personal website! I'm excited to share my projects, blog posts, and creative endeavors with you.  
+  Feel free to explore and learn more about what I do.
+
+# Optional: Add a Call-To-Action (CTA) button to guide visitors
+cta:
+  text: "Learn More"
+  url: "/about/"
 
 design:
   background:
-# Name of image in `assets/media/`.
+    # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
     image: ecliptic-graphic-_jg8xh2SsXQ-unsplash.jpg
-# Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
     image_darken: 0.6
-#  Options are `cover` (default), `contain`, or `actual` size.
     image_size: cover
-# Options include `left`, `center` (default), or `right`.
     image_position: left
-# Use a fun parallax-like fixed background effect on desktop? true/false
     image_parallax: true
-# Text color (true=light, false=dark, or remove for the dynamic theme color).
     text_color_light: true
 ---
