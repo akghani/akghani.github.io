@@ -29,6 +29,7 @@ main_menu:
   enable: true
   align: r
   show_logo: true
+  logo: "images/logo.png"
   show_language: true
   show_day_night: true
   show_search: true
