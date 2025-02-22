@@ -29,12 +29,10 @@ main_menu:
   enable: true
   align: r
   show_logo: true
-  logo: logo.png
   show_language: true
   show_day_night: true
   show_search: true
   highlight_active_link: true
-
 
 
 # Localization
