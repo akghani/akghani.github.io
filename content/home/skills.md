@@ -23,7 +23,7 @@ feature:
 - description: ""
   icon: chart-line
   icon_pack: fas
-  name: Statistics
+  name: Statistical Data Analysis
 
 # Uncomment to use emoji icons.
 - icon: ':smile:'

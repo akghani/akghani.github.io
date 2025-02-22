@@ -11,14 +11,9 @@ content: |
   Welcome to my personal website! I'm excited to share my projects, blog posts, and creative endeavors with you.  
   Feel free to explore and learn more about what I do.
 
-# Optional: Add a Call-To-Action (CTA) button to guide visitors
-cta:
-  text: "Learn More"
-  url: "/about/"
-
 design:
   background:
-    # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
+# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
     image: ecliptic-graphic-_jg8xh2SsXQ-unsplash.jpg
     image_darken: 0.6
     image_size: cover
