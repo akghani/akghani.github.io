@@ -17,7 +17,7 @@ design:
     image: ecliptic-graphic-_jg8xh2SsXQ-unsplash.jpg
     image_darken: 0.6
     image_size: cover
-    image_position: center
+    image_position: left
     image_parallax: true
     text_color_light: true
 ---
