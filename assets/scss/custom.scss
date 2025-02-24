@@ -18,6 +18,29 @@
 }
 
 
+.widget-background {
+  /* Ensure the container isn’t too tall */
+  min-height: 200px; /* Adjust as needed */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 768px) {
+  .widget-background {
+    min-height: 150px; /* Smaller height for mobile devices */
+  }
+}
+
+@media (min-width: 769px) {
+  .widget-background {
+    min-height: 250px; /* Larger height for desktops */
+  }
+}
+
+
+
+
 /* slideLeft, slideRight and grow keyframes */
 @keyframes slideLeft {
     from {
