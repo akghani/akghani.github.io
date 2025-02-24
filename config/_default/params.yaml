@@ -33,6 +33,9 @@ main_menu:
   show_day_night: true
   show_search: true
   highlight_active_link: true
+  logo:
+    text: "Abdelkarim el Ghani, MSc"
+    filename: "icon.png"
 
 
 # Localization
