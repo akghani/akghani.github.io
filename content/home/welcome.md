@@ -3,7 +3,7 @@ widget: blank
 active: true
 weight: 1
 
-title: "Welcome to My Site"
+title: ""
 
 design:
   background:
@@ -15,3 +15,5 @@ design:
     image_parallax: true
     text_color_light: true
 ---
+
+

@@ -45,10 +45,10 @@ experience:
     date_start: '2019-10-01'
     date_end: '2020-08-31' 
     description: |2-
-      * Developed and managed a comprehensive dataset based on international surveys for an Erasmus+ funded project.
-      * Created R-scripts in R-Markdown to document data workflows and present findings.
-      * Conducted statistical analyses, visualized research results, and contributed to international conferences and scientific journals.
-      * Supported open science initiatives by documenting and sharing code on platforms like the Open Science Framework (OSF).
+      + Developed and managed a comprehensive dataset based on international surveys for an Erasmus+ funded project.
+      + Created R-scripts in R-Markdown to document data workflows and present findings.
+      + Conducted statistical analyses, visualized research results, and contributed to international conferences and scientific journals.
+      + Supported open science initiatives by documenting and sharing code on platforms like the Open Science Framework (OSF).
 
 design:
   columns: '2'
