@@ -10,7 +10,7 @@ design:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
     image: icon.png
     image_darken: 0.6
-    image_size: actual
+    image_size: cover
     image_position: center
     image_parallax: true
     text_color_light: true
