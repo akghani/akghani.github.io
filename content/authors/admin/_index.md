@@ -1,4 +1,15 @@
 ---
+# Is this the primary user of the site?
+superuser: true
+
+# Display name
+title: Abdelkarim el Ghani
+highlight_name: true
+
+# Full name (for SEO)
+first_name: Abdelkarim
+last_name: el Ghani
+
 bio: 
 education:
   courses:
