@@ -17,8 +17,8 @@ title: Skills
 # - For available icons, see: https://wowchemy.com/docs/page-builder/#icons
 feature:
 - description: ""
-  icon: r
-  icon_pack: custom
+  icon: r-project
+  icon_pack: fab
   name: R
 - description: ""
   icon: chart-line
@@ -39,4 +39,15 @@ feature:
 #  icon_pack: custom
 #  name: Surfing
 #  description: 90%
+
+
+design:
+  background:
+# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
+    image: typing.gif
+    image_darken: 0.6
+    image_size: cover
+    image_position: left
+    image_parallax: true
+    text_color_light: true
 ---

@@ -8,7 +8,7 @@ title: "Welcome to My Site"
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: ecliptic-graphic-_jg8xh2SsXQ-unsplash.jpg
+    image: icon.png
     image_darken: 0.6
     image_size: cover
     image_position: left
