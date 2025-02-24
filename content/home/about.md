@@ -18,4 +18,16 @@ title: Hello!
 # This should be the username (folder name) of a profile in your `content/authors/` folder.
 # See https://wowchemy.com/docs/get-started/#introduce-yourself
 author: admin
+
+
+design:
+  background:
+# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
+    image: icon.png
+    image_darken: 0.6
+    image_size: cover
+    image_position: left
+    image_parallax: true
+    text_color_light: true
 ---
+

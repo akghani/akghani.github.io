@@ -30,6 +30,6 @@ title: Abdelkarim el Ghani
 avatar_image: avatar.jpg
 ---
 
-Welcome to my website!
+
 I’m Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
 
