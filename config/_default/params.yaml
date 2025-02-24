@@ -29,10 +29,14 @@ main_menu:
   enable: true
   align: r
   logo:
-#      # Logo text
-#      text: "Helloe"
+    # Logo text
+    text: "Helloe"
       # Logo filename in `assets/media/` folder
-      filename: "logo.png"
+    filename: "logo.png"
+  button:
+    enable: true
+    text: "Get Started"
+    url: "https://hugoblox.com/templates/"
   show_logo: true
   show_language: true
   show_day_night: true
