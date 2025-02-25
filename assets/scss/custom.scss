@@ -177,3 +177,27 @@
     transform: scale(1.02); /* Grow effect */
     font-weight: bold; /* Bold effect */
   }
+  
+
+/* Scroll to top button styling */
+.to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none; /* Hidden until needed */
+  background: #333;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25rem;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.to-top:hover {
+  background: #555;
+}
+  
+  
