@@ -1,0 +1,61 @@
+#back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    display: none;
+}
+
+#back-to-top button {
+    padding: 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: var(--button-float-bg);
+    box-shadow: 0 3px 5px var(--button-float-shadow);
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+#back-to-top button:hover {
+    background-color: var(--button-float-bg-hover);
+    box-shadow: 0 5px 8px var(--button-float-shadow-hover);
+    transform: translateY(-2px);
+}
+
+#back-to-top button svg {
+    width: 16px;
+    height: 16px;
+    // fill: var(--button-float-arrow);
+    stroke: var(--button-float-arrow);
+    transition: stroke 0.3s ease;
+}
+
+#back-to-top button:hover svg {
+    // fill: var(--button-float-arrow);
+    stroke: var(--button-float-arrow);
+}
+
+
+/* 
+*   Footer back to top style
+*/
+:root {
+    --button-float-bg: #f9f9fc;
+    --button-float-bg-hover: #ececf6;
+    --button-float-arrow: #2c3e50;
+    --button-float-shadow: rgba(0, 0, 0, 0.1);
+    --button-float-shadow-hover: rgba(0, 0, 0, 0.15);
+}
+
+[data-scheme="dark"] {
+    --button-float-bg: #424242;
+    --button-float-bg-hover: #383838;
+    --button-float-arrow: rgba(255, 255, 255, 0.7);
+    --button-float-shadow: rgba(0, 0, 0, 0.3);
+    --button-float-shadow-hover: rgba(0, 0, 0, 0.5);
+}
