@@ -54,7 +54,7 @@ design:
   columns: '2'
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: n-n-BtbjCFUvBXs-unsplash.jpg
+    image: ben-neale-Hl4oFevvUeI-unsplash.jpg
     image_darken: 0.9
     image_size: cover
     image_position: left

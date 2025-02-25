@@ -23,7 +23,7 @@ author: admin
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: rafael-rodrigues-D-P1TsTSMBA-unsplash.jpg 
+    image: davey-heuser-VgzDrChXfxw-unsplash.jpg 
     image_darken: 0.9
     image_size: cover
     image_position: left
