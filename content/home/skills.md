@@ -44,7 +44,7 @@ feature:
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: ed-van-duijn-2uTjeMfeVEU-unsplash.jpg
+    image: sincerely-media-_K6zAyC9yC0-unsplash.jpg
     image_darken: 0.6
     image_size: cover
     image_position: left
