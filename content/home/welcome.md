@@ -3,7 +3,7 @@ widget: blank
 active: true
 weight: 1
 
-title: ""
+title: "Abdelkarim el Ghani, MSc"
 
 design:
   background:

@@ -3,7 +3,7 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 
 # Activate this widget? true/false
-active: false
+active: true
 
 widget: pages
 
@@ -12,7 +12,7 @@ headless: true
 
 
 # Order that this section appears on the page.
-weight: 55
+weight: 65
 
 title: Publications
 subtitle: ''
