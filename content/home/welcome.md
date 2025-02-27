@@ -16,4 +16,3 @@ design:
     text_color_light: true
 ---
 
-

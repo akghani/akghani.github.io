@@ -44,7 +44,7 @@ feature:
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: pawel-czerwinski-HbcfaO4m03s-unsplash.jpg
+    image: damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg
     image_darken: 0.8
     image_size: cover
     image_position: left
