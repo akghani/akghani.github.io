@@ -23,7 +23,7 @@ author: admin
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: davey-heuser-VgzDrChXfxw-unsplash.jpg 
+    image: damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg 
     image_darken: 0.3
     image_size: cover
     image_position: left
