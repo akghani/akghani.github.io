@@ -1,12 +1,24 @@
-# Personal website
+# Personal Website & Open-Science Portfolio
 
-This is the repository of my personal academic webpage. It is developed with RStudio and blogdown using the Hugo academic theme from Wowchemy.
+This repository contains the source files for **akghani.github.io**, my research-data portfolio and personal academic website.  
+The site is built in **RStudio** with **blogdown** / **Hugo + Wowchemy** and is automatically deployed via **GitHub Pages**.
 
-✔ www.alessandrobramucci.com ✔
+🔗 **Live site**: <https://akghani.github.io>
 
-The site was created in a short time thanks to the following resources:
+---
 
-- The must-read book to start with is [blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)
-- I have found this series of [video lessons](https://www.youtube.com/watch?v=8xbxXR_Iu5Y&list=PLpZT7JPM8_GbPiX4ibrP7ogl7GyEofZMj) extremely clear and straight to the point
-- To edit the publications page I have followed this [post](https://www.emmanuelteitelbaum.com/post/managing-pubs-academic-website/) 
-- To conclude, this short [article](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/) explains how to add a custom domain from Google to your Netlify website!
+## Acknowledgements & Fork Lineage
+
+This project began as a fork of **[Alessandro Bramucci’s academic website](https://github.com/Alessandro1984/academic_website)**. Alessandro’s clear structure and documentation made it easy to customise the Wowchemy theme for my own research focus—thanks Alessandro!
+
+---
+
+## Key Resources Used
+
+* **Book** – *[blogdown: Creating Websites with R Markdown](https://bookdown.org/yihui/blogdown/)* by Xie, Hill & Thomas.  
+* **Video series** – *[“Build a website with blogdown, Hugo & Wowchemy”](https://www.youtube.com/watch?v=8xbxXR_Iu5Y&list=PLpZT7JPM8_GbPiX4ibrP7ogl7GyEofZMj)* (YouTube).  
+* **Publication workflow** – *[Managing Publications on an Academic Website](https://www.emmanuelteitelbaum.com/post/managing-pubs-academic-website/)* by Emmanuel Teitelbaum.  
+* **Custom domain** – *[How to add custom domains to Netlify sites](https://www.netlify.com/blog/2021/12/20/how-to-add-custom-domains-to-netlify-sites/)* (Netlify blog).
+
+---
+
