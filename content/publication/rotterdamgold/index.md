@@ -1,3 +1,4 @@
+---
 title: "Rotterdam Gold"
 authors: ["K. Dijkstra", "A. El Ghani"]
 publishDate: "2024-04-15"
