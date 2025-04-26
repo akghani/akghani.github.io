@@ -6,7 +6,7 @@ publication_types: ["5"]
 date: 2022-11-01
 abstract: "Practical guidebook that translates academic findings into football-club training routines."
 image:
-  filename: fairplay.jpg
+  filename: featured.jpg
   preview_only: false
 featured: true
 tags: ["Open Science", "Community Sports"]
