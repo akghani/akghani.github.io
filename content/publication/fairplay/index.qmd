@@ -13,12 +13,5 @@ tags: ["Open Science", "Community Sports"]
 projects: ["fair-play-handbook"]
 ---
 
-### Project Overview
-The FAIRPLAY project, in collaboration with Nederlands Jeugdinstituut (NJi) and several top European football clubs, investigates the societal impact of football in fostering resilience and life skills in youth. Supported by an Erasmus+ grant, this three-year initiative works with Feyenoord, Charlton Athletic, Werder Bremen, Inter Milan, and Hibernian to develop and implement pedagogical strategies for coaches and youth workers. The project aims to empower young people, particularly in urban environments, by using football as a tool to teach resilience and life skills, culminating in a training manual for best practices and evidence-based approaches.
 
-### Results
-![](fairplay-results.jpg)
 
-::: {.callout-note title="Research Publication"}
-Resilience among youth in soccer. [Dijkstra, K., & el Ghani, A., (2024).](https://www.tijdschriftdepsycholoog.nl/wetenschap/veerkracht-bij-jeugd-door-voetbal/)
-:::
