@@ -1,6 +1,6 @@
 ---
 title: "FAIR-play Handbook (2022)"
-authors: ["K.P. Millaniya", "I. Smit", "K. Dijkstra", "⚑ A. El Ghani – data specialist"]
+#authors: ["K.P. Millaniya", "I. Smit", "K. Dijkstra", "⚑ A. El Ghani – data specialist"]
 publication: "Erasmus+ Vital Cities & Citizens"
 publication_types: ["5"]
 date: 2022-11-01
