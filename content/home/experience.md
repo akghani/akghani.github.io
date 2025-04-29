@@ -29,13 +29,11 @@ experience:
     location: Rotterdam (NL)
     date_start: '2023-04-01'
     description: |2-
-      I teach the following courses:
-      * Macroeconomics: The Economic Cycle and Employment (en/de)
-      * International Economics (de)
-      * Introduction to Python for Data Analytics (de)
-      * Theory of Economic Policy (de)
-      * Microeconomics (de)
-      * [Data Visualization with R](https://github.com/Alessandro1984/Data-visualisation-with-R) (en)
+      + Developed and managed a comprehensive dataset based on international surveys for an Erasmus+ funded project.
+      + Created R-scripts in R-Markdown to document data workflows and present findings.
+      + Conducted statistical analyses, visualized research results, and contributed to international conferences and scientific journals.
+      + Supported open science initiatives by documenting and sharing code on platforms like the Open Science Framework (OSF).
+
 
   - title: Research Intern
     company: Erasmus Medical Center
@@ -54,7 +52,7 @@ design:
   columns: '2'
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: ben-neale-Hl4oFevvUeI-unsplash.jpg
+    image: charcoal_gold_pattern.png
     image_darken: 0.9
     image_size: cover
     image_position: left
