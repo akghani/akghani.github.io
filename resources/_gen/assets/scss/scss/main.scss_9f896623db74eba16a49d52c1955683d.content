@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Set Bootstrap variables */
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -9761,3 +9762,15 @@ div.chart {
 
 .to-top:hover {
   background: #555; }
+
+/* Subtle charcoal-and-gold geometric background */
+body {
+  /* dark charcoal fallback so text remains readable */
+  background-color: #0d0d0d;
+  /* seamless tile from the assets directory               *
+   * note: URL path starts at the site root (`/media/…`)   */
+  background-image: url("/media/charcoal_gold_pattern.png");
+  background-repeat: repeat;
+  /* tile */
+  background-attachment: fixed;
+  /* gentle parallax */ }
