@@ -36,7 +36,15 @@ content:
 
 design:
   # Choose how many columns the section has. Valid values: '1' or '2'.
-  columns: '4'
+  columns: '2'
+  background:
+# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
+    image: charcoal_gold_pattern.png
+    image_darken: 0.3
+    image_size: cover
+    image_position: left
+    image_parallax: true
+    text_color_light: true
 
   # Toggle between the various page layout types.
   #   1 = List
