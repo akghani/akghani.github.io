@@ -1,204 +1,113 @@
-/* My Custom Animations */
+/* ─── Custom palette & background imports ───────────────────────── */
+@import "colors";      // teal · navy · orange · greys
+@import "background";  // charcoal pattern + header/footer strips
 
-.navbar-collapse {
-    margin-left: 3cm; 
-}
+/* ─── My Custom Animations (unchanged) ──────────────────────────── */
+
+.navbar-collapse { margin-left: 3cm; }
+
 .navbar-nav .nav-link {
   display: inline-block;
-  transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out; /* Smooth animation */
+  transition: transform .3s ease-in-out,
+              font-weight .3s ease-in-out;
 }
 .navbar-nav .nav-link:hover {
-  transform: scale(1.1); /* Slightly increase size */
-  font-weight: bold; /* Make text bold */
+  transform: scale(1.1);
+  font-weight: bold;
 }
 
-
-#about-me {
-  color: #cfcfcf;
-}
-
-
-
-
+#about-me { color: #cfcfcf; }
 
 /* slideLeft, slideRight and grow keyframes */
-@keyframes slideLeft {
-    from {
-        transform: translateX(800px); /* Start 800px to the right */
-        opacity: 0; /* Start invisible */
-    }
-    to {
-        transform: translateX(0); /* End at original position */
-        opacity: 1; /* End fully visible */
-    }
-}
-@keyframes slideRight {
-    from {
-        left: -1000px; /* Start off-screen to the left */
-        opacity: 0; /* Start invisible */
-    }
-    to {
-        left: 0; /* End at original position */
-        opacity: 1; /* End fully visible */
-    }
-}
-@keyframes grow {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+@keyframes slideLeft  { from { transform: translateX(800px); opacity:0; } to { transform:none; opacity:1; } }
+@keyframes slideRight { from { left:-1000px; opacity:0; }                to { left:0;      opacity:1; } }
+@keyframes grow       { from { opacity:0; } to { opacity:1; } }
 
+.slide-left { animation: slideLeft 2s ease-out forwards; opacity:0; }
 
-/* General Animations */
-.slide-left {
-    animation: slideLeft 2s ease-out forwards; /* Applies to .slide-left class */
-    opacity: 0; /* Ensure elements are initially invisible */
-}
-
-
-/* Avatar, Title, Location, and Social Icons with Staggered Slide Animation */
+/* Avatar, Title, Location, Icons */
 .avatar-circle {
-    clip-path: circle(50%);
-    border: 4px solid grey;
-    position: relative;
-    opacity: 0;
-    animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards;
+  clip-path: circle(50%);
+  border: 4px solid grey;
+  opacity: 0;
+  animation: slideRight 2s cubic-bezier(.87,0,.13,1) forwards;
 }
-/* Emoji overlay positioned over the bottom-right corner of the avatar */
-.emoji-overlay {  
-    position: absolute;
-    bottom: 295px;
-    right: 85px;
-    font-size: 1.5em;
-    background-color: grey;
-    border-radius: 50%;
-    padding: 3px;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
-    transform: translate(50%, 50%);
-    opacity: 0;
-    animation: grow 1.8s ease-out 2.5s forwards;
+.emoji-overlay {
+  position: absolute; bottom: 295px; right: 85px;
+  font-size: 1.5em; background: grey; border-radius: 50%;
+  padding: 3px; box-shadow: 0 0 4px rgba(0,0,0,.2);
+  transform: translate(50%,50%); opacity:0;
+  animation: grow 1.8s ease-out 2.5s forwards;
 }
+
 #profile {
- .portrait-title,
- .location,
- .network-icon {
-    opacity: 0;
-    position: relative;
-    animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards;
- }
- .portrait-title {
-    left: -1000px;
-    animation-delay: 0.2s;
- }
- .location {
-    left: -1400px;
-    animation-delay: 0.4s;
- }
- .network-icon {
-    left: -1800px;
-    margin-top: 15px;
-    padding: 5px;
-    animation-delay: 0.6s;
- }   
- /* Network Icons with Hover Effect */
- .network-icon i {
-    opacity: 0;
-    animation: grow 2s ease forwards; /* Icon fade-in animation */
-    color: #F6E6FF; /* Default color */
-    transition: color 1.1s ease; /* Smooth color transition */
- }
- .network-icon i:hover {
-    color: #1565c0; /* Change icons color to blue when pointed */
- }
- .network-icon .fa-facebook { animation-delay: 1.5s; }
- .network-icon .fa-blog { animation-delay: 1.7s; }
- .network-icon .fa-github { animation-delay: 1.9s; }
- .network-icon .fa-linkedin { animation-delay: 2.1s; }
+  .portrait-title, .location, .network-icon {
+    opacity:0; position:relative;
+    animation: slideRight 2s cubic-bezier(.87,0,.13,1) forwards;
+  }
+  .portrait-title { left:-1000px; animation-delay:.2s; }
+  .location       { left:-1400px; animation-delay:.4s; }
+  .network-icon   { left:-1800px; margin-top:15px; padding:5px; animation-delay:.6s; }
+  .network-icon i {
+    opacity:0; animation: grow 2s ease forwards; color:$clr-bg;
+    transition: color 1.1s ease;
+  }
+  .network-icon i:hover { color:$clr-primary-dark; }
+  .network-icon .fa-facebook { animation-delay:1.5s; }
+  .network-icon .fa-blog     { animation-delay:1.7s; }
+  .network-icon .fa-github   { animation-delay:1.9s; }
+  .network-icon .fa-linkedin { animation-delay:2.1s; }
 }
 
+/* ─── Buttons & Links using palette ─────────────────────────────── */
+a, .btn-outline-primary-circle      { color:$clr-primary; }
+a:hover,
+.btn-outline-primary-circle:hover   { background:$clr-primary; color:#fff; }
 
+/* Toolbar active underline */
+.btn-toolbar .btn.active { box-shadow: 0 1.5px 0 0 $clr-bg; }
 
-/* Button Styles */
-
-.btn-toolbar .btn.active {
-    box-shadow: 0 1.5px 0 0 white;
-}
-
-.btn-outline-primary-circle {
-    color: #1565c0;
-    transition: background-color 1s, color 1s;
-}
-.btn-outline-primary-circle:hover {
-    background-color: #1565c0; /* Blue background on hover */
-    transform: scale(1.1); /* Slightly grow button */
-}
-
-
-/* Make the background of project cards transparent */
-.project-card {
-    padding: 5px; /* Adds 0.5 cm (5px) padding */
-}
-.card-simple {
-    background-color: transparent !important; /* Ensure the background is transparent */
-    border: 2px solid white !important; /* Add blue border */
-    border-radius: 20px; /* gives the border a rounded edge */
-    transition: background-color 0.3s ease, border-color 0.3s ease;
-}
-/* Hover effect for better visibility */
-.card-simple:hover {
-    background-color: rgba(187, 222, 251, 0.2) !important; /* Light blue on hover for visibility */
-    transform: scale(1.01); /* Zoom effect on hover */
-}
-/* Style the title link inside the card */
-.card-simple .section-subheading.article-title a {
-    color: #F4DFFF !important; /* Make title text light lilac */
-    font-weight: bold; /* Optional: Makes the title stand out */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s ease;
-}
-/* Style title on hover for a more interactive effect */
-.card-simple .section-subheading.article-title a:hover {
-    color: #1565c0 !important; /* Slightly lighter blue on hover */
-}
-
-
-.btn-sm {
-    transition: background-color 1s, color 1s;
-}
-.btn-sm:hover {
-    font-weight: bold; /* Make text bold */
-    transform: scale(1.1); /* Slightly grow button */
-}
-
-
+/* Buttons grow on hover */
+.btn-outline-primary-circle,
+.btn-sm,
 .btn-outline-primary.btn-page-header {
-    transition: transform 0.2s ease, font-weight 0.2s ease;
-  }
-  .btn-outline-primary.btn-page-header:hover {
-    transform: scale(1.02); /* Grow effect */
-    font-weight: bold; /* Bold effect */
-  }
-  
+  transition: background-color 1s, color 1s, transform .2s ease, font-weight .2s ease;
+}
+.btn-sm:hover,
+.btn-outline-primary.btn-page-header:hover,
+.btn-outline-primary-circle:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
 
-/* Scroll to top button styling */
-.to-top {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  display: none; /* Hidden until needed */
-  background: #333;
-  color: #fff;
-  padding: 0.75rem 1rem;
-  border-radius: 50%;
-  text-align: center;
+/* ─── Project card tweaks ───────────────────────────────────────── */
+.project-card { padding:5px; }
+
+.card-simple {
+  background: transparent !important;
+  border: 2px solid $clr-primary !important;
+  border-radius: 20px;
+  transition: background .3s ease, border-color .3s ease;
+}
+.card-simple:hover {
+  background: rgba($clr-primary, .20) !important;
+  transform: scale(1.01);
+}
+.card-simple .section-subheading.article-title a {
+  color: $clr-bg !important;
+  font-weight: bold;
   text-decoration: none;
-  font-size: 1.25rem;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
+  transition: color .3s ease;
 }
+.card-simple .section-subheading.article-title a:hover { color:$clr-primary-dark !important; }
 
-.to-top:hover {
-  background: #555;
+/* ─── Scroll-to-top button ─────────────────────────────────────── */
+.to-top {
+  position: fixed; bottom:2rem; right:2rem; display:none;
+  background: $clr-navy; color:#fff; padding:.75rem 1rem;
+  border-radius:50%; text-align:center; font-size:1.25rem;
+  z-index:1000; transition: opacity .3s ease;
 }
-  
+.to-top:hover { background:$clr-primary-dark; }
 
-@import "background";
+/* end of file */

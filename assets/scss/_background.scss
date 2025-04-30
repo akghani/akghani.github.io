@@ -1,12 +1,29 @@
-/* Subtle charcoal-and-gold geometric background */
+/* ─── Light-theme background ───────────────────────────────────── */
+
+/* 1. Base colour comes from the palette we defined in _colors.scss */
 body {
-  /* dark charcoal fallback so text remains readable */
-  background-color: #0d0d0d;
+  background: $clr-bg;             /* #F4F6F8  – light grey */
+  color:      $clr-navy;           /* keep navy text */
+}
 
-  /* seamless tile from the assets directory               *
-   * note: URL path starts at the site root (`/media/…`)   */
-  background-image: url("/media/charcoal_gold_pattern.png");
+/* 2. Optional subtle pattern made with a CSS repeating-gradient.
+   * Comment-out the next three lines if you prefer solid colour.    */
+body::before {
+  content: "";
+  position: fixed; inset: 0; z-index: -1;          /* sits behind */
+  background-image:
+    repeating-linear-gradient(
+      135deg,                                       /* angle */
+      rgba($clr-primary, 0.06) 0 2px,               /* thin teal line */
+      transparent            2px 22px               /* 20-px spacing  */
+    );
+}
 
-  background-repeat: repeat;          /* tile */
-  background-attachment: fixed;       /* gentle parallax */
+/* 3. Header & footer strips — keep, but use the palette accent
+   *   (open each SVG and replace #d4af37 with $clr-accent OR keep the
+   *    CSS filter hack below if you don’t want to edit the SVGs)     */
+header.site-header::before,
+footer.site-footer::after {
+  /* remove the filter if you’ve hand-edited the SVG stroke colour */
+  filter: none;
 }

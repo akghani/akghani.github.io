@@ -9558,20 +9558,45 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* My Custom Animations */
+/* ─── Custom palette & background imports ───────────────────────── */
+/* ─── Brand palette derived from EMSP graphic ────────────────────── */
+/* ─── Light-theme background ───────────────────────────────────── */
+/* 1. Base colour comes from the palette we defined in _colors.scss */
+body {
+  background: #F4F6F8;
+  /* #F4F6F8  – light grey */
+  color: #003366;
+  /* keep navy text */ }
+
+/* 2. Optional subtle pattern made with a CSS repeating-gradient.
+   * Comment-out the next three lines if you prefer solid colour.    */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  /* sits behind */
+  background-image: repeating-linear-gradient(135deg, rgba(0, 166, 168, 0.06) 0 2px, transparent 2px 22px); }
+
+/* 3. Header & footer strips — keep, but use the palette accent
+   *   (open each SVG and replace #d4af37 with $clr-accent OR keep the
+   *    CSS filter hack below if you don’t want to edit the SVGs)     */
+header.site-header::before,
+footer.site-footer::after {
+  /* remove the filter if you’ve hand-edited the SVG stroke colour */
+  filter: none; }
+
+/* ─── My Custom Animations (unchanged) ──────────────────────────── */
 .navbar-collapse {
   margin-left: 3cm; }
 
 .navbar-nav .nav-link {
   display: inline-block;
-  transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
-  /* Smooth animation */ }
+  transition: transform .3s ease-in-out, font-weight .3s ease-in-out; }
 
 .navbar-nav .nav-link:hover {
   transform: scale(1.1);
-  /* Slightly increase size */
-  font-weight: bold;
-  /* Make text bold */ }
+  font-weight: bold; }
 
 #about-me {
   color: #cfcfcf; }
@@ -9580,26 +9605,18 @@ div.chart {
 @keyframes slideLeft {
   from {
     transform: translateX(800px);
-    /* Start 800px to the right */
-    opacity: 0;
-    /* Start invisible */ }
+    opacity: 0; }
   to {
-    transform: translateX(0);
-    /* End at original position */
-    opacity: 1;
-    /* End fully visible */ } }
+    transform: none;
+    opacity: 1; } }
 
 @keyframes slideRight {
   from {
     left: -1000px;
-    /* Start off-screen to the left */
-    opacity: 0;
-    /* Start invisible */ }
+    opacity: 0; }
   to {
     left: 0;
-    /* End at original position */
-    opacity: 1;
-    /* End fully visible */ } }
+    opacity: 1; } }
 
 @keyframes grow {
   from {
@@ -9607,170 +9624,135 @@ div.chart {
   to {
     opacity: 1; } }
 
-/* General Animations */
 .slide-left {
   animation: slideLeft 2s ease-out forwards;
-  /* Applies to .slide-left class */
-  opacity: 0;
-  /* Ensure elements are initially invisible */ }
+  opacity: 0; }
 
-/* Avatar, Title, Location, and Social Icons with Staggered Slide Animation */
+/* Avatar, Title, Location, Icons */
 .avatar-circle {
   clip-path: circle(50%);
   border: 4px solid grey;
-  position: relative;
   opacity: 0;
   animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards; }
 
-/* Emoji overlay positioned over the bottom-right corner of the avatar */
 .emoji-overlay {
   position: absolute;
   bottom: 295px;
   right: 85px;
   font-size: 1.5em;
-  background-color: grey;
+  background: grey;
   border-radius: 50%;
   padding: 3px;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   transform: translate(50%, 50%);
   opacity: 0;
   animation: grow 1.8s ease-out 2.5s forwards; }
 
-#profile {
-  /* Network Icons with Hover Effect */ }
-  #profile .portrait-title,
-  #profile .location,
-  #profile .network-icon {
-    opacity: 0;
-    position: relative;
-    animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards; }
-  #profile .portrait-title {
-    left: -1000px;
-    animation-delay: 0.2s; }
-  #profile .location {
-    left: -1400px;
-    animation-delay: 0.4s; }
-  #profile .network-icon {
-    left: -1800px;
-    margin-top: 15px;
-    padding: 5px;
-    animation-delay: 0.6s; }
-  #profile .network-icon i {
-    opacity: 0;
-    animation: grow 2s ease forwards;
-    /* Icon fade-in animation */
-    color: #F6E6FF;
-    /* Default color */
-    transition: color 1.1s ease;
-    /* Smooth color transition */ }
-  #profile .network-icon i:hover {
-    color: #1565c0;
-    /* Change icons color to blue when pointed */ }
-  #profile .network-icon .fa-facebook {
-    animation-delay: 1.5s; }
-  #profile .network-icon .fa-blog {
-    animation-delay: 1.7s; }
-  #profile .network-icon .fa-github {
-    animation-delay: 1.9s; }
-  #profile .network-icon .fa-linkedin {
-    animation-delay: 2.1s; }
+#profile .portrait-title, #profile .location, #profile .network-icon {
+  opacity: 0;
+  position: relative;
+  animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards; }
 
-/* Button Styles */
-.btn-toolbar .btn.active {
-  box-shadow: 0 1.5px 0 0 white; }
+#profile .portrait-title {
+  left: -1000px;
+  animation-delay: .2s; }
 
-.btn-outline-primary-circle {
-  color: #1565c0;
-  transition: background-color 1s, color 1s; }
+#profile .location {
+  left: -1400px;
+  animation-delay: .4s; }
 
-.btn-outline-primary-circle:hover {
-  background-color: #1565c0;
-  /* Blue background on hover */
-  transform: scale(1.1);
-  /* Slightly grow button */ }
-
-/* Make the background of project cards transparent */
-.project-card {
+#profile .network-icon {
+  left: -1800px;
+  margin-top: 15px;
   padding: 5px;
-  /* Adds 0.5 cm (5px) padding */ }
+  animation-delay: .6s; }
+
+#profile .network-icon i {
+  opacity: 0;
+  animation: grow 2s ease forwards;
+  color: #F4F6F8;
+  transition: color 1.1s ease; }
+
+#profile .network-icon i:hover {
+  color: #008C95; }
+
+#profile .network-icon .fa-facebook {
+  animation-delay: 1.5s; }
+
+#profile .network-icon .fa-blog {
+  animation-delay: 1.7s; }
+
+#profile .network-icon .fa-github {
+  animation-delay: 1.9s; }
+
+#profile .network-icon .fa-linkedin {
+  animation-delay: 2.1s; }
+
+/* ─── Buttons & Links using palette ─────────────────────────────── */
+a, .btn-outline-primary-circle {
+  color: #00A6A8; }
+
+a:hover,
+.btn-outline-primary-circle:hover {
+  background: #00A6A8;
+  color: #fff; }
+
+/* Toolbar active underline */
+.btn-toolbar .btn.active {
+  box-shadow: 0 1.5px 0 0 #F4F6F8; }
+
+/* Buttons grow on hover */
+.btn-outline-primary-circle,
+.btn-sm,
+.btn-group-sm > .btn,
+.btn-outline-primary.btn-page-header {
+  transition: background-color 1s, color 1s, transform .2s ease, font-weight .2s ease; }
+
+.btn-sm:hover, .btn-group-sm > .btn:hover,
+.btn-outline-primary.btn-page-header:hover,
+.btn-outline-primary-circle:hover {
+  transform: scale(1.1);
+  font-weight: bold; }
+
+/* ─── Project card tweaks ───────────────────────────────────────── */
+.project-card {
+  padding: 5px; }
 
 .card-simple {
-  background-color: transparent !important;
-  /* Ensure the background is transparent */
-  border: 2px solid white !important;
-  /* Add blue border */
+  background: transparent !important;
+  border: 2px solid #00A6A8 !important;
   border-radius: 20px;
-  /* gives the border a rounded edge */
-  transition: background-color 0.3s ease, border-color 0.3s ease; }
+  transition: background .3s ease, border-color .3s ease; }
 
-/* Hover effect for better visibility */
 .card-simple:hover {
-  background-color: rgba(187, 222, 251, 0.2) !important;
-  /* Light blue on hover for visibility */
-  transform: scale(1.01);
-  /* Zoom effect on hover */ }
+  background: rgba(0, 166, 168, 0.2) !important;
+  transform: scale(1.01); }
 
-/* Style the title link inside the card */
 .card-simple .section-subheading.article-title a {
-  color: #F4DFFF !important;
-  /* Make title text light lilac */
+  color: #F4F6F8 !important;
   font-weight: bold;
-  /* Optional: Makes the title stand out */
   text-decoration: none;
-  /* Remove underline */
-  transition: color 0.3s ease; }
+  transition: color .3s ease; }
 
-/* Style title on hover for a more interactive effect */
 .card-simple .section-subheading.article-title a:hover {
-  color: #1565c0 !important;
-  /* Slightly lighter blue on hover */ }
+  color: #008C95 !important; }
 
-.btn-sm, .btn-group-sm > .btn {
-  transition: background-color 1s, color 1s; }
-
-.btn-sm:hover, .btn-group-sm > .btn:hover {
-  font-weight: bold;
-  /* Make text bold */
-  transform: scale(1.1);
-  /* Slightly grow button */ }
-
-.btn-outline-primary.btn-page-header {
-  transition: transform 0.2s ease, font-weight 0.2s ease; }
-
-.btn-outline-primary.btn-page-header:hover {
-  transform: scale(1.02);
-  /* Grow effect */
-  font-weight: bold;
-  /* Bold effect */ }
-
-/* Scroll to top button styling */
+/* ─── Scroll-to-top button ─────────────────────────────────────── */
 .to-top {
   position: fixed;
   bottom: 2rem;
   right: 2rem;
   display: none;
-  /* Hidden until needed */
-  background: #333;
+  background: #003366;
   color: #fff;
-  padding: 0.75rem 1rem;
+  padding: .75rem 1rem;
   border-radius: 50%;
   text-align: center;
-  text-decoration: none;
   font-size: 1.25rem;
   z-index: 1000;
-  transition: opacity 0.3s ease; }
+  transition: opacity .3s ease; }
 
 .to-top:hover {
-  background: #555; }
+  background: #008C95; }
 
-/* Subtle charcoal-and-gold geometric background */
-body {
-  /* dark charcoal fallback so text remains readable */
-  background-color: #0d0d0d;
-  /* seamless tile from the assets directory               *
-   * note: URL path starts at the site root (`/media/…`)   */
-  background-image: url("/media/charcoal_gold_pattern.png");
-  background-repeat: repeat;
-  /* tile */
-  background-attachment: fixed;
-  /* gentle parallax */ }
+/* end of file */
