@@ -9576,7 +9576,7 @@ body::before {
   inset: 0;
   z-index: -1;
   /* sits behind */
-  background-image: repeating-linear-gradient(135deg, rgba(0, 166, 168, 0.03) 0 2px, transparent 2px 32px); }
+  background-image: repeating-linear-gradient(135deg, rgba(0, 166, 168, 0.2) 0 2px, transparent 2px 32px); }
 
 /* 3. Header & footer strips — keep, but use the palette accent
    *   (open each SVG and replace #d4af37 with $clr-accent OR keep the
