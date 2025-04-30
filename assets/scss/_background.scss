@@ -14,8 +14,8 @@ body::before {
   background-image:
     repeating-linear-gradient(
       135deg,                                       /* angle */
-      rgba($clr-primary, 0.06) 0 2px,               /* thin teal line */
-      transparent            2px 22px               /* 20-px spacing  */
+      rgba($clr-primary, 0.03) 0 2px,               /* thin teal line */
+      transparent            2px 32px               /* 32-px spacing  */
     );
 }
 

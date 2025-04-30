@@ -44,7 +44,7 @@ design:
     image_size: cover
     image_position: left
     image_parallax: true
-    text_color_light: true
+#    text_color_light: true
 
   # Toggle between the various page layout types.
   #   1 = List

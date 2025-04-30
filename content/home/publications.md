@@ -5,7 +5,7 @@
 # Activate this widget? true/false
 active: true
 
-widget: pages
+widget: portfolio
 
 # This file represents a page section.
 headless: true
@@ -39,7 +39,7 @@ design:
   #   2 = Compact
   #   3 = Card
   #   4 = Citation (publication only)
-  view: 3
+  view: 2
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
 #    image: charcoal_gold_pattern.png
