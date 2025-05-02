@@ -30,9 +30,10 @@ main_menu:
   align: r
   logo:
     # Logo text
-    text: "Helloe"
+    text: "Abdelkarim el Ghani"
       # Logo filename in `assets/media/` folder
     filename: "logo.png"
+    alt: "Logo"
   button:
     enable: true
     text: "Get Started"
