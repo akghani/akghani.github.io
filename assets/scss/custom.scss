@@ -113,13 +113,19 @@ a:hover,
 /* end of file */
 
 
-/* Show text after the logo icon */
+/* ─── Show logo text next to the icon ──────────────────────────── */
 .navbar-brand {
-  display: flex; align-items: center;
+  display: flex;               /* keep icon + text on a single row */
+  align-items: center;
 }
-.navbar-brand .navbar-title {          /* Wowchemy wraps the text in .navbar-title */
-  margin-left: .5rem;
+
+.navbar-brand .navbar-brand-text {
+  /* Override Bootstrap d-none that Wowchemy sets */
+  display: inline-block !important;
+
+  margin-left: 0.5rem;
   font-weight: 600;
-  color: $clr-navy;                    /* use the palette variable */
-  display: inline-block !important;    /* override Wowchemy's "d-none" */
+  color: $clr-navy;            /* or hard-code #003366 if variables not loaded */
+  white-space: nowrap;         /* keeps first & last name together */
 }
+
