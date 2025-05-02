@@ -9756,18 +9756,3 @@ a:hover,
   background: #008C95; }
 
 /* end of file */
-/* ─── Show logo text next to the icon ──────────────────────────── */
-.navbar-brand {
-  display: flex;
-  /* keep icon + text on a single row */
-  align-items: center; }
-
-.navbar-brand .navbar-brand-text {
-  /* Override Bootstrap d-none that Wowchemy sets */
-  display: inline-block !important;
-  margin-left: 0.5rem;
-  font-weight: 600;
-  color: #003366;
-  /* or hard-code #003366 if variables not loaded */
-  white-space: nowrap;
-  /* keeps first & last name together */ }
