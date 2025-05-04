@@ -20,7 +20,7 @@ header:
   navbar:
     enable: true
     blox: "navbar"  # 👈 make sure this is here
-    align: left
+    align: right
     fixed_to_top: true
 
     logo:
