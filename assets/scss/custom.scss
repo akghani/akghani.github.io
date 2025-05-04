@@ -3,15 +3,91 @@
 @import "background";
 
 /* ─── Navbar tweaks ─────────────────────────────────────────── */
-.navbar-collapse { margin-left: 3rem; } /* Changed from cm to rem for responsiveness */
+.navbar-collapse { margin-left: 3rem; }
 
 .navbar-nav .nav-link {
   display: inline-block;
   transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+  position: relative;
 }
 .navbar-nav .nav-link:hover {
   transform: scale(1.1);
   font-weight: bold;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #aa8949, #f0e6c2);
+  transition: width 0.4s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%;
+}
+
+/* ─── Glassmorphism Navbar ───────────────────────────────────── */
+.navbar {
+  background-color: rgba(43, 37, 36, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  transition: background-color 0.5s ease, backdrop-filter 0.5s ease;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.navbar.scrolled {
+  background-color: rgba(20, 20, 20, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Updated header wave block to remove spacing */
+.header-wave-block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: #2b2524;
+  z-index: 0;
+}
+
+.header-wave-block + .hero-blur {
+  padding-top: 100px; /* separate from navbar/wave */
+}
+
+/* ─── Scroll-triggered Navbar JavaScript ─────────────────────── */
+/* Include this in your site JS or inline: 
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('.navbar');
+  if (window.scrollY > 10) {
+    nav.classList.add('scrolled');
+  } else {
+    nav.classList.remove('scrolled');
+  }
+}); 
+*/
+
+/* ─── Mouse Parallax Hero ───────────────────────────────────── */
+.hero-blur {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.hero-blur:hover .hero-title {
+  transform: rotateY(2deg) rotateX(2deg);
+  transition: transform 0.5s ease;
 }
 
 /* ─── Profile animations ─────────────────────────────────── */
@@ -47,6 +123,13 @@
   .network-icon .fa-linkedin { animation-delay:2.1s; }
 }
 
+/* [Content unchanged below this point...] */
+
+
+
+
+
+
 /* ─── Button styles ───────────────────────────────── */
 a, .btn-outline-primary-circle { color:$clr-primary; }
 a:hover,
@@ -69,6 +152,11 @@ a:hover,
 /* ─── Project cards ───────────────────────────────────── */
 .project-card { padding:5px; }
 
+.project-card:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s ease;
+}
+
 .card-simple {
   background: transparent !important;
   border: 2px solid $clr-primary !important;
@@ -78,6 +166,7 @@ a:hover,
 .card-simple:hover {
   background: rgba($clr-primary, .20) !important;
   transform: scale(1.01);
+  box-shadow: 0 0 20px rgba(255, 255, 200, 0.15);
 }
 .card-simple .section-subheading.article-title a {
   color: $clr-bg !important;
@@ -103,7 +192,14 @@ a:hover,
   font-size: 1.25rem;
   z-index: 1000;
   transition: opacity .3s ease;
+  animation: pulse 2.5s infinite ease-in-out;
 }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50%      { transform: scale(1.1); }
+}
+
 .to-top:hover { background: $clr-primary-dark; }
 
 /* ─── Navbar brand (logo + name) ─────────────────────── */
@@ -126,8 +222,8 @@ a:hover,
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   background-color: rgba(0, 60, 120, 0.3);
   animation: overlayFade 1.2s ease-out both;
 }
@@ -149,6 +245,23 @@ a:hover,
   font-size: 3rem;
   font-weight: 700;
   color: #fff;
+  position: relative;
+}
+
+.hero-blur .hero-title h1::after {
+  content: "";
+  display: block;
+  margin: 0.5rem auto 0;
+  width: 60px;
+  height: 4px;
+  background: linear-gradient(to right, #f0e6c2, #aa8949);
+  border-radius: 2px;
+  animation: glowBar 2s ease-in-out infinite alternate;
+}
+
+@keyframes glowBar {
+  from { transform: scaleX(1); opacity: 0.6; }
+  to { transform: scaleX(1.2); opacity: 1; }
 }
 
 @media (max-width: 768px) {

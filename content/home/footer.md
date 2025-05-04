@@ -12,6 +12,19 @@ design:
 markup: html
 ---
 
+<script>
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('.navbar');
+    if (window.scrollY > 10) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+</script>
+
+
+
 <div class="wave-stack">
   <!-- Back wave -->
   <svg viewBox="0 0 1440 320" class="wave-svg back-wave" preserveAspectRatio="none">

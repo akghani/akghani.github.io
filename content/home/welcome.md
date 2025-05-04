@@ -7,7 +7,7 @@ title: ""
 
 design:
   background:
-    image: giu-vicente-c7Ev87qEkRc-unsplash.jpg
+    image: jiran-family-azdGl7Vq4Hc-unsplash.jpg
     image_darken: 0.0
     image_size: cover
     image_position: center
