@@ -15,28 +15,23 @@ local_business_type: ''
 org_name: ''
 description: 'Personal website of Abdelkarim el Ghani'
 
-# Header navigation bar
-header:
-  navbar:
+# Site header (legacy Wowchemy syntax)
+main_menu:
+  enable: true
+  align: r  # Right-align the navbar
+  logo:
+    text: "Abdelkarim el Ghani"
+    filename: "logo.png"  # Should be in assets/media/
+    alt: "Logo"
+  button:
     enable: true
-    blox: "navbar"  # 👈 make sure this is here
-    align: right
-    fixed_to_top: true
-
-    logo:
-      text: "Abdelkarim el Ghani"      # Your name
-      filename: "logo.png"             # Logo path (in assets/media/)
-      alt: "Logo of Abdelkarim el Ghani"
-
-    button:
-      enable: true
-      text: "Get Started"
-      url: "https://hugoblox.com/templates/"
-
-    show_theme_chooser: true
-    show_search: true
-    highlight_active_link: true
-    show_translations: false
+    text: "Get Started"
+    url: "https://hugoblox.com/templates/"
+  show_logo: true
+  show_language: true
+  show_day_night: true
+  show_search: true
+  highlight_active_link: true
 
 # Localization
 date_format: 'Jan 2, 2006'
@@ -86,28 +81,23 @@ copyright_license:
 abstract_length: 135
 plugins_js: []
 
-# Avatar settings (for About widget)
 avatar:
   gravatar: false
   shape: circle
 
-# Publication settings
 publications:
   date_format: January 2006
   citation_style: apa
 
-# Project display
 projects:
   post_view: 3
   publication_view: 3
   talk_view: 3
 
-# Breadcrumbs
 breadcrumb:
   page_types:
     book: true
 
-# Comments (disabled here)
 comments:
   provider: ''
   commentable:
@@ -122,7 +112,6 @@ comments:
   commento:
     url: ''
 
-# Search
 search:
   provider: wowchemy
   algolia:
@@ -131,12 +120,10 @@ search:
     index_name: ''
     show_logo: false
 
-# CMS / NetlifyCMS integration
 cms:
   branch: master
   local_backend: false
 
-# Icon packs
 icon:
   pack:
     ai: true
