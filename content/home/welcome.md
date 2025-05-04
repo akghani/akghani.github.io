@@ -7,7 +7,7 @@ title: ""
 
 design:
   background:
-    image: jurriaan-F7I6sexmIS8-unsplash.jpg
+    image: giu-vicente-c7Ev87qEkRc-unsplash.jpg
     image_darken: 0.0
     image_size: cover
     image_position: center

@@ -9774,8 +9774,17 @@ a:hover,
   right: 0;
   bottom: 0;
   z-index: 0;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px); }
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+  background-color: rgba(0, 0, 0, 0.25);
+  animation: overlayFade 1.2s ease-out both;
+  /* 👈 This line triggers the fade */ }
+
+@keyframes overlayFade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 .hero-blur .hero-title {
   position: relative;
