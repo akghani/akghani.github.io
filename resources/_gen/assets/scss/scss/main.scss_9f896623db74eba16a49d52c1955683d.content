@@ -9558,7 +9558,7 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Custom palette & background imports ───────────────────────── */
+/* ─── Custom palette & background imports ──────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9586,10 +9586,11 @@ footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
   /*  filter: none; */ }
 
-/* ─── Navbar tweaks ────────────────────────────────────────────── */
+/* ─── Navbar tweaks ─────────────────────────────────────────── */
 .navbar-collapse {
-  margin-left: 3cm; }
+  margin-left: 3rem; }
 
+/* Changed from cm to rem for responsiveness */
 .navbar-nav .nav-link {
   display: inline-block;
   transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out; }
@@ -9598,10 +9599,7 @@ footer.site-footer::after {
   transform: scale(1.1);
   font-weight: bold; }
 
-/* ─── Profile animations ───────────────────────────────────────── */
-#about-me {
-  color: #cfcfcf; }
-
+/* ─── Profile animations ─────────────────────────────────── */
 @keyframes slideLeft {
   from {
     transform: translateX(800px);
@@ -9633,19 +9631,6 @@ footer.site-footer::after {
   border: 4px solid grey;
   opacity: 0;
   animation: slideRight 2s cubic-bezier(0.87, 0, 0.13, 1) forwards; }
-
-.emoji-overlay {
-  position: absolute;
-  bottom: 295px;
-  right: 85px;
-  font-size: 1.5em;
-  background: grey;
-  border-radius: 50%;
-  padding: 3px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-  transform: translate(50%, 50%);
-  opacity: 0;
-  animation: grow 1.8s ease-out 2.5s forwards; }
 
 #profile .portrait-title, #profile .location, #profile .network-icon {
   opacity: 0;
@@ -9687,7 +9672,7 @@ footer.site-footer::after {
 #profile .network-icon .fa-linkedin {
   animation-delay: 2.1s; }
 
-/* ─── Button styles ────────────────────────────────────────────── */
+/* ─── Button styles ───────────────────────────────── */
 a, .btn-outline-primary-circle {
   color: #00A6A8; }
 
@@ -9711,7 +9696,7 @@ a:hover,
   transform: scale(1.1);
   font-weight: bold; }
 
-/* ─── Project cards ────────────────────────────────────────────── */
+/* ─── Project cards ───────────────────────────────────── */
 .project-card {
   padding: 5px; }
 
@@ -9734,7 +9719,7 @@ a:hover,
 .card-simple .section-subheading.article-title a:hover {
   color: #008C95 !important; }
 
-/* ─── Scroll-to-top ────────────────────────────────────────────── */
+/* ─── Scroll-to-top ───────────────────────────────── */
 .to-top {
   position: fixed;
   bottom: 2rem;
@@ -9752,7 +9737,7 @@ a:hover,
 .to-top:hover {
   background: #008C95; }
 
-/* ─── Navbar brand (logo + name) ───────────────────────────────── */
+/* ─── Navbar brand (logo + name) ─────────────────────── */
 .navbar-brand {
   display: flex;
   align-items: center; }
@@ -9765,7 +9750,7 @@ a:hover,
   font-size: 1.2rem;
   font-weight: bold; }
 
-/* ─── Blur entire background via overlay ───────────────────────── */
+/* ─── Blur + Waves + Motion ─────────────────────── */
 .hero-blur::after {
   content: "";
   position: absolute;
@@ -9777,7 +9762,6 @@ a:hover,
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
   background-color: rgba(0, 60, 120, 0.3);
-  /* 💙 soft blue tint */
   animation: overlayFade 1.2s ease-out both; }
 
 @keyframes overlayFade {
@@ -9804,36 +9788,64 @@ a:hover,
   .hero-blur .hero-title h1 {
     font-size: 2rem; } }
 
-.custom-header-shape {
+/* Wave Animation + Styling */
+.header-wave-block, .footer-wave-block {
+  position: relative;
+  overflow: hidden;
+  background-color: #2b2524; }
+
+.wave-stack {
+  position: relative;
   width: 100%;
   height: 100px;
   line-height: 0;
-  overflow: hidden;
-  position: relative;
   z-index: 0; }
 
-.custom-header-shape::after {
-  content: "";
+/* Scrolling Animations */
+.footer-wave-block .wave-svg,
+.header-wave-block .wave-svg {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #2b2524;
-  z-index: -1; }
-
-.wave-svg {
-  display: block;
-  width: 100%;
+  width: 200%;
   height: 100%; }
 
+.footer-wave-block .wave-svg {
+  animation: scrollWaveLeft 18s linear infinite; }
+
+.header-wave-block .wave-svg {
+  animation: scrollWaveRight 20s linear infinite; }
+
+@keyframes scrollWaveLeft {
+  from {
+    transform: translateX(0); }
+  to {
+    transform: translateX(-50%); } }
+
+@keyframes scrollWaveRight {
+  from {
+    transform: translateX(-50%); }
+  to {
+    transform: translateX(0); } }
+
+.back-wave {
+  z-index: 1;
+  opacity: 0.2; }
+
+.middle-wave {
+  z-index: 2;
+  opacity: 0.4; }
+
+.gold-wave {
+  z-index: 3;
+  opacity: 0.9;
+  animation: waveFadeIn 1.5s ease-out both; }
+
 .footer-content {
+  position: relative;
+  z-index: 4;
   text-align: center;
   color: #fff;
   font-size: 0.95rem;
-  padding: 2rem 1rem;
-  z-index: 1;
-  position: relative; }
+  padding: 2rem 1rem 3rem; }
 
 .footer-content a {
   color: #f0e6c2;
@@ -9843,3 +9855,11 @@ a:hover,
 
 .footer-content a:hover {
   color: #d9b67d; }
+
+@keyframes waveFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
