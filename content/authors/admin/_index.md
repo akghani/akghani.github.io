@@ -31,5 +31,5 @@ avatar_image: avatar.jpg
 ---
 
 
-I’m Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
+I’m a Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
 

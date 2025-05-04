@@ -25,5 +25,5 @@ body::before {
 header.site-header::before,
 footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
-  filter: none;
+/*  filter: none; */
 }

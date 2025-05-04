@@ -7,16 +7,16 @@ title: ""
 
 design:
   background:
-# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
     image: jurriaan-F7I6sexmIS8-unsplash.jpg
-    image_darken: 0.4
+    image_darken: 0.0
     image_size: cover
     image_position: center
-    image_parallax: true
+    image_parallax: false
     text_color_light: true
+  css_class: hero-blur
+markup: html
 ---
 
 <div class="hero-title">
-  <h1>Abdelkarim el Ghani MSc</h1>
-  <h2>Data Science · Research · Analytics</h2>
+  <h1>Abdelkarim el Ghani, MSc</h1>
 </div>

@@ -9584,24 +9584,24 @@ body::before {
 header.site-header::before,
 footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
-  filter: none; }
+  /*  filter: none; */ }
 
-/* ─── My Custom Animations (unchanged) ──────────────────────────── */
+/* ─── Navbar tweaks ────────────────────────────────────────────── */
 .navbar-collapse {
   margin-left: 3cm; }
 
 .navbar-nav .nav-link {
   display: inline-block;
-  transition: transform .3s ease-in-out, font-weight .3s ease-in-out; }
+  transition: transform 0.3s ease-in-out, font-weight 0.3s ease-in-out; }
 
 .navbar-nav .nav-link:hover {
   transform: scale(1.1);
   font-weight: bold; }
 
+/* ─── Profile animations ───────────────────────────────────────── */
 #about-me {
   color: #cfcfcf; }
 
-/* slideLeft, slideRight and grow keyframes */
 @keyframes slideLeft {
   from {
     transform: translateX(800px);
@@ -9628,7 +9628,6 @@ footer.site-footer::after {
   animation: slideLeft 2s ease-out forwards;
   opacity: 0; }
 
-/* Avatar, Title, Location, Icons */
 .avatar-circle {
   clip-path: circle(50%);
   border: 4px solid grey;
@@ -9688,7 +9687,7 @@ footer.site-footer::after {
 #profile .network-icon .fa-linkedin {
   animation-delay: 2.1s; }
 
-/* ─── Buttons & Links using palette ─────────────────────────────── */
+/* ─── Button styles ────────────────────────────────────────────── */
 a, .btn-outline-primary-circle {
   color: #00A6A8; }
 
@@ -9697,11 +9696,9 @@ a:hover,
   background: #00A6A8;
   color: #fff; }
 
-/* Toolbar active underline */
 .btn-toolbar .btn.active {
   box-shadow: 0 1.5px 0 0 #F4F6F8; }
 
-/* Buttons grow on hover */
 .btn-outline-primary-circle,
 .btn-sm,
 .btn-group-sm > .btn,
@@ -9714,7 +9711,7 @@ a:hover,
   transform: scale(1.1);
   font-weight: bold; }
 
-/* ─── Project card tweaks ───────────────────────────────────────── */
+/* ─── Project cards ────────────────────────────────────────────── */
 .project-card {
   padding: 5px; }
 
@@ -9737,7 +9734,7 @@ a:hover,
 .card-simple .section-subheading.article-title a:hover {
   color: #008C95 !important; }
 
-/* ─── Scroll-to-top button ─────────────────────────────────────── */
+/* ─── Scroll-to-top ────────────────────────────────────────────── */
 .to-top {
   position: fixed;
   bottom: 2rem;
@@ -9755,7 +9752,7 @@ a:hover,
 .to-top:hover {
   background: #008C95; }
 
-/* end of file */
+/* ─── Navbar brand (logo + name) ───────────────────────────────── */
 .navbar-brand {
   display: flex;
   align-items: center; }
@@ -9768,55 +9765,32 @@ a:hover,
   font-size: 1.2rem;
   font-weight: bold; }
 
-/* ─── Hero Section Styling ───────────────────────────────────── */
-.hero-title {
+/* ─── Blur entire background via overlay ───────────────────────── */
+.hero-blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); }
+
+.hero-blur .hero-title {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  padding: 6rem 1rem;
+  padding: 10rem 1rem;
   animation: fadeIn 1.5s ease-out; }
 
-.hero-title h1 {
-  font-size: 2.4rem;
-  margin: 0;
-  font-weight: 700; }
+.hero-blur .hero-title h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #fff; }
 
-.hero-title h2 {
-  font-size: 1.1rem;
-  margin-top: 1rem;
-  font-weight: 300; }
-
-/* Button under name */
-.hero-button {
-  display: inline-block;
-  margin-top: 2rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #fff;
-  background-color: #007acc;
-  border-radius: 30px;
-  text-decoration: none;
-  transition: background-color 0.3s ease; }
-
-.hero-button:hover {
-  background-color: #005fa3; }
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px); }
-  to {
-    opacity: 1;
-    transform: none; } }
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
-  .hero-title {
-    padding: 4rem 1rem; }
-  .hero-title h1 {
-    font-size: 1.8rem; }
-  .hero-title h2 {
-    font-size: 1rem; }
-  .hero-button {
-    font-size: 0.95rem;
-    padding: 0.6rem 1.2rem; } }
+  .hero-blur .hero-title {
+    padding: 6rem 1rem; }
+  .hero-blur .hero-title h1 {
+    font-size: 2rem; } }
