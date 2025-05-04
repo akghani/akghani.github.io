@@ -1,0 +1,33 @@
+Start building sites … 
+hugo v0.92.0-B3549403+extended darwin/amd64 BuildDate=2022-01-12T08:23:18Z VendorInfo=gohugoio
+WARN 2025/05/04 12:06:48 .Path when the page is backed by a file is deprecated and will be removed in a future release. We plan to use Path for a canonical source path and you probably want to check the source is a file. To get the current behaviour, you can use a construct simlar to the below:
+
+  {{ $path := "" }}
+  {{ with .File }}
+	{{ $path = .Path }}
+  {{ else }}
+	{{ $path = .Path }}
+  {{ end }}
+
+
+Re-run Hugo with the flag --panicOnWarning to get a better error message.
+
+                   | EN   
+-------------------+------
+  Pages            |  73  
+  Paginator pages  |   0  
+  Non-page files   |  29  
+  Static files     | 189  
+  Processed images |  42  
+  Aliases          |  15  
+  Sitemaps         |   1  
+  Cleaned          |   0  
+
+Built in 1403 ms
+Watching for changes in /Users/abdelkarim/Dropbox/Github/academic_website/{assets,content,layouts,static,themes}
+Watching for config changes in /Users/abdelkarim/Dropbox/Github/academic_website/config/_default, /Users/abdelkarim/Dropbox/Github/academic_website/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms/v5/config.yaml, /Users/abdelkarim/Dropbox/Github/academic_website/themes/github.com/wowchemy/wowchemy-hugo-modules/wowchemy/v5/config.yaml
+Environment: "development"
+Serving pages from memory
+Running in Fast Render Mode. For full rebuilds on change: hugo server --disableFastRender
+Web Server is available at http://localhost:1313/ (bind address 127.0.0.1)
+Press Ctrl+C to stop

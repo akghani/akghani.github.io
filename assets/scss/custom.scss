@@ -113,5 +113,22 @@ a:hover,
 /* end of file */
 
 
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  height: 32px;
+  margin-right: 10px;
+}
+
+.navbar-brand span {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+
 
 

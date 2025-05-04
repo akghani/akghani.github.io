@@ -9,49 +9,39 @@ day_night: true
 font: minimal
 font_size: L
 
-
-#appearance:
-#  theme_day: minimal
-#  theme_night: minimal
-#  font: minimal
-#  font_size: L
-
-
 # SEO
 site_type: Person
 local_business_type: ''
 org_name: ''
 description: 'Personal website of Abdelkarim el Ghani'
 
-
-# Site header
-main_menu:
-  enable: true
-  align: r
-  logo:
-    # Logo text
-    text: "Abdelkarim el Ghani"
-      # Logo filename in `assets/media/` folder
-    filename: "logo.png"
-    alt: "Logo"
-  button:
+# Header navigation bar
+header:
+  navbar:
     enable: true
-    text: "Get Started"
-    url: "https://hugoblox.com/templates/"
-  show_logo: true
-  show_language: true
-  show_day_night: true
-  show_search: true
-  highlight_active_link: true
-  
+    blox: "navbar"  # 👈 make sure this is here
+    align: left
+    fixed_to_top: true
 
+    logo:
+      text: "Abdelkarim el Ghani"      # Your name
+      filename: "logo.png"             # Logo path (in assets/media/)
+      alt: "Logo of Abdelkarim el Ghani"
+
+    button:
+      enable: true
+      text: "Get Started"
+      url: "https://hugoblox.com/templates/"
+
+    show_theme_chooser: true
+    show_search: true
+    highlight_active_link: true
+    show_translations: false
 
 # Localization
 date_format: 'Jan 2, 2006'
 time_format: '3:04 PM'
 address_format: en-us
-
-
 
 # Site features
 highlight: true
@@ -63,6 +53,7 @@ highlight_languages:
 math: false
 diagram: false
 privacy_pack: false
+
 edit_page:
   repo_url: ''
   content_dir: ''
@@ -71,6 +62,7 @@ edit_page:
     page: false
     post: false
     book: false
+
 show_related:
   book: true
   page: false
@@ -78,31 +70,44 @@ show_related:
   project: true
   publication: true
   event: true
+
 reading_time: true
 section_pager: false
 docs_section_pager: true
 sharing: true
+
 copyright_license:
   enable: true
   allow_derivatives: false
   share_alike: true
   allow_commercial: false
   notice: 'This work is licensed under {license}'
+
 abstract_length: 135
 plugins_js: []
+
+# Avatar settings (for About widget)
 avatar:
   gravatar: false
   shape: circle
+
+# Publication settings
 publications:
   date_format: January 2006
   citation_style: apa
+
+# Project display
 projects:
   post_view: 3
   publication_view: 3
   talk_view: 3
+
+# Breadcrumbs
 breadcrumb:
   page_types:
     book: true
+
+# Comments (disabled here)
 comments:
   provider: ''
   commentable:
@@ -116,6 +121,8 @@ comments:
     show_count: true
   commento:
     url: ''
+
+# Search
 search:
   provider: wowchemy
   algolia:
@@ -123,20 +130,13 @@ search:
     api_key: ''
     index_name: ''
     show_logo: false
-#map:
-#  provider: mapnik
-#  api_key: ''
-#  zoom: 15
-#marketing:
-#  google_analytics: 'G-1Q51Q7MPV7' # Set up Google analytics
-#  google_tag_manager: ''
-#  google_site_verification: 'google-site-verification=zE_H7eL4bmVB3MI15sIC4FlrXiQqfRfpmt9gPe5LdXs'
-#  baidu_site_verification: ''
-#  baidu_tongji: ''
+
+# CMS / NetlifyCMS integration
 cms:
   branch: master
   local_backend: false
+
+# Icon packs
 icon:
   pack:
     ai: true
-
