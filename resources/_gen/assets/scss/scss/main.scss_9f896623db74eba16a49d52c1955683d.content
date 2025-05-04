@@ -9803,3 +9803,43 @@ a:hover,
     padding: 6rem 1rem; }
   .hero-blur .hero-title h1 {
     font-size: 2rem; } }
+
+.custom-header-shape {
+  width: 100%;
+  height: 100px;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 0; }
+
+.custom-header-shape::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #2b2524;
+  z-index: -1; }
+
+.wave-svg {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.footer-content {
+  text-align: center;
+  color: #fff;
+  font-size: 0.95rem;
+  padding: 2rem 1rem;
+  z-index: 1;
+  position: relative; }
+
+.footer-content a {
+  color: #f0e6c2;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s; }
+
+.footer-content a:hover {
+  color: #d9b67d; }

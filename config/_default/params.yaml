@@ -32,6 +32,8 @@ main_menu:
   show_day_night: true
   show_search: true
   highlight_active_link: true
+  
+
 
 # Localization
 date_format: 'Jan 2, 2006'
