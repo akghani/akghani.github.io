@@ -45,6 +45,8 @@ design:
     image_position: left
     image_parallax: true
 #    text_color_light: true
+  css_class: section
+
 
   # Toggle between the various page layout types.
   #   1 = List

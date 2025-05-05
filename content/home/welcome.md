@@ -7,7 +7,7 @@ title: ""
 
 design:
   background:
-    image: jiran-family-azdGl7Vq4Hc-unsplash.jpg
+    image: accuray-MFSEP2g4YS0-unsplash.jpg
     image_darken: 0.0
     image_size: cover
     image_position: center
