@@ -45,16 +45,24 @@ markup: html
 </script>
 
 
+<!-- Ripple on click, only for buttons & .btn -->
 <script>
-  document.querySelectorAll("a, button, .btn").forEach(el => {
+  document.querySelectorAll("button, .btn").forEach(el => {
     el.classList.add("clickable");
     el.addEventListener("click", e => {
       const rect = el.getBoundingClientRect();
-      el.style.setProperty("--ripple-x", (e.clientX - rect.left - 50) + "px");
-      el.style.setProperty("--ripple-y", (e.clientY - rect.top - 50) + "px");
+      el.style.setProperty(
+        "--ripple-x",
+        (e.clientX - rect.left - 50) + "px"
+      );
+      el.style.setProperty(
+        "--ripple-y",
+        (e.clientY - rect.top - 50) + "px"
+      );
     });
   });
 </script>
+
 
 
 
