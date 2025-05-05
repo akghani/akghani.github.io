@@ -9720,7 +9720,8 @@ body::before {
   right: 0;
   bottom: 0;
   z-index: 0;
-  background: inherit;
+  /* inherit only the background image from Hugo inline style */
+  background-image: inherit;
   background-size: cover;
   background-position: center;
   filter: blur(6px);
