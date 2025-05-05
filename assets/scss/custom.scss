@@ -35,15 +35,15 @@
 
 /* ─── Animated Body Gradient & Shimmer Overlay ─────────────────── */
 @keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
 }
 body {
   background: linear-gradient(-45deg, #2b2524, #392f2d, #443c3a, #2b2524);
   background-size: 400% 400%;
   animation: gradientShift 20s ease infinite;
-  cursor: auto; /* restore native cursor */
+  cursor: auto;
 }
 body::before {
   content: "";
@@ -53,24 +53,23 @@ body::before {
   pointer-events: none;
   background: radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(255,255,255,0.1), transparent 80%);
   mix-blend-mode: soft-light;
-  animation: shimmer 8s infinite ease-in-out;
+  animation: shimmer 8s ease-in-out infinite;
 }
-@keyframes shimmer { 0%,100% { opacity: 0; } 50% { opacity: 0.2; } }
+@keyframes shimmer {
+  0%,100% { opacity: 0; }
+  50%     { opacity: 0.2; }
+}
 
-/* ─── Header Waves & Pointer Events Fix ───────────────────────── */
-.header-wave-block {
+/* ─── Header Waves & Click-Through ───────────────────────────────── */
+.header-wave-block,
+.wave-stack {
   position: relative;
-  height: 100px;
   width: 100%;
   overflow: hidden;
-  background-color: #2b2524;
-}
-.wave-stack {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
   pointer-events: none;
 }
+.header-wave-block { height: 100px; background-color: #2b2524; }
+.wave-stack { position: absolute; top: 0; left: 0; height: 100px; }
 .wave-stack .wave-svg {
   position: absolute;
   width: 200%; height: 100%;
@@ -78,32 +77,31 @@ body::before {
 .back-wave   { z-index: 1; opacity: 0.2; animation: scrollLeft 20s linear infinite; }
 .middle-wave { z-index: 2; opacity: 0.4; animation: scrollLeft 22s linear infinite; }
 .gold-wave   { z-index: 3; opacity: 0.9; animation: scrollLeft 24s linear infinite; }
-@keyframes scrollLeft { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes scrollLeft {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
 
-/* ─── Hero Section Styling & Pop Effect ───────────────────────── */
+/* ─── Hero Section Styling & Blur Background ───────────────────────── */
 .hero-blur {
   position: relative;
   padding: 2rem 1rem;
-  perspective: 800px;
-  background: radial-gradient(circle at center, rgba(255,255,255,0.05), transparent 70%);
   overflow: hidden;
+  /* background-image provided inline by Hugo */
 }
-
-/* Blur background only via ::before */
 .hero-blur::before {
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   z-index: 0;
   background: inherit;
+  background-size: cover;
+  background-position: center;
   filter: blur(6px);
   transform: scale(1.05);
   pointer-events: none;
 }
-
-/* Remove previous overlay blur on container */
 .hero-blur::after {
-  /* tint overlay */
   content: "";
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
@@ -113,13 +111,14 @@ body::before {
   pointer-events: none;
   animation: overlayFade 1.2s ease-out both;
 }
+@keyframes overlayFade { from { opacity: 0; } to { opacity: 1; } }
 
 .hero-blur .hero-title {
   position: relative;
   z-index: 2;
+  text-align: center;
   margin: 0 auto;
   max-width: 90%;
-  text-align: center;
 }
 .hero-blur .hero-title h1 {
   font-size: 2rem;
@@ -131,10 +130,10 @@ body::before {
   -webkit-text-fill-color: transparent;
   animation: textGlow 5s ease-in-out infinite;
 }
-@keyframes overlayFade { from { opacity: 0; } to { opacity: 1; } }
-@keyframes textGlow { 0%,100% { background-position: 200% 0; } 50% { background-position: 0 0; } }
-
-/* Pop effect remains unchanged */
+@keyframes textGlow {
+  0%,100% { background-position: 200% 0; }
+  50%     { background-position: 0 0; }
+}
 .hero-blur:active::after {
   content: "";
   position: absolute;
@@ -145,15 +144,18 @@ body::before {
   transform: translate(-50%, -50%) scale(0);
   animation: pop 0.6s ease-out forwards;
 }
-@keyframes pop { 0% { opacity: 1; transform: translate(-50%,-50%) scale(0); } 100% { opacity: 0; transform: translate(-50%,-50%) scale(5); } }
+@keyframes pop {
+  0%   { opacity: 1; transform: translate(-50%,-50%) scale(0); }
+  100% { opacity: 0; transform: translate(-50%,-50%) scale(5); }
+}
 
-/* ─── Section Reveal & Neon Pulse ─────────────────────────────── */ & Neon Pulse ─────────────────────────────── */
+/* ─── Section Reveal & Neon Pulse ─────────────────────────────── */
 .section {
   position: relative;
   opacity: 0;
   transform: translateY(30px) scale(0.95);
   filter: blur(4px);
-  transition: all 0.8s ease;
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease;
 }
 .section.revealed {
   opacity: 1;
@@ -168,7 +170,10 @@ body::before {
   border-radius: 8px;
   animation: neonPulse 1.5s ease-in-out infinite;
 }
-@keyframes neonPulse { 0%,100% { box-shadow: 0 0 8px rgba(170,137,73,0.8); } 50% { box-shadow: 0 0 16px rgba(170,137,73,1); } }
+@keyframes neonPulse {
+  0%,100% { box-shadow: 0 0 8px rgba(170,137,73,0.8); }
+  50%     { box-shadow: 0 0 16px rgba(170,137,73,1); }
+}
 
 /* ─── Card Hover Effects ──────────────────────────────────────── */
 .card-simple {
@@ -189,14 +194,26 @@ body::before {
   border-radius: 50%;
   animation: topPulse 2s infinite;
 }
-@keyframes topPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.2); } }
+@keyframes topPulse {
+  0%,100% { transform: scale(1); }
+  50%     { transform: scale(1.2); }
+}
 
 /* ─── Footer Waves & Content ─────────────────────────────────── */
-.footer-wave-block { background-color: #2b2524; position: relative; overflow: hidden; }
-.footer-wave-block .wave-svg { animation: scrollLeft 18s linear infinite; }
+.footer-wave-block {
+  position: relative;
+  overflow: hidden;
+  background-color: #2b2524;
+  pointer-events: none;
+}
+.footer-wave-block .wave-svg {
+  animation: scrollLeft 18s linear infinite;
+}
 .footer-content {
   text-align: center;
   color: #fff;
   padding: 2rem 1rem;
 }
-.footer-content a:hover { transform: rotate(20deg) scale(1.1); }
+.footer-content a:hover {
+  transform: rotate(20deg) scale(1.1);
+}

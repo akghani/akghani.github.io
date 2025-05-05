@@ -9558,7 +9558,7 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Custom Imports ────────────────────────────────────────────────── */
+/* ─── Custom palette & background imports ──────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9620,15 +9620,15 @@ footer.site-footer::after {
 .navbar-nav .nav-link:nth-child(4) {
   animation-delay: 0.9s; }
 
+.navbar-nav .nav-link:hover {
+  transform: scale(1.1); }
+
 @keyframes navEnter {
   to {
     opacity: 1;
     transform: translateY(0); } }
 
-.navbar-nav .nav-link:hover {
-  transform: scale(1.1); }
-
-/* ─── Body Gradient & Shimmer Overlay ──────────────────────────── */
+/* ─── Animated Body Gradient & Shimmer Overlay ─────────────────── */
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%; }
@@ -9640,7 +9640,8 @@ footer.site-footer::after {
 body {
   background: linear-gradient(-45deg, #2b2524, #392f2d, #443c3a, #2b2524);
   background-size: 400% 400%;
-  animation: gradientShift 20s ease infinite; }
+  animation: gradientShift 20s ease infinite;
+  cursor: auto; }
 
 body::before {
   content: "";
@@ -9649,11 +9650,10 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
+  pointer-events: none;
   background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255, 255, 255, 0.1), transparent 80%);
   mix-blend-mode: soft-light;
-  pointer-events: none;
-  opacity: 0;
-  animation: shimmer 8s infinite ease-in-out; }
+  animation: shimmer 8s ease-in-out infinite; }
 
 @keyframes shimmer {
   0%, 100% {
@@ -9661,29 +9661,23 @@ body::before {
   50% {
     opacity: 0.2; } }
 
-/* Add before </body>:
-<script>
-  document.body.addEventListener('mousemove', e => {
-    document.body.style.setProperty('--x', (e.clientX/window.innerWidth*100)+'%');
-    document.body.style.setProperty('--y', (e.clientY/window.innerHeight*100)+'%');
-  });
-</script>
-*/
-/* ─── Header & Waves ────────────────────────────────────────────── */
-.header-wave-block {
+/* ─── Header Waves & Click-Through ───────────────────────────────── */
+.header-wave-block,
+.wave-stack {
   position: relative;
-  height: 100px;
+  width: 100%;
   overflow: hidden;
+  pointer-events: none; }
+
+.header-wave-block {
+  height: 100px;
   background-color: #2b2524; }
 
 .wave-stack {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  /* allow clicks through the waves */ }
+  height: 100px; }
 
 .wave-stack .wave-svg {
   position: absolute;
@@ -9711,17 +9705,58 @@ body::before {
   to {
     transform: translateX(-50%); } }
 
-/* ─── Hero Section ─────────────────────────────────────────────── */
+/* ─── Hero Section Styling & Blur Background ───────────────────────── */
 .hero-blur {
   position: relative;
   padding: 2rem 1rem;
-  backdrop-filter: blur(6px);
-  background: radial-gradient(circle at center, rgba(255, 255, 255, 0.05), transparent 70%);
-  perspective: 800px; }
+  overflow: hidden;
+  /* background-image provided inline by Hugo */ }
+
+.hero-blur::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  background: inherit;
+  background-size: cover;
+  background-position: center;
+  filter: blur(6px);
+  transform: scale(1.05);
+  pointer-events: none; }
+
+.hero-blur::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  background-color: rgba(0, 60, 120, 0.3);
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  animation: overlayFade 1.2s ease-out both; }
+
+@keyframes overlayFade {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.hero-blur .hero-title {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 90%; }
 
 .hero-blur .hero-title h1 {
   font-size: 2rem;
-  text-align: center;
+  margin: 0;
+  letter-spacing: 0.05em;
   background: linear-gradient(90deg, #aa8949, #f0e6c2);
   background-size: 200% 200%;
   -webkit-background-clip: text;
@@ -9734,27 +9769,33 @@ body::before {
   50% {
     background-position: 0 0; } }
 
-.hero-blur .hero-title h1:hover {
-  animation: glitch 1s infinite; }
+.hero-blur:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+  background: #f0e6c2;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: pop 0.6s ease-out forwards; }
 
-@keyframes glitch {
-  20% {
-    clip-path: inset(10% 0 90% 0);
-    transform: translate(-2px, 2px); }
-  40% {
-    clip-path: inset(90% 0 10% 0);
-    transform: translate(2px, -2px); }
-  60% {
-    clip-path: inset(10% 0 90% 0);
-    transform: translate(-2px, -2px); } }
+@keyframes pop {
+  0% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0); }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(5); } }
 
 /* ─── Section Reveal & Neon Pulse ─────────────────────────────── */
 .section {
+  position: relative;
   opacity: 0;
   transform: translateY(30px) scale(0.95);
   filter: blur(4px);
-  transition: all 0.8s ease;
-  position: relative; }
+  transition: opacity 0.8s ease, transform 0.8s ease, filter 0.8s ease; }
 
 .section.revealed {
   opacity: 1;
@@ -9767,15 +9808,15 @@ body::before {
   inset: -4px;
   border: 2px solid rgba(170, 137, 73, 0.6);
   border-radius: 8px;
-  animation: neon 1.5s ease-in-out infinite; }
+  animation: neonPulse 1.5s ease-in-out infinite; }
 
-@keyframes neon {
+@keyframes neonPulse {
   0%, 100% {
     box-shadow: 0 0 8px rgba(170, 137, 73, 0.8); }
   50% {
     box-shadow: 0 0 16px #aa8949; } }
 
-/* ─── Card Interactions ───────────────────────────────────────── */
+/* ─── Card Hover Effects ──────────────────────────────────────── */
 .card-simple {
   transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
@@ -9783,7 +9824,7 @@ body::before {
   transform: translateY(-5px) scale(1.02);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); }
 
-/* ─── Scroll-to-Top Button ─────────────────────────────────────── */
+/* ─── Scroll-to-Top Pulse ─────────────────────────────────────── */
 .to-top {
   position: fixed;
   bottom: 2rem;
@@ -9792,9 +9833,9 @@ body::before {
   background: #00A6A8;
   color: #fff;
   border-radius: 50%;
-  animation: pulse 2s infinite; }
+  animation: topPulse 2s infinite; }
 
-@keyframes pulse {
+@keyframes topPulse {
   0%, 100% {
     transform: scale(1); }
   50% {
@@ -9802,9 +9843,10 @@ body::before {
 
 /* ─── Footer Waves & Content ─────────────────────────────────── */
 .footer-wave-block {
-  background-color: #2b2524;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  background-color: #2b2524;
+  pointer-events: none; }
 
 .footer-wave-block .wave-svg {
   animation: scrollLeft 18s linear infinite; }
