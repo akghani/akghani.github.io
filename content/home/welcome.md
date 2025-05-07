@@ -7,7 +7,7 @@ title: ""
 
 design:
   background:
-    image: accuray-MFSEP2g4YS0-unsplash.jpg
+    image: damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg
     image_darken: 0.0
     image_size: cover
     image_position: center

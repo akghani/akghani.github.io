@@ -21,7 +21,7 @@ main_menu:
   align: r  # Right-align the navbar
   logo:
     text: "Abdelkarim el Ghani"
-    filename: "logo.png"  # Should be in assets/media/
+    filename: "logo.svg"  # Should be in assets/media/
     alt: "Logo"
   button:
     enable: true
@@ -74,7 +74,7 @@ docs_section_pager: true
 sharing: true
 
 copyright_license:
-  enable: false
+  enable: true
   allow_derivatives: false
   share_alike: true
   allow_commercial: false
