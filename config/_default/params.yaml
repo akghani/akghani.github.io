@@ -21,7 +21,7 @@ main_menu:
   align: r  # Right-align the navbar
   logo:
     text: "Abdelkarim el Ghani"
-    filename: "logo.svg"  # Should be in assets/media/
+    filename: "logo.png"  # Should be in assets/media/
     alt: "Logo"
   button:
     enable: true
