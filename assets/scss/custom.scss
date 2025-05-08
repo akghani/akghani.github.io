@@ -1,113 +1,69 @@
-/* ─── Strip header‑wave background and any overrides ───────────────────────── */
-.header-wave-block,
-.header-wave-block .wave-stack {
-  background: none !important;
-  background-color: transparent !important;
-}
-
-/* Also remove any inline style Hugo might generate */
-[class*="header-wave-block"] {
-  background: none !important;
-  background-color: transparent !important;
-}
-
-
-/* ─── Force‑transparent navbar ────────────────────────────────────────────── */
-header.navbar,
-header.navbar.scrolled,
-header.navbar.fixed-top {
-  background: transparent !important;
-  background-image: none !important;
-  border-bottom: none !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important;
-}
-
 /* ─── Custom Imports ─────────────────────────────────────────────── */
 @import "colors";
 @import "background";
 
-
-
-/* ─── Glassmorphic Navbar Structure ────────────────────────────── */
-.navbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 1000;
-  padding: 1rem;
-  transition: none !important;
-}
-.navbar-nav .nav-link { /* unchanged */ }
-@keyframes navEnter { to { opacity: 1; transform: translateY(0); } }
-
-/* ─── Body Gradient & Shimmer ─────────────────────────────────── */
-@keyframes gradientShift { /* unchanged */ }
-body { /* unchanged */ }
-body::before { /* unchanged */ }
-@keyframes shimmer { /* unchanged */ }
-
-/* ─── Header Wave ──────────────────────────────────────────────── */
-.header-wave-block,
-.wave-stack {
-  position: relative !important;
-  width: 100% !important;
-  overflow: hidden !important;
-  pointer-events: none !important;
-}
-.header-wave-block {
-  height: 100px !important;
-  background-color: transparent !important; /* remove dark bg */
-}
-.wave-stack {
-  position: absolute !important;
-  top: 0; left: 0;
-  height: 100px !important;
-}
-.wave-stack .wave-svg {
-  position: absolute !important;
-  width: 200% !important;
-  height: 100% !important;
-}
-/* Static green wave override */
-.custom-wave {
-  animation: none !important;
-  -webkit-animation: none !important;
-  z-index: 3 !important;
-  opacity: 1 !important;
+/* ─── Transparent Navbar ─────────────────────────────────────────── */
+header.navbar,
+header.navbar.scrolled,
+header.navbar.fixed-top {
+  background: transparent !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
 }
 
-/* ─── Hero Section & Remove Overlay ───────────────────────────── */
-.hero-blur {
-  position: relative !important;
-  padding: 2rem 1rem !important;
-  overflow: hidden !important;
+/* ─── Hero + Wave Container ──────────────────────────────────────── */
+.hero-wave-block.hero-blur {
+  position: relative;
+  padding: 4rem 1rem 0;    /* space for title above */
+  overflow: visible;       /* allow wave to show */
 }
-.hero-blur::before {
+
+/* Center the title */
+.hero-wave-block .hero-wave-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+}
+.hero-wave-block .hero-wave-container h1 {
+  font-size: 2.5rem;
+  margin: 0 auto 2rem;
+  max-width: 90%;
+}
+
+/* Remove any theme overlay */
+.hero-wave-block.hero-blur::after {
+  display: none !important;
+}
+
+/* Blurred background image */
+.hero-wave-block.hero-blur::before {
   content: "";
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  z-index: 0;
+  inset: 0;
   background-image: inherit !important;
   background-size: cover !important;
   background-position: center !important;
   filter: blur(6px) !important;
   transform: scale(1.05) !important;
-  pointer-events: none !important;
-}
-/* completely remove colored overlay */
-.hero-blur::after {
-  display: none !important;
-  content: none !important;
+  z-index: 0;
 }
 
-/* Hero title styling remains as is */
-.hero-blur .hero-title { position: relative; z-index: 2; text-align: center; }
-.hero-blur .hero-title h1 { /* unchanged */ }
-
-/* ─── Section Reveal, Cards, To‑Top, Footer Content ───────────── */
-/* leave all existing styles here unchanged */
-.section { /* ... */ }
-.card-simple { /* ... */ }
-.to-top { /* ... */ }
-.footer-content { /* ... */ }
-.footer-content a:hover { /* ... */ }
+/* ─── Wave at Bottom ────────────────────────────────────────────── */
+.full-width-wave {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+.full-width-wave .wave-svg {
+  display: block;
+  width: 100%;
+  height: 150px; /* adjust to taste */
+}
+.full-width-wave .custom-wave {
+  animation: none !important;
+}
