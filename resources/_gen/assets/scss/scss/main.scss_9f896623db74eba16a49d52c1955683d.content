@@ -9629,43 +9629,40 @@ header.navbar.fixed-top {
   transform: scale(1.05) !important;
   z-index: 0; }
 
-/* ─── Wave at Bottom (Responsive) ───────────────────────────────── */
-.full-width-wave {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 1; }
-
-/* Base SVG styling */
+/* ─── Responsive Wave Height & Title Offset ───────────────────────── */
+/* Base: use viewport units for the wave */
 .full-width-wave .wave-svg {
-  display: block;
   width: 100%;
-  /* responsive height: 20% of viewport height, clamped */
-  height: 20vh;
+  height: 15vh;
+  /* smaller base height */
   min-height: 80px;
-  max-height: 200px; }
+  max-height: 160px; }
 
-/* Disable animation */
-.full-width-wave .custom-wave {
-  animation: none !important;
-  -webkit-animation: none !important; }
+/* Ensure title is pushed below the wave */
+.hero-wave-block .hero-wave-container {
+  padding-top: 15vh;
+  /* match the wave’s viewport height */ }
 
-/* Tweak for small phones */
-@media (max-width: 480px) {
-  .full-width-wave .wave-svg {
-    height: 15vh;
-    min-height: 60px; }
-  .hero-wave-block .hero-wave-container {
-    padding-top: 12vh;
-    /* keep title visible below wave */ } }
-
-@media (max-width: 320px) {
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
   .full-width-wave .wave-svg {
     height: 12vh;
+    min-height: 60px; }
+  .hero-wave-block .hero-wave-container {
+    padding-top: 12vh; } }
+
+/* Small phones */
+@media (max-width: 480px) {
+  .full-width-wave .wave-svg {
+    height: 10vh;
     min-height: 50px; }
   .hero-wave-block .hero-wave-container {
     padding-top: 10vh; } }
+
+/* Extra‑small (narrow) phones */
+@media (max-width: 360px) {
+  .full-width-wave .wave-svg {
+    height: 8vh;
+    min-height: 40px; }
+  .hero-wave-block .hero-wave-container {
+    padding-top: 8vh; } }
