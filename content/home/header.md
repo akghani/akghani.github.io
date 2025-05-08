@@ -1,7 +1,7 @@
 ---
 widget: blank
 active: false
-weight: 1
+weight: 2
 title: ""
 design:
   text_color_light: true
