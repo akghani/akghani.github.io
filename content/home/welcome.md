@@ -7,11 +7,11 @@ design:
   text_color_light: true
   css_class: hero-blur
   background:
-    image: damir-kopezhanov-nC6CyrVBtkU-unsplash.jpg
+    image: anastassia-anufrieva-3yb7ZsaY0LY-unsplash.jpg
     image_darken: 0.0
     image_size: cover
     image_position: center
-    image_parallax: false
+    image_parallax: true
     text_color_light: true
 markup: html
 ---
