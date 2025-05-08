@@ -5,31 +5,22 @@ weight: 1
 title: ""
 design:
   background:
-    color: "#2b2524"
+#    color: "#2b2524"
     text_color_light: true
   css_class: header-wave-block
 markup: html
 ---
 
 <div class="wave-stack">
-  <!-- Back wave -->
-  <svg viewBox="0 0 1440 320" class="wave-svg back-wave" preserveAspectRatio="none">
-    <path fill="#1e1b1a" fill-opacity="1" d="M0,160 C360,240 1080,80 1440,160 L1440,0 L0,0 Z"></path>
-  </svg>
-
-  <!-- Middle wave -->
-  <svg viewBox="0 0 1440 320" class="wave-svg middle-wave" preserveAspectRatio="none">
-    <path fill="#2b2524" fill-opacity="1" d="M0,180 C360,120 1080,240 1440,120 L1440,0 L0,0 Z"></path>
-  </svg>
-
-  <!-- Gold wave on top -->
-  <svg viewBox="0 0 1440 320" class="wave-svg gold-wave" preserveAspectRatio="none">
-    <defs>
-      <linearGradient id="goldGradientHeader" x1="0" x2="1" y1="0" y2="0">
-        <stop offset="0%" stop-color="#aa8949" />
-        <stop offset="100%" stop-color="#f0e6c2" />
-      </linearGradient>
-    </defs>
-    <path fill="url(#goldGradientHeader)" d="M0,200 C360,100 1080,300 1440,200 L1440,0 L0,0 Z"></path>
+  
+  <!-- Custom green wave on top -->
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 1440 320"
+       class="wave-svg custom-wave"
+       preserveAspectRatio="none">
+    <path fill="#00cba9"
+          fill-opacity="1"
+          d="M0,160L18.5,165.3C36.9,171,74,181,111,186.7C147.7,192,185,192,222,160C258.5,128,295,64,332,64C369.2,64,406,128,443,133.3C480,139,517,85,554,96C590.8,107,628,181,665,192C701.5,203,738,149,775,117.3C812.3,85,849,75,886,69.3C923.1,64,960,64,997,69.3C1033.8,75,1071,85,1108,90.7C1144.6,96,1182,96,1218,128C1255.4,160,1292,224,1329,218.7C1366.2,213,1403,139,1422,101.3L1440,64L1440,0L1421.5,0C1403.1,0,1366,0,1329,0C1292.3,0,1255,0,1218,0C1181.5,0,1145,0,1108,0C1070.8,0,1034,0,997,0C960,0,923,0,886,0C849.2,0,812,0,775,0C738.5,0,702,0,665,0C627.7,0,591,0,554,0C516.9,0,480,0,443,0C406.2,0,369,0,332,0C295.4,0,258,0,222,0C184.6,0,148,0,111,0C73.8,0,37,0,18,0L0,0Z">
+    </path>
   </svg>
 </div>
