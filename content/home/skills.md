@@ -46,9 +46,9 @@ design:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
 #    image: skills-blob.svg
 #    image_darken: 0.7
-    image_size: cover
-    image_position: center
-    image_parallax: true
+#    image_size: cover
+#    image_position: center
+#    image_parallax: true
 #    text_color_light: true
   css_class: skills-blob-bg
 ---

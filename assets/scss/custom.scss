@@ -109,7 +109,7 @@ header.navbar.fixed-top {
 }
 
 
-/* Skills section SVG blob background */
+/* ─── Blob background for Skills section ─────────────────── */
 .skills-blob-bg {
   position: relative;
   overflow: hidden;
@@ -118,12 +118,12 @@ header.navbar.fixed-top {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("/media/skills-blob.svg") center / cover no-repeat;
-  opacity: 0.15;          /* tweak as needed */
+  background: url("/images/skills-blob.svg") center / cover no-repeat;
+  opacity: 0.15;              /* soften; tweak 0→1 */
   pointer-events: none;
   z-index: 0;
 }
-.skills-blob-bg > * {     /* keep icons/text above the blob */
+.skills-blob-bg > * {         /* keep icons/text above blob */
   position: relative;
   z-index: 1;
 }
