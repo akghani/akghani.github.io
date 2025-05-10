@@ -9631,9 +9631,8 @@ header.navbar.fixed-top {
   content: "";
   position: absolute;
   top: 0;
-  left: 50%;
-  transform: translateX(-50%) scaleY(-1);
-  /* flip vertical */
+  /*  left: 50%; */
+  /*  transform: translateX(-50%) scaleY(-1);   /* flip vertical */
   width: 100vw;
   height: 150px;
   /* native 1440×150 → 150 px */
