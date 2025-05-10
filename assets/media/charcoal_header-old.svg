@@ -1,6 +1,0 @@
-<svg width="1920" height="220" viewBox="0 0 1920 220" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-  <rect width="1920" height="220" fill="#0d0d0d"/>
-  <path d="M0 180 L0 220 L1920 220 L1920 60 Z" fill="#111111"/>
-  <path d="M0 220 L1920 60" stroke="$clr-accent" stroke-width="4" stroke-dasharray="12 12"/>
-  <path d="M0 200 L1920 40" stroke="$clr-accent" stroke-width="2" stroke-dasharray="4 8"/>
-</svg>

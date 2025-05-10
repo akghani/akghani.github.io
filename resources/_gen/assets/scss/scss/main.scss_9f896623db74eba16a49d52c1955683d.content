@@ -9558,7 +9558,7 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Custom Imports ─────────────────────────────────────────────── */
+/* ─── Imports ──────────────────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9586,7 +9586,7 @@ footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
   /*  filter: none; */ }
 
-/* ─── Transparent Navbar ─────────────────────────────────────────── */
+/* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
@@ -9594,31 +9594,15 @@ header.navbar.fixed-top {
   box-shadow: none !important;
   backdrop-filter: none !important; }
 
-/* ─── Hero + Wave Container ──────────────────────────────────────── */
-.hero-wave-block.hero-blur {
+/* ─── HERO SECTION (class = hero-blur) ─────────────────────────── */
+.hero-blur {
   position: relative;
   padding: 4rem 1rem 0;
-  /* space for title above */
-  overflow: visible;
-  /* allow wave to show */ }
+  /* space above wave for title */
+  overflow: visible; }
 
-/* Center the title */
-.hero-wave-block .hero-wave-container {
-  position: relative;
-  z-index: 2;
-  text-align: center; }
-
-.hero-wave-block .hero-wave-container h1 {
-  font-size: 2.5rem;
-  margin: 0 auto 2rem;
-  max-width: 90%; }
-
-/* Remove any theme overlay */
-.hero-wave-block.hero-blur::after {
-  display: none !important; }
-
-/* Blurred background image */
-.hero-wave-block.hero-blur::before {
+/* Blur BG */
+.hero-blur::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -9626,43 +9610,106 @@ header.navbar.fixed-top {
   background-size: cover !important;
   background-position: center !important;
   filter: blur(6px) !important;
-  transform: scale(1.05) !important;
+  transform: scale(1.05);
   z-index: 0; }
 
-/* ─── Responsive Wave Height & Title Offset ───────────────────────── */
-/* Base: use viewport units for the wave */
-.full-width-wave .wave-svg {
-  width: 100%;
+/* ---- HEADER WAVES --------------------------------------------- */
+.hero-blur::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
   height: 15vh;
-  /* smaller base height */
+  /* responsive */
   min-height: 80px;
-  max-height: 160px; }
+  max-height: 160px;
+  background: url("/images/header-waves.svg") no-repeat bottom center;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1; }
 
-/* Ensure title is pushed below the wave */
-.hero-wave-block .hero-wave-container {
+/* Title container */
+.hero-wave-container {
+  position: relative;
+  z-index: 2;
+  text-align: center;
   padding-top: 15vh;
-  /* match the wave’s viewport height */ }
+  /* keep text below the wave */
+  max-width: 90%;
+  margin: 0 auto; }
 
-/* Medium screens (tablets) */
+.hero-wave-container h1 {
+  font-size: 2.5rem;
+  margin: 0 0 2rem; }
+
+/* ─── FOOTER SECTION (class = footer-wave-block) ───────────────── */
+.footer-wave-block {
+  position: relative;
+  overflow: visible; }
+
+/* top-edge waves */
+.footer-wave-block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 10vh;
+  min-height: 50px;
+  max-height: 120px;
+  background: url("/images/footer-waves.svg") no-repeat top center;
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1; }
+
+/* footer content pushed below wave */
+.footer-content {
+  position: relative;
+  z-index: 2;
+  margin-top: 10vh;
+  text-align: center;
+  color: #fff;
+  padding: 2rem 1rem; }
+
+.footer-content a:hover {
+  transform: rotate(20deg) scale(1.1); }
+
+/* ─── MEDIA QUERIES (shrink waves / padding) ──────────────────── */
 @media (max-width: 768px) {
-  .full-width-wave .wave-svg {
+  .hero-blur::after {
     height: 12vh;
     min-height: 60px; }
-  .hero-wave-block .hero-wave-container {
-    padding-top: 12vh; } }
-
-/* Small phones */
-@media (max-width: 480px) {
-  .full-width-wave .wave-svg {
-    height: 10vh;
-    min-height: 50px; }
-  .hero-wave-block .hero-wave-container {
-    padding-top: 10vh; } }
-
-/* Extra‑small (narrow) phones */
-@media (max-width: 360px) {
-  .full-width-wave .wave-svg {
+  .hero-wave-container {
+    padding-top: 12vh; }
+  .footer-wave-block::before {
     height: 8vh;
     min-height: 40px; }
-  .hero-wave-block .hero-wave-container {
-    padding-top: 8vh; } }
+  .footer-content {
+    margin-top: 8vh; } }
+
+@media (max-width: 480px) {
+  .hero-blur::after {
+    height: 10vh;
+    min-height: 50px; }
+  .hero-wave-container {
+    padding-top: 10vh; }
+  .footer-wave-block::before {
+    height: 6vh;
+    min-height: 30px; }
+  .footer-content {
+    margin-top: 6vh; } }
+
+@media (max-width: 360px) {
+  .hero-blur::after {
+    height: 8vh;
+    min-height: 40px; }
+  .hero-wave-container {
+    padding-top: 8vh; }
+  .footer-wave-block::before {
+    height: 5vh;
+    min-height: 25px; }
+  .footer-content {
+    margin-top: 5vh; } }
