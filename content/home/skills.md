@@ -44,11 +44,11 @@ feature:
 design:
   background:
 # Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-    image: about-background.png
+#    image: skills-blob.svg
 #    image_darken: 0.7
     image_size: cover
-    image_position: left
+    image_position: center
     image_parallax: true
 #    text_color_light: true
-  css_class: section
+  css_class: skills-blob-bg
 ---

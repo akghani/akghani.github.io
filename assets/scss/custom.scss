@@ -14,7 +14,7 @@ header.navbar.fixed-top {
 /* ─── HERO (class = hero-wave-block hero-blur) ─────────────────── */
 .hero-wave-block.hero-blur {
   position: relative;
-  padding: 4rem 1rem 0;
+  padding: 4rem 0rem 0;
   overflow: visible;
 }
 
@@ -106,4 +106,24 @@ header.navbar.fixed-top {
 @media (max-width: 360px) {
   .hero-wave-container       { padding-top: 60px;  }
   .hero-wave-block.hero-blur::after { height: 60px; }
+}
+
+
+/* Skills section SVG blob background */
+.skills-blob-bg {
+  position: relative;
+  overflow: hidden;
+}
+.skills-blob-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/media/skills-blob.svg") center / cover no-repeat;
+  opacity: 0.15;          /* tweak as needed */
+  pointer-events: none;
+  z-index: 0;
+}
+.skills-blob-bg > * {     /* keep icons/text above the blob */
+  position: relative;
+  z-index: 1;
 }
