@@ -1,6 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
-  <!-- Pill -->
-  <rect x="0" y="25" width="80" height="50" rx="25" fill="#2c7fb8"/>
+<!-- logo.svg: full logo with gradient and updated font -->
+<svg xmlns="http://www.w3.org/2000/svg" class="logo-svg" width="380" height="100" viewBox="0 0 380 100">
+  <defs>
+    <linearGradient id="pillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c7fb8"/>
+      <stop offset="100%" stop-color="#66c2a5"/>
+    </linearGradient>
+  </defs>
+  <!-- Pill background with gradient -->
+  <rect x="0" y="20" width="90" height="60" rx="30" fill="url(#pillGradient)"/>
+
   <!-- Neuron soma -->
   <circle cx="30" cy="50" r="10" fill="#ffffff"/>
   <!-- Dendrites -->
@@ -8,15 +16,17 @@
   <line x1="30" y1="40" x2="40" y2="30" stroke="#ffffff" stroke-width="2"/>
   <line x1="30" y1="60" x2="20" y2="70" stroke="#ffffff" stroke-width="2"/>
   <line x1="30" y1="60" x2="40" y2="70" stroke="#ffffff" stroke-width="2"/>
-  <!-- Bar-chart/statistics element -->
-  <rect x="50" y="45" width="4" height="10" fill="#66c2a5"/>
-  <rect x="56" y="40" width="4" height="15" fill="#66c2a5"/>
-  <rect x="62" y="48" width="4" height="7"  fill="#66c2a5"/>
-  <!-- Your name -->
-  <text x="100" y="60"
-        font-family="Fira Sans, sans-serif"
-        font-size="20"
-        fill="#333333">
+
+  <!-- Single vertical stroke inside the pill (unchanged color) -->
+  <line x1="50" y1="35" x2="50" y2="75" stroke="#ffaf54" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Bar-chart/statistics elements inside the pill -->
+  <rect x="54" y="60" width="4" height="16" fill="#66c2a5"/>
+  <rect x="60" y="54" width="4" height="22" fill="#66c2a5"/>
+  <rect x="66" y="68" width="4" height="8"  fill="#66c2a5"/>
+
+  <!-- Your name with updated professional font -->
+  <text x="100" y="50" font-family="Montserrat, sans-serif" font-size="30" fill="#333333" alignment-baseline="middle">
     Abdelkarim el Ghani
   </text>
 </svg>

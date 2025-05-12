@@ -1,0 +1,27 @@
+<!-- favicon.svg: icon-only version remains the same -->
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 90 90">
+  <defs>
+    <linearGradient id="pillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c7fb8"/>
+      <stop offset="100%" stop-color="#66c2a5"/>
+    </linearGradient>
+  </defs>
+  <!-- Pill background -->
+  <rect x="0" y="15" width="90" height="60" rx="30" fill="url(#pillGradient)"/>
+
+  <!-- Neuron soma -->
+  <circle cx="30" cy="45" r="10" fill="#ffffff"/>
+  <!-- Dendrites -->
+  <line x1="30" y1="35" x2="20" y2="25" stroke="#ffffff" stroke-width="2"/>
+  <line x1="30" y1="35" x2="40" y2="25" stroke="#ffffff" stroke-width="2"/>
+  <line x1="30" y1="55" x2="20" y2="65" stroke="#ffffff" stroke-width="2"/>
+  <line x1="30" y1="55" x2="40" y2="65" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Single vertical stroke inside the pill (unchanged color) -->
+  <line x1="50" y1="30" x2="50" y2="70" stroke="#ffaf54" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Bar-chart elements -->
+  <rect x="54" y="40" width="4" height="16" fill="#66c2a5"/>
+  <rect x="60" y="36" width="4" height="22" fill="#66c2a5"/>
+  <rect x="66" y="48" width="4" height="8"  fill="#66c2a5"/>
+</svg>
