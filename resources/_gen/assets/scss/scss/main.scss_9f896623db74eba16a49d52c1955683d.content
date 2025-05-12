@@ -9695,7 +9695,7 @@ header.navbar.fixed-top {
   .hero-wave-block.hero-blur::after {
     height: 60px; } }
 
-/* ─── Blob background for Skills section ─────────────────── */
+/* ─── Blob background for Skills section ───────────────────────── */
 .skills-blob-bg {
   position: relative;
   overflow: hidden; }
@@ -9714,3 +9714,14 @@ header.navbar.fixed-top {
   /* keep icons/text above blob */
   position: relative;
   z-index: 1; }
+
+/* ─── Logo text color for dark mode ─────────────────────────────── */
+.logo-svg {
+  color: #333333; }
+  .logo-svg .logo-text {
+    fill: currentColor; }
+  @media (prefers-color-scheme: dark) {
+    .logo-svg {
+      color: #fff; } }
+body.dark-mode .logo-svg {
+  color: #fff; }

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <!-- Pill -->
+  <rect x="0"  y="9"  width="18" height="14" rx="7"  fill="#2c7fb8"/>
+  <!-- Neuron soma -->
+  <circle cx="8" cy="16" r="4" fill="#ffffff"/>
+  <!-- Dendrites -->
+  <line x1="8"  y1="12" x2="4"  y2="8"  stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="8"  y1="12" x2="12" y2="8"  stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="8"  y1="20" x2="4"  y2="24" stroke="#ffffff" stroke-width="1.2"/>
+  <line x1="8"  y1="20" x2="12" y2="24" stroke="#ffffff" stroke-width="1.2"/>
+  <!-- Bars -->
+  <rect x="15" y="13" width="1.5" height="4" fill="#66c2a5"/>
+  <rect x="17" y="11" width="1.5" height="6" fill="#66c2a5"/>
+  <rect x="19" y="14" width="1.5" height="3" fill="#66c2a5"/>
+</svg>

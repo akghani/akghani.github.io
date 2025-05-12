@@ -108,8 +108,7 @@ header.navbar.fixed-top {
   .hero-wave-block.hero-blur::after { height: 60px; }
 }
 
-
-/* ─── Blob background for Skills section ─────────────────── */
+/* ─── Blob background for Skills section ───────────────────────── */
 .skills-blob-bg {
   position: relative;
   overflow: hidden;
@@ -126,4 +125,31 @@ header.navbar.fixed-top {
 .skills-blob-bg > * {         /* keep icons/text above blob */
   position: relative;
   z-index: 1;
+}
+
+/* ─── Logo text color for dark mode ─────────────────────────────── */
+// Color variables for logo text
+$logo-text-light: #333333 !default;
+$logo-text-dark:  #fff !default;
+
+// Ensure SVG text uses currentColor
+.logo-svg {
+  color: $logo-text-light;
+
+  // If using a <text> element with class .logo-text
+  .logo-text {
+    fill: currentColor;
+  }
+
+  // Auto-switch based on system preference
+  @media (prefers-color-scheme: dark) {
+    color: $logo-text-dark;
+  }
+}
+
+// Manual dark-mode toggle
+body.dark-mode {
+  .logo-svg {
+    color: $logo-text-dark;
+  }
 }
