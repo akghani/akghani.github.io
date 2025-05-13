@@ -6,6 +6,12 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9558,6 +9564,8 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
+/* ─── Font Imports ───────────────────────────────────────────────── */
+/* ─── Hand-lettered font ───────────────────────────────────────── */
 /* ─── Imports ───────────────────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */

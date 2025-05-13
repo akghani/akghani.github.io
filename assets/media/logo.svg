@@ -1,11 +1,16 @@
-<!-- logo.svg: full logo with gradient and updated font -->
 <svg xmlns="http://www.w3.org/2000/svg" class="logo-svg" width="380" height="100" viewBox="0 0 380 100">
   <defs>
+    <!-- Gradient for pill background -->
     <linearGradient id="pillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#2c7fb8"/>
       <stop offset="100%" stop-color="#66c2a5"/>
     </linearGradient>
+    <!-- Subtle drop shadow for text -->
+    <filter id="txtShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="1" dy="1" stdDeviation="1" flood-color="rgba(0,0,0,0.4)"/>
+    </filter>
   </defs>
+
   <!-- Pill background with gradient -->
   <rect x="0" y="20" width="90" height="60" rx="30" fill="url(#pillGradient)"/>
 
@@ -17,16 +22,25 @@
   <line x1="30" y1="60" x2="20" y2="70" stroke="#ffffff" stroke-width="2"/>
   <line x1="30" y1="60" x2="40" y2="70" stroke="#ffffff" stroke-width="2"/>
 
-  <!-- Single vertical stroke inside the pill (unchanged color) -->
+  <!-- Single vertical stroke inside the pill -->
   <line x1="50" y1="35" x2="50" y2="75" stroke="#ffaf54" stroke-width="4" stroke-linecap="round"/>
 
-  <!-- Bar-chart/statistics elements inside the pill -->
+  <!-- Bar-chart elements inside the pill -->
   <rect x="54" y="60" width="4" height="16" fill="#66c2a5"/>
   <rect x="60" y="54" width="4" height="22" fill="#66c2a5"/>
   <rect x="66" y="68" width="4" height="8"  fill="#66c2a5"/>
 
-  <!-- Your name with updated professional font -->
-  <text x="100" y="50" font-family="Montserrat, sans-serif" font-size="30" fill="#333333" alignment-baseline="middle">
+  <!-- Name in Permanent Marker with outline stroke and dynamic fill -->
+  <text class="logo-text"
+        x="100" y="50"
+        font-family="'Permanent Marker', cursive"
+        font-size="34"
+        fill="currentColor"
+        stroke="#ffffff"
+        stroke-width="2"
+        paint-order="stroke fill"
+        filter="url(#txtShadow)"
+        alignment-baseline="middle">
     Abdelkarim el Ghani
   </text>
 </svg>
