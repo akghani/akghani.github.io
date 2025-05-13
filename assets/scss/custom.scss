@@ -1,17 +1,29 @@
-/* ─── Font Imports ───────────────────────────────────────────────── */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@500;700&display=swap');
-
 /* ─── Hand-lettered font ───────────────────────────────────────── */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 
-
-/* ─── Imports ───────────────────────────────────────────────────── */
+/* ─── Your other imports ───────────────────────────────────────── */
 @import "colors";
 @import "background";
+
+/* ─── Logo theming ──────────────────────────────────────────────── */
+.logo-svg {
+  /* Light mode: dark gray text */
+  color: #333333;
+
+  /* Dark mode: white text */
+  @media (prefers-color-scheme: dark) {
+    color: #ffffff;
+  }
+}
+
+/* If you also toggle dark mode with a class on <body>… */
+body.dark-mode {
+  .logo-svg {
+    color: #ffffff;
+  }
+}
+
+
 
 /* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,

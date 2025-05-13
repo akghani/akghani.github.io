@@ -6,11 +6,6 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 :root {
   --blue: #007bff;
@@ -9564,9 +9559,8 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Font Imports ───────────────────────────────────────────────── */
 /* ─── Hand-lettered font ───────────────────────────────────────── */
-/* ─── Imports ───────────────────────────────────────────────────── */
+/* ─── Your other imports ───────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9593,6 +9587,18 @@ header.site-header::before,
 footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
   /*  filter: none; */ }
+
+/* ─── Logo theming ──────────────────────────────────────────────── */
+.logo-svg {
+  /* Light mode: dark gray text */
+  color: #333333;
+  /* Dark mode: white text */ }
+  @media (prefers-color-scheme: dark) {
+    .logo-svg {
+      color: #ffffff; } }
+/* If you also toggle dark mode with a class on <body>… */
+body.dark-mode .logo-svg {
+  color: #ffffff; }
 
 /* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,

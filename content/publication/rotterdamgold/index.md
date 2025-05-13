@@ -5,7 +5,7 @@ publication: "Erasmus University – Vital Cities & Citizens"
 publication_types: ["5"]      # 5 = report/working paper
 date: 2024-04-15
 abstract: "Final report analysing learning styles and socio-emotional wellbeing among Rotterdam youth."
-url_pdf: ""                    # add the public link when you have it
+url_pdf: "https://www.kenniswerkplaats-rotterdamstalent.nl/wp-content/uploads/2024/03/Rapport-Rotterdam-Goud.pdf"                    # add the public link when you have it
 featured: true
 image:
   filename: featured.jpg
