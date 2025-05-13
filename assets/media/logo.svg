@@ -37,10 +37,10 @@
 
   <!-- Name in Permanent Marker -->
   <text x="100" y="50"
-        font-family="'Permanent Marker', cursive"
-        font-size="33"
+        font-family="'Montserrat Alternates', Roboto, sans-serif"
+        font-size="31"
         fill="currentColor"
-        stroke="#ffffff" stroke-width="10" paint-order="stroke fill"
+        stroke="#ffffff" stroke-width="7" paint-order="stroke fill"
         filter="url(#txtShadow)"
         alignment-baseline="middle">
     Abdelkarim el Ghani
