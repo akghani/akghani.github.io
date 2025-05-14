@@ -1,0 +1,65 @@
+<!-- logo.svg: Full logo with name and tagline -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="800" height="120"
+     viewBox="0 0 800 120">
+
+  <defs>
+    <!-- Import fonts -->
+    <style type="text/css"><![CDATA[
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400&display=swap');
+
+      /* Gradient pill */
+      .pill { fill: url(#pillGradient); filter: url(#pillShadow); stroke: #ffffff; stroke-width: 2; }
+      /* Divider line */
+      .divider { stroke: rgba(0,0,0,0.1); stroke-width: 1; }
+      /* Name text */
+      .name { font-family: 'Montserrat Alternates', sans-serif; font-size: 42px; fill: #333333; }
+      /* Tagline text */
+      .tagline { font-family: Roboto, sans-serif; font-size: 18px; fill: #666666; letter-spacing: 1px; }
+      /* Initials inside pill */
+      .initial { font-family: 'Montserrat Alternates', sans-serif; font-weight: 700; }
+      .initial-a { fill: #ffffff; font-size: 52px; }
+      .initial-g { fill: #ffaf54; font-size: 52px; }
+      /* Subtle shadow for initials */
+      .initial { filter: url(#initialShadow); }
+    ]]></style>
+
+    <!-- Turquoise-green gradient -->
+    <linearGradient id="pillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2c7fb8"/>
+      <stop offset="100%" stop-color="#66c2a5"/>
+    </linearGradient>
+
+    <!-- Pill drop shadow -->
+    <filter id="pillShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+
+    <!-- Initials drop shadow -->
+    <filter id="initialShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+  </defs>
+
+  <!-- ICON with initials -->
+  <g transform="translate(10,15)">
+    <!-- Pill background with white border -->
+    <rect x="0" y="0" width="90" height="90" rx="45" class="pill"/>
+
+    <!-- Initial A in white -->
+    <text class="initial initial-a" x="18" y="62">A</text>
+    <!-- Initial G in yellow overlapping -->
+    <text class="initial initial-g" x="36" y="62">G</text>
+  </g>
+
+  <!-- DIVIDER -->
+  <line x1="120" y1="15" x2="120" y2="105" class="divider"/>
+
+  <!-- TEXT -->
+  <text x="140" y="50" class="name">Abdelkarim el Ghani</text>
+  <!-- Underline accent -->
+  <line x1="140" y1="65" x2="520" y2="65" stroke="#66c2a5" stroke-width="2" opacity="0.5"/>
+  <text x="140" y="85" class="tagline">
+    Neuropharmacology Meets Data
+  </text>
+</svg>
