@@ -9605,6 +9605,9 @@ footer.site-footer::after {
       color: #ffffff; } }
   body.dark-mode .logo-svg {
     color: #ffffff; }
+  .logo-svg:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
 
 /* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,
