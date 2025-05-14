@@ -51,4 +51,5 @@ design:
 #    image_parallax: true
 #    text_color_light: true
   css_class: skills-blob-bg
+markup: html
 ---
