@@ -1,27 +1,35 @@
-<!-- favicon.svg: icon-only version remains the same -->
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 90 90">
+<!-- Favicon icon-only version -->
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="64" height="64"
+     viewBox="0 0 90 90">
+
   <defs>
+    <!-- Turquoise-green gradient -->
     <linearGradient id="pillGradient" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#2c7fb8"/>
       <stop offset="100%" stop-color="#66c2a5"/>
     </linearGradient>
+    <!-- Drop shadows -->
+    <filter id="pillShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.2)"/>
+    </filter>
+    <filter id="initialShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
   </defs>
-  <!-- Pill background -->
-  <rect x="0" y="15" width="90" height="60" rx="30" fill="url(#pillGradient)"/>
 
-  <!-- Neuron soma -->
-  <circle cx="30" cy="45" r="10" fill="#ffffff"/>
-  <!-- Dendrites -->
-  <line x1="30" y1="35" x2="20" y2="25" stroke="#ffffff" stroke-width="2"/>
-  <line x1="30" y1="35" x2="40" y2="25" stroke="#ffffff" stroke-width="2"/>
-  <line x1="30" y1="55" x2="20" y2="65" stroke="#ffffff" stroke-width="2"/>
-  <line x1="30" y1="55" x2="40" y2="65" stroke="#ffffff" stroke-width="2"/>
-
-  <!-- Single vertical stroke inside the pill (unchanged color) -->
-  <line x1="50" y1="30" x2="50" y2="70" stroke="#ffaf54" stroke-width="3" stroke-linecap="round"/>
-
-  <!-- Bar-chart elements -->
-  <rect x="54" y="40" width="4" height="16" fill="#66c2a5"/>
-  <rect x="60" y="36" width="4" height="22" fill="#66c2a5"/>
-  <rect x="66" y="48" width="4" height="8"  fill="#66c2a5"/>
+  <!-- Favicon pill with initials -->
+  <g transform="translate(0,0)">
+    <!-- Pill -->
+    <rect x="0" y="0" width="90" height="90" rx="45"
+          fill="url(#pillGradient)" filter="url(#pillShadow)" stroke="#ffffff" stroke-width="2"/>
+    <!-- A initial -->
+    <text class="initial initial-a" x="22" y="60"
+          font-family="'Montserrat Alternates', sans-serif" font-size="52"
+          fill="#ffffff" filter="url(#initialShadow)">A</text>
+    <!-- G initial -->
+    <text class="initial initial-g" x="40" y="60"
+          font-family="'Montserrat Alternates', sans-serif" font-size="52"
+          fill="#ffaf54" filter="url(#initialShadow)">G</text>
+  </g>
 </svg>
