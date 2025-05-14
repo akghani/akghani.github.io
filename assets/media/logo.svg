@@ -13,7 +13,7 @@
       /* Divider line */
       .divider { stroke: rgba(0,0,0,0.1); stroke-width: 1; }
       /* Name text */
-      .name { font-family: 'Montserrat Alternates', sans-serif; font-size: 42px; fill: #333333; }
+      .name { font-family: 'Montserrat Alternates', sans-serif; font-size: 42px; fill: #666666; }
       /* Tagline text */
       .tagline { font-family: Roboto, sans-serif; font-size: 18px; fill: #666666; letter-spacing: 1px; }
       /* Initials inside pill */
