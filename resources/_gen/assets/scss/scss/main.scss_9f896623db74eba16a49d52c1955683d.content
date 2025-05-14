@@ -9561,7 +9561,8 @@ div.chart {
   font-size: 1.5rem; }
 
 /* ─── Hand-lettered font ───────────────────────────────────────── */
-/* ─── Your other imports ───────────────────────────────────────── */
+/* ─── Montserrat & Roboto fonts ───────────────────────────────── */
+/* ─── Core Imports ───────────────────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9591,15 +9592,19 @@ footer.site-footer::after {
 
 /* ─── Logo theming ──────────────────────────────────────────────── */
 .logo-svg {
+  display: inline-block;
+  cursor: pointer;
+  transform-origin: left center;
+  transition: transform 0.3s ease, filter 0.3s ease;
   /* Light mode: dark gray text */
   color: #333333;
-  /* Dark mode: white text */ }
+  /* Dark mode: white text */
+  /* Manual dark-mode toggle */ }
   @media (prefers-color-scheme: dark) {
     .logo-svg {
       color: #ffffff; } }
-/* If you also toggle dark mode with a class on <body>… */
-body.dark-mode .logo-svg {
-  color: #ffffff; }
+  body.dark-mode .logo-svg {
+    color: #ffffff; }
 
 /* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,
@@ -9612,7 +9617,7 @@ header.navbar.fixed-top {
 /* ─── HERO (class = hero-wave-block hero-blur) ─────────────────── */
 .hero-wave-block.hero-blur {
   position: relative;
-  padding: 4rem 0rem 0;
+  padding: 4rem 0 0;
   overflow: visible; }
 
 /* Title container */
@@ -9620,7 +9625,6 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 2;
   text-align: center;
-  /* wave height → push text down */
   padding-top: 150px;
   max-width: 90%;
   margin: 0 auto; }
@@ -9641,50 +9645,17 @@ header.navbar.fixed-top {
   transform: scale(1.05);
   z-index: 0; }
 
-/* Header wave -- pinned to TOP & flipped down */
+/* Header wave -- pinned to TOP */
 .hero-wave-block.hero-blur::after {
   content: "";
   position: absolute;
   top: 0;
-  /*  left: 50%; */
-  /*  transform: translateX(-50%) scaleY(-1);   /* flip vertical */
   width: 100vw;
   height: 150px;
-  /* native 1440×150 → 150 px */
   background: url("/images/header-waves.svg") top center/100% 100% no-repeat;
   pointer-events: none;
-  z-index: 3;
-  /* above blur */ }
+  z-index: 3; }
 
-/* ─── Footer waves disabled (keep for later) ───────────────────── */
-/*
-.footer-wave-block {
-  position: relative;
-  overflow: visible;
-}
-.footer-wave-block::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100vw;
-  height: 120px;
-  background: url("/images/footer-waves.svg") no-repeat top center;
-  background-size: 100% 100%;
-  pointer-events: none;
-  z-index: 1;
-}
-.footer-content {
-  position: relative;
-  z-index: 2;
-  margin-top: 120px;
-  text-align: center;
-  color: #fff;
-  padding: 2rem 1rem;
-}
-.footer-content a:hover { transform: rotate(20deg) scale(1.1); }
-*/
 /* ─── Responsive tweaks ─────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-wave-container {
@@ -9721,33 +9692,14 @@ header.navbar.fixed-top {
   inset: 0;
   background: url("/images/skills-blob.svg") center/cover no-repeat;
   opacity: 0.15;
-  /* soften; tweak 0→1 */
   pointer-events: none;
   z-index: 0; }
 
 .skills-blob-bg > * {
-  /* keep icons/text above blob */
   position: relative;
   z-index: 1; }
 
-/* ─── Logo text color for dark mode ─────────────────────────────── */
-.logo-svg {
-  color: #333333; }
-  .logo-svg .logo-text {
-    fill: currentColor; }
-  @media (prefers-color-scheme: dark) {
-    .logo-svg {
-      color: #fff; } }
-body.dark-mode .logo-svg {
-  color: #fff; }
-
 /* ─── Logo hover effect ───────────────────────────────────────── */
-.logo-svg {
-  /* make sure transforms originate from the left/center of the SVG */
-  transform-origin: left center;
-  transition: transform 0.3s ease, filter 0.3s ease; }
-  .logo-svg:hover {
-    /* gently scale up */
-    transform: scale(1.05);
-    /* add a soft drop-shadow on hover */
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
+.logo-svg:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
