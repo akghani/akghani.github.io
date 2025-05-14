@@ -180,3 +180,17 @@ body.dark-mode {
     color: $logo-text-dark;
   }
 }
+
+/* ─── Logo hover effect ───────────────────────────────────────── */
+.logo-svg {
+  /* make sure transforms originate from the left/center of the SVG */
+  transform-origin: left center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  
+  &:hover {
+    /* gently scale up */
+    transform: scale(1.05);
+    /* add a soft drop-shadow on hover */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  }
+}

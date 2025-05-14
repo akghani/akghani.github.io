@@ -9740,3 +9740,14 @@ header.navbar.fixed-top {
       color: #fff; } }
 body.dark-mode .logo-svg {
   color: #fff; }
+
+/* ─── Logo hover effect ───────────────────────────────────────── */
+.logo-svg {
+  /* make sure transforms originate from the left/center of the SVG */
+  transform-origin: left center;
+  transition: transform 0.3s ease, filter 0.3s ease; }
+  .logo-svg:hover {
+    /* gently scale up */
+    transform: scale(1.05);
+    /* add a soft drop-shadow on hover */
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
