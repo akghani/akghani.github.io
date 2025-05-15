@@ -12,12 +12,12 @@ design:
     image_position: center
     image_parallax: true
     text_color_light: true
-  css_class: "hero-wave-block hero-blur"
+  css_class: hero-wave-block hero-blur
 markup: html
 ---
 
 <div class="hero-wave-container">
-  <h1>Abdelkarim el Ghani, MSc</h1>
+  <h1>Abdelkarim el Ghani's Science Portfolio</h1>
 </div>
 
 

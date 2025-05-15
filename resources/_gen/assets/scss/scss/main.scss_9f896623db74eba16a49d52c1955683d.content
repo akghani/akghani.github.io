@@ -7,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9560,8 +9560,9 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Font imports ─────────────────────────────────────────────── */
-/* ─── Additional SCSS partials ─────────────────────────────────── */
+/* ─── Hand-lettered font ───────────────────────────────────────── */
+/* ─── Montserrat & Roboto fonts ───────────────────────────────── */
+/* ─── Core Imports ───────────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9591,27 +9592,32 @@ footer.site-footer::after {
 
 /* ─── Logo styling ─────────────────────────────────────────────── */
 .logo-svg {
-  /* fixed navbar size: crisp, no browser blur */
+  /* Navbar size — vector remains crisp */
   height: 60px;
   width: auto;
   display: inline-block;
-  /* allow transforms/filters   */
+  /* enable transforms */
   cursor: pointer;
-  /* show interactivity cursor  */
+  /* interactive cursor */
   transform-origin: left center;
   transition: transform .3s ease, filter .3s ease;
-  /* light & dark modes via currentColor                        */
-  color: #333; }
+  /* Light ↔ dark via currentColor */
+  color: #333;
+  /* Responsive shrink for phones */
+  /* Hover only on devices that actually hover */ }
   @media (prefers-color-scheme: dark) {
     .logo-svg {
       color: #fff; } }
   body.dark-mode .logo-svg {
     color: #fff; }
-  .logo-svg:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
-
-/* ─── Transparent navbar (unchanged) ──────────────────────────── */
+  @media (max-width: 768px) {
+    .logo-svg {
+      height: 40px; } }
+  @media (hover: hover) {
+    .logo-svg:hover {
+      transform: scale(1.05);
+      filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); } }
+/* ─── Transparent Navbar ───────────────────────────────────────── */
 header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
@@ -9704,7 +9710,34 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 1; }
 
-/* ─── Logo hover effect ───────────────────────────────────────── */
-.logo-svg:hover {
-  transform: scale(1.05);
-  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
+/* ─── Skills icons — pill gradient + hover pop ───────────────── */
+.skills-blob-bg .feature-icon i {
+  /* bigger & inline-block so clipping works */
+  font-size: 2.5rem;
+  display: inline-block;
+  /* on-brand gradient */
+  background: linear-gradient(135deg, #2c7fb8 0%, #66c2a5 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* make glyph transparent so gradient shows */
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+  /* fallback */
+  transition: transform .3s ease, filter .3s ease; }
+
+/* hover/focus pop — only on devices that actually hover */
+@media (hover: hover) {
+  .skills-blob-bg .feature:hover .feature-icon i,
+  .skills-blob-bg .feature:focus-visible .feature-icon i {
+    transform: scale(1.2);
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25)); } }
+
+/* optional: cycle accent colours every 3rd icon */
+.skills-blob-bg .feature:nth-of-type(3n+2) .feature-icon i {
+  background: #ffaf54; }
+
+/* yellow */
+.skills-blob-bg .feature:nth-of-type(3n) .feature-icon i {
+  background: #66c2a5; }
+
+/* jade  */
