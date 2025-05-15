@@ -9710,34 +9710,19 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 1; }
 
-/* ─── Skills icons — pill gradient + hover pop ───────────────── */
-.skills-blob-bg .feature-icon i {
-  /* bigger & inline-block so clipping works */
-  font-size: 2.5rem;
-  display: inline-block;
-  /* on-brand gradient */
+/* ─── Force pill-turquoise icon colour ────────────────────────── */
+.skills-blob-bg .feature-icon {
+  color: #2c7fb8 !important;
+  /* override inline style="#fff" */ }
+
+/* gradient text (supported browsers) */
+.skills-blob-bg .feature-icon {
   background: linear-gradient(135deg, #2c7fb8 0%, #66c2a5 100%);
-  background-clip: text;
   -webkit-background-clip: text;
-  /* make glyph transparent so gradient shows */
-  -webkit-text-fill-color: transparent !important;
-  color: transparent !important;
-  /* fallback */
-  transition: transform .3s ease, filter .3s ease; }
+  background-clip: text;
+  color: transparent !important; }
 
-/* hover/focus pop — only on devices that actually hover */
-@media (hover: hover) {
-  .skills-blob-bg .feature:hover .feature-icon i,
-  .skills-blob-bg .feature:focus-visible .feature-icon i {
-    transform: scale(1.2);
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25)); } }
-
-/* optional: cycle accent colours every 3rd icon */
-.skills-blob-bg .feature:nth-of-type(3n+2) .feature-icon i {
-  background: #ffaf54; }
-
-/* yellow */
-.skills-blob-bg .feature:nth-of-type(3n) .feature-icon i {
-  background: #66c2a5; }
-
-/* jade  */
+/* old browsers fallback */
+@supports not (-webkit-background-clip: text) {
+  .skills-blob-bg .feature-icon {
+    color: #2c7fb8 !important; } }

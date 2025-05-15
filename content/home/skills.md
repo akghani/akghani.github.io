@@ -48,13 +48,13 @@ feature:
 
 design:
   css_class: skills-blob-bg   # keeps your blob background
-  # Uncomment below if you prefer an image instead of CSS blob
-  # background:
-  #   image: skills-blob.svg
-  #   image_size: cover
-  #   image_position: center
-  #   image_darken: 0.7
-  #   text_color_light: true
+# Uncomment below if you prefer an image instead of CSS blob
+# background:
+#   image: skills-blob.svg
+#   image_size: cover
+#   image_position: center
+#   image_darken: 0.7
+#   text_color_light: true
 
 markup: html
 ---
