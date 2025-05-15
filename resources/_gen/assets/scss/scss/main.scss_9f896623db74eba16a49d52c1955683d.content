@@ -9564,32 +9564,7 @@ div.chart {
 /* ─── Montserrat & Roboto fonts ───────────────────────────────── */
 /* ─── Core Imports ───────────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
-/* ─── Light-theme background ───────────────────────────────────── */
-/* 1. Base colour comes from the palette we defined in _colors.scss */
-body {
-  background: #F4F6F8;
-  /* #F4F6F8  – light grey */
-  color: #003366;
-  /* keep navy text */ }
-
-/* 2. Optional subtle pattern made with a CSS repeating-gradient.
-   * Comment-out the next three lines if you prefer solid colour.    */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  /* sits behind */
-  background-image: repeating-linear-gradient(135deg, rgba(0, 166, 168, 0.2) 0 2px, transparent 2px 32px); }
-
-/* 3. Header & footer strips — keep, but use the palette accent
-   *   (open each SVG and replace #d4af37 with $clr-accent OR keep the
-   *    CSS filter hack below if you don’t want to edit the SVGs)     */
-header.site-header::before,
-footer.site-footer::after {
-  /* remove the filter if you’ve hand-edited the SVG stroke colour */
-  /*  filter: none; */ }
-
+/*@import "background";*/
 /* ─── Logo styling ─────────────────────────────────────────────── */
 .logo-svg {
   /* Navbar size — vector remains crisp */

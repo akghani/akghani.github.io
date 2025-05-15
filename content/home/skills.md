@@ -47,7 +47,7 @@ feature:
     icon_pack: fab
 
 design:
-  css_class: skills-blob-bg   # keeps your blob background
+  css_class: skills-blob-bg   
 # Uncomment below if you prefer an image instead of CSS blob
 # background:
 #   image: skills-blob.svg
