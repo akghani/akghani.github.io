@@ -7,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Roboto:wght@400&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9560,9 +9560,8 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Hand-lettered font ───────────────────────────────────────── */
-/* ─── Montserrat & Roboto fonts ───────────────────────────────── */
-/* ─── Core Imports ───────────────────────────────────────────────────── */
+/* ─── Font imports ─────────────────────────────────────────────── */
+/* ─── Additional SCSS partials ─────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /* ─── Light-theme background ───────────────────────────────────── */
 /* 1. Base colour comes from the palette we defined in _colors.scss */
@@ -9590,26 +9589,29 @@ footer.site-footer::after {
   /* remove the filter if you’ve hand-edited the SVG stroke colour */
   /*  filter: none; */ }
 
-/* ─── Logo theming ──────────────────────────────────────────────── */
+/* ─── Logo styling ─────────────────────────────────────────────── */
 .logo-svg {
+  /* fixed navbar size: crisp, no browser blur */
+  height: 60px;
+  width: auto;
   display: inline-block;
+  /* allow transforms/filters   */
   cursor: pointer;
+  /* show interactivity cursor  */
   transform-origin: left center;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  /* Light mode: dark gray text */
-  color: #333333;
-  /* Dark mode: white text */
-  /* Manual dark-mode toggle */ }
+  transition: transform .3s ease, filter .3s ease;
+  /* light & dark modes via currentColor                        */
+  color: #333; }
   @media (prefers-color-scheme: dark) {
     .logo-svg {
-      color: #ffffff; } }
+      color: #fff; } }
   body.dark-mode .logo-svg {
-    color: #ffffff; }
+    color: #fff; }
   .logo-svg:hover {
     transform: scale(1.05);
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); }
 
-/* ─── Transparent Navbar ───────────────────────────────────────── */
+/* ─── Transparent navbar (unchanged) ──────────────────────────── */
 header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
