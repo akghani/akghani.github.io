@@ -1,0 +1,20 @@
+.skills-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill,minmax(90px,1fr));
+  gap:1rem;
+  list-style:none;
+  text-align:center;
+  padding:0;
+}
+.skills-grid i{
+  font-size:48px;
+}
+
+/* assets/css/custom.css */
+.feature-icon .devicon {
+  font-size: 2.6rem;        /* make all skills icons larger */
+}
+
+.feature-icon .colored {
+  color: inherit;           /* respect your theme’s text colour */
+}
