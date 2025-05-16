@@ -56,5 +56,5 @@ design:
 #   image_darken: 0.7
 #   text_color_light: true
 
-markup: html
+#markup: html
 ---
