@@ -9560,18 +9560,16 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ────────────────────────────────────────────
+/* ───────────────────────────────────────────
    FONTS
-   ────────────────────────────────────────── */
-/* ────────────────────────────────────────────
+   ───────────────────────────────────────── */
+/* ───────────────────────────────────────────
    THEME COLOURS
-   ────────────────────────────────────────── */
+   ───────────────────────────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
-/*  Branding helpers – edit here if your logo
-    colours ever change.                            */
-/* ────────────────────────────────────────────
-   GLOBAL LONG-WORD INSURANCE
-   ────────────────────────────────────────── */
+/* ───────────────────────────────────────────
+   LONG-WORD INSURANCE (site-wide)
+   ───────────────────────────────────────── */
 body,
 h1, h2, h3, h4, h5, h6,
 p, li, blockquote, figcaption {
@@ -9579,9 +9577,9 @@ p, li, blockquote, figcaption {
   word-break: break-word;
   hyphens: auto; }
 
-/* ────────────────────────────────────────────
+/* ───────────────────────────────────────────
    NAV BAR & LOGO
-   ────────────────────────────────────────── */
+   ───────────────────────────────────────── */
 .logo-svg {
   height: 60px;
   width: auto;
@@ -9605,12 +9603,12 @@ header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
   background: transparent !important;
-  box-shadow: none       !important;
-  backdrop-filter: none  !important; }
+  box-shadow: none   !important;
+  backdrop-filter: none !important; }
 
-/* ────────────────────────────────────────────
-   HERO  →  WELCOME SECTION
-   ────────────────────────────────────────── */
+/* ───────────────────────────────────────────
+   HERO → WELCOME   (3-D cartoon heading)
+   ───────────────────────────────────────── */
 .hero-wave-block.hero-blur {
   position: relative;
   padding: 4rem 0 0;
@@ -9625,23 +9623,23 @@ header.navbar.fixed-top {
   margin: 0 auto; }
 
 .hero-wave-container h1 {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Permanent Marker",cursive;
   font-weight: 900;
-  /*  No mixed-unit maths → keeps Hugo SCSS happy                    */
   font-size: clamp(2.6rem, 7vw, 4.5rem);
   line-height: 1.15;
   letter-spacing: 1px;
+  /* face + outline */
   color: #ffb44d;
-  /* orange fill               */
   -webkit-text-stroke: 2px #ffffff;
-  /* white outline             */
-  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
-  /* Even line lengths where supported (Chrome/Edge/Safari TP)      */
+  /* ── 3-D cartoon extrusion  ─────────────────────
+     Stack shadows 1 px apart in the down-right
+     direction, using a darker orange.            */
+  text-shadow: 1px 1px 0 #e58c19, 2px 2px 0 #e58c19, 3px 3px 0 #e58c19, 4px 4px 0 #e58c19, 5px 5px 0 #e58c19, 5px 5px 6px rgba(0, 0, 0, 0.35);
+  /* soft drop-shadow */
+  /* nicer line breaks where supported            */
   text-wrap: balance; }
 
-/*  A (white) and G (orange) initials – needs span wrappers:
-    “<span class="initial-white">A</span>bdelkarim el
-     <span class="initial-orange">G</span>hani”                    */
+/* A = white, G = orange  (needs span wrappers)  */
 .hero-wave-container h1 .initial-white {
   color: #ffffff;
   -webkit-text-stroke: 0; }
@@ -9650,7 +9648,7 @@ header.navbar.fixed-top {
   color: #ffb44d;
   -webkit-text-stroke: 0; }
 
-/*  Blur + header-wave overlay                                     */
+/* blurred header background + wave overlay       */
 .hero-wave-block.hero-blur::before {
   content: "";
   position: absolute;
@@ -9672,9 +9670,9 @@ header.navbar.fixed-top {
   pointer-events: none;
   z-index: 3; }
 
-/* ────────────────────────────────────────────
-   ABOUT WIDGET  (class = about-blur)
-   ────────────────────────────────────────── */
+/* ───────────────────────────────────────────
+   ABOUT WIDGET BLUR
+   ───────────────────────────────────────── */
 .about-blur {
   position: relative; }
 
@@ -9687,9 +9685,9 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 1; }
 
-/* ────────────────────────────────────────────
-   SKILLS  BLOB  BACKGROUND
-   ────────────────────────────────────────── */
+/* ───────────────────────────────────────────
+   SKILLS  BLOB BACKGROUND
+   ───────────────────────────────────────── */
 .skills-blob-bg {
   position: relative;
   overflow: hidden; }
@@ -9707,9 +9705,9 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 1; }
 
-/* ────────────────────────────────────────────
-   RESPONSIVE  TWEAKS
-   ────────────────────────────────────────── */
+/* ───────────────────────────────────────────
+   RESPONSIVE TWEAKS
+   ───────────────────────────────────────── */
 @media (max-width: 1024px) {
   .hero-wave-container {
     padding-top: 120px; }
