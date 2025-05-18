@@ -22,13 +22,11 @@ author: admin
 
 design:
   background:
-# Name of image in `assets/media/` (ensure the file exists and is correctly referenced)
-#    image: about-background.png 
-#    image_darken: 1.2
+    image: accuray-MFSEP2g4YS0-unsplash.jpg
     image_size: cover
     image_position: left
-    image_parallax: false
-#    text_color_light: true
-  css_class: section
+    image_parallax: true
+    text_color_light: true
+  css_class: about-blur section   #  ← new class BEFORE “section”
 ---
 

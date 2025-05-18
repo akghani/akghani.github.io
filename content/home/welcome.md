@@ -4,20 +4,19 @@ active: true
 weight: 1
 title: ""
 design:
-#  text_color_light: true
+  css_class: header-gradient   # <-- new
   background:
-    image: anastassia-anufrieva-3yb7ZsaY0LY-unsplash.jpg
-    image_darken: 0.0
+    image: header.png
     image_size: cover
     image_position: center
     image_parallax: true
     text_color_light: true
-  css_class: hero-wave-block hero-blur
 markup: html
 ---
 
 <div class="hero-wave-container">
-  <h1>Abdelkarim el Ghani's Science Portfolio</h1>
+  <h1>
+    <span class="hero-A">A</span>bdelkarim&nbsp;el&nbsp;
+    <span class="hero-G">G</span>hani’s&nbsp;Science&nbsp;Portfolio
+  </h1>
 </div>
-
-

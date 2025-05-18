@@ -9560,26 +9560,30 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/* ─── Hand-lettered font ───────────────────────────────────────── */
-/* ─── Montserrat & Roboto fonts ───────────────────────────────── */
-/* ─── Core Imports ───────────────────────────────────────────── */
+/*  ────────────────────────────────────────────────────────────────
+    custom.scss  —  site-wide overrides & additions
+    (complete, ready to replace the old one)
+    ───────────────────────────────────────────────────────────── */
+/* — Hand-lettered font — */
+/* — Montserrat & Roboto — */
+/* — Core SCSS partials from Wowchemy (if used) — */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
 /*@import "background";*/
-/* ─── Logo styling ─────────────────────────────────────────────── */
+/* ╭─────────────────────────╮
+   │  NAVBAR  &  SITE LOGO   │
+   ╰─────────────────────────╯ */
 .logo-svg {
-  /* Navbar size — vector remains crisp */
+  /* keep the vector crisp & scalable */
   height: 60px;
   width: auto;
   display: inline-block;
-  /* enable transforms */
   cursor: pointer;
-  /* interactive cursor */
   transform-origin: left center;
   transition: transform .3s ease, filter .3s ease;
-  /* Light ↔ dark via currentColor */
+  /* default (light) & dark-mode colour */
   color: #333;
-  /* Responsive shrink for phones */
-  /* Hover only on devices that actually hover */ }
+  /* smaller on mobile */
+  /* hover bump (only on devices that hover) */ }
   @media (prefers-color-scheme: dark) {
     .logo-svg {
       color: #fff; } }
@@ -9592,21 +9596,23 @@ div.chart {
     .logo-svg:hover {
       transform: scale(1.05);
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); } }
-/* ─── Transparent Navbar ───────────────────────────────────────── */
+/* transparent navbar (no blur/glass) */
 header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
   background: transparent !important;
-  box-shadow: none !important;
-  backdrop-filter: none !important; }
+  box-shadow: none        !important;
+  backdrop-filter: none   !important; }
 
-/* ─── HERO (class = hero-wave-block hero-blur) ─────────────────── */
+/* ╭─────────────────────────╮
+   │  HERO / WELCOME BLOCK   │
+   ╰─────────────────────────╯ */
 .hero-wave-block.hero-blur {
   position: relative;
   padding: 4rem 0 0;
   overflow: visible; }
 
-/* Title container */
+/* title wrapper */
 .hero-wave-container {
   position: relative;
   z-index: 2;
@@ -9619,19 +9625,33 @@ header.navbar.fixed-top {
   font-size: 2.5rem;
   margin: 0 0 2rem; }
 
-/* Blurred background */
+/* coloured, bold heading  
+   — A is white, G is logo-orange (#ffb44d)                       */
+.header-gradient .hero-wave-container h1 {
+  font-weight: 800;
+  color: #ffffff;
+  /* default text */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
+  letter-spacing: 0.5px; }
+
+/* only the G that you wrap in <span class="hero-G">G</span>      */
+.header-gradient .hero-wave-container .hero-G {
+  color: #ffb44d;
+  /* logo orange  */ }
+
+/* blurred background copy (wave hero) */
 .hero-wave-block.hero-blur::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: inherit !important;
-  background-size: cover !important;
+  background-size: cover   !important;
   background-position: center !important;
   filter: blur(6px);
   transform: scale(1.05);
   z-index: 0; }
 
-/* Header wave -- pinned to TOP */
+/* decorative wave overlay pinned to top */
 .hero-wave-block.hero-blur::after {
   content: "";
   position: absolute;
@@ -9642,7 +9662,47 @@ header.navbar.fixed-top {
   pointer-events: none;
   z-index: 3; }
 
-/* ─── Responsive tweaks ─────────────────────────────────────────── */
+/* ╭─────────────────────────╮
+   │  ABOUT  – blur bg hack  │
+   ╰─────────────────────────╯ */
+.about-blur {
+  position: relative; }
+
+/* Wowchemy injects .bg-image — blur that layer only */
+.about-blur .bg-image {
+  filter: blur(10px);
+  transform: scale(1.05);
+  transform-origin: center;
+  z-index: 0; }
+
+/* bring real content above */
+.about-blur > *:not(.bg-image) {
+  position: relative;
+  z-index: 1; }
+
+/* ╭─────────────────────────╮
+   │  SKILLS  BLOB  SECTION  │
+   ╰─────────────────────────╯ */
+.skills-blob-bg {
+  position: relative;
+  overflow: hidden; }
+
+.skills-blob-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("/images/skills-blob.svg") center/cover no-repeat;
+  opacity: .15;
+  pointer-events: none;
+  z-index: 0; }
+
+.skills-blob-bg > * {
+  position: relative;
+  z-index: 1; }
+
+/* ╭─────────────────────────╮
+   │  RESPONSIVE TWEAKS      │
+   ╰─────────────────────────╯ */
 @media (max-width: 1024px) {
   .hero-wave-container {
     padding-top: 120px; }
@@ -9666,21 +9726,3 @@ header.navbar.fixed-top {
     padding-top: 60px; }
   .hero-wave-block.hero-blur::after {
     height: 60px; } }
-
-/* ─── Blob background for Skills section ───────────────────────── */
-.skills-blob-bg {
-  position: relative;
-  overflow: hidden; }
-
-.skills-blob-bg::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/images/skills-blob.svg") center/cover no-repeat;
-  opacity: 0.15;
-  pointer-events: none;
-  z-index: 0; }
-
-.skills-blob-bg > * {
-  position: relative;
-  z-index: 1; }

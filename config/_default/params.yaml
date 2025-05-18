@@ -33,8 +33,7 @@ main_menu:
   show_search: true
   highlight_active_link: true
   
-
-
+  
 # Localization
 date_format: 'Jan 2, 2006'
 time_format: '3:04 PM'
