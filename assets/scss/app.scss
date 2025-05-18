@@ -1,0 +1,10 @@
+/* Pull in the theme’s core styles first.             */
+/* Wowchemy exposes them as a Hugo resource:          */
+/* → "wowchemy" is an alias to the bundled SCSS file. */
+@import "wowchemy"; 
+
+/* Now pull in your pimped-out goodness 🎉 */
+@import "custom"; 
+
+
+

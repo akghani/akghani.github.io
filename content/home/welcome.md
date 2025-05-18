@@ -16,7 +16,8 @@ markup: html
 
 <div class="hero-wave-container">
   <h1>
-    <span class="hero-A">A</span>bdelkarim&nbsp;el&nbsp;
-    <span class="hero-G">G</span>hani’s&nbsp;Science&nbsp;Portfolio
+    <span class="initial-white">A</span>bdelkarim el
+    <span class="initial-orange">G</span>hani's&nbsp;Science&nbsp;Portfolio
   </h1>
 </div>
+

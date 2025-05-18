@@ -7,7 +7,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100..900&family=Roboto:wght@100..900&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9560,30 +9560,20 @@ div.chart {
 .portrait-title h2 {
   font-size: 1.5rem; }
 
-/*  ────────────────────────────────────────────────────────────────
-    custom.scss  —  site-wide overrides & additions
-    (complete, ready to replace the old one)
-    ───────────────────────────────────────────────────────────── */
-/* — Hand-lettered font — */
-/* — Montserrat & Roboto — */
-/* — Core SCSS partials from Wowchemy (if used) — */
+/* ───────────────  FONTS  ───────────────────────────── */
+/* ───────────────  THEME COLOURS  ───────────────────── */
 /* ─── Brand palette derived from EMSP graphic ────────────────────── */
-/*@import "background";*/
-/* ╭─────────────────────────╮
-   │  NAVBAR  &  SITE LOGO   │
-   ╰─────────────────────────╯ */
+/* (Wowchemy’s palette helper) */
+/*  Branding helpers – tweak these two values if the
+    logo orange or white ever change in the future.     */
+/* ───────────────  NAV BAR & LOGO  ──────────────────── */
 .logo-svg {
-  /* keep the vector crisp & scalable */
   height: 60px;
   width: auto;
   display: inline-block;
   cursor: pointer;
-  transform-origin: left center;
   transition: transform .3s ease, filter .3s ease;
-  /* default (light) & dark-mode colour */
-  color: #333;
-  /* smaller on mobile */
-  /* hover bump (only on devices that hover) */ }
+  color: #333; }
   @media (prefers-color-scheme: dark) {
     .logo-svg {
       color: #fff; } }
@@ -9596,23 +9586,19 @@ div.chart {
     .logo-svg:hover {
       transform: scale(1.05);
       filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2)); } }
-/* transparent navbar (no blur/glass) */
 header.navbar,
 header.navbar.scrolled,
 header.navbar.fixed-top {
   background: transparent !important;
-  box-shadow: none        !important;
-  backdrop-filter: none   !important; }
+  box-shadow: none   !important;
+  backdrop-filter: none !important; }
 
-/* ╭─────────────────────────╮
-   │  HERO / WELCOME BLOCK   │
-   ╰─────────────────────────╯ */
+/* ───────────────  HERO → WELCOME  ──────────────────── */
 .hero-wave-block.hero-blur {
   position: relative;
   padding: 4rem 0 0;
   overflow: visible; }
 
-/* title wrapper */
 .hero-wave-container {
   position: relative;
   z-index: 2;
@@ -9622,36 +9608,38 @@ header.navbar.fixed-top {
   margin: 0 auto; }
 
 .hero-wave-container h1 {
-  font-size: 2.5rem;
-  margin: 0 0 2rem; }
-
-/* coloured, bold heading  
-   — A is white, G is logo-orange (#ffb44d)                       */
-.header-gradient .hero-wave-container h1 {
-  font-weight: 800;
-  color: #ffffff;
-  /* default text */
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.45);
-  letter-spacing: 0.5px; }
-
-/* only the G that you wrap in <span class="hero-G">G</span>      */
-.header-gradient .hero-wave-container .hero-G {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 900;
+  font-size: clamp(2.6rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.15;
+  letter-spacing: 1px;
   color: #ffb44d;
-  /* logo orange  */ }
+  /* main fill */
+  -webkit-text-stroke: 2px #ffffff;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.4); }
 
-/* blurred background copy (wave hero) */
+/*  First-letter colour pops (A → white, G → orange).
+    Needs the <span> wrappers shown below.              */
+.hero-wave-container h1 .initial-white {
+  color: #ffffff;
+  -webkit-text-stroke: 0; }
+
+.hero-wave-container h1 .initial-orange {
+  color: #ffb44d;
+  -webkit-text-stroke: 0; }
+
+/*  Header-wave image & blur (unchanged)  */
 .hero-wave-block.hero-blur::before {
   content: "";
   position: absolute;
   inset: 0;
   background-image: inherit !important;
-  background-size: cover   !important;
+  background-size: cover !important;
   background-position: center !important;
   filter: blur(6px);
   transform: scale(1.05);
   z-index: 0; }
 
-/* decorative wave overlay pinned to top */
 .hero-wave-block.hero-blur::after {
   content: "";
   position: absolute;
@@ -9662,27 +9650,20 @@ header.navbar.fixed-top {
   pointer-events: none;
   z-index: 3; }
 
-/* ╭─────────────────────────╮
-   │  ABOUT  – blur bg hack  │
-   ╰─────────────────────────╯ */
+/* ───────────────  ABOUT WIDGET BLUR  ───────────────── */
 .about-blur {
   position: relative; }
 
-/* Wowchemy injects .bg-image — blur that layer only */
 .about-blur .bg-image {
   filter: blur(10px);
   transform: scale(1.05);
-  transform-origin: center;
   z-index: 0; }
 
-/* bring real content above */
 .about-blur > *:not(.bg-image) {
   position: relative;
   z-index: 1; }
 
-/* ╭─────────────────────────╮
-   │  SKILLS  BLOB  SECTION  │
-   ╰─────────────────────────╯ */
+/* ───────────────  SKILLS BLOB  ─────────────────────── */
 .skills-blob-bg {
   position: relative;
   overflow: hidden; }
@@ -9700,9 +9681,7 @@ header.navbar.fixed-top {
   position: relative;
   z-index: 1; }
 
-/* ╭─────────────────────────╮
-   │  RESPONSIVE TWEAKS      │
-   ╰─────────────────────────╯ */
+/* ───────────────  RESPONSIVE TWEAKS  ───────────────── */
 @media (max-width: 1024px) {
   .hero-wave-container {
     padding-top: 120px; }
