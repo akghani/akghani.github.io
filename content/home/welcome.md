@@ -15,9 +15,9 @@ markup: html
 ---
 
 <div class="hero-wave-container">
-  <h1>
-    <span class="initial-white">A</span>bdelkarim el
-    <span class="initial-orange">G</span>hani's&nbsp;Science&nbsp;Portfolio
-  </h1>
+  <p>
+    <span class="initial-white">A<span class= "initial-orange">bdelkarim</span>&nbsp;
+    <span class="initial-white">el&nbsp;<span class= "initial-orange">G<span class="initial-white">hani's</span>&nbsp;
+    <span class="initial-white">Science&nbsp;Portfolio</span>
+  </p>
 </div>
-

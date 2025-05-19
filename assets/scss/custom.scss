@@ -64,10 +64,10 @@ header.navbar.fixed-top{
   padding-top:150px; max-width:90%; margin:0 auto;
 }
 
-.hero-wave-container h1{
-  font-family:"Permanent Marker",cursive;
+.hero-wave-container p{
+  font-family:"Montserrat Alternates",cursive;
   font-weight:900;
-  font-size:clamp(2.6rem,7vw,4.5rem);
+  font-size:clamp(3.6rem,7vw,4.5rem);
   line-height:1.15; letter-spacing:1px;
 
   /* face + outline */
@@ -90,8 +90,8 @@ header.navbar.fixed-top{
 }
 
 /* A = white, G = orange  (needs span wrappers)  */
-.hero-wave-container h1 .initial-white  { color:$brand-white;  -webkit-text-stroke:0; }
-.hero-wave-container h1 .initial-orange { color:$brand-orange; -webkit-text-stroke:0; }
+.hero-wave-container p .initial-white  { color:$brand-white;  -webkit-text-stroke:0; }
+.hero-wave-container p .initial-orange { color:$brand-orange; -webkit-text-stroke:0; }
 
 /* blurred header background + wave overlay       */
 .hero-wave-block.hero-blur::before{
@@ -101,11 +101,7 @@ header.navbar.fixed-top{
   background-position:center !important;
   filter:blur(6px); transform:scale(1.05); z-index:0;
 }
-.hero-wave-block.hero-blur::after{
-  content:""; position:absolute; top:0; width:100vw; height:150px;
-  background:url("/images/header-waves.svg") top center/100% 100% no-repeat;
-  pointer-events:none; z-index:3;
-}
+
 
 /* ───────────────────────────────────────────
    ABOUT WIDGET BLUR

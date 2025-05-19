@@ -9622,10 +9622,10 @@ header.navbar.fixed-top {
   max-width: 90%;
   margin: 0 auto; }
 
-.hero-wave-container h1 {
-  font-family: "Permanent Marker",cursive;
+.hero-wave-container p {
+  font-family: "Montserrat Alternates",cursive;
   font-weight: 900;
-  font-size: clamp(2.6rem, 7vw, 4.5rem);
+  font-size: clamp(3.6rem, 7vw, 4.5rem);
   line-height: 1.15;
   letter-spacing: 1px;
   /* face + outline */
@@ -9640,11 +9640,11 @@ header.navbar.fixed-top {
   text-wrap: balance; }
 
 /* A = white, G = orange  (needs span wrappers)  */
-.hero-wave-container h1 .initial-white {
+.hero-wave-container p .initial-white {
   color: #ffffff;
   -webkit-text-stroke: 0; }
 
-.hero-wave-container h1 .initial-orange {
+.hero-wave-container p .initial-orange {
   color: #ffb44d;
   -webkit-text-stroke: 0; }
 
@@ -9659,16 +9659,6 @@ header.navbar.fixed-top {
   filter: blur(6px);
   transform: scale(1.05);
   z-index: 0; }
-
-.hero-wave-block.hero-blur::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  width: 100vw;
-  height: 150px;
-  background: url("/images/header-waves.svg") top center/100% 100% no-repeat;
-  pointer-events: none;
-  z-index: 3; }
 
 /* ───────────────────────────────────────────
    ABOUT WIDGET BLUR
