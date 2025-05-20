@@ -1,6 +1,6 @@
 ---
 widget: blank
-active: true
+active: false
 weight: 1
 title: ""
 design:
