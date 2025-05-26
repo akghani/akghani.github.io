@@ -31,5 +31,4 @@ avatar_image: avatar.jpg
 ---
 
 
-I’m a Cognitive Neuroscientist & Data Analyst interested in data visualization, statistical problem solving, and data storytelling.
-
+I’m a passionate Research Data Analyst working at the intersection of neuroscience, psychology, and pharmacology. I transform complex datasets into transparent, reproducible insights through R-based pipelines, Quarto documentation, and SPSS analyses. My clear visualizations and concise reports empower both research teams and stakeholders to make data-driven decisions with confidence.

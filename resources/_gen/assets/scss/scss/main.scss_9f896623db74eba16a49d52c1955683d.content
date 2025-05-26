@@ -9696,6 +9696,66 @@ header.navbar.fixed-top {
   z-index: 1; }
 
 /* ───────────────────────────────────────────
+   SKILLS ICON ULTRA FANCY TWEAK
+   ─────────────────────────────────────────── */
+.skills-blob-bg {
+  /* 1) Bounce & Neon-Pulse Keyframes */
+  /* on hover, pop + tilt + neon intensify */ }
+
+@keyframes subtleBounce {
+  0%, 100% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-4px); } }
+
+@keyframes neonPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 180, 77, 0.3); }
+  50% {
+    box-shadow: 0 0 8px 4px rgba(255, 180, 77, 0.5); }
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 180, 77, 0.3); } }
+
+@keyframes rippleEffect {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.6; }
+  100% {
+    width: 4rem;
+    height: 4rem;
+    opacity: 0; } }
+  .skills-blob-bg i[class*="fa-"] {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #ffffff;
+    will-change: transform, box-shadow, opacity;
+    animation: subtleBounce 3.5s ease-in-out infinite, neonPulse 2.5s ease-in-out infinite;
+    /* ripple container */
+    transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease; }
+    .skills-blob-bg i[class*="fa-"]::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background: rgba(255, 180, 77, 0.4);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none; }
+  .skills-blob-bg i[class*="fa-"]:hover {
+    transform: scale(1.4) rotate(10deg);
+    color: #ffb44d !important;
+    filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+    animation-play-state: paused;
+    /* pause bounce/pulse for clean hover */
+    /* intensify the glow while hovered */
+    box-shadow: 0 0 12px 6px rgba(255, 180, 77, 0.6);
+    /* trigger ripple once */ }
+    .skills-blob-bg i[class*="fa-"]:hover::after {
+      animation: rippleEffect 0.8s ease-out forwards; }
+
+/* ───────────────────────────────────────────
    RESPONSIVE TWEAKS
    ───────────────────────────────────────── */
 @media (max-width: 1024px) {
@@ -9721,3 +9781,39 @@ header.navbar.fixed-top {
     padding-top: 60px; }
   .hero-wave-block.hero-blur::after {
     height: 60px; } }
+
+/* ABOUT WIDGET CARD */
+.about-blur {
+  @apply backdrop-blur-lg bg-white/40 rounded-2xl p-6 shadow-md transition-shadow duration-300 transform-gpu;
+  will-change: transform, opacity;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+.about-blur:hover {
+  @apply shadow-xl; }
+
+/* STAGGERED PARAGRAPH FADE */
+.about-blur p {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease-out forwards; }
+
+.about-blur p:nth-child(1) {
+  animation-delay: 0.2s; }
+
+.about-blur p:nth-child(2) {
+  animation-delay: 0.4s; }
+
+.about-blur p:nth-child(3) {
+  animation-delay: 0.6s; }
+
+.about-blur p:nth-child(4) {
+  animation-delay: 0.8s; }

@@ -1,37 +1,19 @@
-{{- $image_file := .Destination -}}
-{{- $image := resources.Get $image_file -}}
-{{- $imgSrc := "" -}}
-{{- $imgSrcSet := slice -}}
-{{- with $widths := site.Params.imageSizes -}}
-{{- range $widths -}}
-{{- $srcUrl := (printf "%gx" . | $image.Resize).RelPermalink -}}
-{{- if eq $imgSrc "" -}}
-{{- $imgSrc = $srcUrl -}}
+{{- $img := .Page.Resources.GetMatch .Destination -}}
+{{- if and (not $img) .Page.File -}}
+{{ $path := path.Join .Page.File.Dir .Destination }}
+{{- $img = resources.Get $path -}}
 {{- end -}}
-{{- $imgSrcSet = $imgSrcSet | append (printf "%s %gw" $srcUrl .) -}}
-{{- end -}}
-{{- $imgSrcSet = (delimit $imgSrcSet ",") -}}
-{{- end -}}
-
-{{- if .IsBlock -}}
-<figure>
-    {{- if gt $image.Width 850 -}}
-    <img {{ with .Title }} class="with-caption" {{ end }} width="{{ $image.Width }}" height="{{ $image.Height }}"
-        src="{{ $image.RelPermalink }}" alt="{{ . }}" decoding="async" fetchpriority="high" srcset="{{ $imgSrcSet }}"
-        sizes="{{ site.Params.imageSizeString }}" />
-    {{- else -}}
-    <img{{ with .Title }} class="with-caption" {{ end }} width="{{ $image.Width }}" height="{{ $image.Height }}"
-        src="{{ $image.RelPermalink }}" alt="{{ . }}" decoding="async" fetchpriority="high" />
-    {{- end -}}
-    {{- with .Title }}<figcaption>{{ . }}</figcaption>{{- end -}}
+{{- with $img -}}
+{{- $large := $img.Resize "1200x" -}}
+{{ $medium := $large.Fill "726x402" -}}
+{{ $small := $medium.Fill "458x254" -}}
+<figure class="image-caption">
+    <img alt="{{ $.Text }}" srcset="
+        {{ $small.RelPermalink }} 458w,
+        {{ $medium.RelPermalink }} 726w,
+        {{ $large.RelPermalink }} 1200w" sizes="50vw" src="{{ $small.RelPermalink }}" />
+    <figcaption>{{ with $.Title | safeHTML }}{{ . }}{{ end }}</figcaption>
 </figure>
 {{- else -}}
-{{- if gt $image.Width 850 -}}
-<img width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}" alt="{{ . }}"
-    decoding="async" fetchpriority="high" srcset="{{ $imgSrcSet }}" sizes="{{ site.Params.imageSizeString }}" {{- with
-    .Title }} title="{{ . }}" {{ end -}} />
-{{- else -}}
-<img width="{{ $image.Width }}" height="{{ $image.Height }}" src="{{ $image.RelPermalink }}" alt="{{ . }}"
-    decoding="async" fetchpriority="high" {{- with .Title }} title="{{ . }}" {{ end -}} />
-{{- end -}}
+<img class="rounded-lg" src="{{ .Destination | safeURL }}" width="auto" alt="{{ $.Text }}" />
 {{- end -}}

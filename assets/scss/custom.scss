@@ -121,6 +121,67 @@ header.navbar.fixed-top{
 }
 .skills-blob-bg > *      { position:relative; z-index:1; }
 
+
+
+/* ───────────────────────────────────────────
+   SKILLS ICON ULTRA FANCY TWEAK
+   ─────────────────────────────────────────── */
+.skills-blob-bg {
+
+  /* 1) Bounce & Neon-Pulse Keyframes */
+  @keyframes subtleBounce {
+    0%, 100% { transform: translateY(0); }
+    50%      { transform: translateY(-4px); }
+  }
+  @keyframes neonPulse {
+    0%   { box-shadow: 0 0 0 0 rgba($brand-orange, 0.3); }
+    50%  { box-shadow: 0 0 8px 4px rgba($brand-orange, 0.5); }
+    100% { box-shadow: 0 0 0 0 rgba($brand-orange, 0.3); }
+  }
+  @keyframes rippleEffect {
+    0%  { width: 0; height: 0; opacity: 0.6; }
+    100%{ width: 4rem; height: 4rem; opacity: 0; }
+  }
+
+  i[class*="fa-"] {
+    position: relative;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: $brand-white;
+    will-change: transform, box-shadow, opacity;
+    animation: subtleBounce 3.5s ease-in-out infinite, neonPulse 2.5s ease-in-out infinite;
+
+    /* ripple container */
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      background: rgba($brand-orange, 0.4);
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+    }
+
+    transition: transform 0.3s ease, filter 0.3s ease, color 0.3s ease;
+  }
+
+  /* on hover, pop + tilt + neon intensify */
+  i[class*="fa-"]:hover {
+    transform: scale(1.4) rotate(10deg);
+    color: $brand-orange !important;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.25));
+    animation-play-state: paused; /* pause bounce/pulse for clean hover */
+
+    /* intensify the glow while hovered */
+    box-shadow: 0 0 12px 6px rgba($brand-orange, 0.6);
+
+    /* trigger ripple once */
+    &::after { animation: rippleEffect 0.8s ease-out forwards; }
+  }
+}
+
+
+
 /* ───────────────────────────────────────────
    RESPONSIVE TWEAKS
    ───────────────────────────────────────── */
@@ -140,3 +201,31 @@ header.navbar.fixed-top{
   .hero-wave-container{ padding-top:60px; }
   .hero-wave-block.hero-blur::after{ height:60px; }
 }
+
+
+
+/* ABOUT WIDGET CARD */
+.about-blur {
+  @apply backdrop-blur-lg bg-white/40 rounded-2xl p-6 shadow-md transition-shadow duration-300 transform-gpu;
+  will-change: transform, opacity;
+  opacity: 0;
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.about-blur:hover {
+  @apply shadow-xl;
+}
+
+/* STAGGERED PARAGRAPH FADE */
+.about-blur p {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+.about-blur p:nth-child(1) { animation-delay: 0.2s; }
+.about-blur p:nth-child(2) { animation-delay: 0.4s; }
+.about-blur p:nth-child(3) { animation-delay: 0.6s; }
+.about-blur p:nth-child(4) { animation-delay: 0.8s; }

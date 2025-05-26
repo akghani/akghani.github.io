@@ -42,6 +42,7 @@ imaging:
   quality: 80
   anchor: smart
 timeout: 600000
+
 taxonomies:
   author: authors
   tag: tags
@@ -54,18 +55,21 @@ security:
   _merge: deep
 sitemap:
   _merge: deep
-  
-cascade:
-  # Configure blog posts
-  - _target:
-      path: /publication/**
-    pager: true
-    editable: false
-    reading_time: true
-    commentable: false
-    show_related: false
-    show_breadcrumb: true
-    share: true
-    header:
-      navbar:
-        enable: false
+
+# Provide footer configuration.
+footer:
+  enable: true
+  # You can provide your custom footer template using this option.
+  # Put your template in "layouts/partials" folder of your repo.
+  template: footer.html
+  # Show/hide navigation in the footer. Default is "true".
+  navigation:
+    enable: true
+    # show custom menus in the footer
+    customMenus: true
+  # Show/hide "Contact Me" section in the footer. Default is "true".
+  contactMe:
+    enable: true
+  # Show/hide credentials section in the footer. Default is "true".
+  credentials:
+    enable: true

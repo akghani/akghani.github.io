@@ -1,25 +1,10 @@
 ---
-# An instance of the About widget.
-# Documentation: https://wowchemy.com/docs/page-builder/
 widget: about
-
-# Activate this widget? true/false
 active: true
-
-# This file represents a page section.
 headless: true
-
-# Order that this section appears on the page.
 weight: 20
-
 title: Hello!
-
-# Choose the user profile to display
-# This should be the username (folder name) of a profile in your `content/authors/` folder.
-# See https://wowchemy.com/docs/get-started/#introduce-yourself
 author: admin
-
-
 design:
   background:
 #    image: accuray-MFSEP2g4YS0-unsplash.jpg
@@ -30,3 +15,4 @@ design:
   css_class: about-blur section   #  ← new class BEFORE “section”
 ---
 
+I’m a passionate Research Data Analyst working at the intersection of neuroscience, psychology, and pharmacology. I transform complex datasets into transparent, reproducible insights through R-based pipelines, Quarto documentation, and SPSS analyses. My clear visualizations and concise reports empower both research teams and stakeholders to make data-driven decisions with confidence.
