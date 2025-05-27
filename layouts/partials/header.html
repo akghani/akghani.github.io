@@ -1,0 +1,15 @@
+<!-- in layouts/partials/head.html or config.toml -->
+<link rel="icon" type="image/png" sizes="128x128" href="/favicon_128.png">
+<link rel="icon" type="image/png" sizes="512x512" href="/favicon_512.png">
+
+<!-- header logo -->
+<img src="/media/logo_header.png"
+     srcset="/media/logo_header.png 1x,
+             /media/logo_header@2x.png 2x"
+     alt="Site Name">
+
+<!-- print stylesheet -->
+@page {
+  background-image: url("/media/logo_print.png");
+  background-size: 8cm auto;   /* matches 300-dpi tagging */
+}
