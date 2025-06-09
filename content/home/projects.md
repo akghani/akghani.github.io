@@ -2,7 +2,7 @@
 # An instance of the Portfolio widget.
 # Documentation: https://wowchemy.com/docs/page-builder/
 # Activate this widget? true/false
-active: true
+active: false
 
 widget: portfolio
 

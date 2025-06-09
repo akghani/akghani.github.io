@@ -12,8 +12,9 @@ email: ""
 highlight_name: true
 interests:
 - Neuroscience
-- Quantitative Data Analysis
-- Data Visualization
+- Data Science
+- Data Cleaning
+- Tidyverse / R / Quarto
 organizations:
 - name: Erasmus University
   url: https://www.eur.nl/
@@ -31,4 +32,6 @@ avatar_image: avatar.jpg
 ---
 
 
-I’m a passionate Research Data Analyst working at the intersection of neuroscience, psychology, and pharmacology. I transform complex datasets into transparent, reproducible insights through R-based pipelines, Quarto documentation, and SPSS analyses. My clear visualizations and concise reports empower both research teams and stakeholders to make data-driven decisions with confidence.
+I’m a passionate Research Data Analyst working at the intersection of neuroscience, psychology, and pharmacology. 
+I transform complex datasets into transparent, reproducible insights through R-based pipelines, Quarto documentation, and SPSS analyses. 
+My clear visualizations and concise reports empower both research teams and stakeholders to make data-driven decisions with confidence.

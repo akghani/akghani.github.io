@@ -147,7 +147,7 @@ header.navbar.fixed-top{
     position: relative;
     display: inline-block;
     font-size: 2.5rem;
-    color: $brand-white;
+    color: $clr-primary-dark;
     will-change: transform, box-shadow, opacity;
     animation: subtleBounce 3.5s ease-in-out infinite, neonPulse 2.5s ease-in-out infinite;
 
@@ -180,6 +180,44 @@ header.navbar.fixed-top{
   }
 }
 
+/* make custom SVGs behave exactly like the FA <i> glyphs */
+svg.custom-icon {
+  position: relative;
+  display: inline-block;
+  width: 2.5rem;                 /* matches font-icon 2.5 rem */
+  height: 2.5rem;
+  fill: $clr-primary-dark;            /* or currentColor */
+  will-change: transform, box-shadow, opacity;
+  animation: subtleBounce 3.5s ease-in-out infinite,
+             neonPulse   2.5s ease-in-out infinite;
+
+  /* ripple container */
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    width: 0; height: 0;
+    background: rgba($brand-orange, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+  }
+
+  transition: transform .3s ease,
+              filter    .3s ease,
+              fill      .3s ease;   /* svg uses fill instead of color */
+}
+
+/* hover: identical pop + tilt + neon */
+svg.custom-icon:hover {
+  transform: scale(1.4) rotate(10deg);
+  fill: $brand-orange !important;
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,.25));
+  animation-play-state: paused;
+  box-shadow: 0 0 12px 6px rgba($brand-orange, 0.6);
+
+  &::after { animation: rippleEffect .8s ease-out forwards; }
+}
 
 
 /* ───────────────────────────────────────────

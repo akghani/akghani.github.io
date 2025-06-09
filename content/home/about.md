@@ -7,11 +7,11 @@ title: Hello!
 author: admin
 design:
   background:
-#    image: accuray-MFSEP2g4YS0-unsplash.jpg
-#    image_size: content
-#    image_position: left
-#    image_parallax: true
-#    text_color_light: true
+    image: brain-puzzle.jpg
+    image_size: content
+    image_position: left
+    image_parallax: true
+    text_color_light: true
   css_class: about-blur section   #  ← new class BEFORE “section”
 ---
 

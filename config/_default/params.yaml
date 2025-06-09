@@ -46,8 +46,8 @@ highlight_languages:
   - python
   - latex
   - bash
-math: false
-diagram: false
+math: true
+diagram: true
 privacy_pack: false
 
 edit_page:
@@ -63,7 +63,7 @@ show_related:
   book: true
   page: false
   post: true
-  project: true
+  project: false
   publication: true
   event: true
 
@@ -128,4 +128,9 @@ cms:
 icon:
   pack:
     ai: true
+
+extensions:
+  academicons:
+    enable: true
+
 

@@ -18,3 +18,25 @@
 .feature-icon .colored {
   color: inherit;           /* respect your theme’s text colour */
 }
+
+
+/* ── size & colour for any custom SVG icon ─────────────────────── */
+.icon.custom-icon{                 /* project links, buttons, etc. */
+  width:2.6rem;                    /* matches your 2.6 rem devicons */
+  height:2.6rem;
+  fill:currentColor;               /* inherits link text colour     */
+}
+
+/* skills widget uses .feature-icon wrapper */
+.feature-icon svg.custom-icon{
+  width:2.6rem;
+  height:2.6rem;
+  fill:currentColor;
+}
+
+/* optional – uniform hover colour for all icons (font & svg) */
+a:hover .icon,
+a:hover .devicon{
+  color:#2c7fb8;                   /* or whatever accent you prefer */
+  fill:#2c7fb8;
+}
