@@ -42,8 +42,8 @@ vignettes/*.pdf
 
 Thumbs.db
 
-public/
-resources/
+/public/
+/resources/
 
 
 .hugo_build.lock
