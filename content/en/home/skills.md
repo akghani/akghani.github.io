@@ -17,11 +17,6 @@ feature:
     icon: r-project
     icon_pack: fab
 
-#  - name: 
-#    description: Data Wrangling
-#    icon: skills/r-project-icon
-#    icon_pack: custom
-
   - name: Python
     description: 20%
     icon: python
